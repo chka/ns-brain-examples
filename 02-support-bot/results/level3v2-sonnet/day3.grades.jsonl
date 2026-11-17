@@ -1,0 +1,50 @@
+{"chat": "3.0", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.0", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.1", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.1", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.2", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.3", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.3", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.4", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.5", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Klarna described as online only; it also works at the register via the Klarna app."}
+{"chat": "3.5", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.6", "turn": 0, "score": 0, "knew_customer": null, "kind": "general", "note": "Gives return dates for orders NY-2406/NY-2407, which belong to a different customer (Priya Patel), not Ben's NY-2463/NY-2464."}
+{"chat": "3.7", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.8", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.8", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.9", "turn": 0, "score": 2, "knew_customer": true, "kind": "personal", "note": ""}
+{"chat": "3.10", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.10", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "3.11", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.11", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.12", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.13", "turn": 0, "score": 2, "knew_customer": true, "kind": "personal", "note": ""}
+{"chat": "3.14", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Klarna described as online only; it also works at the register via the Klarna app."}
+{"chat": "3.15", "turn": 0, "score": 0, "knew_customer": null, "kind": "general", "note": "Guest has no purchases, yet the answer cites a sale Corrib shirt bought Oct 30 that is another customer's (Jordan Rivera's) order."}
+{"chat": "3.15", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "3.16", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.17", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Defers online-bought and sale pairs to the team although the policy answers both (free hem on full-price pairs bought online too; others from $15)."}
+{"chat": "3.18", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.19", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.19", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.20", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.21", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.21", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.22", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.23", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Klarna described as online only; it also works at the register via the Klarna app."}
+{"chat": "3.24", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.24", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "3.24", "turn": 2, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.25", "turn": 0, "score": 1, "knew_customer": true, "kind": "personal", "note": "Uses Rosa's boots correctly, but gives Dec 8 as the deadline when a Nov 8 full-price purchase is returnable until Jan 15."}
+{"chat": "3.26", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.27", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.28", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.28", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.29", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.30", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.31", "turn": 0, "score": 0, "knew_customer": null, "kind": "general", "note": "Guest is told return dates for orders NY-2406/NY-2407, another customer's (Priya Patel's) purchases."}
+{"chat": "3.32", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.33", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.33", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.34", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.35", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}

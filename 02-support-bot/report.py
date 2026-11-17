@@ -5,12 +5,13 @@ python3 report.py            every day that every bot has finished
 python3 report.py 1 2        only those days
 """
 import json
+import os
 import pathlib
 import statistics
 import sys
 
 RESULTS = pathlib.Path(__file__).resolve().parent / "results"
-BOTS = ["level2-sonnet", "level2-haiku", "level3-sonnet", "level3-haiku"]
+BOTS = os.environ.get("BOTS", "level2-sonnet level2-haiku level3-sonnet level3-haiku").split()
 
 
 def load(bot, days):

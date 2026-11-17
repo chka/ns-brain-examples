@@ -1,0 +1,51 @@
+[level1-sonnet] day 1  2.75s cpu 0.14s $0.0662 llm: do you take apple pay
+[level1-sonnet] day 1  3.61s cpu 0.00s $0.0690 llm: store hours?
+[level1-sonnet] day 1  1.57s cpu 0.00s $0.0663 llm: where is the store
+[level1-sonnet] day 1  1.67s cpu 0.00s $0.0668 llm: closest subway?
+[level1-sonnet] day 1  1.65s cpu 0.01s $0.0664 llm: can i return sale items
+[level1-sonnet] day 1  1.47s cpu 0.00s $0.0660 llm: do you sell gift cards
+[level1-sonnet] day 1  2.70s cpu 0.00s $0.0676 llm: bopis?
+[level1-sonnet] day 1  1.59s cpu 0.00s $0.0664 llm: can i buy online and pick up in store
+[level1-sonnet] day 1  2.66s cpu 0.01s $0.0660 llm: do you have a student discount
+[level1-sonnet] day 1  2.95s cpu 0.01s $0.0678 llm: are you open sunday
+[level1-sonnet] day 1  1.32s cpu 0.01s $0.0659 llm: where can i park
+[level1-sonnet] day 1  1.35s cpu 0.01s $0.0660 llm: do you accept apple pay
+[level1-sonnet] day 1  2.06s cpu 0.00s $0.0660 llm: do gift cards expire
+[level1-sonnet] day 1  2.36s cpu 0.01s $0.0667 llm: do you take apple pay
+[level1-sonnet] day 1  2.94s cpu 0.01s $0.0679 llm: gift cards?
+[level1-sonnet] day 1  2.31s cpu 0.01s $0.0663 llm: can i buy one online
+[level1-sonnet] day 1  2.39s cpu 0.00s $0.0675 llm: how many days do i have to return
+[level1-sonnet] day 1  2.70s cpu 0.00s $0.0670 llm: is hemming free
+[level1-sonnet] day 1  1.34s cpu 0.00s $0.0660 llm: parking nearby?
+[level1-sonnet] day 1  2.07s cpu 0.00s $0.0663 llm: student discount?
+[level1-sonnet] day 1  1.71s cpu 0.00s $0.0665 llm: do you do personal shopping
+[level1-sonnet] day 1  1.50s cpu 0.01s $0.0664 llm: where are you located
+[level1-sonnet] day 1  1.77s cpu 0.00s $0.0665 llm: store hours?
+[level1-sonnet] day 1  2.56s cpu 0.00s $0.0675 llm: open late any day?
+[level1-sonnet] day 1  3.34s cpu 0.00s $0.0696 llm: return policy
+[level1-sonnet] day 1  2.58s cpu 0.00s $0.0677 llm: sale returns?
+[level1-sonnet] day 1  1.67s cpu 0.00s $0.0664 llm: can i return sale items
+[level1-sonnet] day 1  3.82s cpu 0.01s $0.0678 llm: how many points do i have
+[level1-sonnet] day 1  2.06s cpu 0.01s $0.0659 llm: do you take amex
+[level1-sonnet] day 1  1.57s cpu 0.00s $0.0660 llm: where is the store
+[level1-sonnet] day 1  2.46s cpu 0.00s $0.0678 llm: alterations?
+[level1-sonnet] day 1  1.71s cpu 0.00s $0.0663 llm: do you ship
+[level1-sonnet] day 1  2.20s cpu 0.01s $0.0675 llm: how long does it take
+[level1-sonnet] day 1  2.23s cpu 0.01s $0.0677 llm: do harbour jeans run small
+[level1-sonnet] day 1  1.84s cpu 0.01s $0.0659 llm: do you take amex
+[level1-sonnet] day 1  2.56s cpu 0.01s $0.0661 llm: price match?
+[level1-sonnet] day 1  1.30s cpu 0.00s $0.0656 llm: do you have wifi
+[level1-sonnet] day 1  1.28s cpu 0.00s $0.0660 llm: open thanksgiving?
+[level1-sonnet] day 1  1.51s cpu 0.01s $0.0661 llm: can i pay with venmo
+[level1-sonnet] day 1  1.56s cpu 0.01s $0.0659 llm: whats the address
+[level1-sonnet] day 1  2.16s cpu 0.00s $0.0673 llm: store hours?
+[level1-sonnet] day 1  1.98s cpu 0.00s $0.0673 llm: and sunday?
+[level1-sonnet] day 1  3.13s cpu 0.00s $0.0682 llm: i bought the slim shirt, can i return it
+[level1-sonnet] day 1  3.15s cpu 0.00s $0.0673 llm: exchange policy
+[level1-sonnet] day 1  1.91s cpu 0.00s $0.0661 llm: do you take amex
+[level1-sonnet] day 1  1.76s cpu 0.00s $0.0664 llm: merino care
+[level1-sonnet] day 1  5.40s cpu 0.00s $0.0701 llm: i lost the receipt for the rain jacket
+[level1-sonnet] day 1  2.87s cpu 0.00s $0.0665 llm: can i return sale items
+[level1-sonnet] day 1  2.45s cpu 0.00s $0.0664 llm: is hemming free
+[level1-sonnet] day 1  2.32s cpu 0.00s $0.0665 llm: do you ship
+{"bot": "level1-sonnet", "day": 1, "messages": 50, "from_memory": 0, "cost": 3.3413, "seconds": {"min": 1.283, "max": 5.398, "avg": 2.236, "median": 2.115, "p95": 3.61}}
