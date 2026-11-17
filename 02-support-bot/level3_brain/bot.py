@@ -48,9 +48,8 @@ PHRASINGS = RUN / "phrasings.json"
 # Either one alone matched "return policy on jumpers" to "can I return my sale jumper".
 NEAR, SAME = 0.70, 0.85
 
-# How many facts go to the LLM with a question, ranked by the local model. Fourteen lost
-# facts the answers needed (Harbour runs small; exchanges are Ireland and UK only).
-FACTS = 22
+# How many facts beyond the core go to the LLM with a question, ranked by the local model.
+FACTS = 12
 
 # Messages about this customer's own orders always go to the LLM, and so do messages that
 # need the previous one to make sense: a stored answer cannot know which jumper "it" is. A
@@ -60,13 +59,47 @@ OWN = re.compile(r"\b(i bought|i got|i ordered|did i buy|i posted|last time|for 
                  r"receipt for the|do i have to return the|points do i have|is my|"
                  r"my (order|parcel|items?|stuff|size|points|account|hem|jeans|dress|shirts?|boots|jacket|return))\b"
                  r"|\bthe [a-z ]+ (is|are) too\b", re.I)
-FOLLOW_UP = re.compile(r"^\s*(and|also|but|what about|how about)\b", re.I)
+FOLLOW_UP = re.compile(r"^\s*(and|also|but|what about|how about|then)\b", re.I)
 PRONOUN = re.compile(r"\b(it|them|that one|this one|these|those)\b", re.I)
 
-FORMAT = """Reply with one JSON object and nothing else:
-{"answer": "<your reply to this customer>",
- "general_question": "<only if your answer contains nothing about this customer, does not depend on today's date or day of the week, and would be word for word right for anyone (a store policy, hours, payment, care...): the question rewritten as a short self-contained question; otherwise null>",
- "customer_notes": ["<each new durable fact about THIS customer worth remembering next time: sizes, fit, likes, dislikes, what they plan to buy, and any size or product you recommended to them; one short sentence each, or none>"]}"""
+# The scopes whose facts go into every call, before anything else: the questions a store gets
+# most, and the rules an answer gets wrong when one of them is missing (the holiday window
+# changes every return deadline in November). Being the same in every call, they are cached.
+CORE = ["hours", "hours:holidays", "returns", "returns:sale", "returns:holiday", "returns:receipt",
+        "returns:never", "exchanges", "payment"]
+
+# An answer that talks about the person or the conversation is not a store answer and is never
+# stored for everyone ("since you asked about parking..." reached a different customer once).
+PERSONAL_ANSWER = re.compile(r"\b(today is|tonight|this (monday|tuesday|wednesday|thursday|friday|saturday|sunday)|"
+                             r"you asked|since you|you mentioned|you said|you told|as we discussed|"
+                             r"your (order|purchase|receipt|account|points|hem|size|jacket|jeans|shirt|dress|boots))\b", re.I)
+
+FORMAT = """Reply with one JSON object and nothing else, short:
+{"answer": "<your reply, at most 70 words>",
+ "general_question": "<if the answer is the same for anyone (a store policy, hours, payment, care...), the question as a short self-contained question; else null>",
+ "customer_notes": [<only facts this customer just told you about themselves, or a size you recommended; usually empty>]}
+For hours give the regular week and the holiday hours, never only today's, so the answer stays true tomorrow."""
+
+
+def normalise(text):
+    return re.sub(r"[^a-z0-9 ]+", "", text.lower()).strip()
+
+
+# Words that narrow a question. A stored question carrying one the customer did not use answers
+# a narrower question: "what is your return policy on sale items?" is not "return policy".
+QUALIFIERS = {"sale", "online", "holiday", "holidays", "christmas", "thanksgiving", "black", "friday",
+              "sunday", "saturday", "thursday", "receipt", "gift", "student", "military", "faulty", "final",
+              "altered", "alteration", "tax", "express", "same-day", "kids", "canada", "california", "klarna",
+              "venmo", "amex", "apple", "google", "cash", "merino", "linen", "denim", "leather", "parking", "subway"}
+
+
+def qualifiers(text):
+    return {w.rstrip("s") for w in re.findall(r"[a-z-]+", text.lower()) if w in QUALIFIERS or w.rstrip("s") in QUALIFIERS}
+
+
+def strip_today(text):
+    """'what time do you close today' asks the same as 'what time do you close'."""
+    return re.sub(r"\s*\b(today|tonight|right now|now)\b", "", text, flags=re.I).strip() or text
 
 
 def parse_reply(text):
@@ -126,6 +159,10 @@ class BrainBot:
                 self.known.append({**get(p["id"]), "title": p["phrasing"]})
         self.known_vecs = self.model.encode([m["title"] for m in self.known], convert_to_tensor=True,
                                             normalize_embeddings=True)
+        # The core facts, read once from the brain and sent first in every call.
+        core = [m for s in CORE for m in browse(s) if not m["title"].rstrip().endswith("?")]
+        self.core_ids = {m["id"] for m in core}
+        self.core = "\n".join(f"- {m['title']}" for m in core)   # titles are whole sentences with the numbers
 
     def start_chat(self, email, date):
         return Conversation(self, email, date)
@@ -166,14 +203,24 @@ class BrainBot:
         questions filed in the scopes just picked are candidates; the nearest three by the
         small model go to the cross-encoder, which has the last word."""
         with self.lock:
-            known, sims = list(self.known), (self.known_vecs @ q).tolist()
+            known = list(self.known)
+            # The same words as a question already answered: no model needed to know that.
+            plain = normalise(message)
+            for m in reversed(known):
+                if normalise(m["title"]) == plain:
+                    return m, 1.0, 1.0
+            sims = (self.known_vecs @ q).tolist()
             # The three nearest DIFFERENT memories: several wordings of one question must not
             # crowd out a closer question ("returns policy" vs "returns policy over Christmas").
             near, seen = [], set()
             for i in sorted(range(len(sims)), key=sims.__getitem__, reverse=True):
                 if sims[i] < NEAR or len(near) == 3:
                     break
-                if known[i]["scope"] in scopes and known[i]["id"] not in seen:
+                # A stored answer may come from the question's scope or a scope above it, never
+                # from a narrower one: "return policy" must not get the sale-items answer.
+                if any(s == known[i]["scope"] or s.startswith(known[i]["scope"] + ":") for s in scopes) \
+                        and not (qualifiers(known[i]["title"]) - qualifiers(message)) \
+                        and known[i]["id"] not in seen:
                     near.append(i)
                     seen.add(known[i]["id"])
             if not near:
@@ -191,6 +238,7 @@ class Conversation:
     def __init__(self, shop, email, date):
         self.shop, self.date, self.history, self.asked = shop, date, [], []
         self.customer = "customer:" + re.sub(r"[^a-z]+", "-", email.split("@")[0].lower()).strip("-")
+        self.name = ORDERS.get(email, {}).get("name")
         if not browse(self.customer) and email in ORDERS:
             # First login: copy the order history from the order system into the brain.
             c = ORDERS[email]
@@ -211,6 +259,28 @@ class Conversation:
                                  "At the alterations counter, lower floor, during store hours.", "--date", o["date"],
                                  "--source", "shop/orders.json", "--confidence", "confirmed", "--allow-duplicate")
 
+    def lookup(self, message):
+        """Answers that are plain look-ups in this customer's records in the brain."""
+        m = message.lower()
+        if not self.name or not re.search(r"points do i have|is my hem|hem ready|what size .* did i buy|which size did i", m):
+            return None
+        records = browse(self.customer)
+        bought = [r for r in records if r["title"].startswith("Bought ")]
+        if "points" in m:
+            spent = sum(int(x) for r in bought for x in re.findall(r"\$(\d+)", r["title"])[:1])
+            return (f"You have about {spent} Row Rewards points: 1 point for every $1 you spent with us. Every 200 "
+                    f"points is a $10 reward, and points expire 12 months after you earn them. Returned items take "
+                    f"their points off.")
+        if "hem" in m:
+            alt = [r for r in records if r["title"].startswith("Alteration")]
+            if not alt:
+                return ("I don't see an alteration on your account. If you left something with us, the alterations "
+                        "counter (lower floor) or (212) 555-0147 can check it.")
+            return f"{alt[0]['title']}. {alt[0]['body']}"
+        words = [w for w in re.findall(r"[a-z]+", m) if len(w) > 3 and w not in {"what", "size", "which", "did", "buy"}]
+        hits = [r for r in bought if any(w in r["title"].lower() for w in words)] or bought
+        return " ".join(r["title"].replace("Bought", "You bought", 1) + "." for r in hits[:2])
+
     def profile(self):
         return "\n".join(f"- {m['title']}. {m['body']}" for m in browse(self.customer))
 
@@ -218,17 +288,26 @@ class Conversation:
         # A short message needs the chat before it only when there is one: "store hours?"
         # opening a chat is a whole question, "and sunday?" after it is not.
         return bool(OWN.search(message) or FOLLOW_UP.search(message)
-                    or (self.history and (len(message.split()) < 4 or PRONOUN.search(message))))
+                    or (self.history and PRONOUN.search(message)))
 
     def reply(self, message):
         t0 = time.perf_counter()
         context = " ".join(self.asked[-1:] + [message])
         self.asked.append(message)
         shop = self.shop
-        scopes, q = shop.classify(context if FOLLOW_UP.search(message) else message)
+        asked = strip_today(message)
+        scopes, q = shop.classify(context if FOLLOW_UP.search(message) else asked)
+
+        # Step 2b: questions about this customer's own records are answered from the brain
+        # by code, with no model: points, an alteration, a size bought.
+        looked_up = self.lookup(message)
+        if looked_up:
+            self.history += [{"role": "user", "content": message}, {"role": "assistant", "content": looked_up}]
+            return looked_up, {"usage": {}, "llm_calls": 0, "path": "memory", "scopes": [self.customer],
+                               "matched": "customer record", "local_ms": round((time.perf_counter() - t0) * 1000, 1)}
 
         # Step 3: answer from memory when this is a question the shop already answered.
-        found = None if self.needs_context(message) else shop.known_answer(message, q, scopes)
+        found = None if self.needs_context(message) else shop.known_answer(asked, q, scopes)
         if found:
             hit, similarity, same = found
             answer = hit["body"]
@@ -248,15 +327,17 @@ class Conversation:
             for m in browse(s, n=60) + recall(message, s, n=8):
                 if not m["scope"].startswith("customer"):
                     candidates[m["id"]] = m
+        candidates = {k: m for k, m in candidates.items() if k not in shop.core_ids}
         ranked = sorted(candidates.values(), key=lambda m: float(shop.vector(m) @ q), reverse=True)[:FACTS]
         lines = [f"- [{m['scope']}] {m['title']}. {m['body']}" for m in ranked]
         prompt = (f"TODAY: {self.date}\n\nWHAT THE SHOP KNOWS ABOUT THIS CUSTOMER:\n{self.profile() or '- nothing yet'}"
                   f"\n\nSHOP FACTS FOR THIS QUESTION:\n" + "\n".join(lines) + f"\n\nCUSTOMER: {message}")
-        # No prompt caching here: the whole request is about 2,000 tokens and changes with
-        # every question, and Anthropic does not cache prefixes under 1,024 tokens anyway.
-        msgs = [{"role": "system", "content": f"{RULES}\nUse the shop facts and what the shop knows about the "
-                 f"customer; for returns, list the customer's items and say for each whether and until when it can "
-                 f"be returned.\n\n{FORMAT}"}]
+        # The rules, the format and the core facts are the same in every call, so they come
+        # first and are cached: from the second call on they cost a tenth of the input price.
+        msgs = [{"role": "system", "cache_control": {"type": "ephemeral"},
+                 "content": f"{RULES}\nUse the store facts and what the store knows about the customer; for "
+                 f"returns, say for each of the customer's items whether and until when it can be returned.\n\n"
+                 f"{FORMAT}\n\nCORE STORE FACTS:\n{shop.core}"}]
         msgs += [{"role": m["role"], "content": m["content"]} for m in self.history]
         msgs.append({"role": "user", "content": prompt})
         text, usage = chat(msgs, model=ANSWER_MODEL)
@@ -270,19 +351,27 @@ class Conversation:
         # Step 5: teach the brain.
         learned, refused = [], []
         general, general_answer = out.get("general_question"), answer
-        if general and not OWN.search(general):
+        name = self.name.split()[0].lower() if self.name else None
+        if general and (PERSONAL_ANSWER.search(answer) or (name and name in answer.lower())):
+            refused.append(f"{general} (answer is about this customer)")
+            general = None
+        if general and not OWN.search(general) and not self.needs_context(message):
             title = general.rstrip(" ?") + "?"
             with shop.lock:
                 mid, existing = remember(scopes[0], "knowledge", title, general_answer,
                                          "--source", "bot", "--confidence", "reported")
             if mid:
-                shop.learn_phrasing(title, {"id": mid, "title": title, "body": general_answer, "scope": scopes[0]})
+                memory = {"id": mid, "title": title, "body": general_answer, "scope": scopes[0]}
+                shop.learn_phrasing(title, memory)
+                # and the customer's own words, so the next customer who types them gets it at once
+                if normalise(asked) != normalise(title):
+                    shop.learn_phrasing(asked, memory, keep=True)
                 learned.append(title)
             elif existing:
                 # ns-brain refused a second answer to a question it already holds and named
                 # the memory that has it. Nothing new goes in the brain; the bot learns that
                 # this customer's words are another way to ask that question.
-                shop.learn_phrasing(message, get(existing), keep=True)
+                shop.learn_phrasing(asked, get(existing), keep=True)
                 refused.append(f"{title} (already #{existing})")
         for note in out.get("customer_notes") or []:
             with shop.lock:
