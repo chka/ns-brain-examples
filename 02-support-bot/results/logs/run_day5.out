@@ -1,4 +1,0 @@
-level2-sonnet  day 5: 50 msgs,  0 from memory, $0.2882, avg 2.786s, p95 4.14s, cpu 2.17s
-level2-haiku   day 5: 50 msgs,  0 from memory, $0.0164, avg 2.318s, p95 4.902s, cpu 2.22s
-level3-sonnet  day 5: 50 msgs, 26 from memory, $0.2273, avg 2.056s, p95 6.885s, cpu 28.58s
-level3-haiku   day 5: 50 msgs, 24 from memory, $0.0142, avg 1.875s, p95 5.056s, cpu 30.63s
