@@ -1,0 +1,57 @@
+/home/chka/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:287: UserWarning: 
+NVIDIA GeForce RTX 5070 with CUDA capability sm_120 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_90.
+If you want to use the NVIDIA GeForce RTX 5070 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(
+[level3-haiku] day 2  4.34s cpu 3.19s $0.0006 brain+llm: do you hem jeans
+[level3-haiku] day 2  4.40s cpu 2.00s $0.0007 brain+llm: are you open on thanksgiving
+[level3-haiku] day 2  0.04s cpu 0.14s $0.0000 memory: return policy
+[level3-haiku] day 2  1.99s cpu 0.28s $0.0004 brain+llm: what time do you close today
+[level3-haiku] day 2  2.40s cpu 0.14s $0.0005 brain+llm: and sunday?
+[level3-haiku] day 2  0.04s cpu 0.15s $0.0000 memory: can i return sale items
+[level3-haiku] day 2  3.03s cpu 1.58s $0.0004 brain+llm: how many days do i have to return
+[level3-haiku] day 2  2.86s cpu 0.50s $0.0005 brain+llm: is it a refund or store credit
+[level3-haiku] day 2  2.85s cpu 2.01s $0.0004 brain+llm: what size chelsea boots did i buy
+[level3-haiku] day 2  3.26s cpu 0.10s $0.0006 brain+llm: what are your hours
+[level3-haiku] day 2  0.04s cpu 0.15s $0.0000 memory: return policy
+[level3-haiku] day 2  0.05s cpu 0.18s $0.0000 memory: no receipt return?
+[level3-haiku] day 2  1.81s cpu 0.07s $0.0004 brain+llm: what time do you open
+[level3-haiku] day 2  2.48s cpu 0.08s $0.0005 brain+llm: and thursday?
+[level3-haiku] day 2  0.06s cpu 0.23s $0.0000 memory: can i return sale items
+[level3-haiku] day 2  0.05s cpu 0.18s $0.0000 memory: is there parking
+[level3-haiku] day 2  0.07s cpu 0.29s $0.0000 memory: do you sell gift cards
+[level3-haiku] day 2  2.36s cpu 0.08s $0.0006 brain+llm: are you open sunday
+[level3-haiku] day 2  0.05s cpu 0.20s $0.0000 memory: no receipt return?
+[level3-haiku] day 2  0.04s cpu 0.17s $0.0000 memory: gift wrap?
+[level3-haiku] day 2  4.47s cpu 1.29s $0.0006 brain+llm: how many points do i have
+[level3-haiku] day 2  0.07s cpu 0.28s $0.0000 memory: what is your return policy
+[level3-haiku] day 2  3.50s cpu 0.96s $0.0005 brain+llm: can i pay in installments
+[level3-haiku] day 2  0.04s cpu 0.14s $0.0000 memory: do you ship
+[level3-haiku] day 2  0.04s cpu 0.16s $0.0000 memory: how much is shipping
+[level3-haiku] day 2  4.91s cpu 0.51s $0.0008 brain+llm: black friday hours
+[level3-haiku] day 2  0.05s cpu 0.18s $0.0000 memory: how many days do i have to return
+[level3-haiku] day 2  0.07s cpu 0.24s $0.0000 memory: gift wrap?
+[level3-haiku] day 2  1.36s cpu 0.15s $0.0004 brain+llm: are you open on thanksgiving
+[level3-haiku] day 2  0.05s cpu 0.20s $0.0000 memory: apple pay?
+[level3-haiku] day 2  0.04s cpu 0.17s $0.0000 memory: where are you located
+[level3-haiku] day 2  0.08s cpu 0.30s $0.0000 memory: can i buy online and pick up in store
+[level3-haiku] day 2  0.04s cpu 0.15s $0.0000 memory: do you hem jeans
+[level3-haiku] day 2  0.05s cpu 0.20s $0.0000 memory: do you have a student discount
+[level3-haiku] day 2  0.08s cpu 0.31s $0.0000 memory: can i buy online and pick up in store
+[level3-haiku] day 2  0.04s cpu 0.16s $0.0000 memory: is hemming free
+[level3-haiku] day 2  2.16s cpu 1.07s $0.0004 brain+llm: do you ship to canada
+[level3-haiku] day 2  0.06s cpu 0.24s $0.0000 memory: can i buy online and pick up in store
+[level3-haiku] day 2  0.04s cpu 0.14s $0.0000 memory: do you accept apple pay
+[level3-haiku] day 2  4.34s cpu 0.79s $0.0007 brain+llm: exchange policy
+[level3-haiku] day 2  0.04s cpu 0.17s $0.0000 memory: no receipt return?
+[level3-haiku] day 2  0.04s cpu 0.14s $0.0000 memory: can i return something
+[level3-haiku] day 2  4.84s cpu 0.84s $0.0007 brain+llm: can i return the high-rise jeans i bought
+[level3-haiku] day 2  1.36s cpu 0.18s $0.0003 brain+llm: do you ship to california
+[level3-haiku] day 2  3.01s cpu 0.14s $0.0006 brain+llm: what time do you open
+[level3-haiku] day 2  0.04s cpu 0.15s $0.0000 memory: price match?
+[level3-haiku] day 2  2.24s cpu 0.07s $0.0005 brain+llm: hours today
+[level3-haiku] day 2  2.19s cpu 1.02s $0.0004 brain+llm: do you take checks
+[level3-haiku] day 2  0.06s cpu 0.21s $0.0000 memory: do gift cards expire
+[level3-haiku] day 2  2.99s cpu 0.25s $0.0005 brain+llm: exchange policy
+{"bot": "level3-haiku", "day": 2, "messages": 50, "from_memory": 27, "cost": 0.0118, "seconds": {"min": 0.037, "max": 4.914, "avg": 1.411, "median": 0.074, "p95": 4.471}}

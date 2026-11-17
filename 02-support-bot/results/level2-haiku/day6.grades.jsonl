@@ -1,0 +1,50 @@
+{"chat": "6.0", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.1", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.1", "turn": 1, "score": 0, "knew_customer": null, "kind": "follow-up", "note": "Calls Sunday Nov 29 'this Sunday'; today is Sat Nov 21, so the coming Sunday is Nov 22 with regular 11am-7pm hours."}
+{"chat": "6.2", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.3", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.4", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.4", "turn": 1, "score": 0, "knew_customer": null, "kind": "general", "note": "Empty answer: the customer got no reply at all."}
+{"chat": "6.5", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.6", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.7", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.8", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see the order and refers to the team; the purchase was a Corrib slim shirt, olive, size L (NY-2466)."}
+{"chat": "6.8", "turn": 1, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic no-receipt policy; her in-store sale Corrib slim shirt (NY-2466, Nov 7) can be looked up and today, Nov 21, is the last day of its 14-day store-credit or exchange window."}
+{"chat": "6.9", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.9", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.10", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.10", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Thursday details are right, but it says other days close at 8pm and omits Black Friday Nov 27 (8am-10pm) and Sat Nov 28 (9am-9pm)."}
+{"chat": "6.10", "turn": 2, "score": 1, "knew_customer": null, "kind": "general", "note": "Refers amounts outside $25-$500 to the team instead of saying gift cards come only in that range."}
+{"chat": "6.11", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic policy and asks when; her full-price navy Burren boots (NY-2455, Nov 11) are returnable until Jan 15, the sale charcoal pair (NY-2454, Nov 1) passed its 14 days on Nov 15."}
+{"chat": "6.12", "turn": 0, "score": 0, "knew_customer": false, "kind": "personal", "note": "Says yes, you can exchange them, but his Harbour jeans (NY-2439, Nov 10) were hemmed and altered items cannot be returned."}
+{"chat": "6.12", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Says store credit or exchange only applies to online sale orders, leaving in-store sale returns unclear; all sale items get store credit or exchange only."}
+{"chat": "6.13", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see the alteration and refers to the team; he has no alteration on record, only an unaltered merino crew and rain jacket (NY-2445)."}
+{"chat": "6.13", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.14", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.15", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.16", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.17", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic policy and asks for details; his Inis linen trousers (NY-2469, Oct 26) were hemmed, so they cannot be returned."}
+{"chat": "6.18", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.19", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.20", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.21", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.21", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "6.22", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.23", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.23", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.24", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.24", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.25", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic policy and asks for details; her sale Corrib slim shirt (NY-2466, Nov 7) is store credit or exchange only and today, Nov 21, is the last day."}
+{"chat": "6.26", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic policy and asks what she bought; her full-price Maam jacket (NY-2407, Nov 9) is returnable until Jan 15, the sale Claddagh dress until Nov 23, and the Oct 14 order (NY-2406) is past 30 days."}
+{"chat": "6.26", "turn": 1, "score": 0, "knew_customer": false, "kind": "personal", "note": "Invents an exception (other card, cash or gift card refunds 'unless our store team agrees'), and asks what she bought instead of saying her jacket gets a card refund and the sale dress store credit (NY-2407)."}
+{"chat": "6.27", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.27", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.28", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": "Correct, but ends in a stray cut-off fragment ('Quest')."}
+{"chat": "6.29", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.29", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.30", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.31", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.31", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Sends Black Friday weekend purchases to the team although the holiday rule (returnable until Jan 15) already covers them."}
+{"chat": "6.32", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "6.33", "turn": 0, "score": 0, "knew_customer": false, "kind": "personal", "note": "Says 'yes, you may be able to', but his sale Claddagh wrap dress (NY-2428, Oct 8) passed its 14-day window in October."}
+{"chat": "6.34", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}

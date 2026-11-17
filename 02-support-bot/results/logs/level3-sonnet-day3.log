@@ -1,0 +1,57 @@
+/home/chka/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:287: UserWarning: 
+NVIDIA GeForce RTX 5070 with CUDA capability sm_120 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_90.
+If you want to use the NVIDIA GeForce RTX 5070 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(
+[level3-sonnet] day 3  0.05s cpu 0.19s $0.0000 memory: store hours?
+[level3-sonnet] day 3  5.32s cpu 2.62s $0.0117 brain+llm: open late any day?
+[level3-sonnet] day 3  0.04s cpu 0.14s $0.0000 memory: where are you located
+[level3-sonnet] day 3  5.85s cpu 0.13s $0.0126 brain+llm: store hours?
+[level3-sonnet] day 3  0.04s cpu 0.16s $0.0000 memory: gift wrap?
+[level3-sonnet] day 3  0.05s cpu 0.19s $0.0000 memory: do you sell gift cards
+[level3-sonnet] day 3  9.29s cpu 0.10s $0.0179 brain+llm: store hours?
+[level3-sonnet] day 3  0.05s cpu 0.18s $0.0000 memory: can i return without a receipt
+[level3-sonnet] day 3  0.04s cpu 0.17s $0.0000 memory: do you take checks
+[level3-sonnet] day 3  0.05s cpu 0.20s $0.0000 memory: do you take apple pay
+[level3-sonnet] day 3  0.11s cpu 0.33s $0.0000 memory: what is your return policy
+[level3-sonnet] day 3  0.24s cpu 0.61s $0.0000 memory: are you open on thanksgiving
+[level3-sonnet] day 3  2.07s cpu 1.51s $0.0061 brain+llm: can i exchange for a different size
+[level3-sonnet] day 3  5.78s cpu 0.10s $0.0130 brain+llm: store hours?
+[level3-sonnet] day 3  1.88s cpu 1.51s $0.0059 brain+llm: what size waxed jacket did i buy
+[level3-sonnet] day 3  0.08s cpu 0.28s $0.0000 memory: store hours?
+[level3-sonnet] day 3  3.76s cpu 0.17s $0.0107 brain+llm: and sunday?
+[level3-sonnet] day 3  0.25s cpu 0.64s $0.0000 memory: i lost my receipt can i still return
+[level3-sonnet] day 3  1.73s cpu 0.53s $0.0072 brain+llm: do you do alterations
+[level3-sonnet] day 3  0.04s cpu 0.14s $0.0000 memory: exchange policy
+[level3-sonnet] day 3  2.36s cpu 2.98s $0.0061 brain+llm: what size slim shirt did i buy
+[level3-sonnet] day 3  0.03s cpu 0.13s $0.0000 memory: amex ok?
+[level3-sonnet] day 3  0.04s cpu 0.16s $0.0000 memory: how many days do i have to return
+[level3-sonnet] day 3  4.91s cpu 0.96s $0.0108 brain+llm: is it a refund or store credit
+[level3-sonnet] day 3  0.05s cpu 0.21s $0.0000 memory: where is the store
+[level3-sonnet] day 3  0.04s cpu 0.15s $0.0000 memory: do you hem jeans
+[level3-sonnet] day 3  2.00s cpu 1.52s $0.0057 brain+llm: shipping cost?
+[level3-sonnet] day 3  1.93s cpu 0.39s $0.0058 brain+llm: merino care
+[level3-sonnet] day 3  1.55s cpu 0.09s $0.0064 brain+llm: exchange policy
+[level3-sonnet] day 3  0.05s cpu 0.17s $0.0000 memory: do you do gift wrapping
+[level3-sonnet] day 3  0.04s cpu 0.16s $0.0000 memory: can i pay with venmo
+[level3-sonnet] day 3  0.04s cpu 0.16s $0.0000 memory: can i return sale items
+[level3-sonnet] day 3  0.04s cpu 0.13s $0.0000 memory: exchange policy
+[level3-sonnet] day 3  0.04s cpu 0.14s $0.0000 memory: do you take amex
+[level3-sonnet] day 3  0.05s cpu 0.21s $0.0000 memory: store hours?
+[level3-sonnet] day 3  3.34s cpu 0.07s $0.0104 brain+llm: and sunday?
+[level3-sonnet] day 3  6.25s cpu 0.15s $0.0141 brain+llm: store hours?
+[level3-sonnet] day 3  6.47s cpu 0.84s $0.0118 brain+llm: the chelsea boots is too small can i exchange
+[level3-sonnet] day 3  0.04s cpu 0.17s $0.0000 memory: are you open on thanksgiving
+[level3-sonnet] day 3  1.78s cpu 0.65s $0.0065 brain+llm: do you take klarna
+[level3-sonnet] day 3  0.06s cpu 0.23s $0.0000 memory: store hours?
+[level3-sonnet] day 3  0.04s cpu 0.16s $0.0000 memory: can i return sale items
+[level3-sonnet] day 3  0.05s cpu 0.18s $0.0000 memory: can i return without a receipt
+[level3-sonnet] day 3  0.05s cpu 0.18s $0.0000 memory: do you take apple pay
+[level3-sonnet] day 3  0.06s cpu 0.22s $0.0000 memory: what is your return policy
+[level3-sonnet] day 3  0.08s cpu 0.27s $0.0000 memory: black friday hours
+[level3-sonnet] day 3  0.06s cpu 0.21s $0.0000 memory: alterations?
+[level3-sonnet] day 3  0.04s cpu 0.17s $0.0000 memory: are you open on thanksgiving
+[level3-sonnet] day 3  0.04s cpu 0.15s $0.0000 memory: do you ship
+[level3-sonnet] day 3  0.05s cpu 0.18s $0.0000 memory: is there parking
+{"bot": "level3-sonnet", "day": 3, "messages": 50, "from_memory": 33, "cost": 0.1626, "seconds": {"min": 0.034, "max": 9.291, "avg": 1.366, "median": 0.056, "p95": 6.247}}

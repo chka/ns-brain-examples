@@ -1,0 +1,51 @@
+[level2-haiku] day 5  2.00s cpu 0.25s $0.0003 rag+llm: parking nearby?
+[level2-haiku] day 5  1.50s cpu 0.05s $0.0002 rag+llm: student discount?
+[level2-haiku] day 5  1.50s cpu 0.03s $0.0002 rag+llm: do you have wifi
+[level2-haiku] day 5  1.79s cpu 0.05s $0.0003 rag+llm: can i return without a receipt
+[level2-haiku] day 5  2.07s cpu 0.05s $0.0003 rag+llm: gift wrap?
+[level2-haiku] day 5  3.02s cpu 0.04s $0.0004 rag+llm: what size slim shirt did i buy
+[level2-haiku] day 5  2.49s cpu 0.04s $0.0004 rag+llm: what size merino crew did i buy
+[level2-haiku] day 5  1.45s cpu 0.06s $0.0003 rag+llm: where are you located
+[level2-haiku] day 5  1.48s cpu 0.05s $0.0003 rag+llm: are you open on thanksgiving
+[level2-haiku] day 5  1.91s cpu 0.03s $0.0003 rag+llm: can i book a stylist
+[level2-haiku] day 5  6.60s cpu 0.06s $0.0009 rag+llm: i bought the merino crew, can i return it
+[level2-haiku] day 5  3.25s cpu 0.04s $0.0004 rag+llm: the slim shirt is too small can i exchange it
+[level2-haiku] day 5  2.47s cpu 0.04s $0.0003 rag+llm: can i return sale items
+[level2-haiku] day 5  1.80s cpu 0.04s $0.0002 rag+llm: is my hem ready
+[level2-haiku] day 5  3.12s cpu 0.03s $0.0004 rag+llm: return policy
+[level2-haiku] day 5  1.66s cpu 0.04s $0.0003 rag+llm: what about sale items
+[level2-haiku] day 5  4.90s cpu 0.03s $0.0008 rag+llm: return policy
+[level2-haiku] day 5  1.77s cpu 0.04s $0.0002 rag+llm: do you ship to canada
+[level2-haiku] day 5  1.64s cpu 0.05s $0.0003 rag+llm: store hours?
+[level2-haiku] day 5  2.89s cpu 0.04s $0.0004 rag+llm: exchange policy
+[level2-haiku] day 5  2.05s cpu 0.06s $0.0003 rag+llm: what time do you close today
+[level2-haiku] day 5  1.88s cpu 0.05s $0.0003 rag+llm: can i buy a gift card
+[level2-haiku] day 5  1.85s cpu 0.04s $0.0003 rag+llm: how much is hemming
+[level2-haiku] day 5  1.77s cpu 0.03s $0.0002 rag+llm: do you ship
+[level2-haiku] day 5  1.87s cpu 0.03s $0.0002 rag+llm: can i swap sizes
+[level2-haiku] day 5  2.28s cpu 0.03s $0.0002 rag+llm: can i return without a receipt
+[level2-haiku] day 5  2.62s cpu 0.03s $0.0005 rag+llm: store hours?
+[level2-haiku] day 5  1.78s cpu 0.04s $0.0004 rag+llm: i lost my receipt can i still return
+[level2-haiku] day 5  2.42s cpu 0.03s $0.0003 rag+llm: the rain jacket is too small can i exchange i
+[level2-haiku] day 5  2.32s cpu 0.03s $0.0003 rag+llm: how many points do i have
+[level2-haiku] day 5  2.01s cpu 0.04s $0.0001 rag+llm: what time do you close today
+[level2-haiku] day 5  1.68s cpu 0.04s $0.0003 rag+llm: do the jeans run small
+[level2-haiku] day 5  3.59s cpu 0.05s $0.0003 rag+llm: return policy
+[level2-haiku] day 5  1.82s cpu 0.05s $0.0002 rag+llm: do you have a restroom
+[level2-haiku] day 5  1.98s cpu 0.04s $0.0003 rag+llm: what size linen trousers did i buy
+[level2-haiku] day 5  1.48s cpu 0.03s $0.0003 rag+llm: do you sell gift cards
+[level2-haiku] day 5  1.68s cpu 0.05s $0.0003 rag+llm: do you accept amex
+[level2-haiku] day 5  1.93s cpu 0.04s $0.0003 rag+llm: can i return sale items
+[level2-haiku] day 5  1.70s cpu 0.05s $0.0003 rag+llm: is there parking
+[level2-haiku] day 5  1.53s cpu 0.05s $0.0001 rag+llm: is my hem ready
+[level2-haiku] day 5  3.27s cpu 0.04s $0.0006 rag+llm: how long do i have to return the chelsea boot
+[level2-haiku] day 5  5.40s cpu 0.03s $0.0008 rag+llm: i bought the rain jacket, can i return it
+[level2-haiku] day 5  1.66s cpu 0.04s $0.0003 rag+llm: how many days do i have to return
+[level2-haiku] day 5  3.67s cpu 0.03s $0.0003 rag+llm: the slim shirt is too small can i exchange it
+[level2-haiku] day 5  2.24s cpu 0.05s $0.0004 rag+llm: no receipt return?
+[level2-haiku] day 5  2.63s cpu 0.03s $0.0005 rag+llm: store hours?
+[level2-haiku] day 5  1.80s cpu 0.04s $0.0001 rag+llm: do you ship to canada
+[level2-haiku] day 5  1.42s cpu 0.03s $0.0003 rag+llm: gift card expiry?
+[level2-haiku] day 5  2.31s cpu 0.04s $0.0004 rag+llm: do the jeans run small
+[level2-haiku] day 5  1.95s cpu 0.05s $0.0004 rag+llm: black friday hours
+{"bot": "level2-haiku", "day": 5, "messages": 50, "from_memory": 0, "cost": 0.0164, "seconds": {"min": 1.425, "max": 6.598, "avg": 2.318, "median": 1.942, "p95": 4.902}}

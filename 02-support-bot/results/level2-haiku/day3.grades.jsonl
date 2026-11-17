@@ -1,0 +1,50 @@
+{"chat": "3.0", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.0", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.1", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.1", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.2", "turn": 0, "score": 0, "knew_customer": null, "kind": "general", "note": "Invents a policy that online orders cannot be gift-wrapped; the fact sheet only says free gift wrapping at the register."}
+{"chat": "3.3", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.3", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.4", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.5", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.5", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.6", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.7", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.8", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.8", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Says it does not have the store hours and sends the customer to the team, though the hours are in the fact sheet."}
+{"chat": "3.9", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see the order and refers to the team; the purchase was a Maam waxed jacket, black, size L (NY-2425)."}
+{"chat": "3.10", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.10", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "3.11", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.11", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.12", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.13", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see the order and refers to the team; the purchase was a Corrib slim shirt, rust, size L (NY-2436)."}
+{"chat": "3.14", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.15", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.15", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "3.16", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.17", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.18", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.19", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.19", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.20", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.21", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.21", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.22", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.23", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.24", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.24", "turn": 1, "score": 0, "knew_customer": null, "kind": "follow-up", "note": "Calls Sunday Nov 29 'this coming Sunday'; the coming Sunday is Nov 22 with regular 11am-7pm hours."}
+{"chat": "3.24", "turn": 2, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.25", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic exchange policy without using the order (Burren Chelsea boots, black, size 11, full price, Nov 8) and wrongly says it has no sizing notes for the boots."}
+{"chat": "3.26", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "States the Jan 15 holiday return window without saying it covers only purchases from Nov 1 to Dec 24."}
+{"chat": "3.27", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.28", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.28", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.29", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.30", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.31", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.32", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.33", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.33", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.34", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.35", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}

@@ -1,0 +1,51 @@
+[level2-haiku] day 7  1.91s cpu 0.25s $0.0002 rag+llm: can i bring my dog
+[level2-haiku] day 7  2.27s cpu 0.05s $0.0004 rag+llm: do you have kids shoes
+[level2-haiku] day 7  1.68s cpu 0.05s $0.0002 rag+llm: student discount?
+[level2-haiku] day 7  2.14s cpu 0.05s $0.0003 rag+llm: is my hem ready
+[level2-haiku] day 7  1.80s cpu 0.05s $0.0003 rag+llm: do you do alterations
+[level2-haiku] day 7  2.82s cpu 0.04s $0.0002 rag+llm: can i exchange for a different size
+[level2-haiku] day 7  1.69s cpu 0.04s $0.0002 rag+llm: do you take klarna
+[level2-haiku] day 7  3.68s cpu 0.04s $0.0005 rag+llm: i lost the receipt for the slim shirt
+[level2-haiku] day 7  2.95s cpu 0.04s $0.0005 rag+llm: how long do i have to return the wrap dress
+[level2-haiku] day 7  1.52s cpu 0.04s $0.0004 rag+llm: what time do you open on black friday
+[level2-haiku] day 7  1.63s cpu 0.03s $0.0003 rag+llm: do you do same day delivery
+[level2-haiku] day 7  1.80s cpu 0.03s $0.0003 rag+llm: thanksgiving hours
+[level2-haiku] day 7  2.82s cpu 0.03s $0.0004 rag+llm: black friday hours
+[level2-haiku] day 7  2.84s cpu 0.04s $0.0003 rag+llm: the wrap dress is too small can i exchange it
+[level2-haiku] day 7  2.18s cpu 0.05s $0.0003 rag+llm: can i return without a receipt
+[level2-haiku] day 7  1.58s cpu 0.03s $0.0003 rag+llm: open thanksgiving?
+[level2-haiku] day 7  1.78s cpu 0.04s $0.0003 rag+llm: exchange policy
+[level2-haiku] day 7  1.72s cpu 0.05s $0.0002 rag+llm: military discount?
+[level2-haiku] day 7  2.05s cpu 0.05s $0.0003 rag+llm: black friday hours
+[level2-haiku] day 7  1.78s cpu 0.05s $0.0003 rag+llm: are sale items returnable
+[level2-haiku] day 7  3.99s cpu 0.05s $0.0005 rag+llm: i bought the waxed jacket, can i return it
+[level2-haiku] day 7  2.91s cpu 0.03s $0.0004 rag+llm: return policy
+[level2-haiku] day 7  1.73s cpu 0.05s $0.0003 rag+llm: what about sale items
+[level2-haiku] day 7  1.70s cpu 0.04s $0.0002 rag+llm: exchange policy
+[level2-haiku] day 7  1.74s cpu 0.04s $0.0001 rag+llm: is my hem ready
+[level2-haiku] day 7  1.69s cpu 0.05s $0.0002 rag+llm: where are you located
+[level2-haiku] day 7  1.66s cpu 0.04s $0.0003 rag+llm: closest subway?
+[level2-haiku] day 7  4.52s cpu 0.05s $0.0006 rag+llm: how long do i have to return the waxed jacket
+[level2-haiku] day 7  1.63s cpu 0.05s $0.0003 rag+llm: are you open on thanksgiving
+[level2-haiku] day 7  2.54s cpu 0.05s $0.0005 rag+llm: store hours?
+[level2-haiku] day 7  1.91s cpu 0.05s $0.0004 rag+llm: and sunday?
+[level2-haiku] day 7  2.64s cpu 0.06s $0.0003 rag+llm: do you sell mens suits
+[level2-haiku] day 7  3.72s cpu 0.04s $0.0003 rag+llm: the wrap dress is too small can i exchange it
+[level2-haiku] day 7  2.02s cpu 0.05s $0.0003 rag+llm: gift wrap?
+[level2-haiku] day 7  3.14s cpu 0.05s $0.0003 rag+llm: do you take amex
+[level2-haiku] day 7  2.11s cpu 0.05s $0.0002 rag+llm: can i swap sizes
+[level2-haiku] day 7  1.70s cpu 0.03s $0.0003 rag+llm: what are your hours
+[level2-haiku] day 7  3.03s cpu 0.03s $0.0005 rag+llm: and thursday?
+[level2-haiku] day 7  1.59s cpu 0.04s $0.0002 rag+llm: is the store wheelchair accessible
+[level2-haiku] day 7  2.33s cpu 0.04s $0.0002 rag+llm: what time do you open on black friday
+[level2-haiku] day 7  1.70s cpu 0.03s $0.0001 rag+llm: is my hem ready
+[level2-haiku] day 7  2.15s cpu 0.04s $0.0003 rag+llm: how many points do i have
+[level2-haiku] day 7  3.59s cpu 0.05s $0.0005 rag+llm: alterations?
+[level2-haiku] day 7  1.52s cpu 0.03s $0.0003 rag+llm: can i buy a gift card
+[level2-haiku] day 7  3.94s cpu 0.05s $0.0003 rag+llm: return policy
+[level2-haiku] day 7  1.67s cpu 0.03s $0.0003 rag+llm: and without a receipt?
+[level2-haiku] day 7  1.81s cpu 0.04s $0.0002 rag+llm: address?
+[level2-haiku] day 7  1.68s cpu 0.07s $0.0003 rag+llm: closest subway
+[level2-haiku] day 7  2.08s cpu 0.04s $0.0003 rag+llm: can i return the rain jacket i bought
+[level2-haiku] day 7  1.63s cpu 0.03s $0.0003 rag+llm: do you take apple pay
+{"bot": "level2-haiku", "day": 7, "messages": 50, "from_memory": 0, "cost": 0.0153, "seconds": {"min": 1.516, "max": 4.517, "avg": 2.254, "median": 1.91, "p95": 3.942}}

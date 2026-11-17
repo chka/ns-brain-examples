@@ -1,0 +1,63 @@
+{
+  "bot": "level2-sonnet",
+  "model": "fc:anthropic/claude-sonnet-5.5",
+  "day": 3,
+  "messages": 50,
+  "llm_calls": 50,
+  "from_memory": 0,
+  "cost": 0.2566,
+  "tokens": {
+    "input": 200,
+    "cache_write": 70793,
+    "cache_read": 39854,
+    "output": 7120,
+    "embed": 291
+  },
+  "seconds": {
+    "min": 1.816,
+    "max": 3.734,
+    "avg": 2.535,
+    "median": 2.456,
+    "p95": 3.431
+  },
+  "seconds_llm_answers": {
+    "min": 1.816,
+    "max": 3.734,
+    "avg": 2.535,
+    "median": 2.456,
+    "p95": 3.431
+  },
+  "seconds_memory_answers": {},
+  "llm_seconds": {
+    "min": 1.263,
+    "max": 3.071,
+    "avg": 1.91,
+    "median": 1.847,
+    "p95": 2.818
+  },
+  "local_seconds": {
+    "min": 0.019,
+    "max": 0.063,
+    "avg": 0.03,
+    "median": 0.028,
+    "p95": 0.052
+  },
+  "cpu_seconds": {
+    "min": 0.026,
+    "max": 0.257,
+    "avg": 0.042,
+    "median": 0.036,
+    "p95": 0.068
+  },
+  "ns_brain_cpu_seconds": {
+    "min": 0.0,
+    "max": 0.001,
+    "avg": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "cpu_seconds_total": 2.09,
+  "local_model_device": "none",
+  "gpu": "not used: this PyTorch build has no kernels for the RTX 5070",
+  "peak_memory_mb": 75
+}

@@ -1,0 +1,50 @@
+{"chat": "2.0", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Defers sale and online purchases to the team; online purchases qualify for free hemming and sale items do not, which it could have said."}
+{"chat": "2.1", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.2", "turn": 0, "score": 0, "knew_customer": null, "kind": "general", "note": "Asked for the return policy, it gives only the sale-item rule, omitting the 30-day full-price refund, so it reads as if every return is 14 days for store credit."}
+{"chat": "2.3", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.3", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "2.3", "turn": 2, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.4", "turn": 0, "score": 0, "knew_customer": null, "kind": "general", "note": "Says online sale orders have a 14-day limit, implying in-store sale items get 30 days; all sale items have 14 days, and it omits the holiday window to Jan 15."}
+{"chat": "2.4", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "2.5", "turn": 0, "score": 2, "knew_customer": true, "kind": "personal", "note": ""}
+{"chat": "2.6", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Regular hours are right, but it sends holiday hours to the team when it knows them (Thanksgiving closed, Black Friday 8am-10pm)."}
+{"chat": "2.7", "turn": 0, "score": 0, "knew_customer": null, "kind": "general", "note": "Asked for the return policy, it gives only the sale-item rule, omitting the 30-day full-price refund, so it reads as if every return is 14 days for store credit."}
+{"chat": "2.8", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.9", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.9", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "2.9", "turn": 2, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.10", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.11", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.11", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.12", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.13", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.14", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see anything and sends to the team; it had her four full-price purchases ($833) and could have given the points they earn."}
+{"chat": "2.15", "turn": 0, "score": 0, "knew_customer": null, "kind": "general", "note": "Asked for the return policy, it gives only the sale-item rule, omitting the 30-day full-price refund, so it reads as if every return is 14 days for store credit."}
+{"chat": "2.16", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.17", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.17", "turn": 1, "score": 1, "knew_customer": null, "kind": "follow-up", "note": "Gives $8 and express $18 but never states standard shipping is free over $100, and omits the $25 same-day Manhattan courier."}
+{"chat": "2.18", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.19", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Correct for full price but omits the 14-day sale rule and that purchases from Nov 1 are returnable until Jan 15."}
+{"chat": "2.20", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.20", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.21", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.22", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.22", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "2.23", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Defers sale and online purchases to the team; online purchases qualify for free hemming and sale items do not, which it could have said."}
+{"chat": "2.24", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.24", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.25", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Defers sale and online purchases to the team; online purchases qualify for free hemming and sale items do not, which it could have said."}
+{"chat": "2.26", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.27", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.28", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.29", "turn": 0, "score": 0, "knew_customer": null, "kind": "general", "note": "Offers Ryan an exchange on his Harbour jeans until Nov 22, but they were hemmed and altered items cannot be returned; it contradicts its own later answer."}
+{"chat": "2.30", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.30", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Says yes without the 30-day, receipt and unworn-with-tags rules, and leaks an instruction ('Mention that...') instead of stating the points rule."}
+{"chat": "2.31", "turn": 0, "score": 2, "knew_customer": true, "kind": "personal", "note": ""}
+{"chat": "2.31", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.32", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.33", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.33", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.34", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.34", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.35", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}

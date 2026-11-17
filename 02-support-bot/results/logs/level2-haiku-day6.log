@@ -1,0 +1,51 @@
+[level2-haiku] day 6  5.22s cpu 0.21s $0.0007 rag+llm: return policy
+[level2-haiku] day 6  2.64s cpu 0.03s $0.0005 rag+llm: store hours?
+[level2-haiku] day 6  1.68s cpu 0.04s $0.0003 rag+llm: and sunday?
+[level2-haiku] day 6  1.60s cpu 0.04s $0.0002 rag+llm: do you take apple pay
+[level2-haiku] day 6  1.73s cpu 0.05s $0.0002 rag+llm: where is the store
+[level2-haiku] day 6  1.70s cpu 0.05s $0.0002 rag+llm: where are you located
+[level2-haiku] day 6  6.75s cpu 0.05s $0.0010 rag+llm: return policy
+[level2-haiku] day 6  1.56s cpu 0.04s $0.0003 rag+llm: can i pay with venmo
+[level2-haiku] day 6  4.83s cpu 0.04s $0.0005 rag+llm: return policy
+[level2-haiku] day 6  1.74s cpu 0.03s $0.0002 rag+llm: can i swap sizes
+[level2-haiku] day 6  3.20s cpu 0.04s $0.0004 rag+llm: what size slim shirt did i buy
+[level2-haiku] day 6  1.77s cpu 0.04s $0.0003 rag+llm: i lost my receipt can i still return
+[level2-haiku] day 6  1.84s cpu 0.04s $0.0003 rag+llm: do you do alterations
+[level2-haiku] day 6  1.66s cpu 0.05s $0.0003 rag+llm: can i buy a gift card
+[level2-haiku] day 6  2.69s cpu 0.03s $0.0003 rag+llm: what time do you open
+[level2-haiku] day 6  3.83s cpu 0.04s $0.0006 rag+llm: open late any day?
+[level2-haiku] day 6  1.68s cpu 0.04s $0.0003 rag+llm: can i buy a gift card
+[level2-haiku] day 6  3.31s cpu 0.03s $0.0005 rag+llm: can i return the chelsea boots i bought
+[level2-haiku] day 6  3.23s cpu 0.03s $0.0004 rag+llm: the high-rise jeans is too small can i exchan
+[level2-haiku] day 6  1.71s cpu 0.04s $0.0002 rag+llm: are sale items returnable
+[level2-haiku] day 6  2.35s cpu 0.03s $0.0003 rag+llm: is my hem ready
+[level2-haiku] day 6  1.70s cpu 0.05s $0.0002 rag+llm: whats the address
+[level2-haiku] day 6  1.61s cpu 0.03s $0.0001 rag+llm: can i pay with venmo
+[level2-haiku] day 6  1.78s cpu 0.04s $0.0002 rag+llm: price match?
+[level2-haiku] day 6  2.04s cpu 0.03s $0.0004 rag+llm: can i return without a receipt
+[level2-haiku] day 6  2.33s cpu 0.04s $0.0004 rag+llm: how long do i have to return the linen trouse
+[level2-haiku] day 6  2.58s cpu 0.07s $0.0003 rag+llm: are sale items returnable
+[level2-haiku] day 6  1.49s cpu 0.04s $0.0003 rag+llm: are you open on thanksgiving
+[level2-haiku] day 6  2.43s cpu 0.04s $0.0002 rag+llm: store hours?
+[level2-haiku] day 6  1.84s cpu 0.04s $0.0003 rag+llm: what time do you close today
+[level2-haiku] day 6  2.00s cpu 0.04s $0.0004 rag+llm: and sunday?
+[level2-haiku] day 6  1.44s cpu 0.03s $0.0002 rag+llm: are dogs allowed
+[level2-haiku] day 6  2.61s cpu 0.03s $0.0002 rag+llm: store hours?
+[level2-haiku] day 6  1.64s cpu 0.04s $0.0003 rag+llm: do you ship
+[level2-haiku] day 6  1.71s cpu 0.03s $0.0002 rag+llm: whats the address
+[level2-haiku] day 6  1.67s cpu 0.05s $0.0003 rag+llm: closest subway?
+[level2-haiku] day 6  2.61s cpu 0.04s $0.0004 rag+llm: how long do i have to return the slim shirt
+[level2-haiku] day 6  2.60s cpu 0.05s $0.0004 rag+llm: how many days do i have to return
+[level2-haiku] day 6  1.84s cpu 0.05s $0.0003 rag+llm: is it a refund or store credit
+[level2-haiku] day 6  2.50s cpu 0.04s $0.0002 rag+llm: store hours?
+[level2-haiku] day 6  1.85s cpu 0.04s $0.0004 rag+llm: open late any day?
+[level2-haiku] day 6  6.49s cpu 0.03s $0.0008 rag+llm: return policy
+[level2-haiku] day 6  2.31s cpu 0.04s $0.0002 rag+llm: how many days do i have to return
+[level2-haiku] day 6  1.85s cpu 0.03s $0.0004 rag+llm: what is your return policy
+[level2-haiku] day 6  1.61s cpu 0.05s $0.0002 rag+llm: do you take klarna
+[level2-haiku] day 6  1.89s cpu 0.05s $0.0004 rag+llm: black friday sale?
+[level2-haiku] day 6  2.00s cpu 0.04s $0.0004 rag+llm: return policy
+[level2-haiku] day 6  1.83s cpu 0.03s $0.0002 rag+llm: exchange policy
+[level2-haiku] day 6  2.44s cpu 0.05s $0.0004 rag+llm: can i return the wrap dress i bought
+[level2-haiku] day 6  1.80s cpu 0.05s $0.0003 rag+llm: what are your hours
+{"bot": "level2-haiku", "day": 6, "messages": 50, "from_memory": 0, "cost": 0.0172, "seconds": {"min": 1.439, "max": 6.75, "avg": 2.384, "median": 1.85, "p95": 5.217}}

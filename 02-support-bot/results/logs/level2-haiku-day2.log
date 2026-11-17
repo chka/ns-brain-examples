@@ -1,0 +1,51 @@
+[level2-haiku] day 2  2.10s cpu 0.22s $0.0002 rag+llm: do you hem jeans
+[level2-haiku] day 2  1.70s cpu 0.03s $0.0003 rag+llm: are you open on thanksgiving
+[level2-haiku] day 2  2.88s cpu 0.04s $0.0004 rag+llm: return policy
+[level2-haiku] day 2  2.19s cpu 0.04s $0.0003 rag+llm: what time do you close today
+[level2-haiku] day 2  2.93s cpu 0.04s $0.0005 rag+llm: and sunday?
+[level2-haiku] day 2  1.77s cpu 0.04s $0.0003 rag+llm: can i return sale items
+[level2-haiku] day 2  1.58s cpu 0.04s $0.0003 rag+llm: how many days do i have to return
+[level2-haiku] day 2  1.70s cpu 0.05s $0.0003 rag+llm: is it a refund or store credit
+[level2-haiku] day 2  2.96s cpu 0.04s $0.0003 rag+llm: what size chelsea boots did i buy
+[level2-haiku] day 2  1.86s cpu 0.06s $0.0003 rag+llm: what are your hours
+[level2-haiku] day 2  3.63s cpu 0.04s $0.0003 rag+llm: return policy
+[level2-haiku] day 2  2.14s cpu 0.03s $0.0004 rag+llm: no receipt return?
+[level2-haiku] day 2  2.59s cpu 0.03s $0.0004 rag+llm: what time do you open
+[level2-haiku] day 2  2.88s cpu 0.04s $0.0005 rag+llm: and thursday?
+[level2-haiku] day 2  1.94s cpu 0.06s $0.0003 rag+llm: can i return sale items
+[level2-haiku] day 2  2.72s cpu 0.04s $0.0003 rag+llm: is there parking
+[level2-haiku] day 2  1.73s cpu 0.05s $0.0003 rag+llm: do you sell gift cards
+[level2-haiku] day 2  1.39s cpu 0.05s $0.0003 rag+llm: are you open sunday
+[level2-haiku] day 2  2.04s cpu 0.06s $0.0002 rag+llm: no receipt return?
+[level2-haiku] day 2  2.25s cpu 0.04s $0.0004 rag+llm: gift wrap?
+[level2-haiku] day 2  2.76s cpu 0.04s $0.0004 rag+llm: how many points do i have
+[level2-haiku] day 2  1.69s cpu 0.03s $0.0003 rag+llm: what is your return policy
+[level2-haiku] day 2  1.54s cpu 0.05s $0.0002 rag+llm: can i pay in installments
+[level2-haiku] day 2  1.60s cpu 0.08s $0.0002 rag+llm: do you ship
+[level2-haiku] day 2  1.48s cpu 0.03s $0.0002 rag+llm: how much is shipping
+[level2-haiku] day 2  2.35s cpu 0.03s $0.0005 rag+llm: black friday hours
+[level2-haiku] day 2  2.60s cpu 0.05s $0.0002 rag+llm: how many days do i have to return
+[level2-haiku] day 2  2.64s cpu 0.04s $0.0002 rag+llm: gift wrap?
+[level2-haiku] day 2  1.53s cpu 0.04s $0.0003 rag+llm: are you open on thanksgiving
+[level2-haiku] day 2  1.63s cpu 0.04s $0.0003 rag+llm: apple pay?
+[level2-haiku] day 2  2.78s cpu 0.04s $0.0002 rag+llm: where are you located
+[level2-haiku] day 2  3.07s cpu 0.04s $0.0003 rag+llm: can i buy online and pick up in store
+[level2-haiku] day 2  1.61s cpu 0.05s $0.0001 rag+llm: do you hem jeans
+[level2-haiku] day 2  1.68s cpu 0.03s $0.0002 rag+llm: do you have a student discount
+[level2-haiku] day 2  2.33s cpu 0.04s $0.0003 rag+llm: can i buy online and pick up in store
+[level2-haiku] day 2  2.13s cpu 0.03s $0.0003 rag+llm: is hemming free
+[level2-haiku] day 2  1.70s cpu 0.03s $0.0002 rag+llm: do you ship to canada
+[level2-haiku] day 2  1.84s cpu 0.05s $0.0003 rag+llm: can i buy online and pick up in store
+[level2-haiku] day 2  1.48s cpu 0.03s $0.0002 rag+llm: do you accept apple pay
+[level2-haiku] day 2  3.58s cpu 0.04s $0.0004 rag+llm: exchange policy
+[level2-haiku] day 2  2.25s cpu 0.03s $0.0002 rag+llm: no receipt return?
+[level2-haiku] day 2  1.78s cpu 0.04s $0.0003 rag+llm: can i return something
+[level2-haiku] day 2  2.99s cpu 0.03s $0.0005 rag+llm: can i return the high-rise jeans i bought
+[level2-haiku] day 2  2.04s cpu 0.04s $0.0004 rag+llm: do you ship to california
+[level2-haiku] day 2  2.48s cpu 0.05s $0.0002 rag+llm: what time do you open
+[level2-haiku] day 2  1.90s cpu 0.05s $0.0002 rag+llm: price match?
+[level2-haiku] day 2  2.24s cpu 0.03s $0.0004 rag+llm: hours today
+[level2-haiku] day 2  1.69s cpu 0.03s $0.0002 rag+llm: do you take checks
+[level2-haiku] day 2  1.64s cpu 0.03s $0.0003 rag+llm: do gift cards expire
+[level2-haiku] day 2  1.97s cpu 0.04s $0.0001 rag+llm: exchange policy
+{"bot": "level2-haiku", "day": 2, "messages": 50, "from_memory": 0, "cost": 0.0147, "seconds": {"min": 1.39, "max": 3.633, "avg": 2.16, "median": 2.04, "p95": 3.071}}

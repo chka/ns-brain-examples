@@ -1,0 +1,704 @@
+{
+ "_about": "The store's order system, invented. Customers log in to the chat with their email; Level 3 copies a customer's purchases into the brain the first time they log in. Levels 1 and 2 never see it.",
+ "customers": {
+  "maya.chen@example.com": {
+   "name": "Maya Chen",
+   "orders": [
+    {
+     "order": "NY-2400",
+     "where": "online",
+     "date": "2026-10-25",
+     "items": [
+      {
+       "item": "Maam waxed jacket, charcoal",
+       "size": "L",
+       "price": 285,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "jordan.rivera@example.com": {
+   "name": "Jordan Rivera",
+   "orders": [
+    {
+     "order": "NY-2403",
+     "where": "in store",
+     "date": "2026-10-30",
+     "items": [
+      {
+       "item": "Corrib slim shirt, navy",
+       "size": "M",
+       "price": 55,
+       "tag": "SALE (was $78)"
+      }
+     ]
+    }
+   ]
+  },
+  "priya.patel@example.com": {
+   "name": "Priya Patel",
+   "orders": [
+    {
+     "order": "NY-2406",
+     "where": "in store",
+     "date": "2026-10-14",
+     "items": [
+      {
+       "item": "Maam waxed jacket, forest green",
+       "size": "L",
+       "price": 285,
+       "tag": "full price"
+      },
+      {
+       "item": "Puffin rain jacket, navy",
+       "size": "8",
+       "price": 58,
+       "tag": "full price"
+      }
+     ]
+    },
+    {
+     "order": "NY-2407",
+     "where": "in store",
+     "date": "2026-11-09",
+     "items": [
+      {
+       "item": "Claddagh wrap dress, indigo",
+       "size": "4",
+       "price": 112,
+       "tag": "SALE (was $160)"
+      },
+      {
+       "item": "Maam waxed jacket, forest green",
+       "size": "L",
+       "price": 285,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "marcus.brooks@example.com": {
+   "name": "Marcus Brooks",
+   "orders": [
+    {
+     "order": "NY-2409",
+     "where": "online",
+     "date": "2026-11-09",
+     "items": [
+      {
+       "item": "Puffin rain jacket, rust",
+       "size": "6",
+       "price": 41,
+       "tag": "SALE (was $58)"
+      },
+      {
+       "item": "Inis linen trousers, indigo",
+       "size": "M",
+       "price": 98,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "sofia.rossi@example.com": {
+   "name": "Sofia Rossi",
+   "orders": [
+    {
+     "order": "NY-2412",
+     "where": "online",
+     "date": "2026-10-13",
+     "items": [
+      {
+       "item": "Maam waxed jacket, black",
+       "size": "M",
+       "price": 285,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "ethan.walsh@example.com": {
+   "name": "Ethan Walsh",
+   "orders": [
+    {
+     "order": "NY-2415",
+     "where": "online",
+     "date": "2026-10-18",
+     "items": [
+      {
+       "item": "Atlantic merino crew, navy",
+       "size": "L",
+       "price": 138,
+       "tag": "full price"
+      },
+      {
+       "item": "Maam waxed jacket, rust",
+       "size": "L",
+       "price": 285,
+       "tag": "full price"
+      }
+     ]
+    },
+    {
+     "order": "NY-2416",
+     "where": "in store",
+     "date": "2026-10-20",
+     "items": [
+      {
+       "item": "Puffin rain jacket, charcoal",
+       "size": "4",
+       "price": 58,
+       "tag": "full price"
+      },
+      {
+       "item": "Inis linen trousers, indigo",
+       "size": "S",
+       "price": 98,
+       "tag": "full price"
+      }
+     ],
+     "alteration": {
+      "what": "hem",
+      "ready": "2026-10-27"
+     }
+    }
+   ]
+  },
+  "chloe.kim@example.com": {
+   "name": "Chloe Kim",
+   "orders": [
+    {
+     "order": "NY-2418",
+     "where": "online",
+     "date": "2026-10-16",
+     "items": [
+      {
+       "item": "Burren Chelsea boots, rust",
+       "size": "11",
+       "price": 235,
+       "tag": "full price"
+      },
+      {
+       "item": "Corrib slim shirt, rust",
+       "size": "M",
+       "price": 78,
+       "tag": "full price"
+      }
+     ]
+    },
+    {
+     "order": "NY-2419",
+     "where": "in store",
+     "date": "2026-11-12",
+     "items": [
+      {
+       "item": "Burren Chelsea boots, navy",
+       "size": "11",
+       "price": 235,
+       "tag": "full price"
+      },
+      {
+       "item": "Maam waxed jacket, indigo",
+       "size": "L",
+       "price": 285,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "diego.lopez@example.com": {
+   "name": "Diego Lopez",
+   "orders": [
+    {
+     "order": "NY-2421",
+     "where": "in store",
+     "date": "2026-10-15",
+     "items": [
+      {
+       "item": "Claddagh wrap dress, forest green",
+       "size": "4",
+       "price": 160,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "hannah.weiss@example.com": {
+   "name": "Hannah Weiss",
+   "orders": [
+    {
+     "order": "NY-2424",
+     "where": "in store",
+     "date": "2026-10-19",
+     "items": [
+      {
+       "item": "Puffin rain jacket, navy",
+       "size": "4",
+       "price": 58,
+       "tag": "full price"
+      }
+     ]
+    },
+    {
+     "order": "NY-2425",
+     "where": "online",
+     "date": "2026-10-08",
+     "items": [
+      {
+       "item": "Maam waxed jacket, black",
+       "size": "L",
+       "price": 200,
+       "tag": "SALE (was $285)"
+      }
+     ]
+    }
+   ]
+  },
+  "kevin.nguyen@example.com": {
+   "name": "Kevin Nguyen",
+   "orders": [
+    {
+     "order": "NY-2427",
+     "where": "online",
+     "date": "2026-10-23",
+     "items": [
+      {
+       "item": "Harbour high-rise jeans, rust",
+       "size": "28",
+       "price": 118,
+       "tag": "full price"
+      }
+     ],
+     "alteration": {
+      "what": "hem",
+      "ready": "2026-10-30"
+     }
+    },
+    {
+     "order": "NY-2428",
+     "where": "online",
+     "date": "2026-10-08",
+     "items": [
+      {
+       "item": "Claddagh wrap dress, olive",
+       "size": "6",
+       "price": 112,
+       "tag": "SALE (was $160)"
+      }
+     ]
+    }
+   ]
+  },
+  "aisha.khan@example.com": {
+   "name": "Aisha Khan",
+   "orders": [
+    {
+     "order": "NY-2430",
+     "where": "in store",
+     "date": "2026-10-13",
+     "items": [
+      {
+       "item": "Inis linen trousers, oatmeal",
+       "size": "M",
+       "price": 69,
+       "tag": "SALE (was $98)"
+      },
+      {
+       "item": "Puffin rain jacket, navy",
+       "size": "6",
+       "price": 41,
+       "tag": "SALE (was $58)"
+      }
+     ],
+     "alteration": {
+      "what": "hem",
+      "ready": "2026-10-20"
+     }
+    }
+   ]
+  },
+  "ryan.murphy@example.com": {
+   "name": "Ryan Murphy",
+   "orders": [
+    {
+     "order": "NY-2433",
+     "where": "in store",
+     "date": "2026-10-23",
+     "items": [
+      {
+       "item": "Harbour high-rise jeans, forest green",
+       "size": "29",
+       "price": 118,
+       "tag": "full price"
+      }
+     ],
+     "alteration": {
+      "what": "hem",
+      "ready": "2026-10-30"
+     }
+    }
+   ]
+  },
+  "olivia.green@example.com": {
+   "name": "Olivia Green",
+   "orders": [
+    {
+     "order": "NY-2436",
+     "where": "in store",
+     "date": "2026-10-14",
+     "items": [
+      {
+       "item": "Atlantic merino crew, oatmeal",
+       "size": "M",
+       "price": 138,
+       "tag": "full price"
+      },
+      {
+       "item": "Corrib slim shirt, rust",
+       "size": "L",
+       "price": 78,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "daniel.cohen@example.com": {
+   "name": "Daniel Cohen",
+   "orders": [
+    {
+     "order": "NY-2439",
+     "where": "online",
+     "date": "2026-11-10",
+     "items": [
+      {
+       "item": "Harbour high-rise jeans, olive",
+       "size": "27",
+       "price": 118,
+       "tag": "full price"
+      },
+      {
+       "item": "Corrib slim shirt, black",
+       "size": "M",
+       "price": 78,
+       "tag": "full price"
+      }
+     ],
+     "alteration": {
+      "what": "hem",
+      "ready": "2026-11-17"
+     }
+    },
+    {
+     "order": "NY-2440",
+     "where": "online",
+     "date": "2026-11-13",
+     "items": [
+      {
+       "item": "Maam waxed jacket, olive",
+       "size": "M",
+       "price": 285,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "grace.park@example.com": {
+   "name": "Grace Park",
+   "orders": [
+    {
+     "order": "NY-2442",
+     "where": "in store",
+     "date": "2026-10-21",
+     "items": [
+      {
+       "item": "Inis linen trousers, navy",
+       "size": "M",
+       "price": 98,
+       "tag": "full price"
+      },
+      {
+       "item": "Claddagh wrap dress, forest green",
+       "size": "6",
+       "price": 160,
+       "tag": "full price"
+      }
+     ],
+     "alteration": {
+      "what": "hem",
+      "ready": "2026-10-28"
+     }
+    }
+   ]
+  },
+  "leo.silva@example.com": {
+   "name": "Leo Silva",
+   "orders": [
+    {
+     "order": "NY-2445",
+     "where": "in store",
+     "date": "2026-10-27",
+     "items": [
+      {
+       "item": "Atlantic merino crew, rust",
+       "size": "S",
+       "price": 138,
+       "tag": "full price"
+      },
+      {
+       "item": "Puffin rain jacket, indigo",
+       "size": "4",
+       "price": 58,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "nina.novak@example.com": {
+   "name": "Nina Novak",
+   "orders": [
+    {
+     "order": "NY-2448",
+     "where": "online",
+     "date": "2026-11-14",
+     "items": [
+      {
+       "item": "Puffin rain jacket, charcoal",
+       "size": "8",
+       "price": 58,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "sam.reed@example.com": {
+   "name": "Sam Reed",
+   "orders": [
+    {
+     "order": "NY-2451",
+     "where": "online",
+     "date": "2026-11-13",
+     "items": [
+      {
+       "item": "Atlantic merino crew, oatmeal",
+       "size": "S",
+       "price": 138,
+       "tag": "full price"
+      },
+      {
+       "item": "Puffin rain jacket, indigo",
+       "size": "8",
+       "price": 58,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "emma.clarke@example.com": {
+   "name": "Emma Clarke",
+   "orders": [
+    {
+     "order": "NY-2454",
+     "where": "in store",
+     "date": "2026-11-01",
+     "items": [
+      {
+       "item": "Claddagh wrap dress, navy",
+       "size": "8",
+       "price": 160,
+       "tag": "full price"
+      },
+      {
+       "item": "Burren Chelsea boots, charcoal",
+       "size": "9",
+       "price": 164,
+       "tag": "SALE (was $235)"
+      }
+     ]
+    },
+    {
+     "order": "NY-2455",
+     "where": "in store",
+     "date": "2026-11-11",
+     "items": [
+      {
+       "item": "Atlantic merino crew, forest green",
+       "size": "M",
+       "price": 138,
+       "tag": "full price"
+      },
+      {
+       "item": "Burren Chelsea boots, navy",
+       "size": "10",
+       "price": 235,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "tyler.hughes@example.com": {
+   "name": "Tyler Hughes",
+   "orders": [
+    {
+     "order": "NY-2457",
+     "where": "in store",
+     "date": "2026-10-29",
+     "items": [
+      {
+       "item": "Corrib slim shirt, indigo",
+       "size": "M",
+       "price": 78,
+       "tag": "full price"
+      },
+      {
+       "item": "Harbour high-rise jeans, black",
+       "size": "27",
+       "price": 118,
+       "tag": "full price"
+      }
+     ],
+     "alteration": {
+      "what": "hem",
+      "ready": "2026-11-05"
+     }
+    }
+   ]
+  },
+  "rosa.diaz@example.com": {
+   "name": "Rosa Diaz",
+   "orders": [
+    {
+     "order": "NY-2460",
+     "where": "in store",
+     "date": "2026-11-08",
+     "items": [
+      {
+       "item": "Burren Chelsea boots, black",
+       "size": "11",
+       "price": 235,
+       "tag": "full price"
+      },
+      {
+       "item": "Inis linen trousers, oatmeal",
+       "size": "L",
+       "price": 98,
+       "tag": "full price"
+      }
+     ],
+     "alteration": {
+      "what": "hem",
+      "ready": "2026-11-15"
+     }
+    }
+   ]
+  },
+  "ben.fischer@example.com": {
+   "name": "Ben Fischer",
+   "orders": [
+    {
+     "order": "NY-2463",
+     "where": "in store",
+     "date": "2026-11-07",
+     "items": [
+      {
+       "item": "Claddagh wrap dress, forest green",
+       "size": "4",
+       "price": 160,
+       "tag": "full price"
+      },
+      {
+       "item": "Maam waxed jacket, charcoal",
+       "size": "M",
+       "price": 285,
+       "tag": "full price"
+      }
+     ]
+    },
+    {
+     "order": "NY-2464",
+     "where": "online",
+     "date": "2026-10-24",
+     "items": [
+      {
+       "item": "Corrib slim shirt, forest green",
+       "size": "L",
+       "price": 78,
+       "tag": "full price"
+      },
+      {
+       "item": "Atlantic merino crew, forest green",
+       "size": "S",
+       "price": 138,
+       "tag": "full price"
+      }
+     ]
+    }
+   ]
+  },
+  "zoe.hart@example.com": {
+   "name": "Zoe Hart",
+   "orders": [
+    {
+     "order": "NY-2466",
+     "where": "in store",
+     "date": "2026-11-07",
+     "items": [
+      {
+       "item": "Corrib slim shirt, olive",
+       "size": "L",
+       "price": 55,
+       "tag": "SALE (was $78)"
+      }
+     ]
+    }
+   ]
+  },
+  "omar.malik@example.com": {
+   "name": "Omar Malik",
+   "orders": [
+    {
+     "order": "NY-2469",
+     "where": "in store",
+     "date": "2026-10-26",
+     "items": [
+      {
+       "item": "Inis linen trousers, forest green",
+       "size": "M",
+       "price": 98,
+       "tag": "full price"
+      }
+     ],
+     "alteration": {
+      "what": "hem",
+      "ready": "2026-11-02"
+     }
+    },
+    {
+     "order": "NY-2470",
+     "where": "online",
+     "date": "2026-10-19",
+     "items": [
+      {
+       "item": "Atlantic merino crew, black",
+       "size": "L",
+       "price": 97,
+       "tag": "SALE (was $138)"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

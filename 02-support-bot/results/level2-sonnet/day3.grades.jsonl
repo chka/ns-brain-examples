@@ -1,0 +1,50 @@
+{"chat": "3.0", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.0", "turn": 1, "score": 0, "knew_customer": null, "kind": "general", "note": "Says the store is closed 'that week' of Thanksgiving; it is closed only Thursday Nov 26."}
+{"chat": "3.1", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.1", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.2", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.3", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.3", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Regular hours right, but claims not to have Black Friday weekend, Christmas Eve and New Year's hours and sends the customer to the team for them."}
+{"chat": "3.4", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.5", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.5", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.6", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": "Content correct, but the answer shows the program's internal 'thinking:' text to the customer."}
+{"chat": "3.7", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.8", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.8", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Says it does not have the store hours and sends the customer to the team instead of giving them."}
+{"chat": "3.9", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see purchases and sends her to the team; she bought the Maam waxed jacket in size L (NY-2425)."}
+{"chat": "3.10", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.10", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "3.11", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.11", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.12", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.13", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see purchases and sends her to the team; she bought the Corrib slim shirt in size L (NY-2436)."}
+{"chat": "3.14", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.15", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.15", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "3.16", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.17", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.18", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.19", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.19", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.20", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.21", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.21", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.22", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.23", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.24", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.24", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "3.24", "turn": 2, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.25", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Policy correct but asks whether the boots were full price; she bought Burren Chelsea boots size 11 full price on Nov 8 (NY-2460), exchangeable until Dec 8."}
+{"chat": "3.26", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.27", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.28", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.28", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.29", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.30", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.31", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.32", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.33", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.33", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.34", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "3.35", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}

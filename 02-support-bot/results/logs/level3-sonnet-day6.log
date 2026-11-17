@@ -1,0 +1,57 @@
+/home/chka/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:287: UserWarning: 
+NVIDIA GeForce RTX 5070 with CUDA capability sm_120 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_90.
+If you want to use the NVIDIA GeForce RTX 5070 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(
+[level3-sonnet] day 6  0.05s cpu 0.19s $0.0000 memory: return policy
+[level3-sonnet] day 6  0.06s cpu 0.24s $0.0000 memory: store hours?
+[level3-sonnet] day 6  4.14s cpu 2.31s $0.0103 brain+llm: and sunday?
+[level3-sonnet] day 6  0.08s cpu 0.27s $0.0000 memory: do you take apple pay
+[level3-sonnet] day 6  0.06s cpu 0.23s $0.0000 memory: where is the store
+[level3-sonnet] day 6  0.04s cpu 0.14s $0.0000 memory: where are you located
+[level3-sonnet] day 6  2.63s cpu 0.83s $0.0061 brain+llm: return policy
+[level3-sonnet] day 6  0.05s cpu 0.19s $0.0000 memory: can i pay with venmo
+[level3-sonnet] day 6  0.05s cpu 0.18s $0.0000 memory: return policy
+[level3-sonnet] day 6  0.04s cpu 0.16s $0.0000 memory: can i swap sizes
+[level3-sonnet] day 6  4.54s cpu 7.01s $0.0061 brain+llm: what size slim shirt did i buy
+[level3-sonnet] day 6  0.06s cpu 0.23s $0.0000 memory: i lost my receipt can i still return
+[level3-sonnet] day 6  0.06s cpu 0.23s $0.0000 memory: do you do alterations
+[level3-sonnet] day 6  0.05s cpu 0.20s $0.0000 memory: can i buy a gift card
+[level3-sonnet] day 6  3.99s cpu 0.29s $0.0097 brain+llm: what time do you open
+[level3-sonnet] day 6  3.84s cpu 0.07s $0.0108 brain+llm: open late any day?
+[level3-sonnet] day 6  0.07s cpu 0.26s $0.0000 memory: can i buy a gift card
+[level3-sonnet] day 6  6.15s cpu 0.98s $0.0126 brain+llm: can i return the chelsea boots i bought
+[level3-sonnet] day 6  6.91s cpu 0.86s $0.0132 brain+llm: the high-rise jeans is too small can i exchan
+[level3-sonnet] day 6  0.04s cpu 0.15s $0.0000 memory: are sale items returnable
+[level3-sonnet] day 6  2.13s cpu 1.00s $0.0078 brain+llm: is my hem ready
+[level3-sonnet] day 6  1.65s cpu 0.77s $0.0066 brain+llm: whats the address
+[level3-sonnet] day 6  0.04s cpu 0.17s $0.0000 memory: can i pay with venmo
+[level3-sonnet] day 6  1.96s cpu 1.56s $0.0066 brain+llm: price match?
+[level3-sonnet] day 6  0.08s cpu 0.32s $0.0000 memory: can i return without a receipt
+[level3-sonnet] day 6  6.82s cpu 0.07s $0.0143 brain+llm: how long do i have to return the linen trouse
+[level3-sonnet] day 6  0.18s cpu 0.48s $0.0000 memory: are sale items returnable
+[level3-sonnet] day 6  0.03s cpu 0.12s $0.0000 memory: are you open on thanksgiving
+[level3-sonnet] day 6  0.06s cpu 0.24s $0.0000 memory: store hours?
+[level3-sonnet] day 6  2.83s cpu 0.09s $0.0092 brain+llm: what time do you close today
+[level3-sonnet] day 6  4.22s cpu 0.14s $0.0120 brain+llm: and sunday?
+[level3-sonnet] day 6  1.95s cpu 0.28s $0.0055 brain+llm: are dogs allowed
+[level3-sonnet] day 6  0.06s cpu 0.21s $0.0000 memory: store hours?
+[level3-sonnet] day 6  3.79s cpu 1.34s $0.0102 brain+llm: do you ship
+[level3-sonnet] day 6  0.04s cpu 0.15s $0.0000 memory: whats the address
+[level3-sonnet] day 6  1.78s cpu 0.10s $0.0065 brain+llm: closest subway?
+[level3-sonnet] day 6  5.32s cpu 0.20s $0.0120 brain+llm: how long do i have to return the slim shirt
+[level3-sonnet] day 6  0.04s cpu 0.16s $0.0000 memory: how many days do i have to return
+[level3-sonnet] day 6  4.83s cpu 0.17s $0.0112 brain+llm: is it a refund or store credit
+[level3-sonnet] day 6  0.08s cpu 0.28s $0.0000 memory: store hours?
+[level3-sonnet] day 6  4.87s cpu 0.07s $0.0124 brain+llm: open late any day?
+[level3-sonnet] day 6  0.15s cpu 0.43s $0.0000 memory: return policy
+[level3-sonnet] day 6  0.15s cpu 0.41s $0.0000 memory: how many days do i have to return
+[level3-sonnet] day 6  0.08s cpu 0.29s $0.0000 memory: what is your return policy
+[level3-sonnet] day 6  2.55s cpu 0.97s $0.0065 brain+llm: do you take klarna
+[level3-sonnet] day 6  2.61s cpu 0.80s $0.0065 brain+llm: black friday sale?
+[level3-sonnet] day 6  3.45s cpu 0.09s $0.0080 brain+llm: return policy
+[level3-sonnet] day 6  0.04s cpu 0.14s $0.0000 memory: exchange policy
+[level3-sonnet] day 6  6.99s cpu 0.13s $0.0156 brain+llm: can i return the wrap dress i bought
+[level3-sonnet] day 6  5.19s cpu 0.09s $0.0129 brain+llm: what are your hours
+{"bot": "level3-sonnet", "day": 6, "messages": 50, "from_memory": 26, "cost": 0.2328, "seconds": {"min": 0.032, "max": 6.992, "avg": 1.938, "median": 0.164, "p95": 6.815}}

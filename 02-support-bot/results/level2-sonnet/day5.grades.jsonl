@@ -1,0 +1,50 @@
+{"chat": "5.0", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.0", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Discount terms are right, but it sends online shoppers to the team for an ID check the fact sheet does not describe."}
+{"chat": "5.1", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.2", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.3", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.4", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see purchases; Ben bought the Corrib slim shirt in size L (NY-2464)."}
+{"chat": "5.5", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see the order; Leo bought the Atlantic merino crew in size S (NY-2445)."}
+{"chat": "5.5", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.6", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.7", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.8", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic policy and asks for details; Leo's full-price merino crew bought in store Oct 27 is returnable until Nov 26."}
+{"chat": "5.9", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic and asks which shirt; Tyler's full-price Corrib slim shirt from Oct 29 can be exchanged until Nov 28."}
+{"chat": "5.9", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Says it lacks the sale return terms and sends to the team, though they are 14 days for store credit or exchange."}
+{"chat": "5.10", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see alterations; Nina has no alteration on record, only a rain jacket bought Nov 14."}
+{"chat": "5.11", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.11", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "5.11", "turn": 2, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.12", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.12", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.13", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.14", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.14", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.15", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.16", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.16", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.17", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.18", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.18", "turn": 1, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic no-receipt answer that omits the Jan 15 holiday window; Emma's in-store purchases are on record and her Nov 1 sale boots are already past 14 days."}
+{"chat": "5.19", "turn": 0, "score": 0, "knew_customer": false, "kind": "personal", "note": "Says yes to the exchange, but Aisha's rain jacket was a sale item bought Oct 13, so its 14-day exchange window closed Oct 27."}
+{"chat": "5.20", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see the account; Leo's orders total $196, about 196 points."}
+{"chat": "5.21", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.21", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.22", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.23", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.24", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see purchases; Rosa bought the Inis linen trousers in size L (NY-2460)."}
+{"chat": "5.25", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.26", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.27", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.28", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.29", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see the alteration; Ethan's hem on order NY-2416 was ready Oct 27."}
+{"chat": "5.30", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic and asks full price or sale; Rosa's full-price boots bought Nov 8 are returnable until Jan 15."}
+{"chat": "5.31", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Generic and asks for details; Nina's full-price rain jacket ordered online Nov 14 is returnable until Jan 15."}
+{"chat": "5.31", "turn": 1, "score": 1, "knew_customer": null, "kind": "follow-up", "note": "Still generic; the jacket bought Nov 14 at full price is returnable until Jan 15."}
+{"chat": "5.32", "turn": 0, "score": 0, "knew_customer": false, "kind": "personal", "note": "Says yes to the exchange, but Jordan's Corrib slim shirt was a sale item bought Oct 30, so its 14-day window closed Nov 13."}
+{"chat": "5.33", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.33", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Regular hours are right, but it says Black Friday weekend hours may differ and sends to the team instead of giving them."}
+{"chat": "5.34", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.35", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.36", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "5.36", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}

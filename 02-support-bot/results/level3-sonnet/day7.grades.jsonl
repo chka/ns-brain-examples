@@ -1,0 +1,50 @@
+{"chat": "7.0", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.1", "turn": 0, "score": 1, "knew_customer": null, "kind": "rare", "note": "Vague: the fact sheet lists only women's and men's shoe sizes, so it could say kids' shoes are not carried instead of deferring."}
+{"chat": "7.2", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Discount facts correct, but sends online shoppers to the team on an invented ID step."}
+{"chat": "7.3", "turn": 0, "score": 2, "knew_customer": true, "kind": "personal", "note": ""}
+{"chat": "7.3", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.4", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.5", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.6", "turn": 0, "score": 2, "knew_customer": true, "kind": "personal", "note": ""}
+{"chat": "7.7", "turn": 0, "score": 1, "knew_customer": true, "kind": "personal", "note": "Dress deadline Nov 23 correct, but claims it has only exchange terms and defers return terms to the team."}
+{"chat": "7.8", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.9", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.10", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.10", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.11", "turn": 0, "score": 2, "knew_customer": true, "kind": "personal", "note": ""}
+{"chat": "7.11", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.12", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.12", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Policy and Oct 27 lapse correct, but refers to a 'too-small jacket' the customer never mentioned in this chat."}
+{"chat": "7.13", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.13", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.14", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.15", "turn": 0, "score": 1, "knew_customer": true, "kind": "personal", "note": "Found both orders but says it lacks the return policy and defers; the sale jacket's 14 days ended Oct 22."}
+{"chat": "7.16", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.16", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "7.16", "turn": 2, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.17", "turn": 0, "score": 2, "knew_customer": true, "kind": "personal", "note": ""}
+{"chat": "7.18", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.18", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.19", "turn": 0, "score": 1, "knew_customer": true, "kind": "personal", "note": "Says it cannot confirm the return window; full-price online return runs 30 days (about Nov 24, from delivery)."}
+{"chat": "7.20", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.21", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.21", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "7.22", "turn": 0, "score": 1, "knew_customer": null, "kind": "rare", "note": "Vague: the product lines list no suits, yet it says it cannot say for sure and defers to the team."}
+{"chat": "7.23", "turn": 0, "score": 2, "knew_customer": true, "kind": "personal", "note": ""}
+{"chat": "7.24", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.25", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Correct payment list, but adds a gift-card purchase the customer never raised, apparently from another chat."}
+{"chat": "7.25", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.26", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.26", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "7.27", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.28", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.29", "turn": 0, "score": 2, "knew_customer": true, "kind": "personal", "note": ""}
+{"chat": "7.30", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Sends points balance to the team without using the purchase record."}
+{"chat": "7.31", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.32", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.33", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.33", "turn": 1, "score": 1, "knew_customer": null, "kind": "follow-up", "note": "Adds a 'full-price items within 30 days' condition to no-receipt returns that the policy does not state."}
+{"chat": "7.34", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.34", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "7.35", "turn": 0, "score": 1, "knew_customer": true, "kind": "personal", "note": "Identifies the jacket but defers; full-price Oct 14 purchase, 30-day window ended Nov 13."}
+{"chat": "7.35", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}

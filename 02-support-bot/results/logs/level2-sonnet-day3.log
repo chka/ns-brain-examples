@@ -1,0 +1,51 @@
+[level2-sonnet] day 3  2.97s cpu 0.26s $0.0068 rag+llm: store hours?
+[level2-sonnet] day 3  2.72s cpu 0.03s $0.0068 rag+llm: open late any day?
+[level2-sonnet] day 3  1.96s cpu 0.04s $0.0035 rag+llm: where are you located
+[level2-sonnet] day 3  1.83s cpu 0.06s $0.0047 rag+llm: store hours?
+[level2-sonnet] day 3  2.00s cpu 0.04s $0.0054 rag+llm: gift wrap?
+[level2-sonnet] day 3  1.82s cpu 0.05s $0.0053 rag+llm: do you sell gift cards
+[level2-sonnet] day 3  3.04s cpu 0.03s $0.0082 rag+llm: store hours?
+[level2-sonnet] day 3  2.02s cpu 0.04s $0.0065 rag+llm: can i return without a receipt
+[level2-sonnet] day 3  2.11s cpu 0.05s $0.0045 rag+llm: do you take checks
+[level2-sonnet] day 3  1.82s cpu 0.05s $0.0048 rag+llm: do you take apple pay
+[level2-sonnet] day 3  2.56s cpu 0.04s $0.0069 rag+llm: what is your return policy
+[level2-sonnet] day 3  2.02s cpu 0.04s $0.0064 rag+llm: are you open on thanksgiving
+[level2-sonnet] day 3  2.58s cpu 0.04s $0.0041 rag+llm: can i exchange for a different size
+[level2-sonnet] day 3  3.21s cpu 0.05s $0.0036 rag+llm: store hours?
+[level2-sonnet] day 3  2.70s cpu 0.03s $0.0057 rag+llm: what size waxed jacket did i buy
+[level2-sonnet] day 3  2.29s cpu 0.03s $0.0017 rag+llm: store hours?
+[level2-sonnet] day 3  2.71s cpu 0.03s $0.0079 rag+llm: and sunday?
+[level2-sonnet] day 3  2.17s cpu 0.04s $0.0065 rag+llm: i lost my receipt can i still return
+[level2-sonnet] day 3  3.47s cpu 0.03s $0.0076 rag+llm: do you do alterations
+[level2-sonnet] day 3  3.16s cpu 0.03s $0.0042 rag+llm: exchange policy
+[level2-sonnet] day 3  2.50s cpu 0.03s $0.0058 rag+llm: what size slim shirt did i buy
+[level2-sonnet] day 3  2.35s cpu 0.03s $0.0057 rag+llm: amex ok?
+[level2-sonnet] day 3  2.49s cpu 0.03s $0.0065 rag+llm: how many days do i have to return
+[level2-sonnet] day 3  3.43s cpu 0.03s $0.0074 rag+llm: is it a refund or store credit
+[level2-sonnet] day 3  1.89s cpu 0.03s $0.0041 rag+llm: where is the store
+[level2-sonnet] day 3  2.77s cpu 0.07s $0.0048 rag+llm: do you hem jeans
+[level2-sonnet] day 3  2.88s cpu 0.03s $0.0051 rag+llm: shipping cost?
+[level2-sonnet] day 3  3.36s cpu 0.03s $0.0035 rag+llm: merino care
+[level2-sonnet] day 3  3.25s cpu 0.03s $0.0052 rag+llm: exchange policy
+[level2-sonnet] day 3  2.36s cpu 0.05s $0.0050 rag+llm: do you do gift wrapping
+[level2-sonnet] day 3  2.42s cpu 0.03s $0.0050 rag+llm: can i pay with venmo
+[level2-sonnet] day 3  2.91s cpu 0.04s $0.0054 rag+llm: can i return sale items
+[level2-sonnet] day 3  2.58s cpu 0.05s $0.0013 rag+llm: exchange policy
+[level2-sonnet] day 3  2.41s cpu 0.04s $0.0053 rag+llm: do you take amex
+[level2-sonnet] day 3  2.42s cpu 0.04s $0.0018 rag+llm: store hours?
+[level2-sonnet] day 3  2.23s cpu 0.04s $0.0065 rag+llm: and sunday?
+[level2-sonnet] day 3  2.97s cpu 0.03s $0.0085 rag+llm: store hours?
+[level2-sonnet] day 3  3.73s cpu 0.05s $0.0058 rag+llm: the chelsea boots is too small can i exchange
+[level2-sonnet] day 3  2.07s cpu 0.04s $0.0018 rag+llm: are you open on thanksgiving
+[level2-sonnet] day 3  2.51s cpu 0.03s $0.0048 rag+llm: do you take klarna
+[level2-sonnet] day 3  2.34s cpu 0.04s $0.0018 rag+llm: store hours?
+[level2-sonnet] day 3  2.33s cpu 0.04s $0.0056 rag+llm: can i return sale items
+[level2-sonnet] day 3  2.50s cpu 0.07s $0.0019 rag+llm: can i return without a receipt
+[level2-sonnet] day 3  2.23s cpu 0.04s $0.0044 rag+llm: do you take apple pay
+[level2-sonnet] day 3  2.09s cpu 0.03s $0.0018 rag+llm: what is your return policy
+[level2-sonnet] day 3  2.25s cpu 0.04s $0.0076 rag+llm: black friday hours
+[level2-sonnet] day 3  2.14s cpu 0.03s $0.0053 rag+llm: alterations?
+[level2-sonnet] day 3  1.93s cpu 0.04s $0.0069 rag+llm: are you open on thanksgiving
+[level2-sonnet] day 3  3.17s cpu 0.03s $0.0047 rag+llm: do you ship
+[level2-sonnet] day 3  3.06s cpu 0.03s $0.0062 rag+llm: is there parking
+{"bot": "level2-sonnet", "day": 3, "messages": 50, "from_memory": 0, "cost": 0.2566, "seconds": {"min": 1.816, "max": 3.734, "avg": 2.535, "median": 2.456, "p95": 3.431}}

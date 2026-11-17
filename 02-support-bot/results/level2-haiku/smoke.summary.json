@@ -1,0 +1,63 @@
+{
+  "bot": "level2-haiku",
+  "model": "fc:anthropic/claude-haiku-5.5",
+  "day": 1,
+  "messages": 3,
+  "llm_calls": 3,
+  "from_memory": 0,
+  "cost": 0.0008,
+  "tokens": {
+    "input": 12,
+    "cache_write": 4387,
+    "cache_read": 1413,
+    "output": 519,
+    "embed": 17
+  },
+  "seconds": {
+    "min": 1.606,
+    "max": 2.27,
+    "avg": 1.967,
+    "median": 2.025,
+    "p95": 2.27
+  },
+  "seconds_llm_answers": {
+    "min": 1.606,
+    "max": 2.27,
+    "avg": 1.967,
+    "median": 2.025,
+    "p95": 2.27
+  },
+  "seconds_memory_answers": {},
+  "llm_seconds": {
+    "min": 1.084,
+    "max": 1.767,
+    "avg": 1.314,
+    "median": 1.091,
+    "p95": 1.767
+  },
+  "local_seconds": {
+    "min": 0.029,
+    "max": 0.032,
+    "avg": 0.031,
+    "median": 0.031,
+    "p95": 0.032
+  },
+  "cpu_seconds": {
+    "min": 0.036,
+    "max": 0.233,
+    "avg": 0.103,
+    "median": 0.039,
+    "p95": 0.233
+  },
+  "ns_brain_cpu_seconds": {
+    "min": 0.0,
+    "max": 0.001,
+    "avg": 0.0,
+    "median": 0.0,
+    "p95": 0.001
+  },
+  "cpu_seconds_total": 0.31,
+  "local_model_device": "none",
+  "gpu": "not used: this PyTorch build has no kernels for the RTX 5070",
+  "peak_memory_mb": 74
+}

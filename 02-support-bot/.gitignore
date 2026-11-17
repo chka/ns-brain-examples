@@ -1,0 +1,5 @@
+run/
+run-*/
+__pycache__/
+level2_rag/index.json
+results/old/

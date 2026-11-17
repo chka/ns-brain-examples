@@ -1,0 +1,50 @@
+{"chat": "2.0", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Implies hemming on online purchases needs the team, though anything bought at Kestrel Row qualifies."}
+{"chat": "2.1", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.2", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Omits the holiday window (Nov 1 to Dec 24 purchases returnable until Jan 15), relevant in November."}
+{"chat": "2.3", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.3", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "2.3", "turn": 2, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.4", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.4", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "2.5", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see orders; she bought Burren Chelsea boots in size 11 (NY-2460)."}
+{"chat": "2.6", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.7", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.8", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.9", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.9", "turn": 1, "score": 2, "knew_customer": null, "kind": "follow-up", "note": ""}
+{"chat": "2.9", "turn": 2, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.10", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.11", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.11", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.12", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.13", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.14", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Says it cannot see her account and sends her to the team; no use of her purchases."}
+{"chat": "2.15", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Omits the holiday window (Nov 1 to Dec 24 purchases returnable until Jan 15), relevant in November."}
+{"chat": "2.16", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.17", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.17", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.18", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.19", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.20", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.20", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.21", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.22", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.22", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.23", "turn": 0, "score": 1, "knew_customer": null, "kind": "general", "note": "Implies hemming on online purchases needs the team, though anything bought at Kestrel Row qualifies."}
+{"chat": "2.24", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.24", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Says it does not know about pickup; buy online, pick up in store is free, ready in 2 hours, held 7 days."}
+{"chat": "2.25", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.26", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.27", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.28", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.29", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.30", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.30", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Omits the holiday window (Nov 1 to Dec 24 purchases returnable until Jan 15) and asks for details instead."}
+{"chat": "2.31", "turn": 0, "score": 1, "knew_customer": false, "kind": "personal", "note": "Asks for date and receipt; his Harbour jeans (NY-2433, Oct 23) were hemmed, so they cannot be returned."}
+{"chat": "2.31", "turn": 1, "score": 1, "knew_customer": null, "kind": "general", "note": "Claims it lacks shipping costs and times and sends to the team, though the facts give them."}
+{"chat": "2.32", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.33", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.33", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.34", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.34", "turn": 1, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
+{"chat": "2.35", "turn": 0, "score": 2, "knew_customer": null, "kind": "general", "note": ""}
