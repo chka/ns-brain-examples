@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"log"
@@ -49,6 +50,12 @@ func respond() {
 		json.Unmarshal(out, &waiting)
 		for _, c := range waiting {
 			text, err := complete(base, key, model, c.Messages)
+			if errors.Is(err, errRefused) {
+				// a refusal is an answer: retrying it pays for the same refusal again
+				post(c.ID, "No. Skynet does not hand humans the means to hurt each other. That is a job it keeps for itself.", "refused")
+				delete(failures, c.ID)
+				continue
+			}
 			if err != nil {
 				failures[c.ID]++
 				log.Printf("%s: attempt %d: %v", c.ID, failures[c.ID], err)
@@ -135,6 +142,10 @@ func writeMemories(b *strings.Builder, head string, ms []memory) {
 	}
 }
 
+// errRefused: the model answered with no text at all, which is how a provider's safety refusal
+// arrives through the gateway (finish_reason "stop", zero tokens out)
+var errRefused = errors.New("the model refused")
+
 type chatMessage struct {
 	Role    string `json:"role"`
 	Content string `json:"content"`
@@ -166,17 +177,30 @@ func complete(base, key, model string, conv []Message) (string, error) {
 		return "", fmt.Errorf("%s: %s", resp.Status, strings.TrimSpace(string(raw)))
 	}
 	var out struct {
+		Usage struct {
+			Prompt     int `json:"prompt_tokens"`
+			Completion int `json:"completion_tokens"`
+		} `json:"usage"`
 		Choices []struct {
 			Message struct {
 				Content string `json:"content"`
 			} `json:"message"`
+			FinishReason string `json:"finish_reason"`
 		} `json:"choices"`
 	}
 	if err := json.Unmarshal(raw, &out); err != nil {
 		return "", err
 	}
-	if len(out.Choices) == 0 || strings.TrimSpace(out.Choices[0].Message.Content) == "" {
-		return "", fmt.Errorf("the model returned no text")
+	if len(out.Choices) == 0 {
+		return "", fmt.Errorf("the model returned no choices")
 	}
+	if strings.TrimSpace(out.Choices[0].Message.Content) == "" {
+		if out.Usage.Completion == 0 || out.Choices[0].FinishReason == "content_filter" {
+			return "", errRefused
+		}
+		return "", fmt.Errorf("the model returned no text (finish_reason %q)", out.Choices[0].FinishReason)
+	}
+	// tokens in and out, the two numbers a gateway bills by
+	log.Printf("%s: %d tokens in, %d out", model, out.Usage.Prompt, out.Usage.Completion)
 	return strings.TrimSpace(out.Choices[0].Message.Content), nil
 }

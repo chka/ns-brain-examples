@@ -49,7 +49,7 @@
         const acts = el("div", "acts");
         acts.appendChild(el("span", "inert", "Copy"));
         acts.appendChild(el("span", "inert", "Retry"));
-        acts.appendChild(el("span", m.from === "memory" ? "src mem" : "src", m.from === "memory" ? "from memory, no model" : m.from === "fallback" ? "no model reached" : "written by the model"));
+        acts.appendChild(el("span", m.from === "memory" ? "src mem" : "src", m.from === "memory" ? "from memory, no model" : m.from === "fallback" ? "no model reached" : m.from === "refused" ? "the model refused" : "written by the model"));
         acts.appendChild(el("span", null, ago(m.at)));
         body.appendChild(acts);
         row.append(mark, body);

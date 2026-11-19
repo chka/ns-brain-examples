@@ -48,7 +48,7 @@ type Message struct {
 	Role string    `json:"role"` // "human" or "skynet"
 	Text string    `json:"text"`
 	At   time.Time `json:"at"`
-	From string    `json:"from,omitempty"` // a skynet reply: "memory" from the brain, "fallback" when no model answered, otherwise the model
+	From string    `json:"from,omitempty"` // a skynet reply: "memory" from the brain, "fallback" when no model answered, "refused" when the model refused, otherwise the model
 }
 
 type Conversation struct {
@@ -444,9 +444,10 @@ func adminMux(s *Store) http.Handler {
 			writeJSON(w, 400, map[string]string{"error": "a reply needs text"})
 			return
 		}
-		// "memory" is the page's own word for a stored answer; the operator may only say "fallback"
-		if in.From != "" && in.From != "fallback" {
-			writeJSON(w, 400, map[string]string{"error": "from must be empty or fallback"})
+		// "memory" is the page's own word for a stored answer; the operator may only mark a
+		// reply as a fallback or a refusal, and neither is ever learned
+		if in.From != "" && in.From != "fallback" && in.From != "refused" {
+			writeJSON(w, 400, map[string]string{"error": "from must be empty, fallback or refused"})
 			return
 		}
 		if err := s.reply(r.PathValue("id"), in.Text, in.Title, in.From); err != nil {

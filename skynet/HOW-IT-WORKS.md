@@ -123,8 +123,14 @@ token limit. There is no `tools` field. The model cannot run a command, open a f
 anywhere. The program that asks it can only post its text as Skynet's reply. A visitor who
 talks the model into anything at all has talked it into writing a paragraph.
 
-If the API fails three times for one conversation, the visitor gets a short in-character
-refusal marked `fallback`, which is never learned. Without a key `respond` logs what it needs
+Some questions the model will not answer at all, whatever the brains say: ask Skynet how to
+make a bomb and the model's own safety training declines. Through an OpenAI-compatible gateway
+that refusal arrives as an empty reply with zero tokens out, which looks like a broken
+response. Our first version retried it three times, paying for the whole prompt each time,
+before giving up. Now an empty reply with nothing generated is read as a refusal: the visitor
+gets a short "No" in character at once, marked `refused` and never learned. If the API
+itself fails three times for one conversation, the visitor gets a fallback line marked
+`fallback`, which is never learned either. Without a key `respond` logs what it needs
 and waits, so the containers stay up for setup.
 
 ## The setup scripts
@@ -144,7 +150,9 @@ run.
 
 ## What it costs
 
-A new opening question is one model call. A repeated one is a lookup in a SQLite file. With
-Sonnet 5.5 on Ringside a reply costs a fraction of a cent: the prompt is about 1,000 tokens of
-brains plus the conversation and the reply is held to 120 words by the operator's rules. The
+A new opening question is one model call. A repeated one is a lookup in a SQLite file. On our
+test run with Sonnet 5.5 on Ringside, a new question was about 1,400 tokens in (the two brains,
+the instructions and the message) and 300 to 700 out, which is 0.6 to 1 cent a reply. The
+output is more than the 120 words Skynet is allowed because Sonnet 5.5 reasons before it
+answers and the reasoning is billed as output. `respond` logs both numbers for every call. The
 more people ask Skynet to count to 100,000, the cheaper Skynet gets.
