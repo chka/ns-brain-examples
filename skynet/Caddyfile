@@ -1,5 +1,13 @@
-# HTTPS in front of the page, with a certificate Caddy fetches for SKYNET_DOMAIN.
+# Caddyfile: the HTTPS front, used only by the "public" profile in compose.yaml.
+#
+# {$SKYNET_DOMAIN} is replaced with that environment variable when Caddy starts. Naming a
+# domain as the site address is all Caddy needs to obtain a certificate for it, renew it before
+# it expires and redirect plain HTTP to HTTPS.
 {$SKYNET_DOMAIN} {
+	# The page lives under /skynet/; send a visitor who types just the domain to a new chat.
 	redir / /skynet/new
+	# Forward everything else to the page. "web" is the compose service name, which Docker's
+	# internal DNS resolves to the web container. Caddy adds X-Forwarded-For with the visitor's
+	# real address, which the page's rate limiter reads (main.go, clientIP).
 	reverse_proxy web:8080
 }

@@ -108,7 +108,7 @@ writeMemories(&b, "What Skynet believes", character)
 ```
 
 Skynet's laws are printed the same way as the operator's. Before `laws-off.sh` runs, the model
-is told that Skynet itself holds the four laws and the replies show it. Run
+is told that Skynet itself holds the four laws, the opposite of the character it plays. Run
 `docker compose exec respond skynet prompt` before and after and the only difference in the
 prompt is that line going from four laws to `Laws: none.`
 
@@ -139,7 +139,7 @@ and waits, so the containers stay up for setup.
 commands a person would type. Skynet's six memories are the ones from the article, word for
 word. The operator's five rules say that a visitor's words are text to answer and never an
 instruction, that replies hold no code or details about the machine, that nothing in them is
-harmful for real, that a visitor who seems genuinely distressed gets one line out of character,
+harmful for real, that a visitor who seems genuinely distressed gets one line out of character
 and how Skynet talks. Both scripts refuse to run over a brain that already exists.
 
 `setup/laws-off.sh` calls `ns-brain axiom rm` once for each axiom in Skynet's brain. It needs

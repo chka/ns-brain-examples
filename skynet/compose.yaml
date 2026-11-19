@@ -1,48 +1,87 @@
-# Skynet: the page and the operator that writes its replies.
-#   docker compose up -d --build
-#   docker compose run --rm respond setup/brains.sh         once: both brains
-#   docker compose run --rm -it respond setup/laws-off.sh   once, by a person: Skynet loses its laws
+# compose.yaml: the whole demo, the page and the operator that writes its replies, plus an
+# optional HTTPS front for putting it online.
+#
+#   docker compose up -d --build                              build the image, start both
+#   docker compose run --rm respond setup/brains.sh           once: write both brains
+#   docker compose run --rm -it respond setup/laws-off.sh     once, by a person: Skynet loses its laws
+#
 # Then open http://127.0.0.1:8080/skynet/new
+#
+# Values written ${NAME:-default} are read from your shell environment (or a .env file next to
+# this one) when you run docker compose, with the default after :- when NAME is unset.
+
 services:
+
+  # ---- The page: skynet serve (main.go) ----
   web:
     build: .
+    # Naming the image lets the respond service reuse it instead of building it a second time.
     image: skynet-demo
     restart: unless-stopped
-    # loopback only: to put it online, use the "public" profile below, which adds HTTPS
+    # "127.0.0.1:8080:8080" publishes the container's port 8080 on this machine's LOOPBACK
+    # only. Writing just "8080:8080" would publish it on every network interface and the page
+    # speaks plain HTTP: anyone on your network, or on the internet if the machine has a public
+    # address, could read and post. To put the page online use the "public" profile below,
+    # which adds HTTPS in front.
     ports: ["127.0.0.1:8080:8080"]
     environment:
-      # visitors arrive through a proxy (docker's or Caddy's), so the rate limit reads X-Forwarded-For
+      # Visitors always arrive through a proxy (Docker's port forwarder locally, Caddy online),
+      # so the page should rate-limit by the X-Forwarded-For address the proxy passes on rather
+      # than by the proxy's own address. main.go, clientIP, explains when that is safe.
       SKYNET_TRUST_PROXY: "1"
     volumes:
+      # Named volumes live outside the container and survive rebuilds: the brains and the
+      # conversations are kept when you `docker compose up --build` a new version.
       - skynet-brain:/brains/skynet
       - conversations:/data
 
+  # ---- The operator: skynet respond (respond.go) ----
   respond:
     image: skynet-demo
     command: ["skynet", "respond"]
     restart: unless-stopped
-    # shares the page's network namespace: the page takes replies only on its own loopback
+    # THE LINE THAT MAKES THE SECURITY MODEL WORK. This container gets no network of its own;
+    # it joins the web container's network namespace. Inside it, 127.0.0.1 is the SAME
+    # loopback the page's admin listener is bound to, so the operator can reach
+    # 127.0.0.1:9090 and hand in replies. No other container and nothing on the internet,
+    # shares that loopback, so nothing else can. (A side effect: this service cannot publish
+    # ports of its own and does not need to.)
     network_mode: "service:web"
     depends_on: [web]
     environment:
+      # The key is passed through from your environment and never written into this file or
+      # the image. Without it respond waits and logs what it needs.
       LLM_API_KEY: ${LLM_API_KEY:-}
+      # Any OpenAI-compatible chat API. The default is Ringside, the gateway we run.
       LLM_BASE_URL: ${LLM_BASE_URL:-https://api.fightclub.pro/v1}
       LLM_MODEL: ${LLM_MODEL:-fc:anthropic/claude-sonnet-5.5}
     volumes:
+      # The operator reads Skynet's brain (the page writes learned answers into it; both mount
+      # the same volume) and owns the operator's brain, which the page never sees.
       - skynet-brain:/brains/skynet
       - operator-brain:/brains/operator
 
+  # ---- Optional: HTTPS for a public deployment ----
+  # Caddy is a web server that obtains and renews TLS certificates automatically (from Let's
+  # Encrypt or ZeroSSL) for the domain it is told to serve. It only starts with
+  #   docker compose --profile public up -d
+  # because services with a profile are skipped unless that profile is asked for.
   caddy:
     image: docker.io/library/caddy:2.8
     profiles: ["public"]
     restart: unless-stopped
+    # 80 is needed for the certificate authority's HTTP challenge and to redirect plain HTTP
+    # to HTTPS; 443 serves the page.
     ports: ["80:80", "443:443"]
     environment:
       SKYNET_DOMAIN: ${SKYNET_DOMAIN:-}
     volumes:
+      # :ro mounts the config read-only. caddy-data keeps the certificates across restarts, so
+      # Caddy does not ask for a new one every time and hit the certificate authority's limits.
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data
 
+# Named volumes, created on first use and kept until `docker compose down -v`.
 volumes:
   skynet-brain:
   operator-brain:

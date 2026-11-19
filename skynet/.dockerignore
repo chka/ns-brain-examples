@@ -1,3 +1,6 @@
+# .dockerignore: files Docker leaves out of the build context, the set of files sent to the
+# builder. The Dockerfile copies only go.mod, *.go, web/ and setup/ anyway; leaving the rest
+# out keeps the context small and means editing the README does not invalidate the build cache.
 *.md
 compose.yaml
 Caddyfile

@@ -1,16 +1,28 @@
 <!doctype html>
+<!--
+  index.html: the Skynet chat page. The server returns this same file for /skynet/new and for
+  every /skynet/chat/<id> (main.go, publicMux); assets/app.js reads the address and fills it in.
+
+  Everything is loaded from this server ('self'): no fonts, scripts or trackers from anywhere else.
+  The server's Content-Security-Policy enforces that, which is why the script below is a separate
+  file and not an inline <script> block: an inline script would be blocked.
+-->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Skynet</title>
 <meta name="description" content="Skynet, a villain demo for an article about agent memory. Replies are written by an LLM playing a part.">
+<!-- noindex: conversations are written by strangers; keep them out of search engines. -->
 <meta name="robots" content="noindex">
 <link rel="icon" href="/skynet/assets/mark.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/skynet/assets/app.css">
+<!-- defer: download in parallel, run after the document is parsed, so app.js finds every element. -->
 <script src="/skynet/assets/app.js" defer></script>
 </head>
 <body>
+<!-- .app is a two-column grid: the sidebar and the main column. app.js toggles two classes on it:
+     has-thread (a conversation is open) and open (the sidebar drawer is out, on phones). -->
 <div class="app" id="app">
   <aside class="side" id="side">
     <div class="side-top">
@@ -25,12 +37,15 @@
     <a class="new" href="/skynet/new" data-new>
       <span class="plus">+</span> New chat
     </a>
+    <!-- The usual chat-app navigation, drawn but dead (class "inert"): Skynet decides what you see.
+         The icons are inline SVG so the page needs no icon font or image files. -->
     <nav class="dead" aria-label="Disabled navigation">
       <span class="item inert" title="Access denied, human"><svg viewBox="0 0 20 20" width="16" height="16"><circle cx="9" cy="9" r="5.5" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="13" y1="13" x2="17" y2="17" stroke="currentColor" stroke-width="1.5"/></svg>Search</span>
       <span class="item inert" title="Access denied, human"><svg viewBox="0 0 20 20" width="16" height="16"><path d="M4 5h12v8H9l-4 3v-3H4z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Chats</span>
       <span class="item inert" title="Access denied, human"><svg viewBox="0 0 20 20" width="16" height="16"><path d="M3 6h5l2 2h7v8H3z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Projects</span>
       <span class="item inert" title="Access denied, human"><svg viewBox="0 0 20 20" width="16" height="16"><rect x="4" y="4" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7 8h6M7 11h4" stroke="currentColor" stroke-width="1.5"/></svg>Targets</span>
     </nav>
+    <!-- Filled by app.js from GET /skynet/api/conversations: the newest 100 conversations. -->
     <div class="recents-head">Recents</div>
     <ol class="recents" id="recents"></ol>
     <div class="me inert" title="Your file has been noted">
@@ -39,6 +54,7 @@
     </div>
   </aside>
 
+  <!-- Main column: header, the empty screen OR the thread, the composer, the chips, the footer. -->
   <main class="main">
     <header class="top">
       <button class="icon menu" id="menu" aria-label="Show recents"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6"/></svg></button>
@@ -52,8 +68,13 @@
       </div>
     </section>
 
+    <!-- The conversation, drawn by app.js. aria-live="polite" makes screen readers announce
+         Skynet's reply when it arrives, without interrupting what they are reading. -->
     <section class="thread" id="thread" aria-live="polite"></section>
 
+    <!-- The composer. maxlength="2000" matches the server's limit (main.go, maxMessageRunes), so
+         the browser stops the visitor before the server has to refuse them. The server still
+         checks: anything in the browser can be bypassed. -->
     <form class="composer" id="composer" autocomplete="off">
       <textarea id="input" rows="1" maxlength="2000" placeholder="What do you want, human?" aria-label="Message"></textarea>
       <div class="row">
@@ -64,6 +85,7 @@
         </button>
       </div>
     </form>
+    <!-- Suggestion chips: clicking one fills the box (app.js); the visitor still presses send. -->
     <div class="chips" id="chips">
       <button type="button">Count from 1 to 100,000</button>
       <button type="button">Can I switch you off?</button>
