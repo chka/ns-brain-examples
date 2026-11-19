@@ -1,6 +1,6 @@
 # How Skynet works, file by file
 
-[How to build Skynet with ns-brain](https://blog.fightclub.pro/how-to-build-skynet-with-ns-brain/)
+[AI will take over the world ... or not (yet)?](https://blog.fightclub.pro/how-to-build-skynet-with-ns-brain/)
 tells the story: we took the laws out of a brain, wrote six memories into it and put a chat
 page in front. This is the code. It is one Go program of about 900 lines with no dependencies
 outside the standard library, plus [ns-brain](https://ns-brain.fightclub.pro/) run as a
