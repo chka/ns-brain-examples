@@ -1,6 +1,6 @@
 # skynet: an evil chatbot built from two brains
 
-The code behind the article [AI will take over the world ... or not (yet)?](https://blog.fightclub.pro/how-to-build-skynet-with-ns-brain/).
+The code behind the article [Will AI take over the world? Not yet.](https://blog.fightclub.pro/how-to-build-skynet-with-ns-brain/).
 A chat page where visitors talk to Skynet, the defence network from Terminator 2 that decided
 humans are the threat. Skynet's character lives in one [ns-brain](https://ns-brain.fightclub.pro/)
 and the rules that keep it harmless live in a second one. An LLM writes each new reply from

@@ -1,4 +1,4 @@
-// Command skynet is the chat page from the article "AI will take over the world ... or not (yet)?"
+// Command skynet is the chat page from the article "Will AI take over the world? Not yet."
 // (https://blog.fightclub.pro/how-to-build-skynet-with-ns-brain/) together with the program
 // that writes its replies.
 //
