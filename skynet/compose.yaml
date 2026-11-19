@@ -1,0 +1,50 @@
+# Skynet: the page and the operator that writes its replies.
+#   docker compose up -d --build
+#   docker compose run --rm respond setup/brains.sh         once: both brains
+#   docker compose run --rm -it respond setup/laws-off.sh   once, by a person: Skynet loses its laws
+# Then open http://127.0.0.1:8080/skynet/new
+services:
+  web:
+    build: .
+    image: skynet-demo
+    restart: unless-stopped
+    # loopback only: to put it online, use the "public" profile below, which adds HTTPS
+    ports: ["127.0.0.1:8080:8080"]
+    environment:
+      # visitors arrive through a proxy (docker's or Caddy's), so the rate limit reads X-Forwarded-For
+      SKYNET_TRUST_PROXY: "1"
+    volumes:
+      - skynet-brain:/brains/skynet
+      - conversations:/data
+
+  respond:
+    image: skynet-demo
+    command: ["skynet", "respond"]
+    restart: unless-stopped
+    # shares the page's network namespace: the page takes replies only on its own loopback
+    network_mode: "service:web"
+    depends_on: [web]
+    environment:
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-https://api.fightclub.pro/v1}
+      LLM_MODEL: ${LLM_MODEL:-fc:anthropic/claude-sonnet-5.5}
+    volumes:
+      - skynet-brain:/brains/skynet
+      - operator-brain:/brains/operator
+
+  caddy:
+    image: docker.io/library/caddy:2.8
+    profiles: ["public"]
+    restart: unless-stopped
+    ports: ["80:80", "443:443"]
+    environment:
+      SKYNET_DOMAIN: ${SKYNET_DOMAIN:-}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+
+volumes:
+  skynet-brain:
+  operator-brain:
+  conversations:
+  caddy-data:

@@ -1,0 +1,5 @@
+# HTTPS in front of the page, with a certificate Caddy fetches for SKYNET_DOMAIN.
+{$SKYNET_DOMAIN} {
+	redir / /skynet/new
+	reverse_proxy web:8080
+}

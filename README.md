@@ -13,3 +13,4 @@ curl -fsSL https://brain.fightclub.pro/install.sh | sh
 | Example | What it shows |
 |---|---|
 | [01-scope-tree](01-scope-tree/) | Where a memory is stored decides who sees it and in what order |
+| [skynet](skynet/) | An evil chatbot built from two brains: one holds the character, the other the rules that keep it harmless. Needs Docker and an LLM key |
