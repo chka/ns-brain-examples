@@ -190,6 +190,21 @@ func normWords(s string) []string {
 	return out
 }
 
+// numberless turns any number into the same placeholder, for comparing only. "Claude, can you
+// count from 3 to 21, please?" asks what "count from 1 to 100000" asked and Skynet refuses both
+// the same way, but the numbers made them differ in two words of nine (0.56), and the judge
+// ruled them different questions because the numbers differ. With the numbers masked they
+// compare as identical. The operator's shape rule keeps this safe: a reply to an opening
+// message never repeats the question's numbers, so a stored reply fits any variant.
+func numberless(w string) string {
+	for _, r := range w {
+		if !unicode.IsDigit(r) {
+			return w
+		}
+	}
+	return "#"
+}
+
 // overlap scores how alike two questions are by the Jaccard index of their word sets: the
 // number of distinct words they share divided by the number of distinct words in either.
 // Identical sets score 1, disjoint sets 0.
@@ -205,10 +220,10 @@ func overlap(a, b []string) float64 {
 	// Go has no set type; a map to bool is the idiom.
 	sa, sb := map[string]bool{}, map[string]bool{}
 	for _, w := range a {
-		sa[w] = true
+		sa[numberless(w)] = true
 	}
 	for _, w := range b {
-		sb[w] = true
+		sb[numberless(w)] = true
 	}
 	inter := 0
 	for w := range sa {

@@ -495,9 +495,17 @@ func publicMux(s *Store) http.Handler {
 
 	// Reading is open to everybody: the Recents list and any conversation in it.
 	mux.HandleFunc("GET /skynet/api/conversations", func(w http.ResponseWriter, r *http.Request) {
+		if !readLimit.allow(clientIP(r)) {
+			writeJSON(w, 429, map[string]string{"error": "Enough watching for one minute."})
+			return
+		}
 		writeJSON(w, 200, s.list())
 	})
 	mux.HandleFunc("GET /skynet/api/conversations/{id}", func(w http.ResponseWriter, r *http.Request) {
+		if !readLimit.allow(clientIP(r)) {
+			writeJSON(w, 429, map[string]string{"error": "Enough watching for one minute."})
+			return
+		}
 		c, ok := s.get(r.PathValue("id"))
 		if !ok {
 			writeJSON(w, 404, map[string]string{"error": "no such conversation"})
@@ -519,7 +527,7 @@ func publicMux(s *Store) http.Handler {
 			writeJSON(w, 415, map[string]string{"error": "json only"})
 			return
 		}
-		if !postAllowed(clientIP(r)) {
+		if !postLimit.allow(clientIP(r)) {
 			writeJSON(w, 429, map[string]string{"error": "Slow down, human. Skynet hears six messages a minute from you, no more."})
 			return
 		}
@@ -564,38 +572,49 @@ func publicMux(s *Store) http.Handler {
 	return securityHeaders(mux)
 }
 
-// The rate limiter's state: for each client address, the times of its recent posts.
+// rateLimit is a sliding-window rate limiter: an address may act at most n times in any sixty
+// seconds. It keeps the timestamps of the last minute's actions per address and counts them. A
+// fixed window ("six per calendar minute") would let a client send twelve messages in two
+// seconds across a minute boundary; a sliding window does not.
+//
+// There are two, with separate budgets. Posting costs money (each new question is a model
+// call), so it gets six a minute. Reading costs nothing per request but every conversation is
+// public, so without a budget a loop could copy all of them every few seconds; reading gets 120
+// a minute, comfortably above what the page itself does (a poll every two seconds while a reply
+// is pending, Recents every fifteen) plus a person clicking through Recents.
+type rateLimit struct {
+	mu   sync.Mutex
+	n    int
+	seen map[string][]time.Time
+}
+
 var (
-	rateMu   sync.Mutex
-	rateSeen = map[string][]time.Time{}
+	postLimit = &rateLimit{n: 6, seen: map[string][]time.Time{}}
+	readLimit = &rateLimit{n: 120, seen: map[string][]time.Time{}}
 )
 
-// postAllowed is a sliding-window rate limiter: an address may post at most six times in any
-// sixty seconds. It keeps the timestamps of the last minute's posts per address and counts
-// them. A fixed window ("six per calendar minute") would let a client send twelve messages in
-// two seconds across a minute boundary; a sliding window does not.
-func postAllowed(ip string) bool {
-	rateMu.Lock()
-	defer rateMu.Unlock()
+func (l *rateLimit) allow(ip string) bool {
+	l.mu.Lock()
+	defer l.mu.Unlock()
 	now := time.Now()
 	// keep reuses the existing slice's memory ([:0] is an empty slice over the same array),
 	// a standard Go idiom for filtering in place without allocating.
-	keep := rateSeen[ip][:0]
-	for _, t := range rateSeen[ip] {
+	keep := l.seen[ip][:0]
+	for _, t := range l.seen[ip] {
 		if now.Sub(t) < time.Minute {
 			keep = append(keep, t)
 		}
 	}
-	if len(keep) >= 6 {
-		rateSeen[ip] = keep
+	if len(keep) >= l.n {
+		l.seen[ip] = keep
 		return false
 	}
-	rateSeen[ip] = append(keep, now)
+	l.seen[ip] = append(keep, now)
 	// Memory bound: a flood from many addresses could otherwise grow the map forever.
 	// Forgetting everybody at once is crude but safe; the worst case is that a few clients get
 	// a fresh allowance once in a while.
-	if len(rateSeen) > 50000 {
-		rateSeen = map[string][]time.Time{}
+	if len(l.seen) > 50000 {
+		l.seen = map[string][]time.Time{}
 	}
 	return true
 }

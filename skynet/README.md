@@ -83,7 +83,7 @@ docker compose --profile public up -d
 ```
 
 Every message a visitor writes is sent to your model, so it costs you money. The page allows
-six messages a minute from one address, 25 conversations waiting at once and 60 messages in
+six messages and 120 reads a minute from one address, 25 conversations waiting at once and 60 messages in
 one conversation. The learned answers mean a repeated opening question costs nothing and a reworded one costs a
 small judge call (`LLM_JUDGE_MODEL`) instead of a reply.
 Set a budget on your gateway key as well.

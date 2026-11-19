@@ -54,7 +54,7 @@ operator saw a waiting question, asked the model and paid for a reply that the p
 refused, because the conversation was already answered. Doing both under one lock means a
 known question is never seen as waiting.
 
-The limits are in this file too: six messages a minute from one address, 25 conversations
+The limits are in this file too: six messages and 120 reads a minute from one address, 25 conversations
 waiting at once, 2,000 characters a message and 60 messages a conversation. They are what stops
 a visitor from turning your model bill into their hobby.
 
