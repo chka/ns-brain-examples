@@ -256,18 +256,24 @@ type storedAnswer struct {
 }
 
 // candidates finds the learned answers whose questions share at least judgeAt of their words
-// with q, best first. It works in two stages, a common pattern in search: a cheap, generous
-// RETRIEVAL step finds candidates, then an exact score decides which survive.
+// with q, best first. It lists EVERY stored question in the "answers" scope (recall --browse)
+// and scores each one with overlap.
 //
-//  1. ns-brain's full-text search (recall, scope "answers", --strict, top 50) finds stored
-//     questions that share words with this one. Search ranks by relevance and relevance is
-//     not equality: "count to 10" ranks "count to 100000" highly.
-//  2. overlap scores each candidate's stored question (its title, minus the "Q: " prefix)
-//     against this one.
+// Our first version searched instead: ns-brain's full-text search for the question's words,
+// then a score for the top results. That is the usual two-stage pattern (cheap retrieval,
+// exact verification) and it failed in a way that took a while to see. Full-text search
+// ignores short, common words, so "who built you really" searched for "built really", never
+// found the stored "who made you" and went to the model, while the same pair was matched on a
+// day the wording happened to share a longer word. Listing everything costs one ns-brain call
+// and a loop over a few hundred short titles, which is nothing next to a model call. With tens
+// of thousands of stored answers it would be worth an index of its own; this demo is far from
+// that.
 func candidates(q []string) []storedAnswer {
 	var found []storedAnswer
-	for _, r := range recall(skynetBrain(), strings.Join(q, " "), "--scope", answersScope, "--strict", "-n", "50") {
-		if r.Scope != answersScope || r.Loose {
+	for _, r := range recall(skynetBrain(), "--browse", "--scope", answersScope, "-n", "5000") {
+		// --browse lists the scope and, as every recall does, the global scope it sits in
+		// (Skynet's character); those rows are not answers
+		if r.Scope != answersScope {
 			continue
 		}
 		stored := strings.TrimPrefix(r.Title, "Q: ")

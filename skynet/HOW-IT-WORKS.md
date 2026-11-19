@@ -77,9 +77,8 @@ Every brain operation is the `ns-brain` binary run with arguments. A visitor's w
 as an argument or on stdin and never through a shell, so a message full of quotes and
 semicolons is only text.
 
-Learning is a few functions. `knownAnswer` searches the `answers` scope by the question's
-words and scores the best candidates itself, by the share of words the two questions have in
-common after dropping words like "please" and "Skynet" that do not change the question. At 60%
+Learning is a few functions. `knownAnswer` lists every stored question in the `answers`
+scope and scores each one by the share of words the two questions have in common after dropping words like "please" and "Skynet" that do not change the question. At 60%
 or more it is the same question and the page serves the stored reply at once. Between 40% and
 60% the words cannot tell, so the conversation goes to the operator, which asks a small model
 (Claude Haiku 5.5 by default, under a hundredth of the cost of a reply) whether the new
