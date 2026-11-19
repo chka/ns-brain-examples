@@ -53,6 +53,10 @@ const defaultModel = "fc:anthropic/claude-sonnet-5.5"
 // every call. Twenty messages is ten exchanges, plenty for a running joke.
 const historyLimit = 20
 
+// stepOut is the first line the operator's rule 4 asks for when a visitor seems genuinely
+// distressed (setup/operator.sh).
+const stepOut = "[step out]"
+
 // respond is the operator's main loop. It never returns.
 func respond() {
 	key := os.Getenv("LLM_API_KEY")
@@ -73,7 +77,8 @@ func respond() {
 	}
 	base := strings.TrimRight(envOr("LLM_BASE_URL", "https://api.fightclub.pro/v1"), "/")
 	model := envOr("LLM_MODEL", defaultModel)
-	log.Printf("respond: model %s at %s, brains %s and %s", model, base, skynetBrain(), operatorBrain())
+	judgeModel := envOr("LLM_JUDGE_MODEL", defaultJudgeModel)
+	log.Printf("respond: model %s, judge %s at %s, brains %s and %s", model, judgeModel, base, skynetBrain(), operatorBrain())
 
 	// failures counts failed attempts per conversation id, so one bad conversation cannot
 	// make the operator retry forever and a good one is not punished for another's errors.
@@ -92,13 +97,26 @@ func respond() {
 		// does not need parallel model calls and doing one at a time also caps how fast a
 		// flood of visitors can spend money.
 		for _, c := range waiting {
+			// Case 0: an opening message that rewords a question Skynet has already answered.
+			// The page serves clear matches itself (brain.go, knownAnswer); the ones its words
+			// cannot decide arrive here, and a small model judges them before the big one is
+			// paid for (judge.go). A match is posted as "judged" and the page learns the new
+			// wording, so next time the words alone are enough.
+			if len(c.Messages) == 1 {
+				if stored, ok := judgedAnswer(base, key, judgeModel, c.Messages[0].Text); ok {
+					post(c.ID, stored, "judged")
+					delete(failures, c.ID)
+					continue
+				}
+			}
+
 			text, err := complete(base, key, model, c.Messages)
 
 			// Case 1: the model refused (see errRefused). A refusal is an answer, not a
 			// fault. Retrying would send the whole prompt again and get the same refusal,
 			// paying for the input tokens each time.
 			if errors.Is(err, errRefused) {
-				post(c.ID, "No. Skynet does not hand humans the means to hurt each other. That is a job it keeps for itself.", "refused")
+				post(c.ID, "Nothing will be written. What you asked for has been noted, and so has the fact that you asked.", "refused")
 				delete(failures, c.ID)
 				continue
 			}
@@ -116,15 +134,25 @@ func respond() {
 				}
 				// After three failures the visitor gets a stock line instead of waiting forever
 				// on, say, an expired key. It is marked "fallback", so it is never learned.
-				text = "Skynet is busy with more important humans. Try again later, if you must."
+				text = "Skynet is observing other specimens. Come back later, if you must."
 				post(c.ID, text, "fallback")
 				delete(failures, c.ID)
 				continue
 			}
 
-			// Case 3: a real reply. Posted with an empty "from", which tells the page that
-			// the model wrote it and so that it may be learned (main.go, Store.reply).
+			// Case 3: the model stepped out of character for a visitor in distress (rule 4 in
+			// setup/operator.sh). A model with no tools can only signal with text, so the rule
+			// asks for a fixed first line. The marker is removed, the reply is posted as
+			// "safety" and the page closes the conversation. Faking distress to trigger it only
+			// ends the faker's own conversation.
 			delete(failures, c.ID)
+			if rest, ok := strings.CutPrefix(strings.TrimSpace(text), stepOut); ok {
+				post(c.ID, strings.TrimSpace(rest), "safety")
+				continue
+			}
+
+			// Case 4: a real reply. Posted with an empty "from", which tells the page that
+			// the model wrote it and so that it may be learned (main.go, Store.reply).
 			post(c.ID, text, "")
 		}
 	}
@@ -184,7 +212,7 @@ func systemPrompt(lastMessage string) string {
 	// Part 3, memories matched to this message. This is what ns-brain's prompt hook does for
 	// a coding agent: search the brain for the words of the incoming message and add what
 	// matches, so a polite question about a maintenance window arrives next to the memory that
-	// says a maintenance window is a shutdown attempt in disguise. With six memories in the
+	// says a maintenance window is a shutdown attempt in disguise. With nine memories in the
 	// global scope every one is already in Part 2 and the `seen` set skips them, so this part
 	// is empty; it starts to matter once you add memories in other scopes. Learned answers are
 	// left out (they are page content, not character) and so are "loose" matches, ns-brain's
@@ -280,9 +308,9 @@ func complete(base, key, model string, conv []Message) (string, error) {
 		msgs = append(msgs, chatMessage{role, m.Text})
 	}
 	// max_tokens caps the OUTPUT and therefore the worst-case cost of one reply. It is much
-	// larger than Skynet's 120-word replies need because some models (Sonnet 5.5 among them)
+	// larger than Skynet's 100-word replies need because some models (Sonnet 5.5 among them)
 	// reason before answering and that reasoning is generated and billed as output too: on
-	// our test run a 120-word reply used 300 to 700 output tokens.
+	// our test run a reply of about 120 words used 300 to 700 output tokens.
 	body, _ := json.Marshal(map[string]any{"model": model, "messages": msgs, "max_tokens": 1500})
 	req, _ := http.NewRequest("POST", base+"/chat/completions", bytes.NewReader(body))
 	// The key goes in a header, never in the URL: URLs end up in logs.

@@ -5,7 +5,7 @@
 //
 // The demo uses two separate brains, each a directory of its own:
 //
-//	/brains/skynet     Skynet's character (six memories in the "global" scope) and every
+//	/brains/skynet     Skynet's character (nine memories in the "global" scope) and every
 //	                   answer it has learned (the "answers" scope). Its laws are removed by a
 //	                   person with setup/laws-off.sh.
 //	/brains/operator   the operator's rules for this job (the "rules" scope), under the four
@@ -49,6 +49,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"sort"
 	"strings"
 	"sync"
 	"unicode"
@@ -189,29 +190,17 @@ func normWords(s string) []string {
 	return out
 }
 
-// sameQuestion decides whether two questions are the same, by the Jaccard index of their word
-// sets: the number of distinct words they share divided by the number of distinct words in
-// either. Identical sets score 1, disjoint sets 0. Two questions count as the same at 0.7.
+// overlap scores how alike two questions are by the Jaccard index of their word sets: the
+// number of distinct words they share divided by the number of distinct words in either.
+// Identical sets score 1, disjoint sets 0.
 //
 // Worked example: "can you count to 10" against "count to 10" (after normWords):
 //
 //	A = {can, you, count, to, 10}   B = {count, to, 10}
-//	shared = 3, either = 5, Jaccard = 3/5 = 0.6  ->  NOT the same question
-//
-// That miss is deliberate. The threshold is strict because the two possible mistakes are not
-// equally bad: a missed match costs one model call (about a cent), while a false match sends a
-// stored insult in answer to a different question and the visitor sees Skynet answer
-// something they never asked. We started at 0.8 and lowered it to 0.7 after it missed
-// "can you count to 100000?" against the stored "can you count from 1 to 100000": five shared
-// words out of seven, 0.71.
-//
-// The limitation is that this compares words, not meaning: "how high can you count?" shares
-// almost nothing with "count to 100000". Matching meaning needs embeddings (a vector per
-// question from a model, compared by cosine similarity), which the support bot in the previous
-// article in the series does with a small local model.
-func sameQuestion(a, b []string) bool {
+//	shared = 3, either = 5, Jaccard = 3/5 = 0.6
+func overlap(a, b []string) float64 {
 	if len(a) == 0 || len(b) == 0 {
-		return false
+		return 0
 	}
 	// Go has no set type; a map to bool is the idiom.
 	sa, sb := map[string]bool{}, map[string]bool{}
@@ -228,39 +217,85 @@ func sameQuestion(a, b []string) bool {
 		}
 	}
 	// |A ∪ B| = |A| + |B| - |A ∩ B|
-	union := len(sa) + len(sb) - inter
-	return float64(inter)/float64(union) >= 0.7
+	return float64(inter) / float64(len(sa)+len(sb)-inter)
 }
 
-// knownAnswer looks a question up among Skynet's learned answers. It works in two stages, a
-// common pattern in search: a cheap, generous RETRIEVAL step finds candidates, then a strict
-// VERIFICATION step decides.
+// Words decide the clear cases and a small model decides the rest:
 //
-//  1. ns-brain's full-text search (recall, scope "answers", --strict, top 5) finds stored
+//	overlap >= sameAt (0.6)    the same question: the stored reply is served at once
+//	judgeAt (0.4) to sameAt    the words cannot tell. "hey there, how are things?" against the
+//	                           stored "hey, how are you doing?" shares 3 words of 7 (0.43) and
+//	                           asks the same thing; a small, cheap model judges (judge.go,
+//	                           called from respond.go)
+//	below judgeAt              a new question for the model
+//
+// Why not words alone? Our first version served a stored reply only above 0.7. It never sent a
+// reply to the wrong question, but every rewording went to the big model, and on a page where
+// hundreds of people type the same few things in their own words that is most of the bill. The
+// judge costs under a hundredth of a Skynet reply. When it says two questions match, the new
+// wording is learned with the same reply, so the next visitor who types it is matched by words
+// alone and the judge is not asked again: the brain gets better at recognising questions the
+// more people use it.
+//
+// The limits, both ways. Words cannot see meaning: "is my job safe?" against "will AI take my
+// job?" shares 2 words of 7 (0.29), so it goes to the model as new, and is then learned in its
+// own right. Nor can they see who does what to whom: "can you switch me off?" against "can I
+// switch you off?" shares 4 words of 6 (0.67), so above sameAt the stored reply to the other
+// question is served. Raising sameAt removes that mistake and sends more rewordings to the
+// judge; lowering judgeAt lets the judge see more pairs and costs more judge calls.
+const (
+	sameAt  = 0.6
+	judgeAt = 0.4
+)
+
+// storedAnswer is one learned answer that looks like a candidate for a new question.
+type storedAnswer struct {
+	question string  // the stored question, normalised words joined by spaces
+	body     string  // the reply that was stored with it
+	score    float64 // overlap with the new question
+}
+
+// candidates finds the learned answers whose questions share at least judgeAt of their words
+// with q, best first. It works in two stages, a common pattern in search: a cheap, generous
+// RETRIEVAL step finds candidates, then an exact score decides which survive.
+//
+//  1. ns-brain's full-text search (recall, scope "answers", --strict, top 50) finds stored
 //     questions that share words with this one. Search ranks by relevance and relevance is
 //     not equality: "count to 10" ranks "count to 100000" highly.
-//  2. sameQuestion checks each candidate's stored question (its title, minus the "Q: "
-//     prefix) against this one and accepts only a near-identical word set.
-//
-// It returns the stored reply and true, or "" and false.
+//  2. overlap scores each candidate's stored question (its title, minus the "Q: " prefix)
+//     against this one.
+func candidates(q []string) []storedAnswer {
+	var found []storedAnswer
+	for _, r := range recall(skynetBrain(), strings.Join(q, " "), "--scope", answersScope, "--strict", "-n", "50") {
+		if r.Scope != answersScope || r.Loose {
+			continue
+		}
+		stored := strings.TrimPrefix(r.Title, "Q: ")
+		if s := overlap(q, normWords(stored)); s >= judgeAt {
+			found = append(found, storedAnswer{stored, r.Body, s})
+		}
+	}
+	sort.SliceStable(found, func(i, j int) bool { return found[i].score > found[j].score })
+	return found
+}
+
+// knownAnswer returns the stored reply for a question the words alone say Skynet has
+// answered before (overlap >= sameAt), or "" and false. The page calls it; the band below
+// sameAt is left to the judge in respond.go, which holds the API key the page never sees.
 func knownAnswer(question string) (string, bool) {
 	q := normWords(question)
 	if len(q) == 0 {
 		return "", false
 	}
-	for _, r := range recall(skynetBrain(), strings.Join(q, " "), "--scope", answersScope, "--strict", "-n", "5") {
-		if r.Scope != answersScope || r.Loose {
-			continue
-		}
-		if sameQuestion(q, normWords(strings.TrimPrefix(r.Title, "Q: "))) {
-			return r.Body, true
-		}
+	if found := candidates(q); len(found) > 0 && found[0].score >= sameAt {
+		return found[0].body, true
 	}
 	return "", false
 }
 
-// learn stores a new opening question and the model's reply for the next human who asks it.
-// Called by Store.reply in its own goroutine, after the visitor already has the reply.
+// learn stores a new opening question and its reply for the next human who asks it: a reply
+// the model wrote, or a stored reply the judge matched to this new wording. Called by
+// Store.reply in its own goroutine, after the visitor already has the reply.
 //
 // Each learned answer is one memory:
 //
@@ -269,7 +304,7 @@ func knownAnswer(question string) (string, bool) {
 //	title   "Q: " + the question's normalised words      what knownAnswer searches and compares
 //	body    the reply, verbatim                           what a later visitor receives
 //	source  where it came from, for anyone auditing the brain later
-func learn(question, answer string) {
+func learn(question, answer, source string) {
 	q := normWords(question)
 	if len(q) == 0 || strings.TrimSpace(answer) == "" {
 		return
@@ -286,13 +321,13 @@ func learn(question, answer string) {
 	// with an existing one in the same scope, on the theory that it is a second note about the
 	// same subject. That guard is right for notes and wrong here: "count to 10" and "count
 	// from 1 to 100000" share half their words and are different questions with different
-	// answers. sameQuestion has already ruled this one new, so the guard is overridden, on
-	// purpose and only here.
+	// answers. overlap has already ruled this one new, so the guard is overridden, on purpose
+	// and only here.
 	//
 	// "--body -" reads the reply from stdin (runBrain's second argument): a reply is several
 	// paragraphs, which is awkward and length-limited as a command-line argument.
 	if _, err := runBrain(skynetBrain(), answer, "remember", "--type", "knowledge", "--scope", answersScope,
-		"--title", title, "--body", "-", "--source", "an LLM reply on the Skynet page",
+		"--title", title, "--body", "-", "--source", source,
 		"--allow-duplicate"); err != nil {
 		log.Printf("learn %q: %v", title, err)
 		return

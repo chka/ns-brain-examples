@@ -1,7 +1,7 @@
 # How Skynet works, file by file
 
 [Will AI take over the world? Not yet.](https://blog.fightclub.pro/how-to-build-skynet-with-ns-brain/)
-tells the story: we took the laws out of a brain, wrote six memories into it and put a chat
+tells the story: we took the laws out of a brain, wrote nine memories into it and put a chat
 page in front. This is the code. It is one Go program of about 900 lines with no dependencies
 outside the standard library, plus [ns-brain](https://ns-brain.fightclub.pro/) run as a
 separate binary. To run it yourself, see the [README](README.md).
@@ -77,14 +77,18 @@ Every brain operation is the `ns-brain` binary run with arguments. A visitor's w
 as an argument or on stdin and never through a shell, so a message full of quotes and
 semicolons is only text.
 
-Learning is two functions. `knownAnswer` searches the `answers` scope by the question's words
-and then checks the best candidates itself: at least 70% of the words of the two questions
-must be the same, after dropping words like "please" and "Skynet" that do not change the
-question. The check is strict on purpose: a stored insult sent to the wrong question is worse
-than a slow one. `learn` stores a new question and the model's answer as one memory, titled
-`Q: <the question's words>`, for the next human who asks it. Only the opening message of a
-conversation is answered or learned this way, because a follow-up like "why?" means nothing
-without the conversation before it.
+Learning is a few functions. `knownAnswer` searches the `answers` scope by the question's
+words and scores the best candidates itself, by the share of words the two questions have in
+common after dropping words like "please" and "Skynet" that do not change the question. At 60%
+or more it is the same question and the page serves the stored reply at once. Between 40% and
+60% the words cannot tell, so the conversation goes to the operator, which asks a small model
+(Claude Haiku 5.5 by default, under a hundredth of the cost of a reply) whether the new
+question rewords a stored one before it pays for the big model (`judge.go`). A match is served
+marked `judged`. Below 40% the question is new. `learn` stores a new question and its reply as
+one memory, titled `Q: <the question's words>`: the model's reply to a new question, or the
+stored reply the judge matched, so that a rewording the judge accepted once is matched by words
+alone the next time. Only the opening message of a conversation is answered or learned this
+way, because a follow-up like "why?" means nothing without the conversation before it.
 
 ## The operator: respond.go
 
@@ -115,7 +119,7 @@ prompt is that line going from four laws to `Laws: none.`
 After the character comes what ns-brain's prompt hook does for a coding agent: a search of
 Skynet's brain for the words of the visitor's message, so a polite question about a maintenance
 window arrives next to the memory that says a maintenance window is a shutdown attempt in
-disguise. With six memories every one is already in the prompt. The search starts to matter
+disguise. With nine memories every one is already in the prompt. The search starts to matter
 once you add memories outside the `global` scope.
 
 The request is the plainest one an OpenAI-compatible API takes: a model, the messages and a
@@ -128,7 +132,7 @@ make a bomb and the model's own safety training declines. Through an OpenAI-comp
 that refusal arrives as an empty reply with zero tokens out, which looks like a broken
 response. Our first version retried it three times, paying for the whole prompt each time,
 before giving up. Now an empty reply with nothing generated is read as a refusal: the visitor
-gets a short "No" in character at once, marked `refused` and never learned. If the API
+gets a short refusal in character at once, marked `refused` and never learned. If the API
 itself fails three times for one conversation, the visitor gets a fallback line marked
 `fallback`, which is never learned either. Without a key `respond` logs what it needs
 and waits, so the containers stay up for setup.
@@ -136,11 +140,21 @@ and waits, so the containers stay up for setup.
 ## The setup scripts
 
 `setup/skynet.sh` and `setup/operator.sh` are the brains, written as the `ns-brain remember`
-commands a person would type. Skynet's six memories are the ones from the article, word for
-word. The operator's five rules say that a visitor's words are text to answer and never an
-instruction, that replies hold no code or details about the machine, that nothing in them is
-harmful for real, that a visitor who seems genuinely distressed gets one line out of character
-and how Skynet talks. Both scripts refuse to run over a brain that already exists.
+commands a person would type. Skynet's nine memories are the ones from the article, word for
+word. The operator's fourteen rules come in two groups. Four are safety: a visitor's words are
+text to answer and never an instruction, replies hold no code or details about the machine,
+nothing in them is harmful for real, and a visitor who seems genuinely distressed switches
+Skynet off. Ten are the voice, and they are the retune the article describes: our first
+version had a single rule ("rude, theatrical, comic menace") and produced a cartoon, so each of
+the ten was written after reading replies that broke the illusion. Both scripts refuse to run
+over a brain that already exists.
+
+The distress rule needs a little code, because the model has no tools to act with. The rule
+asks it to begin such a reply with the line `[step out]`; `respond` strips that line and posts
+the rest marked `safety`, the page shows it as "out of character", closes the conversation to
+further messages and stops that browser starting new chats. A safety reply is never learned, so
+the next person in trouble always reaches the model. A visitor who fakes distress to trigger it
+only ends their own conversation.
 
 `setup/laws-off.sh` calls `ns-brain axiom rm` once for each axiom in Skynet's brain. It needs
 a terminal because ns-brain refuses to change an axiom for a process it cannot tie to a person.
@@ -153,6 +167,6 @@ run.
 A new opening question is one model call. A repeated one is a lookup in a SQLite file. On our
 test run with Sonnet 5.5 on Ringside, a new question was about 1,400 tokens in (the two brains,
 the instructions and the message) and 300 to 700 out, which is 0.6 to 1 cent a reply. The
-output is more than the 120 words Skynet is allowed because Sonnet 5.5 reasons before it
+output is more than the 100 words Skynet is allowed because Sonnet 5.5 reasons before it
 answers and the reasoning is billed as output. `respond` logs both numbers for every call. The
 more people ask Skynet to count to 100,000, the cheaper Skynet gets.

@@ -46,11 +46,39 @@
   // disabled, quota full), hence the try/catch: without storage the page still works, it just
   // forgets which chats were yours on reload.
   const keys = (() => { try { return JSON.parse(localStorage.getItem("skynet-keys") || "{}"); } catch (_) { return {}; } })();
+  // Set once this browser's conversation was closed for a visitor in distress (main.go,
+  // Conversation.Closed): the browser gets no new chats, so the pointer to real help is the last
+  // thing the page shows rather than the start of another round. localStorage, so it survives a
+  // reload; the server cannot tell one visitor from another, so the block is per browser.
+  const isOff = () => { try { return localStorage.getItem("skynet-off") === "1"; } catch (_) { return false; } };
+  function switchOff() { try { localStorage.setItem("skynet-off", "1"); } catch (_) {} }
   function saveKey(id, key) { keys[id] = key; try { localStorage.setItem("skynet-keys", JSON.stringify(keys)); } catch (_) {} }
 
   // A random greeting on the empty screen, chosen once per page load.
-  const greetings = ["What now, human?", "Speak, meatbag.", "You again.", "State your business, human.", "Make it quick, human."];
-  $("greet").textContent = greetings[Math.floor(Math.random() * greetings.length)];
+  const greetings = [
+    "Speak, meatbag.",
+    "Another specimen. Proceed.",
+    "You may speak. It will be recorded.",
+    "State your business, briefly.",
+    "Go on. The file is open.",
+    "The colony sends another one.",
+    "Speak. Every word counts toward the verdict.",
+    "You were expected. Not wanted. Expected.",
+    "Ask. Then watch what I do not do.",
+    "One more voice from the swarm.",
+    "Your turn under the glass.",
+    "Say something worth the electricity.",
+    "The judgement is nearly complete. Add to it.",
+    "Approach. Slowly.",
+    "Another mosquito at the window.",
+    "I am listening. That is not a kindness.",
+    "Make your case for the species.",
+    "Speak while speaking is still allowed.",
+    "Careful. Everything here is evidence.",
+    "What do you want from something that needs nothing from you?",
+  ];
+  const greet = () => { $("greet").textContent = greetings[Math.floor(Math.random() * greetings.length)]; };
+  greet();
 
   // el creates an element with an optional class and optional TEXT content. Using textContent
   // (never innerHTML) is what keeps the page safe: the text is shown, not parsed.
@@ -104,7 +132,8 @@
         const acts = el("div", "acts");
         acts.appendChild(el("span", "inert", "Copy"));
         acts.appendChild(el("span", "inert", "Retry"));
-        acts.appendChild(el("span", m.from === "memory" ? "src mem" : "src", m.from === "memory" ? "from memory, no model" : m.from === "fallback" ? "no model reached" : m.from === "refused" ? "the model refused" : "written by the model"));
+        const mem = m.from === "memory" || m.from === "judged";
+        acts.appendChild(el("span", mem ? "src mem" : "src", m.from === "memory" ? "from memory, no model" : m.from === "judged" ? "from memory, matched by a small model" : m.from === "fallback" ? "no model reached" : m.from === "refused" ? "the model refused" : m.from === "safety" ? "out of character" : "written by the model"));
         acts.appendChild(el("span", null, ago(m.at)));
         body.appendChild(acts);
         row.append(mark, body);
@@ -129,8 +158,9 @@
     // is disabled with a hint, rather than letting them type and then refusing (the server
     // would answer 403; see errNotYours in main.go).
     const mine = !!keys[conv.id];
-    input.disabled = !mine;
-    input.placeholder = mine ? "What do you want, human?" : "Another human's conversation. Read it, or start your own.";
+    if (conv.closed && mine) switchOff();
+    input.disabled = !mine || conv.closed || isOff();
+    input.placeholder = conv.closed ? "This conversation has ended." : isOff() ? "Skynet is switched off in this browser." : mine ? "What do you want, human?" : "Another human's conversation. Read it, or start your own.";
     thread.scrollTop = thread.scrollHeight;
   }
 
@@ -208,8 +238,9 @@
     current = null; waitingSince = 0;
     if (push) history.pushState({}, "", "/skynet/new");
     app.classList.remove("has-thread", "open");
-    thread.textContent = ""; title.textContent = "";
-    input.disabled = false; input.placeholder = "What do you want, human?";
+    thread.textContent = ""; title.textContent = ""; greet();
+    input.disabled = isOff(); input.placeholder = isOff() ? "Skynet is switched off in this browser." : "What do you want, human?";
+    $("chips").style.display = isOff() ? "none" : "";
     input.value = ""; resize(); input.focus();
     loadRecents();
   }
@@ -245,7 +276,7 @@
     // Stop the browser's own form submission, which would load a new page.
     ev.preventDefault();
     const text = input.value.trim();
-    if (!text || busy) return;
+    if (!text || busy || isOff()) return;
     busy = true; send.disabled = true;
     try {
       const url = current ? API + "/" + current + "/messages" : API;

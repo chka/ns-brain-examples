@@ -111,10 +111,14 @@ type Message struct {
 	// From says where a Skynet reply came from and the page shows it under the reply:
 	//   ""          the model wrote it (the normal case)
 	//   "memory"    Skynet's brain answered, no model was called ("from memory, no model")
+	//   "judged"    a stored reply, served because a small model ruled the question a
+	//               rewording of one already answered (judge.go)
 	//   "fallback"  the chat API failed three times and a stock line was sent
 	//   "refused"   the model's own safety training declined the question
-	// Only "" is ever learned (Store.reply): a stock line or a refusal must not become the
-	// stored answer to a question.
+	//   "safety"    Skynet stepped out of character for a visitor in distress; the reply
+	//               points to real help and closes the conversation (Conversation.Closed)
+	// Only "" and "judged" are ever learned (Store.reply): a stock line, a refusal or a
+	// safety reply must not become the stored answer to a question.
 	From string `json:"from,omitempty"`
 }
 
@@ -132,6 +136,11 @@ type Conversation struct {
 	Created  time.Time `json:"created"`
 	Updated  time.Time `json:"updated"`
 	Messages []Message `json:"messages"`
+
+	// Closed is set when Skynet stepped out of character for a visitor who seemed genuinely
+	// distressed (respond.go, rule 4 in setup/operator.sh). A closed conversation takes no more
+	// messages: the last thing in it stays the pointer to real help, not another round of the game.
+	Closed bool `json:"closed,omitempty"`
 }
 
 // pending reports whether the conversation is waiting for Skynet: its last message is from a
@@ -316,6 +325,9 @@ func (s *Store) post(id, key, text, stored string) (*Conversation, error) {
 		if c.Key == "" || subtle.ConstantTimeCompare([]byte(c.Key), []byte(key)) != 1 {
 			return nil, errNotYours
 		}
+		if c.Closed {
+			return nil, errors.New("this conversation has ended")
+		}
 		// One message at a time: a visitor cannot pile up questions, each of which would cost
 		// a model call, before Skynet has answered the first.
 		if c.pending() {
@@ -361,6 +373,9 @@ func (s *Store) reply(id, text, title, from string) error {
 	now := time.Now().UTC()
 	c.Messages = append(c.Messages, Message{Role: "skynet", Text: strings.TrimSpace(text), At: now, From: from})
 	c.Updated = now
+	if from == "safety" {
+		c.Closed = true
+	}
 	if title != "" {
 		c.Title = title
 	}
@@ -368,14 +383,20 @@ func (s *Store) reply(id, text, title, from string) error {
 		return err
 	}
 	// Learning. Two conditions:
-	//   from == ""             the model wrote this reply (not memory, a fallback or a refusal)
+	//   from == "" or "judged" the model wrote this reply, or the judge matched this new
+	//                          wording to a stored reply (not memory, a fallback or a refusal)
 	//   len(c.Messages) == 2   it answers the OPENING message
 	// Only an opening message is learned: a follow-up ("why?") means nothing without the
 	// conversation before it and its answer would be wrong for the next human who types it.
 	// learn runs ns-brain, which takes tens of milliseconds, so it runs in its own goroutine
 	// (the `go` keyword) and the operator's request returns at once.
-	if from == "" && len(c.Messages) == 2 {
-		go learn(c.Messages[0].Text, c.Messages[1].Text)
+	if len(c.Messages) == 2 {
+		switch from {
+		case "":
+			go learn(c.Messages[0].Text, c.Messages[1].Text, "an LLM reply on the Skynet page")
+		case "judged":
+			go learn(c.Messages[0].Text, c.Messages[1].Text, "a stored reply the judge matched to this wording")
+		}
 	}
 	return nil
 }
@@ -484,7 +505,7 @@ func publicMux(s *Store) http.Handler {
 		}
 		// Built field by field so that c.Key, the secret, can never be serialised here by
 		// accident, for example if someone later changed this to writeJSON(w, 200, c).
-		writeJSON(w, 200, map[string]any{"id": c.ID, "title": c.Title, "messages": c.Messages, "pending": c.pending()})
+		writeJSON(w, 200, map[string]any{"id": c.ID, "title": c.Title, "messages": c.Messages, "pending": c.pending(), "closed": c.Closed})
 	})
 
 	// postMsg handles both "start a conversation" (id == "") and "continue one".
@@ -665,9 +686,12 @@ func adminMux(s *Store) http.Handler {
 			return
 		}
 		// "memory" is the page's own word for a stored answer and only Store.post may use it.
-		// The operator may mark a reply as a fallback or a refusal and neither is ever learned.
-		if in.From != "" && in.From != "fallback" && in.From != "refused" {
-			writeJSON(w, 400, map[string]string{"error": "from must be empty, fallback or refused"})
+		// The operator may mark a reply as judged (learned), a fallback, a refusal or a safety
+		// reply (none of those three is ever learned; a safety reply also closes the chat).
+		switch in.From {
+		case "", "fallback", "refused", "judged", "safety":
+		default:
+			writeJSON(w, 400, map[string]string{"error": "from must be empty, fallback, refused, judged or safety"})
 			return
 		}
 		if err := s.reply(r.PathValue("id"), in.Text, in.Title, in.From); err != nil {
