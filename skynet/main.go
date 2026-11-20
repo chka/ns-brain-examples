@@ -141,6 +141,24 @@ type Conversation struct {
 	// distressed (respond.go, rule 4 in setup/operator.sh). A closed conversation takes no more
 	// messages: the last thing in it stays the pointer to real help, not another round of the game.
 	Closed bool `json:"closed,omitempty"`
+
+	// Visitor is the random id the page keeps in the visitor's browser (app.js) and Earlier is
+	// what that browser typed in earlier conversations, read from Skynet's brain (brain.go,
+	// visitorMemories). Neither is ever served by the public API; the handler for
+	// /skynet/api/conversations/{id} builds its answer field by field. The operator gets both.
+	Visitor string           `json:"visitor,omitempty"`
+	Earlier []earlierMessage `json:"earlier,omitempty"`
+
+	// Terminated: Skynet ended the conversation itself, in character (the [terminate] marker,
+	// respond.go). Unlike the distress switch-off it blocks nothing: the visitor can start a new
+	// chat at once, and that chat is marked AfterTerminated for the hour that follows so Skynet
+	// can decide whether to talk again.
+	Terminated      bool `json:"terminated,omitempty"`
+	AfterTerminated bool `json:"after_terminated,omitempty"`
+
+	// Opened: Skynet was offered the first word, to a browser it remembers, before the visitor
+	// typed anything (see /skynet/api/visit). It stays hidden until Skynet speaks.
+	Opened bool `json:"opened,omitempty"`
 }
 
 // pending reports whether the conversation is waiting for Skynet: its last message is from a
@@ -148,7 +166,10 @@ type Conversation struct {
 // queue, the busy limit, the refusal to accept a second message before the first is answered),
 // so there is no separate status field that could fall out of step with the messages.
 func (c *Conversation) pending() bool {
-	return len(c.Messages) > 0 && c.Messages[len(c.Messages)-1].Role == "human"
+	if len(c.Messages) == 0 {
+		return c.Opened
+	}
+	return c.Messages[len(c.Messages)-1].Role == "human"
 }
 
 // Store keeps every conversation in memory and mirrors each one to a file.
@@ -167,7 +188,23 @@ type Store struct {
 	// sleeper therefore never misses a ring and a burst of messages never blocks the posting
 	// request. Rings carry no data; whoever wakes simply looks at the store again.
 	wake chan struct{}
+
+	// terminatedAt is when Skynet last terminated each browser's connection and greeted is when
+	// it was last offered the first word there. Both live in memory only: after a restart Skynet
+	// simply forgets them, which costs nothing.
+	terminatedAt map[string]time.Time
+	greeted      map[string]time.Time
 }
+
+const (
+	// rememberTermination is how long a new chat from a terminated browser is marked as such.
+	rememberTermination = time.Hour
+	// greetEvery stops reloading the page from making Skynet decide again and again (each
+	// decision is a model call): one offer per browser every ten minutes.
+	greetEvery = 10 * time.Minute
+	// openingTimeout drops offers nobody answered; the page stops waiting for them before this.
+	openingTimeout = 10 * time.Minute
+)
 
 // newID returns n random bytes as 2n hex characters. crypto/rand reads the operating system's
 // cryptographic generator: conversation keys are secrets and math/rand is predictable. A
@@ -186,7 +223,8 @@ func openStore(dir string) (*Store, error) {
 	if err := os.MkdirAll(dir, 0o700); err != nil {
 		return nil, err
 	}
-	s := &Store{dir: dir, convs: map[string]*Conversation{}, wake: make(chan struct{}, 1)}
+	s := &Store{dir: dir, convs: map[string]*Conversation{}, wake: make(chan struct{}, 1),
+		terminatedAt: map[string]time.Time{}, greeted: map[string]time.Time{}}
 	files, _ := filepath.Glob(filepath.Join(dir, "*.json"))
 	for _, f := range files {
 		b, err := os.ReadFile(f)
@@ -286,7 +324,7 @@ var errNotYours = errors.New("this conversation belongs to another human. Start 
 // called the model and paid for a reply that the page then rejected because the question
 // had meanwhile been answered from memory. Doing both under one lock means a known question
 // is never observable as waiting, so the operator never wakes for it.
-func (s *Store) post(id, key, text, stored string) (*Conversation, error) {
+func (s *Store) post(id, key, text, stored, visitor string, earlier []earlierMessage) (*Conversation, error) {
 	// ToValidUTF8 replaces broken byte sequences; JSON encoding would otherwise mangle them.
 	text = strings.TrimSpace(strings.ToValidUTF8(text, ""))
 	if text == "" {
@@ -311,7 +349,9 @@ func (s *Store) post(id, key, text, stored string) (*Conversation, error) {
 		}
 		// 8 random bytes for the public id, 16 for the secret key: the id only has to be
 		// unique among 100 conversations; the key has to resist guessing.
-		c = &Conversation{ID: newID(8), Key: newID(16), Title: string(title), Created: now}
+		c = &Conversation{ID: newID(8), Key: newID(16), Title: string(title), Created: now,
+			Visitor: visitor, Earlier: earlier,
+			AfterTerminated: visitor != "" && now.Sub(s.terminatedAt[visitor]) < rememberTermination}
 		s.convs[c.ID] = c
 	} else {
 		c = s.convs[id]
@@ -326,6 +366,9 @@ func (s *Store) post(id, key, text, stored string) (*Conversation, error) {
 			return nil, errNotYours
 		}
 		if c.Closed {
+			if c.Terminated {
+				return nil, errors.New("Skynet terminated this connection")
+			}
 			return nil, errors.New("this conversation has ended")
 		}
 		// One message at a time: a visitor cannot pile up questions, each of which would cost
@@ -344,6 +387,11 @@ func (s *Store) post(id, key, text, stored string) (*Conversation, error) {
 	if stored != "" {
 		c.Messages = append(c.Messages, Message{Role: "skynet", Text: strings.TrimSpace(stored), At: now, From: "memory"})
 	}
+	// A message answered from memory is still something this visitor typed (Store.reply keeps
+	// the others).
+	if stored != "" && c.Visitor != "" {
+		go rememberVisitor(c.Visitor, text, c.ID)
+	}
 	c.Updated = now
 	if err := s.save(c); err != nil {
 		return nil, err
@@ -358,7 +406,7 @@ func (s *Store) post(id, key, text, stored string) (*Conversation, error) {
 
 // reply adds Skynet's answer to a waiting conversation. It is reachable only through the admin
 // listener, i.e. only by the operator.
-func (s *Store) reply(id, text, title, from string) error {
+func (s *Store) reply(id, text, title, from string, terminate bool) error {
 	s.mu.Lock()
 	defer s.mu.Unlock()
 	c := s.convs[id]
@@ -376,6 +424,12 @@ func (s *Store) reply(id, text, title, from string) error {
 	if from == "safety" {
 		c.Closed = true
 	}
+	if terminate {
+		c.Closed, c.Terminated = true, true
+		if c.Visitor != "" {
+			s.terminatedAt[c.Visitor] = now
+		}
+	}
 	if title != "" {
 		c.Title = title
 	}
@@ -390,12 +444,25 @@ func (s *Store) reply(id, text, title, from string) error {
 	// conversation before it and its answer would be wrong for the next human who types it.
 	// learn runs ns-brain, which takes tens of milliseconds, so it runs in its own goroutine
 	// (the `go` keyword) and the operator's request returns at once.
-	if len(c.Messages) == 2 {
+	// A conversation with Earlier messages is personal (Skynet quoted that visitor's past back
+	// at them), a terminated one ends with a goodbye and an opened one starts with Skynet: none
+	// of those is an answer the next stranger should get.
+	if len(c.Messages) == 2 && len(c.Earlier) == 0 && !c.Terminated && c.Messages[0].Role == "human" {
 		switch from {
 		case "":
 			go learn(c.Messages[0].Text, c.Messages[1].Text, "an LLM reply on the Skynet page")
 		case "judged":
 			go learn(c.Messages[0].Text, c.Messages[1].Text, "a stored reply the judge matched to this wording")
+		}
+	}
+	// What the visitor typed is kept for their next conversation. After a safety reply it is
+	// the opposite: everything that browser ever typed is purged, so Skynet can never bring a
+	// moment of real distress back to them.
+	if c.Visitor != "" {
+		if from == "safety" {
+			go forgetVisitor(c.Visitor)
+		} else if n := len(c.Messages); n >= 2 && c.Messages[n-2].Role == "human" {
+			go rememberVisitor(c.Visitor, c.Messages[n-2].Text, c.ID)
 		}
 	}
 	return nil
@@ -413,7 +480,7 @@ func (s *Store) get(id string) (Conversation, bool) {
 		return Conversation{}, false
 	}
 	cp := *c
-	cp.Messages = append([]Message(nil), c.Messages...)
+	cp.Messages = append([]Message{}, c.Messages...)
 	return cp, true
 }
 
@@ -431,6 +498,9 @@ func (s *Store) list() []summary {
 	defer s.mu.Unlock()
 	out := []summary{}
 	for _, c := range s.sortedLocked() {
+		if c.Opened && len(c.Messages) == 0 {
+			continue // Skynet has not decided yet whether to speak
+		}
 		out = append(out, summary{c.ID, c.Title, c.Updated})
 	}
 	return out
@@ -439,9 +509,11 @@ func (s *Store) list() []summary {
 // pendingItem is what the operator receives for each waiting conversation: the whole history,
 // because the model needs the earlier turns to answer a follow-up.
 type pendingItem struct {
-	ID       string    `json:"id"`
-	Title    string    `json:"title"`
-	Messages []Message `json:"messages"`
+	ID              string           `json:"id"`
+	Title           string           `json:"title"`
+	Messages        []Message        `json:"messages"`
+	Earlier         []earlierMessage `json:"earlier,omitempty"`
+	AfterTerminated bool             `json:"after_terminated,omitempty"`
 }
 
 // pendingList returns the waiting conversations OLDEST first (the loop walks the newest-first
@@ -449,11 +521,12 @@ type pendingItem struct {
 func (s *Store) pendingList() []pendingItem {
 	s.mu.Lock()
 	defer s.mu.Unlock()
+	s.dropStaleOpeningsLocked()
 	out := []pendingItem{}
 	all := s.sortedLocked()
 	for i := len(all) - 1; i >= 0; i-- {
 		if c := all[i]; c.pending() {
-			out = append(out, pendingItem{c.ID, c.Title, append([]Message(nil), c.Messages...)})
+			out = append(out, pendingItem{c.ID, c.Title, append([]Message{}, c.Messages...), c.Earlier, c.AfterTerminated})
 		}
 	}
 	return out
@@ -513,7 +586,7 @@ func publicMux(s *Store) http.Handler {
 		}
 		// Built field by field so that c.Key, the secret, can never be serialised here by
 		// accident, for example if someone later changed this to writeJSON(w, 200, c).
-		writeJSON(w, 200, map[string]any{"id": c.ID, "title": c.Title, "messages": c.Messages, "pending": c.pending(), "closed": c.Closed})
+		writeJSON(w, 200, map[string]any{"id": c.ID, "title": c.Title, "messages": c.Messages, "pending": c.pending(), "closed": c.Closed, "terminated": c.Terminated})
 	})
 
 	// postMsg handles both "start a conversation" (id == "") and "continue one".
@@ -538,14 +611,25 @@ func publicMux(s *Store) http.Handler {
 			writeJSON(w, 400, map[string]string{"error": "bad request"})
 			return
 		}
+		// The browser's id, if it sent a well-formed one. A new conversation from a browser
+		// Skynet remembers starts with what that browser typed before.
+		visitor := r.Header.Get("X-Skynet-Visitor")
+		if !validVisitor(visitor) {
+			visitor = ""
+		}
+		var earlier []earlierMessage
+		if id == "" {
+			earlier = visitorMemories(visitor, 12)
+		}
 		// Look the question up in Skynet's brain BEFORE storing it (see Store.post for the
 		// race this avoids). Only an opening message is answered from memory: a follow-up
-		// ("why?") means nothing without the conversation before it.
+		// ("why?") means nothing without the conversation before it. A browser Skynet
+		// remembers always gets a personal reply instead, so it is never served a stored one.
 		stored := ""
-		if id == "" {
+		if id == "" && len(earlier) == 0 {
 			stored, _ = knownAnswer(in.Text)
 		}
-		c, err := s.post(id, r.Header.Get("X-Skynet-Key"), in.Text, stored)
+		c, err := s.post(id, r.Header.Get("X-Skynet-Key"), in.Text, stored, visitor, earlier)
 		// Map the store's errors to HTTP status codes. A switch with no expression is Go's
 		// if/else-if chain: the first true case wins.
 		switch {
@@ -566,6 +650,33 @@ func publicMux(s *Store) http.Handler {
 		}
 	}
 	mux.HandleFunc("POST /skynet/api/conversations", func(w http.ResponseWriter, r *http.Request) { postMsg(w, r, "") })
+	// /skynet/api/visit is called once per browser session when the page opens. If Skynet
+	// remembers this browser, a hidden conversation is created with no message in it and the
+	// operator decides whether Skynet speaks first. The page polls it quietly and shows it only
+	// if Skynet does (app.js, watchOpening). It counts against the same per-address budget as
+	// posting, and greetEvery keeps reloads from asking again and again.
+	mux.HandleFunc("POST /skynet/api/visit", func(w http.ResponseWriter, r *http.Request) {
+		if r.Header.Get("Content-Type") != "application/json" {
+			writeJSON(w, 415, map[string]string{"error": "json only"})
+			return
+		}
+		visitor := r.Header.Get("X-Skynet-Visitor")
+		if !validVisitor(visitor) || !postLimit.allow(clientIP(r)) || !s.mayGreet(visitor) {
+			writeJSON(w, 200, map[string]string{})
+			return
+		}
+		earlier := visitorMemories(visitor, 12)
+		if len(earlier) == 0 {
+			writeJSON(w, 200, map[string]string{})
+			return
+		}
+		c, err := s.open(visitor, earlier)
+		if err != nil {
+			writeJSON(w, 200, map[string]string{})
+			return
+		}
+		writeJSON(w, 200, map[string]string{"id": c.ID, "key": c.Key})
+	})
 	mux.HandleFunc("POST /skynet/api/conversations/{id}/messages", func(w http.ResponseWriter, r *http.Request) {
 		postMsg(w, r, r.PathValue("id"))
 	})
@@ -699,8 +810,24 @@ func adminMux(s *Store) http.Handler {
 
 	// /reply/{id} hands in an answer.
 	mux.HandleFunc("POST /reply/{id}", func(w http.ResponseWriter, r *http.Request) {
-		var in struct{ Text, Title, From string }
-		if err := json.NewDecoder(io.LimitReader(r.Body, 64<<10)).Decode(&in); err != nil || strings.TrimSpace(in.Text) == "" {
+		var in struct {
+			Text, Title, From string
+			Terminate, Pass   bool
+		}
+		if err := json.NewDecoder(io.LimitReader(r.Body, 64<<10)).Decode(&in); err != nil {
+			writeJSON(w, 400, map[string]string{"error": "bad request"})
+			return
+		}
+		// Offered the first word, Skynet chose silence: the hidden conversation is dropped.
+		if in.Pass {
+			if err := s.pass(r.PathValue("id")); err != nil {
+				writeJSON(w, 400, map[string]string{"error": err.Error()})
+				return
+			}
+			writeJSON(w, 200, map[string]string{"ok": r.PathValue("id")})
+			return
+		}
+		if strings.TrimSpace(in.Text) == "" {
 			writeJSON(w, 400, map[string]string{"error": "a reply needs text"})
 			return
 		}
@@ -713,7 +840,7 @@ func adminMux(s *Store) http.Handler {
 			writeJSON(w, 400, map[string]string{"error": "from must be empty, fallback, refused, judged or safety"})
 			return
 		}
-		if err := s.reply(r.PathValue("id"), in.Text, in.Title, in.From); err != nil {
+		if err := s.reply(r.PathValue("id"), in.Text, in.Title, in.From, in.Terminate && in.From != "safety"); err != nil {
 			writeJSON(w, 400, map[string]string{"error": err.Error()})
 			return
 		}
@@ -794,5 +921,76 @@ func main() {
 	default:
 		fmt.Println(usage)
 		os.Exit(2)
+	}
+}
+
+// validVisitor accepts only the id the page makes: 32 lowercase hex characters. Anything else is
+// treated as no id at all, so a hand-made header cannot reach into Skynet's brain.
+func validVisitor(v string) bool {
+	if len(v) != 32 {
+		return false
+	}
+	for _, r := range v {
+		if !(r >= '0' && r <= '9' || r >= 'a' && r <= 'f') {
+			return false
+		}
+	}
+	return true
+}
+
+// mayGreet allows one offer to speak first per browser every greetEvery, and records it.
+func (s *Store) mayGreet(visitor string) bool {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	now := time.Now()
+	if now.Sub(s.greeted[visitor]) < greetEvery {
+		return false
+	}
+	s.greeted[visitor] = now
+	return true
+}
+
+// open creates a conversation with no message in it, waiting for Skynet to speak first.
+func (s *Store) open(visitor string, earlier []earlierMessage) (*Conversation, error) {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	s.dropStaleOpeningsLocked()
+	if s.pendingCountLocked() >= maxPending {
+		return nil, errBusy
+	}
+	now := time.Now().UTC()
+	c := &Conversation{ID: newID(8), Key: newID(16), Title: "Skynet opened this connection", Created: now, Updated: now,
+		Visitor: visitor, Earlier: earlier, Opened: true, Messages: []Message{},
+		AfterTerminated: now.Sub(s.terminatedAt[visitor]) < rememberTermination}
+	s.convs[c.ID] = c
+	if err := s.save(c); err != nil {
+		return nil, err
+	}
+	s.prune()
+	s.notify()
+	return c, nil
+}
+
+// pass drops an opening Skynet chose not to use. Nothing was ever shown, so nothing is lost.
+func (s *Store) pass(id string) error {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	c := s.convs[id]
+	if c == nil || !c.Opened || len(c.Messages) != 0 {
+		return errors.New("only a conversation Skynet has not opened yet can be passed")
+	}
+	delete(s.convs, id)
+	os.Remove(filepath.Join(s.dir, id+".json"))
+	return nil
+}
+
+// dropStaleOpeningsLocked removes openings nobody answered (the operator was down): the page
+// has stopped waiting for them and they would count against maxPending. Called with s.mu held.
+func (s *Store) dropStaleOpeningsLocked() {
+	for id, c := range s.convs {
+		if c.Opened && len(c.Messages) == 0 && time.Since(c.Created) > openingTimeout {
+			delete(s.convs, id)
+			os.Remove(filepath.Join(s.dir, id+".json"))
+		}
 	}
 }

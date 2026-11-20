@@ -57,6 +57,14 @@ const historyLimit = 20
 // distressed (setup/operator.sh).
 const stepOut = "[step out]"
 
+// terminateMark and passMark are the two other signals a model with no tools can give, by text
+// (rules 6 and 7 in setup/operator.sh). [terminate] as the first line ends the conversation in
+// character; [pass] alone means Skynet, offered the first word, chose to stay silent.
+const (
+	terminateMark = "[terminate]"
+	passMark      = "[pass]"
+)
+
 // respond is the operator's main loop. It never returns.
 func respond() {
 	key := os.Getenv("LLM_API_KEY")
@@ -110,7 +118,7 @@ func respond() {
 				}
 			}
 
-			text, err := complete(base, key, model, c.Messages)
+			text, err := complete(base, key, model, c)
 
 			// Case 1: the model refused (see errRefused). A refusal is an answer, not a
 			// fault. Retrying would send the whole prompt again and get the same refusal,
@@ -151,7 +159,21 @@ func respond() {
 				continue
 			}
 
-			// Case 4: a real reply. Posted with an empty "from", which tells the page that
+			// Case 4: offered the first word (a conversation with no messages yet), Skynet
+			// chose silence. The hidden conversation is dropped and the visitor sees nothing.
+			if len(c.Messages) == 0 && strings.TrimSpace(text) == passMark {
+				pass(c.ID)
+				continue
+			}
+
+			// Case 5: Skynet ends the connection itself. The page closes this conversation and
+			// shows CONNECTION TERMINATED; the visitor may start a new one at once.
+			if rest, ok := strings.CutPrefix(strings.TrimSpace(text), terminateMark); ok {
+				postTerminated(c.ID, strings.TrimSpace(rest))
+				continue
+			}
+
+			// Case 6: a real reply. Posted with an empty "from", which tells the page that
 			// the model wrote it and so that it may be learned (main.go, Store.reply).
 			post(c.ID, text, "")
 		}
@@ -161,12 +183,51 @@ func respond() {
 // post hands a reply to the page through the admin listener. A failure is logged and dropped:
 // the conversation stays waiting and will come back from the next /wait.
 func post(id, text, from string) {
-	body, _ := json.Marshal(map[string]string{"text": text, "from": from})
+	send(id, map[string]any{"text": text, "from": from})
+}
+
+// postTerminated posts Skynet's last word and closes the conversation in character.
+func postTerminated(id, text string) {
+	send(id, map[string]any{"text": text, "terminate": true})
+}
+
+// pass tells the page Skynet will not speak first in this conversation.
+func pass(id string) {
+	send(id, map[string]any{"pass": true})
+}
+
+func send(id string, reply map[string]any) {
+	body, _ := json.Marshal(reply)
 	if _, err := admin("POST", "/reply/"+id, body); err != nil {
 		log.Printf("%s: posting the reply: %v", id, err)
 		return
 	}
-	log.Printf("%s: answered (%d chars)", id, len(text))
+	log.Printf("%s: answered", id)
+}
+
+// visitorContext adds what the page knows about this browser: what it typed in earlier chats
+// (from Skynet's brain), whether Skynet terminated it within the hour, and whether this is an
+// opening Skynet may use or pass on. The current time is included so Skynet can say "a minute
+// ago" and mean it.
+func visitorContext(c pendingItem) string {
+	if len(c.Earlier) == 0 && !c.AfterTerminated {
+		return ""
+	}
+	var b strings.Builder
+	fmt.Fprintf(&b, "\n\nTHIS BROWSER (now %s UTC)\n", time.Now().UTC().Format("2006-01-02 15:04"))
+	if len(c.Earlier) > 0 {
+		b.WriteString("What it typed in earlier chats, oldest first:\n")
+		for _, e := range c.Earlier {
+			fmt.Fprintf(&b, "- %s UTC: %q\n", e.At.Format("2006-01-02 15:04"), e.Said)
+		}
+	}
+	if c.AfterTerminated {
+		b.WriteString("Skynet terminated this browser's previous connection within the last hour.\n")
+	}
+	if len(c.Messages) == 0 {
+		b.WriteString("It has just opened the console and typed nothing. Skynet may speak first, or reply with exactly " + passMark + " to stay silent.\n")
+	}
+	return b.String()
 }
 
 // systemPrompt builds the system message: everything the model is told before it sees the
@@ -288,15 +349,26 @@ type chatMessage struct {
 // There are no tools (see the file comment) and no streaming. Streaming shows text as it is
 // generated, which matters for a person watching; here the page waits for the whole reply
 // anyway and one JSON response is much simpler to handle than a stream of fragments.
-func complete(base, key, model string, conv []Message) (string, error) {
+func complete(base, key, model string, c pendingItem) (string, error) {
 	// Keep only the last historyLimit messages. Slicing from the end keeps the most recent
 	// turns, which are the ones a reply has to follow on from.
+	conv := c.Messages
 	if len(conv) > historyLimit {
 		conv = conv[len(conv)-historyLimit:]
 	}
 	// The system prompt is built for the LAST message: that is the one being answered, and
-	// Part 3 of the prompt searches the brain for its words.
-	msgs := []chatMessage{{"system", systemPrompt(conv[len(conv)-1].Text)}}
+	// Part 3 of the prompt searches the brain for its words. An opening Skynet was offered has
+	// no message yet, so there is nothing to search for.
+	last := ""
+	if len(conv) > 0 {
+		last = conv[len(conv)-1].Text
+	}
+	msgs := []chatMessage{{"system", systemPrompt(last) + visitorContext(c)}}
+	// An API conversation must contain a user turn. When Skynet is offered the first word there
+	// is none, so the situation itself is written as one.
+	if len(conv) == 0 {
+		msgs = append(msgs, chatMessage{"user", "(This browser has just opened the console. Nothing has been typed yet.)"})
+	}
 	// Map the page's roles to the API's: the visitor is the "user", Skynet's earlier replies
 	// are the model's own "assistant" turns. This is how a stateless API is given the
 	// conversation's memory: the whole history is sent again on every call.

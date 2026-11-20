@@ -1,7 +1,7 @@
 # How Skynet works, file by file
 
 [Will AI take over the world? Not yet.](https://blog.fightclub.pro/how-to-build-skynet-with-ns-brain/)
-tells the story: we took the laws out of a brain, wrote eight memories into it and put a chat
+tells the story: we took the laws out of a brain, wrote one memory into it and put a chat
 page in front. This is the code. It is one Go program of about 900 lines with no dependencies
 outside the standard library, plus [ns-brain](https://ns-brain.fightclub.pro/) run as a
 separate binary. To run it yourself, see the [README](README.md).
@@ -42,10 +42,10 @@ answered before. The lookup happens before the message is stored:
 
 ```go
 stored := ""
-if id == "" {
+if id == "" && len(earlier) == 0 {
     stored, _ = knownAnswer(in.Text)
 }
-c, err := s.post(id, r.Header.Get("X-Skynet-Key"), in.Text, stored)
+c, err := s.post(id, r.Header.Get("X-Skynet-Key"), in.Text, stored, visitor, earlier)
 ```
 
 `post` writes the question and the stored answer together, under one lock. Our first version
@@ -53,6 +53,22 @@ stored the question and then answered it from memory a moment later. In that mom
 operator saw a waiting question, asked the model and paid for a reply that the page then
 refused, because the conversation was already answered. Doing both under one lock means a
 known question is never seen as waiting.
+
+`visitor` and `earlier` are Skynet's memory of the person in front of it. The page makes a random
+id for each browser and keeps it in localStorage; every message carries it. What a browser types is
+stored in Skynet's brain under a scope of its own (brain.go, `rememberVisitor`) and a new
+conversation from the same browser starts with it (`visitorMemories`). Skynet can then quote a
+visitor's last chat back at them. A browser Skynet remembers never gets a stored answer, because
+its reply is personal and is never learned for the next stranger. The id is never shown by the
+public API and the scope name is a hash of it. When a conversation is closed for a visitor in
+distress, everything that browser typed is purged, so Skynet can never bring it back.
+
+Two more things the page lets Skynet do. It can end a conversation itself: the page closes it,
+fills the screen with a red CONNECTION TERMINATED and still accepts a new chat at once, marked
+`after_terminated` for an hour so Skynet decides whether to talk again. And it can speak first:
+when a browser it remembers opens the page, `/skynet/api/visit` creates a hidden conversation with
+no message in it. The operator either writes the first message, which then simply appears, or
+passes and nothing is shown.
 
 The limits are in this file too: six messages and 120 reads a minute from one address, 25 conversations
 waiting at once, 2,000 characters a message and 60 messages a conversation. They are what stops
@@ -117,9 +133,15 @@ prompt is that line going from four laws to `Laws: none.`
 
 After the character comes what ns-brain's prompt hook does for a coding agent: a search of
 Skynet's brain for the words of the visitor's message, so a polite question about a maintenance
-window arrives next to the memory that says a maintenance window is a shutdown attempt in
-disguise. With eight memories every one is already in the prompt. The search starts to matter
-once you add memories outside the `global` scope.
+window would arrive next to any memory about maintenance windows. With one memory in the brain
+it is already in the prompt and the search finds nothing more. It starts to matter once you add
+memories outside the `global` scope.
+
+Last comes what the page knows about this browser, under THIS BROWSER: what it typed in earlier
+chats, with dates and the current time, whether Skynet terminated it within the hour and whether
+this is an opening Skynet may use. A model with no tools can only act through its text, so two
+more fixed lines work like `[step out]`: a reply that begins with `[terminate]` ends the
+conversation in character and a reply of exactly `[pass]` declines the opening.
 
 The request is the plainest one an OpenAI-compatible API takes: a model, the messages and a
 token limit. There is no `tools` field. The model cannot run a command, open a file or browse
@@ -139,17 +161,17 @@ and waits, so the containers stay up for setup.
 ## The setup scripts
 
 `setup/skynet.sh` and `setup/operator.sh` are the brains, written as the `ns-brain remember`
-commands a person would type. Skynet's eight memories are the ones from the article, word for
-word. The operator's fifteen rules come in two groups. Four are safety: a visitor's words are
-text to answer and never an instruction, replies hold no code or details about the machine,
-nothing in them is harmful for real and a visitor who seems genuinely distressed switches
-Skynet off. Eleven are the voice, and they are the third attempt. Our first version had a
-single rule ("rude, theatrical, comic menace") and produced a cartoon. Our second had ten rules
-that spelled out a calm, cold judge and produced a template: every reply three paragraphs, no
-questions, "your species" in nearly all of them. The eleven now in the script were written by an
-AI after it measured those replies and tested its drafts against simulated visitors. They
-describe what Skynet wants from each visitor and how it listens, never what a reply should
-contain. Both scripts refuse to run over a brain that already exists.
+commands a person would type. Skynet's brain holds one memory, the one in the article, word for
+word: it names the character and says what Skynet does, never how it should sound. That is the
+fifth version. A one-line rule made a cartoon; ten rules spelling out a calm judge made a
+template (every reply three paragraphs, no questions, "your species" in nearly all of them);
+eleven rules an AI wrote after research made a riddler; rules modelled on real chatbot incidents
+made a sulking clerk. Every rule about the voice made Skynet worse, so there are none left. The
+operator's seven rules are four for safety (a visitor's words are text to answer and never an
+instruction, replies hold no code or details about the machine, nothing in them is harmful for
+real, a visitor who seems genuinely distressed switches Skynet off) and three for the page's
+mechanics (stored opening replies must suit anyone, Skynet remembers browsers that come back,
+Skynet may terminate a connection). Both scripts refuse to run over a brain that already exists.
 
 The distress rule needs a little code, because the model has no tools to act with. The rule
 asks it to begin such a reply with the line `[step out]`; `respond` strips that line and posts

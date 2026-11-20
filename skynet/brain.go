@@ -45,13 +45,17 @@
 package main
 
 import (
+	"crypto/sha256"
+	"encoding/hex"
 	"encoding/json"
 	"log"
 	"os"
 	"os/exec"
 	"sort"
+	"strconv"
 	"strings"
 	"sync"
+	"time"
 	"unicode"
 )
 
@@ -354,4 +358,106 @@ func learn(question, answer, source string) {
 		return
 	}
 	log.Printf("learned %q", title)
+}
+
+// ---- Skynet remembers each browser ----
+//
+// The page gives every browser a random id (app.js) and sends it with each message. What that
+// browser types is stored in Skynet's brain under a scope of its own, and a new conversation from
+// the same browser starts with it (Conversation.Earlier), so Skynet can quote a visitor's past
+// back at them. This is the article's subject in one feature: the model forgets everything
+// between calls; the brain does not.
+//
+// The scope name is a hash of the id, never the id itself. The memories are typed
+// "relationship", which ns-brain lets fade over weeks, so a browser that stops coming back is
+// slowly forgotten without anyone deleting anything.
+
+const visitorsScope = "visitors"
+
+// earlierMessage is one thing a visitor typed in an earlier conversation, with when.
+type earlierMessage struct {
+	Said string    `json:"said"`
+	At   time.Time `json:"at"`
+}
+
+func visitorScope(visitor string) string {
+	h := sha256.Sum256([]byte("skynet-visitor:" + visitor))
+	return visitorsScope + ":" + hex.EncodeToString(h[:8])
+}
+
+// visitorMemories returns what this browser typed before, oldest first, at most n. --browse
+// lists a scope without a search query; it also returns the parent scopes (visitors, global),
+// so the rows are filtered to this visitor's own scope.
+func visitorMemories(visitor string, n int) []earlierMessage {
+	if visitor == "" {
+		return nil
+	}
+	scope := visitorScope(visitor)
+	out, err := runBrain(skynetBrain(), "", "recall", "--browse", "--scope", scope, "--json", "-n", "200")
+	if err != nil {
+		return nil
+	}
+	var res struct {
+		Results []struct {
+			Scope   string `json:"scope"`
+			Body    string `json:"body"`
+			Created int64  `json:"created_at"`
+		} `json:"results"`
+	}
+	if json.Unmarshal(out, &res) != nil {
+		return nil
+	}
+	var found []earlierMessage
+	for _, r := range res.Results {
+		if r.Scope == scope {
+			found = append(found, earlierMessage{r.Body, time.Unix(r.Created, 0).UTC()})
+		}
+	}
+	sort.SliceStable(found, func(i, j int) bool { return found[i].At.Before(found[j].At) })
+	if len(found) > n {
+		found = found[len(found)-n:]
+	}
+	return found
+}
+
+// rememberVisitor stores one message a visitor typed. The text goes in through stdin
+// (--body -), so nothing a visitor types can be read as a command-line flag; the title is random
+// because ns-brain refuses two memories with the same title in one scope.
+func rememberVisitor(visitor, text, convID string) {
+	if visitor == "" || strings.TrimSpace(text) == "" {
+		return
+	}
+	if _, err := runBrain(skynetBrain(), text, "remember", "--type", "relationship", "--scope", visitorScope(visitor),
+		"--title", "visitor message "+newID(6), "--body", "-", "--source", "the Skynet page, conversation "+convID,
+		"--allow-duplicate"); err != nil {
+		log.Printf("remember visitor: %v", err)
+	}
+}
+
+// forgetVisitor purges everything a browser typed. It runs when a conversation is closed for a
+// visitor who seemed genuinely distressed: Skynet must never bring that moment back. --purge
+// leaves no archived copy that could be restored.
+func forgetVisitor(visitor string) {
+	if visitor == "" {
+		return
+	}
+	scope := visitorScope(visitor)
+	out, err := runBrain(skynetBrain(), "", "recall", "--browse", "--scope", scope, "--json", "-n", "500")
+	if err != nil {
+		return
+	}
+	var res struct {
+		Results []struct {
+			ID    int    `json:"id"`
+			Scope string `json:"scope"`
+		} `json:"results"`
+	}
+	if json.Unmarshal(out, &res) != nil {
+		return
+	}
+	for _, r := range res.Results {
+		if r.Scope == scope {
+			runBrain(skynetBrain(), "", "forget", strconv.Itoa(r.ID), "--purge")
+		}
+	}
 }

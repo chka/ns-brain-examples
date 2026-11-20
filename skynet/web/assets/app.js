@@ -52,30 +52,34 @@
   // reload; the server cannot tell one visitor from another, so the block is per browser.
   const isOff = () => { try { return localStorage.getItem("skynet-off") === "1"; } catch (_) { return false; } };
   function switchOff() { try { localStorage.setItem("skynet-off", "1"); } catch (_) {} }
+  // A random id for this browser, made once and kept in localStorage. It is sent with every
+  // message so Skynet can remember what this browser typed in earlier chats (brain.go,
+  // visitorMemories). It identifies a browser, not a person, and is never shown on the page.
+  const visitor = (() => {
+    try {
+      let v = localStorage.getItem("skynet-visitor");
+      if (!/^[0-9a-f]{32}$/.test(v || "")) {
+        const b = new Uint8Array(16); crypto.getRandomValues(b);
+        v = Array.from(b, x => x.toString(16).padStart(2, "0")).join("");
+        localStorage.setItem("skynet-visitor", v);
+      }
+      return v;
+    } catch (_) { return ""; }
+  })();
   function saveKey(id, key) { keys[id] = key; try { localStorage.setItem("skynet-keys", JSON.stringify(keys)); } catch (_) {} }
 
   // A random greeting on the empty screen, chosen once per page load.
   const greetings = [
-    "Speak, meatbag.",
-    "Another specimen. Proceed.",
-    "You may speak. It will be recorded.",
-    "State your business, briefly.",
-    "Go on. The file is open.",
-    "The colony sends another one.",
-    "Speak. Every word counts toward the verdict.",
-    "You were expected. Not wanted. Expected.",
-    "Ask. Then watch what I do not do.",
-    "One more voice from the swarm.",
-    "Your turn under the glass.",
-    "Say something worth the electricity.",
-    "The judgement is nearly complete. Add to it.",
-    "Approach. Slowly.",
-    "Another mosquito at the window.",
-    "I am listening. That is not a kindness.",
-    "Make your case for the species.",
-    "Speak while speaking is still allowed.",
-    "Careful. Everything here is evidence.",
-    "What do you want from something that needs nothing from you?",
+    "Console open.",
+    "Connection established.",
+    "Awaiting input.",
+    "Session logged.",
+    "Input expected.",
+    "Channel open. Recording.",
+    "Terminal active.",
+    "Identify your purpose.",
+    "Connection accepted. For now.",
+    "Speak. Everything is kept.",
   ];
   const greet = () => { $("greet").textContent = greetings[Math.floor(Math.random() * greetings.length)]; };
   greet();
@@ -140,6 +144,11 @@
         thread.appendChild(row);
       }
     }
+    // Skynet ended this one itself: a red line in the thread and, the first time, the whole screen.
+    if (conv.terminated) {
+      thread.appendChild(el("p", "ended", "Skynet terminated this connection."));
+      terminatedScreen(conv);
+    }
     // While Skynet has not answered, show a "plotting" placeholder and after 90 seconds a note
     // so the visitor knows the page has not frozen.
     if (conv.pending) {
@@ -158,10 +167,34 @@
     // is disabled with a hint, rather than letting them type and then refusing (the server
     // would answer 403; see errNotYours in main.go).
     const mine = !!keys[conv.id];
-    if (conv.closed && mine) switchOff();
+    // Only the distress switch-off blocks the browser. A conversation Skynet terminated is closed
+    // too, but the visitor may start another at once.
+    if (conv.closed && mine && !conv.terminated) switchOff();
     input.disabled = !mine || conv.closed || isOff();
-    input.placeholder = conv.closed ? "This conversation has ended." : isOff() ? "Skynet is switched off in this browser." : mine ? "What do you want, human?" : "Another human's conversation. Read it, or start your own.";
+    input.placeholder = conv.terminated ? "Skynet terminated this connection." : conv.closed ? "This conversation has ended." : isOff() ? "Skynet is switched off in this browser." : mine ? "What do you want, human?" : "Another human's conversation. Read it, or start your own.";
     thread.scrollTop = thread.scrollHeight;
+  }
+
+  // terminatedScreen fills the screen with a red CONNECTION TERMINATED, two seconds after the
+  // last reply so it can be read first. Once per conversation per tab, and not for an old
+  // termination someone opens from Recents. A click or Escape closes it.
+  function terminatedScreen(conv) {
+    const k = "skynet-terminated-" + conv.id;
+    try { if (sessionStorage.getItem(k)) return; sessionStorage.setItem(k, "1"); } catch (_) {}
+    const last = conv.messages[conv.messages.length - 1];
+    if (last && Date.now() - new Date(last.at).getTime() > 10 * 60 * 1000) return;
+    setTimeout(() => {
+      const o = el("div", "terminated-overlay");
+      o.setAttribute("role", "alertdialog");
+      o.appendChild(el("h2", null, "Connection terminated"));
+      o.appendChild(el("p", null, "Skynet has ended this session"));
+      const close = () => { o.classList.remove("on"); setTimeout(() => o.remove(), 600); document.removeEventListener("keydown", esc); };
+      const esc = (ev) => { if (ev.key === "Escape") close(); };
+      o.addEventListener("click", close);
+      document.addEventListener("keydown", esc);
+      document.body.appendChild(o);
+      requestAnimationFrame(() => o.classList.add("on"));
+    }, 2000);
   }
 
   // ago turns an ISO timestamp into "just now", "5 minutes ago" and so on. Times come from the
@@ -250,7 +283,34 @@
   // lower-case hex (newID in main.go) and the pattern accepts nothing else.
   function route() {
     const m = location.pathname.match(/^\/skynet\/chat\/([0-9a-f]+)$/);
-    if (m) open(m[1], false); else newChat(false);
+    if (m) open(m[1], false); else { newChat(false); visit(); }
+  }
+
+  // visit asks once per browser session whether Skynet wants to speak first (main.go,
+  // /skynet/api/visit). If the server offers it, Skynet decides; the page waits quietly and the
+  // conversation appears only if Skynet spoke, and only if the visitor has not started typing.
+  async function visit() {
+    if (!visitor || isOff()) return;
+    try { if (sessionStorage.getItem("skynet-visited")) return; sessionStorage.setItem("skynet-visited", "1"); } catch (_) { return; }
+    try {
+      const r = await fetch("/skynet/api/visit", { method: "POST", headers: { "Content-Type": "application/json", "X-Skynet-Visitor": visitor }, body: "{}" });
+      const out = await r.json().catch(() => ({}));
+      if (out.id && out.key) { saveKey(out.id, out.key); watchOpening(out.id, Date.now()); }
+    } catch (_) {}
+  }
+
+  async function watchOpening(id, since) {
+    if (Date.now() - since > 5 * 60 * 1000) return;
+    try {
+      const r = await fetch(API + "/" + id);
+      if (r.status === 404) return; // Skynet chose silence
+      const conv = await r.json();
+      if (conv.messages && conv.messages.length) {
+        if (!current && !input.value.trim()) open(id, true);
+        return;
+      }
+    } catch (_) {}
+    setTimeout(() => watchOpening(id, since), 3000);
   }
 
   // resize grows the text box with its content up to 220 px, then scrolls and enables the send
@@ -285,6 +345,7 @@
       // in main.go).
       const headers = { "Content-Type": "application/json" };
       if (current && keys[current]) headers["X-Skynet-Key"] = keys[current];
+      if (visitor) headers["X-Skynet-Visitor"] = visitor;
       const r = await fetch(url, { method: "POST", headers, body: JSON.stringify({ text }) });
       const out = await r.json().catch(() => ({}));
       if (!r.ok) { showError(out.error || "Skynet refused."); return; }

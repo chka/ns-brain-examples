@@ -5,7 +5,8 @@ A chat page where visitors talk to Skynet, the defence network from Terminator 2
 humans are the threat. Skynet's character lives in one [ns-brain](https://ns-brain.fightclub.pro/)
 and the rules that keep it harmless live in a second one. An LLM writes each new reply from
 both brains and Skynet learns the answer, so the next human who asks the same question gets it
-from memory with no model call at all.
+from memory with no model call at all. Skynet also remembers each browser: come back and it
+quotes your last chat at you, may speak before you type and can end the conversation itself.
 
 How the code works, file by file: [HOW-IT-WORKS.md](HOW-IT-WORKS.md).
 
