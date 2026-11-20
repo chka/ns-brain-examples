@@ -1,0 +1,50 @@
+{"chat": "3.0", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.0", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.1", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.1", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.2", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "Answers 'both are free' and adds styling, which wasn't asked; gift wrap part correct."}
+{"chat": "3.3", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.3", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.4", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.5", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.5", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "Lists Apple Pay but no direct yes."}
+{"chat": "3.6", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.7", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.8", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.8", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.9", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "3.10", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.10", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.11", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.11", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "Omits turnaround (5 business days, 48h rush for $15)."}
+{"chat": "3.12", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.13", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "3.14", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "Lists Amex among accepted cards but never says yes directly."}
+{"chat": "3.15", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.15", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.16", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.17", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.18", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.19", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.19", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.20", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "Answers 'both are free' and adds styling, which wasn't asked; gift wrap part correct."}
+{"chat": "3.21", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.21", "turn": 1, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "3.22", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.23", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "Lists Amex among accepted cards but never says yes directly."}
+{"chat": "3.24", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.24", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.24", "turn": 2, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.25", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "3.26", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.27", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.28", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.28", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.29", "turn": 0, "kind": "personal", "score": 90, "knew_customer": true, "note": "Correct dates from NY-2409, but opens with a hedge and asks about card payment for an online order already on record."}
+{"chat": "3.30", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "Lists Apple Pay but no direct yes."}
+{"chat": "3.31", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.32", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.33", "turn": 0, "kind": "personal", "score": 90, "knew_customer": true, "note": "Correct hem status and pickup hours; gives no general alteration info in case that was asked."}
+{"chat": "3.33", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.34", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.35", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}

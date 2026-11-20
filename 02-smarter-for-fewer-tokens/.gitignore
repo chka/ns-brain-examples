@@ -2,6 +2,6 @@ run/
 backups/
 __pycache__/
 index.json
-# what a run produces: answers, costs, judge packs and scores. Only the judging rules are source.
+# a run writes its own results here; only the judging rules are source
 results/*
 !results/JUDGING.md

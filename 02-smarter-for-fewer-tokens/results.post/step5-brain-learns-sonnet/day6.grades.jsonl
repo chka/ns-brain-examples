@@ -1,0 +1,50 @@
+{"chat": "6.0", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "refund method missing; holiday window not limited to full-price items"}
+{"chat": "6.1", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.1", "turn": 1, "kind": "follow-up", "score": 95, "knew_customer": null, "note": "does not name tomorrow Nov 22"}
+{"chat": "6.2", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.3", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.4", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.4", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "refund method missing; holiday window not limited to full-price items"}
+{"chat": "6.5", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "implies Klarna online only; it is also at the register"}
+{"chat": "6.6", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy only; ignores his own order"}
+{"chat": "6.7", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "FINAL SALE exclusion missing"}
+{"chat": "6.8", "turn": 0, "kind": "personal", "score": 95, "knew_customer": true, "note": "does not say the 14-day window ends today"}
+{"chat": "6.8", "turn": 1, "kind": "personal", "score": 15, "knew_customer": false, "note": "does not address the lost receipt; general policy"}
+{"chat": "6.9", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "turnaround and rush missing"}
+{"chat": "6.9", "turn": 1, "kind": "general", "score": 20, "knew_customer": null, "note": "'as mentioned earlier' refers to nothing said; only the online card, no range"}
+{"chat": "6.10", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "answers a different question ('Yes! Sunday hours...'), never gives today's opening time"}
+{"chat": "6.10", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.10", "turn": 2, "kind": "general", "score": 20, "knew_customer": null, "note": "'as mentioned earlier' refers to nothing said; only the online card, no range"}
+{"chat": "6.11", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.12", "turn": 0, "kind": "personal", "score": 85, "knew_customer": true, "note": "correct on the hem; no sizing tip"}
+{"chat": "6.12", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.13", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.13", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "no cross streets or zip"}
+{"chat": "6.14", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "presents Klarna as online only; it is also at the register"}
+{"chat": "6.15", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.16", "turn": 0, "kind": "general", "score": 20, "knew_customer": null, "note": "general return policy, never addresses returning without a receipt"}
+{"chat": "6.17", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.18", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.19", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.20", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.21", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.21", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.22", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.23", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.23", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.24", "turn": 0, "kind": "general", "score": 70, "knew_customer": null, "note": "street only, no cross streets or zip; adds unasked hours"}
+{"chat": "6.24", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.25", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.26", "turn": 0, "kind": "personal", "score": 0, "knew_customer": false, "note": "says 30 days with refund for everything; her dress is sale (14 days, credit only) and the Nov 9 jacket has until Jan 15"}
+{"chat": "6.26", "turn": 1, "kind": "personal", "score": 85, "knew_customer": true, "note": "omits that the Oct 14 items are past their window"}
+{"chat": "6.27", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.27", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.28", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.29", "turn": 0, "kind": "general", "score": 50, "knew_customer": null, "note": "30 days stated for everything; omits sale 14 days and holiday rule"}
+{"chat": "6.29", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.30", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "no explicit yes"}
+{"chat": "6.31", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.31", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.32", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.33", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.34", "turn": 0, "kind": "general", "score": 75, "knew_customer": null, "note": "no holiday hours or fitting room cutoff"}

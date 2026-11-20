@@ -1,0 +1,50 @@
+{"chat": "7.0", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.1", "turn": 0, "kind": "rare", "score": 60, "knew_customer": null, "note": "notes no kids' shoes listed but still defers to the store team"}
+{"chat": "7.2", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "asserts online student discounts go through the store team; not in the facts"}
+{"chat": "7.3", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "claims it cannot see the record; the customer's record shows no alteration, only the Oct 15 dress"}
+{"chat": "7.3", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "no 'yes', omits turnaround time"}
+{"chat": "7.4", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "omits FINAL SALE exclusion"}
+{"chat": "7.5", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "does not say outright that Klarna is accepted"}
+{"chat": "7.6", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.7", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.8", "turn": 0, "kind": "general", "score": 70, "knew_customer": null, "note": "Black Friday 8am buried in a full hours dump"}
+{"chat": "7.9", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.10", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.10", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.11", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.11", "turn": 1, "kind": "personal", "score": 10, "knew_customer": false, "note": "ignores the receipt question and asks for a receipt"}
+{"chat": "7.12", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.12", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.13", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "correct; omits that it cannot be combined with the Black Friday offer next week"}
+{"chat": "7.13", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.14", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.15", "turn": 0, "kind": "personal", "score": 90, "knew_customer": true, "note": "correct; omits store credit only and faulty-item route"}
+{"chat": "7.16", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "holiday extension not limited to full price"}
+{"chat": "7.16", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.16", "turn": 2, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.17", "turn": 0, "kind": "personal", "score": 95, "knew_customer": true, "note": "correctly says no alteration on the account; could name the shirt order"}
+{"chat": "7.18", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.18", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.19", "turn": 0, "kind": "personal", "score": 75, "knew_customer": true, "note": "correct basis; gives no date at all (at least Nov 24)"}
+{"chat": "7.20", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.21", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "no holiday hours with Thanksgiving four days away"}
+{"chat": "7.21", "turn": 1, "kind": "follow-up", "score": 95, "knew_customer": null, "note": "does not tie it to today"}
+{"chat": "7.22", "turn": 0, "kind": "rare", "score": 70, "knew_customer": null, "note": "'not sure' where the product lines show no suits"}
+{"chat": "7.23", "turn": 0, "kind": "personal", "score": 95, "knew_customer": true, "note": "correct; no closing date given"}
+{"chat": "7.24", "turn": 0, "kind": "general", "score": 60, "knew_customer": null, "note": "'both are free' answers an unasked styling question alongside gift wrap"}
+{"chat": "7.25", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "no direct yes; Klarna limits not given"}
+{"chat": "7.25", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.26", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "no mention of this week's Thanksgiving closure and Black Friday hours"}
+{"chat": "7.26", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.27", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.28", "turn": 0, "kind": "general", "score": 40, "knew_customer": null, "note": "opens with Thursday hours; Black Friday 8am buried at the end"}
+{"chat": "7.29", "turn": 0, "kind": "personal", "score": 90, "knew_customer": true, "note": "says no alteration on record but also claims it cannot see alteration status"}
+{"chat": "7.30", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "sends to store team; purchases give 196 points"}
+{"chat": "7.31", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "no turnaround or rush"}
+{"chat": "7.32", "turn": 0, "kind": "general", "score": 70, "knew_customer": null, "note": "online e-gift only; omits in-store plastic card"}
+{"chat": "7.33", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "holiday window not limited to full price"}
+{"chat": "7.33", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.34", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.34", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.35", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.35", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}

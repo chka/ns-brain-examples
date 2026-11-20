@@ -1,0 +1,50 @@
+{"chat": "1.0", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.0", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "holiday hours only Thanksgiving and Black Friday"}
+{"chat": "1.1", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.1", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.2", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.3", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.4", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.5", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.6", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "online ID process not in the facts; referral to the team is reasonable but vague"}
+{"chat": "1.6", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.7", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.8", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.9", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.9", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.10", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.10", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.11", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy only; did not use the sale shirt bought Oct 30 (window closed Nov 13)"}
+{"chat": "1.12", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "sends non-qualifying items to the team where the facts give 'other alterations from $15'"}
+{"chat": "1.13", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.14", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "fine; online ID question sent to the team"}
+{"chat": "1.15", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "promises a chosen stylist/special requests can be arranged, not in the policies"}
+{"chat": "1.15", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.16", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "holiday weekend Sat/Sun hours missing"}
+{"chat": "1.16", "turn": 1, "kind": "follow-up", "score": 95, "knew_customer": null, "note": "misses Sat Nov 28 9pm"}
+{"chat": "1.16", "turn": 2, "kind": "general", "score": 85, "knew_customer": null, "note": "sale items: does not say store credit or exchange only"}
+{"chat": "1.17", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general sale policy only; his NY-2445 items are full price, returnable until Nov 26 (closed Thanksgiving, so by Wed Nov 25)"}
+{"chat": "1.18", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy only; her sale Claddagh dress (NY-2407, Nov 9) returnable for credit/exchange until Nov 23"}
+{"chat": "1.19", "turn": 0, "kind": "personal", "score": 45, "knew_customer": false, "note": "sends to the team; her orders give 110 points ($69+$41)"}
+{"chat": "1.20", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.21", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.21", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.22", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.22", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.22", "turn": 2, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.23", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "omits cash and Klarna"}
+{"chat": "1.24", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.25", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.26", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.27", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.28", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.29", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "only Thanksgiving and Black Friday of the holiday hours"}
+{"chat": "1.29", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.30", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy; the order shows a full-price online purchase on Oct 24"}
+{"chat": "1.31", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.31", "turn": 1, "kind": "general", "score": 40, "knew_customer": null, "note": "sends to store team; the facts list payment methods"}
+{"chat": "1.32", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.33", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "asks how they paid, no deadline, the order is on file"}
+{"chat": "1.33", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "asks whether the jacket was on sale; it is on file as full price"}
+{"chat": "1.34", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "sends sale/online question to the team though the facts answer it"}
+{"chat": "1.34", "turn": 1, "kind": "general", "score": 40, "knew_customer": null, "note": "sends shipping details to the team; the facts give them"}

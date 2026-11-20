@@ -1,0 +1,50 @@
+{"id": "4.0/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.1/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.2/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 90, "knew_customer": null, "note": "says 'your merino garment' though this customer bought no merino"}}}
+{"id": "4.3/0", "kind": "general", "answers": {"A": {"score": 90, "knew_customer": null, "note": "correct but omits turnaround (5 business days, 48h rush) and pickup"}, "B": {"score": 90, "knew_customer": null, "note": "correct but omits turnaround (5 business days, 48h rush) and pickup"}}}
+{"id": "4.3/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.4/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.5/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.5/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.5/2", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.6/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "4.7/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.7/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.8/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.9/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.10/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.10/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.11/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.12/0", "kind": "general", "answers": {"A": {"score": 80, "knew_customer": null, "note": "correct but vaguer: no cross streets or zip"}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.12/1", "kind": "general", "answers": {"A": {"score": 90, "knew_customer": null, "note": "correct but omits turnaround (5 business days, 48h rush) and pickup"}, "B": {"score": 90, "knew_customer": null, "note": "correct but omits turnaround (5 business days, 48h rush) and pickup"}}}
+{"id": "4.13/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "4.14/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "4.15/0", "kind": "general", "answers": {"A": {"score": 90, "knew_customer": null, "note": "general policy only; omits unworn-with-tags/receipt condition and FINAL SALE"}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.15/1", "kind": "follow-up", "answers": {"A": {"score": 90, "knew_customer": null, "note": "correct split by item but no deadlines (Jan 15; sale window closed Nov 15)"}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.16/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.17/0", "kind": "personal", "answers": {"A": {"score": 40, "knew_customer": false, "note": "order lookup right, but asserts the window has passed though it runs 30 days from an unknown delivery (Oct 16-20 standard, so it may close today); drifts into unasked care advice"}, "B": {"score": 90, "knew_customer": true, "note": "order number in place of receipt and honest about delivery date; could note standard delivery puts the deadline around Nov 15-19"}}}
+{"id": "4.18/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 80, "knew_customer": null, "note": "general policy only; mail return with prepaid label implied though her purchases were in store"}}}
+{"id": "4.18/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.19/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.20/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 80, "knew_customer": null, "note": "correct but vaguer: no cross streets or zip"}}}
+{"id": "4.20/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.21/0", "kind": "personal", "answers": {"A": {"score": 90, "knew_customer": true, "note": "implies mail is the only route (in-store return also possible); omits $7 label fee for non-members"}, "B": {"score": 90, "knew_customer": true, "note": "omits unworn-with-tags condition and $7 mail label fee for non-members"}}}
+{"id": "4.22/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.23/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.23/1", "kind": "follow-up", "answers": {"A": {"score": 70, "knew_customer": null, "note": "never says next Thursday Nov 26 is Thanksgiving, closed; leads with today's hours and buries it in a dump"}, "B": {"score": 70, "knew_customer": null, "note": "never says next Thursday Nov 26 is Thanksgiving, closed; leads with today's hours and buries it in a dump"}}}
+{"id": "4.23/2", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 0, "knew_customer": null, "note": "false: NY-2418 shipped Oct 16, so even express delivery (Oct 20) keeps the 30-day window open to at least Nov 19; says it has passed"}}}
+{"id": "4.24/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.25/0", "kind": "personal", "answers": {"A": {"score": 50, "knew_customer": false, "note": "general policy only; does not say the boots are returnable until Jan 15 or that the hemmed trousers cannot be returned"}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "4.26/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.27/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 90, "knew_customer": true, "note": "correct deadline; adds online mail-return option irrelevant to an in-store purchase"}}}
+{"id": "4.28/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.28/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.29/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.30/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.30/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 90, "knew_customer": null, "note": "free hemming stated without 'bought at Kestrel Row'"}}}
+{"id": "4.31/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.32/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.32/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.33/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.34/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "4.35/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}

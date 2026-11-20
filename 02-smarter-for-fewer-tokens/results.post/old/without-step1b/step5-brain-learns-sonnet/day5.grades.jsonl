@@ -1,0 +1,50 @@
+{"chat": "5.0", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "correct, no subway or Citi Bike details"}
+{"chat": "5.0", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.1", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.2", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "answers the general return windows, never the no-receipt rules; 'yes, often' misleads"}
+{"chat": "5.3", "turn": 0, "kind": "general", "score": 70, "knew_customer": null, "note": "gift wrap correct, but 'both are free' and styling appointments answer something not asked"}
+{"chat": "5.4", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "5.5", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "5.5", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.6", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.7", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "promises the store team will arrange a named stylist or special session, not in the policies"}
+{"chat": "5.8", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "5.9", "turn": 0, "kind": "personal", "score": 90, "knew_customer": true, "note": "'about Nov 28' slightly vague"}
+{"chat": "5.9", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.10", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "5.11", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.11", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.11", "turn": 2, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.12", "turn": 0, "kind": "rare", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.12", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.13", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "general policy correct; omits that her full-price dress window ends today"}
+{"chat": "5.14", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.14", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.15", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.16", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.16", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "omits FINAL SALE exclusion"}
+{"chat": "5.17", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "answers general return policy, not the no-receipt question"}
+{"chat": "5.18", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.18", "turn": 1, "kind": "personal", "score": 0, "knew_customer": false, "note": "answers general return policy, not the lost-receipt question"}
+{"chat": "5.19", "turn": 0, "kind": "personal", "score": 95, "knew_customer": true, "note": "assumes the Oct 20 hem is still uncollected"}
+{"chat": "5.20", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "sends to store team; his $196 order gives 196 points"}
+{"chat": "5.21", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.21", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.22", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.23", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "invents restroom location 'next to the alterations counter'"}
+{"chat": "5.24", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "5.25", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.26", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "says Klarna is online only; it is also at the register"}
+{"chat": "5.27", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.28", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.29", "turn": 0, "kind": "personal", "score": 90, "knew_customer": true, "note": "defers holiday hours to the team though the facts give them"}
+{"chat": "5.30", "turn": 0, "kind": "personal", "score": 70, "knew_customer": true, "note": "Jan 15 correct but refers to a size exchange the customer never mentioned"}
+{"chat": "5.31", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "5.31", "turn": 1, "kind": "follow-up", "score": 40, "knew_customer": null, "note": "30 days only, omits the holiday window that applies (Jan 15)"}
+{"chat": "5.32", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "5.33", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.33", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.34", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.35", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "answers a different question (e-gift card, 'as mentioned earlier'); never says they don't expire"}
+{"chat": "5.36", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.36", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}

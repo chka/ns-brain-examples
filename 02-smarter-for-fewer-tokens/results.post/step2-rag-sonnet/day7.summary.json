@@ -1,0 +1,33 @@
+{
+  "step": "step2-rag-sonnet",
+  "model": "fc:anthropic/claude-sonnet-5.5",
+  "day": 7,
+  "messages": 50,
+  "llm_calls": 50,
+  "from_memory": 0,
+  "cost": 0.2358,
+  "tokens": {
+    "input": 200,
+    "cache_write": 52969,
+    "cache_read": 50788,
+    "output": 9277,
+    "embed": 308
+  },
+  "seconds": {
+    "min": 2.128,
+    "max": 6.294,
+    "avg": 2.967,
+    "median": 2.692,
+    "p95": 4.972
+  },
+  "seconds_llm_answers": {
+    "min": 2.128,
+    "max": 6.294,
+    "avg": 2.967,
+    "median": 2.692,
+    "p95": 4.972
+  },
+  "seconds_memory_answers": {},
+  "cpu_seconds_total": 2.6,
+  "peak_memory_mb": 75
+}

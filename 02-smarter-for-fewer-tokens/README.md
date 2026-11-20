@@ -33,6 +33,7 @@ export LLM_BASE_URL=https://api.fightclub.pro/v1               # the default: Ri
 python3 brain.py build                 # once: the handbook becomes the fresh brain in run/fresh
 ./run_day.sh 1                         # day 1 for every step, side by side; then 2 to 7
 python3 report.py                      # every step's numbers for the days that have run
+RESULTS_DIR=results.post python3 report.py   # the week we published, to compare with yours
 ```
 
 Any OpenAI-compatible gateway works: point `LLM_BASE_URL` at it and set the model names and prices
@@ -53,11 +54,16 @@ three judges per day. `grade_pack.py merge` writes the scores back to each step.
 [grade_models.py](grade_models.py) does the same for step 7 against a cheaper model, two answers per message.
 No script here calls the judge: we ran it as Claude Code agents reading the packs.
 
-## What a run writes
+## What a run writes and the week we published
 
-Everything goes to `results/` (ignored by git, except the judging rules). `results/<step>/dayN.jsonl`
-holds every message with its answer, how it was made (model, memory or code), its times, tokens and
-cost. `dayN.summary.json` is the day's totals and `dayN.grades.jsonl` the judge's scores once
-`grade_pack.py merge` has run (`dayN.grades-models.jsonl` for the cheaper-model round). The judge's
-packs, keys and scores go to `results/judge/` and `results/judge-models/`. A day that already has
-results is never run again: delete its file to run it again.
+A run writes everything to `results/`, which starts empty apart from the judging rules.
+`results/<step>/dayN.jsonl` holds every message with its answer, how it was made (model, memory or
+code), its times, tokens and cost. `dayN.summary.json` is the day's totals and `dayN.grades.jsonl`
+the judge's scores once `grade_pack.py merge` has run (`dayN.grades-models.jsonl` for the
+cheaper-model round). The judge's packs, keys and scores go to `results/judge/` and
+`results/judge-models/`. A day that already has results is never run again: delete its file to
+run it again.
+
+`results.post/` is the same layout for the week behind the articles: every answer, cost and score
+we published. `results.post/old/` keeps runs that were replaced, including the first day before two
+bugs of ours were fixed (the technical article tells both).

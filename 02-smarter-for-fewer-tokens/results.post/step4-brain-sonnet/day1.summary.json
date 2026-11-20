@@ -1,0 +1,32 @@
+{
+  "step": "step4-brain-sonnet",
+  "model": "fc:anthropic/claude-sonnet-5.5",
+  "day": 1,
+  "messages": 50,
+  "llm_calls": 50,
+  "from_memory": 0,
+  "cost": 0.2713,
+  "tokens": {
+    "input": 40856,
+    "cache_write": 7683,
+    "cache_read": 376467,
+    "output": 9511
+  },
+  "seconds": {
+    "min": 1.237,
+    "max": 4.781,
+    "avg": 2.599,
+    "median": 2.167,
+    "p95": 4.407
+  },
+  "seconds_llm_answers": {
+    "min": 1.237,
+    "max": 4.781,
+    "avg": 2.599,
+    "median": 2.167,
+    "p95": 4.407
+  },
+  "seconds_memory_answers": {},
+  "cpu_seconds_total": 19.61,
+  "peak_memory_mb": 895
+}

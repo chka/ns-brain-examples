@@ -1,0 +1,50 @@
+{"chat": "7.0", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.1", "turn": 0, "kind": "rare", "score": 90, "knew_customer": null, "note": "inferred from the sheet (only Burren boots, adult sizes), stated as definite"}
+{"chat": "7.2", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "asserts the store team handles online student discounts, not in the sheet"}
+{"chat": "7.3", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.3", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.4", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.5", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.6", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.7", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.8", "turn": 0, "kind": "general", "score": 40, "knew_customer": null, "note": ""}
+{"chat": "7.9", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.10", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.10", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.11", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.11", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.12", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.12", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.13", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.13", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.14", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.15", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.16", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "holiday Jan 15 rule not limited to full price; no refund method"}
+{"chat": "7.16", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.16", "turn": 2, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.17", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.18", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.18", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.19", "turn": 0, "kind": "personal", "score": 85, "knew_customer": true, "note": "right order and rule; 'around Nov 24' is the earliest bound, real deadline later with delivery time"}
+{"chat": "7.20", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.21", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "regular hours only; defers holiday hours that the facts give"}
+{"chat": "7.21", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.22", "turn": 0, "kind": "rare", "score": 95, "knew_customer": null, "note": "defers stock check needlessly"}
+{"chat": "7.23", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.24", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.25", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.25", "turn": 1, "kind": "general", "score": 85, "knew_customer": null, "note": "'must be unaltered' for exchanges is an inference, not stated policy"}
+{"chat": "7.26", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.26", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.27", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.28", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.29", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.30", "turn": 0, "kind": "personal", "score": 55, "knew_customer": false, "note": "sends to team; orders give ~196 points"}
+{"chat": "7.31", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.32", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.33", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "omits holiday extension to Jan 15 and receipt requirement"}
+{"chat": "7.33", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.34", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "street only; Sunday hours correct"}
+{"chat": "7.34", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "7.35", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "7.35", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}

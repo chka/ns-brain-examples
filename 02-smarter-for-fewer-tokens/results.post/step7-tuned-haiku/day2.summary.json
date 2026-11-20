@@ -1,0 +1,38 @@
+{
+  "step": "step7-tuned-haiku",
+  "model": "fc:anthropic/claude-haiku-5.5",
+  "day": 2,
+  "messages": 50,
+  "llm_calls": 18,
+  "from_memory": 32,
+  "cost": 0.0108,
+  "tokens": {
+    "input": 26369,
+    "cache_write": 7939,
+    "cache_read": 134963,
+    "output": 11606
+  },
+  "seconds": {
+    "min": 0.0,
+    "max": 10.845,
+    "avg": 1.254,
+    "median": 0.145,
+    "p95": 5.698
+  },
+  "seconds_llm_answers": {
+    "min": 1.136,
+    "max": 10.845,
+    "avg": 3.327,
+    "median": 2.363,
+    "p95": 10.845
+  },
+  "seconds_memory_answers": {
+    "min": 0.0,
+    "max": 0.229,
+    "avg": 0.088,
+    "median": 0.116,
+    "p95": 0.214
+  },
+  "cpu_seconds_total": 23.71,
+  "peak_memory_mb": 1471
+}

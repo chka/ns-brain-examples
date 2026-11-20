@@ -1,0 +1,520 @@
+[
+ {
+  "id": "1.23/0",
+  "date": "2026-11-16",
+  "customer": "kevin.nguyen@example.com",
+  "orders": [
+   {
+    "order": "NY-2427",
+    "where": "online",
+    "date": "2026-10-23",
+    "items": [
+     {
+      "item": "Harbour high-rise jeans, rust",
+      "size": "28",
+      "price": 118,
+      "tag": "full price"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-10-30"
+    }
+   },
+   {
+    "order": "NY-2428",
+    "where": "online",
+    "date": "2026-10-08",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, olive",
+      "size": "6",
+      "price": 112,
+      "tag": "SALE (was $160)"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "do you take amex",
+  "answers": {
+   "A": "Yes, we accept American Express, both in store and online. We also take Visa, Mastercard, Discover, Apple Pay, Google Pay, cash, Kestrel Row gift cards and Klarna (pay in 4 on purchases from $50 to $1,000). For anything else, the store team is glad to help at ny@kestrelrow.example or (212) 555-0147.",
+   "B": "We accept Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. We also accept Klarna. We do not accept Venmo, checks or crypto.",
+   "C": "Yes, we accept American Express, both in store and online. We also take Visa, Mastercard, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. Just so you know, we don't accept Venmo, checks or crypto.",
+   "D": "Yes, we accept American Express, along with Visa, Mastercard, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. We also take Klarna for online orders from $50 to $1,000. We don't accept Venmo, checks or crypto. Anything else I can help with?",
+   "E": "Yes, we do! American Express is accepted both in store at 147 Greene Street and online. We also take Visa, Mastercard, Discover, Apple Pay, Google Pay and Kestrel Row gift cards. Cash is welcome in store too. Is there anything else I can help you with?",
+   "F": "Yes, we accept American Express, both in store and online. We also take Visa, Mastercard, Discover, Apple Pay, Google Pay, cash, Kestrel Row gift cards and Klarna (pay in 4, for purchases from $50 to $1,000). Sorry, we don't accept Venmo, checks or crypto. Any other questions, the store team is happy to help at ny@kestrelrow.example or (212) 555-0147.",
+   "G": "We accept Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. We also accept Klarna. We do not accept Venmo, checks or crypto.",
+   "H": "Yes, we accept American Express, both in store and online. We also take Visa, Mastercard, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. Just so you know, we don't accept Venmo, checks or crypto.",
+   "I": "Yes, we do! American Express is accepted both in store at 147 Greene Street and online. We also take Visa, Mastercard, Discover, Apple Pay, Google Pay and Kestrel Row gift cards. Just so you can plan ahead, we don't accept Venmo, checks or crypto. Anything else I can help with?",
+   "J": "Yes, we accept American Express, both in store and online. We also take Visa, Mastercard, Discover, Apple Pay, Google Pay, cash, Kestrel Row gift cards and Klarna (online, for orders from $50 to $1,000). We don't accept Venmo, checks or crypto."
+  }
+ },
+ {
+  "id": "1.24/0",
+  "date": "2026-11-16",
+  "customer": "marcus.brooks@example.com",
+  "orders": [
+   {
+    "order": "NY-2409",
+    "where": "online",
+    "date": "2026-11-09",
+    "items": [
+     {
+      "item": "Puffin rain jacket, rust",
+      "size": "6",
+      "price": 41,
+      "tag": "SALE (was $58)"
+     },
+     {
+      "item": "Inis linen trousers, indigo",
+      "size": "M",
+      "price": 98,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "price match?",
+  "answers": {
+   "A": "Hi Marcus! We don't price match, but I'm happy to tell you about our current offers. From Friday Nov 27 to Monday Nov 30, full-price items are 25% off in store and online. Items already on sale aren't included.\n\nIf you have a specific item or a recent Kestrel Row purchase in mind, tell me and I'll point you in the right direction.",
+   "B": "We don't price match, but I'm happy to help. If you buy an item and we mark that same item down within 7 days, we can make a price adjustment once. For that, the store team can help: have your receipt or order number ready. You can reach them at ny@kestrelrow.example or (212) 555-0147. We also have a Black Friday offer: full-price items are 25% off from Friday, Nov 27 to Monday, Nov 30, in store and online.",
+   "C": "We don't price match, but I'm happy to tell you about our current offers. Our Black Friday offer runs Friday, Nov 27 to Monday, Nov 30: full-price items are 25% off in store and online. Also, if an item you bought is marked down within 7 days, we can make a one-time price adjustment. The store team can help with that: ny@kestrelrow.example or (212) 555-0147.",
+   "D": "We don't price match, but I'm happy to tell you about our current offers. Our Black Friday sale runs Friday, Nov 27 to Monday, Nov 30, with 25% off full-price items in store and online. Also, if an item you buy is marked down within 7 days, we can do a one-time price adjustment. For that, the store team can help: ny@kestrelrow.example or (212) 555-0147.",
+   "E": "We don't price match, including competitor prices or other websites. If we mark down the same item within 7 days of your purchase, we can make one price adjustment. Your order NY-2409 is right at that 7-day limit, so please contact our store team at ny@kestrelrow.example or (212) 555-0147 with your order number to check whether the Puffin jacket qualifies.",
+   "F": "We don't price match, whether it's a competitor or another website. If you buy an item and we mark that same item down within 7 days, we can do a one-time price adjustment. The store team can arrange that at ny@kestrelrow.example or (212) 555-0147 during store hours. Have your receipt or order number handy. Happy to tell you about our current offers too.",
+   "G": "We don't price match, including competitor prices, other websites, or other retailers' sales. If you buy an item and we mark that same item down within 7 days, we can make a one-time price adjustment. For that, the store team can help: ny@kestrelrow.example or (212) 555-0147. Have your receipt or order number ready.",
+   "H": "We don't price match, including other retailers' prices. If the same item at Kestrel Row is marked down within 7 days of purchase, we can do a one-time price adjustment, which the store team arranges at ny@kestrelrow.example or (212) 555-0147. Have your order number ready. Full-price items are also 25% off in store and online from Nov 27 to Nov 30.",
+   "I": "We don't price match, including competitor prices or other websites. If the same item is marked down at Kestrel Row within 7 days of your purchase, you can ask for one price adjustment, and our store team handles those. For questions about it, contact ny@kestrelrow.example or (212) 555-0147.",
+   "J": "We don't price match, whether it's a competitor or another website's sale. If you buy an item and we mark that same item down within 7 days, we can make a one-time price adjustment. The store team arranges that: email ny@kestrelrow.example or call (212) 555-0147 during store hours, with your receipt or order number ready."
+  }
+ },
+ {
+  "id": "1.25/0",
+  "date": "2026-11-16",
+  "customer": "guest-1-25@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "do you have wifi",
+  "answers": {
+   "A": "Yes, we have free Wi-Fi throughout the store at 147 Greene Street in SoHo. Feel free to hop on while you browse or try things on!",
+   "B": "Yes, we offer free Wi-Fi in the store at 147 Greene Street, so feel free to browse, connect, and take your time. If you have any other questions before you visit, just ask!",
+   "C": "Yes, free Wi-Fi is available in the store. Our entrance is step-free, and the customer restroom is on the lower floor, reached by elevator. If you have any other questions, the store team is happy to help at ny@kestrelrow.example or (212) 555-0147.",
+   "D": "Yes, we do! Free Wi-Fi is available in the store at 147 Greene Street, so feel free to browse and connect while you shop. Dogs on a leash are welcome too, if you're bringing a furry friend along.",
+   "E": "Yes, we offer free Wi-Fi in the store at 147 Greene Street. Feel free to hop on while you browse or try things on. If you have any other questions before you visit, just ask!",
+   "F": "Yes, we have free Wi-Fi available throughout the store at 147 Greene Street in SoHo. Feel free to hop on while you browse or wait for a fitting room!",
+   "G": "Yes, we have free Wi-Fi in the store. Dogs on a leash are welcome too, if you're bringing a furry friend along. We're at 147 Greene Street in SoHo.",
+   "H": "Yes, free Wi-Fi is available in the store at 147 Greene Street in SoHo. If you have other questions about your visit, the store team can help at ny@kestrelrow.example or (212) 555-0147 during store hours.",
+   "I": "Yes, free Wi-Fi is available in the store. If you need anything else during your visit, the store team can help at ny@kestrelrow.example or (212) 555-0147 during store hours.",
+   "J": "Yes, free Wi-Fi is available in the store. If you have any other questions about your visit, the store team is happy to help at (212) 555-0147 or ny@kestrelrow.example."
+  }
+ },
+ {
+  "id": "1.26/0",
+  "date": "2026-11-16",
+  "customer": "sam.reed@example.com",
+  "orders": [
+   {
+    "order": "NY-2451",
+    "where": "online",
+    "date": "2026-11-13",
+    "items": [
+     {
+      "item": "Atlantic merino crew, oatmeal",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "open thanksgiving?",
+  "answers": {
+   "A": "No, we're closed on Thanksgiving, Thursday, Nov 26. We reopen on Black Friday, Nov 27, from 8am to 10pm, with 25% off full-price items in store and online through Monday, Nov 30.",
+   "B": "No, we're closed on Thanksgiving, Thursday, November 26. We reopen on Black Friday, November 27, from 8am to 10pm. For anything else, the store team is happy to help at ny@kestrelrow.example or (212) 555-0147.",
+   "C": "No, we're closed all day on Thanksgiving, Thursday, Nov 26. We reopen for Black Friday, Nov 27, from 8am to 10pm, with last fitting room entry at 9:45pm. Saturday, Nov 28 is 9am-9pm, and Sunday, Nov 29 is 10am-8pm. Hope to see you then!",
+   "D": "We're closed on Thanksgiving, Thursday, Nov 26. Black Friday weekend hours: Fri Nov 27 8am-10pm, Sat Nov 28 9am-9pm, Sun Nov 29 10am-8pm, Mon Nov 30 10am-8pm. Our regular week is Mon-Wed 10am-8pm, Thu 10am-9pm, Fri-Sat 10am-8pm, Sun 11am-7pm. Last fitting room entry is 15 minutes before closing.",
+   "E": "No, we're closed on Thanksgiving, Thursday, Nov 26. We reopen on Black Friday, Nov 27, from 8am to 10pm, with 25% off full-price items in store and online. Happy to help with anything else!",
+   "F": "No, we're closed on Thanksgiving, Thursday, Nov 26. We reopen on Black Friday, Nov 27, from 8am to 10pm, with 25% off full-price items in store and online. Hope you have a lovely holiday!",
+   "G": "No, we're closed on Thanksgiving, Thursday, November 26. We reopen on Black Friday, November 27, from 8am to 10pm. For anything else, the store team is glad to help at ny@kestrelrow.example or (212) 555-0147.",
+   "H": "No, we're closed all day on Thanksgiving, Thursday, Nov 26, 2026. Holiday hours: Black Friday, Nov 27, 8am-10pm; Sat Nov 28, 9am-9pm; Sun Nov 29, 10am-8pm. Regular hours: Mon-Wed and Fri-Sat 10am-8pm, Thu 10am-9pm, Sun 11am-7pm. Last fitting room entry is 15 minutes before closing.",
+   "I": "Thanksgiving (Thu Nov 26): closed. Today (Monday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm. Last fitting room entry is 15 minutes before closing.",
+   "J": "No, we're closed on Thanksgiving, Thursday, Nov 26. We reopen on Black Friday, Nov 27, from 8am to 10pm, with 25% off full-price items in store and online through Monday, Nov 30."
+  }
+ },
+ {
+  "id": "1.27/0",
+  "date": "2026-11-16",
+  "customer": "guest-1-27@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "can i pay with venmo",
+  "answers": {
+   "A": "No, we don't accept Venmo, and we don't take checks or cryptocurrency either. We do accept Visa, Mastercard, American Express, Discover, Apple Pay, Google Pay, cash (in store) and Kestrel Row gift cards. Online orders take the same, except cash. Klarna pay in 4 is also available online for orders from $50 to $1,000.",
+   "B": "Sorry, we don't accept Venmo. Checks and cryptocurrency aren't accepted either. We take Visa, Mastercard, American Express, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. For more help, contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "C": "Sorry, we don't accept Venmo. We also can't take checks or crypto. You can pay with Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash or a Kestrel Row gift card. Klarna pay in 4 is also available for purchases from $50 to $1,000 through the Klarna app. Let me know if you'd like help with anything else!",
+   "D": "Sorry, we don't accept Venmo, checks or cryptocurrency. We do accept Visa, Mastercard, American Express, Discover, Apple Pay, Google Pay, cash (in store) and Kestrel Row gift cards. Klarna pay in 4 is also available online for orders from $50 to $1,000.",
+   "E": "No, we don't accept Venmo. Venmo, checks and crypto are not accepted at Kestrel Row. We do accept Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash, Kestrel Row gift cards and Klarna for purchases from $50 to $1,000. If you have other questions, the store team can help at (212) 555-0147 or ny@kestrelrow.example.",
+   "F": "No, we don't accept Venmo. Checks and cryptocurrency aren't accepted either. We do take Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash, Kestrel Row gift cards and Klarna (pay in 4 on purchases from $50 to $1,000). For anything else, the store team is happy to help at (212) 555-0147 or ny@kestrelrow.example.",
+   "G": "Sorry, we don't accept Venmo, checks, or crypto. You can pay with Visa, Mastercard, American Express, Discover, Apple Pay, Google Pay, cash, or a Kestrel Row gift card. Klarna (pay in 4) is also available for purchases from $50 to $1,000, in store or online.",
+   "H": "Sorry, we don't accept Venmo. We also don't take checks or cryptocurrency. Online orders accept Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, and Kestrel Row gift cards. In store we accept cash too. Klarna pay in 4 is available online for orders from $50 to $1,000. For anything else, the store team can help at ny@kestrelrow.example or (212) 555-0147.",
+   "I": "Sorry, we don't accept Venmo. We also can't take checks or crypto. You can pay with Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash or a Kestrel Row gift card. Klarna pay in 4 is also available for purchases from $50 to $1,000 through the Klarna app. Happy to help with anything else!",
+   "J": "Sorry, we don't accept Venmo (or checks or crypto). You can pay with Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash or a Kestrel Row gift card. Klarna pay in 4 is also available for purchases from $50 to $1,000."
+  }
+ },
+ {
+  "id": "1.28/0",
+  "date": "2026-11-16",
+  "customer": "guest-1-28@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "whats the address",
+  "answers": {
+   "A": "Kestrel Row is at 147 Greene Street, between Prince and Spring Streets, in SoHo, New York, NY 10012. The closest subway stop is Prince St (R, W), a 2-minute walk. Let me know if you'd like our hours or other directions.",
+   "B": "The address is 147 Greene Street, between Prince and Spring Streets, SoHo, New York, NY 10012. The closest subway stop is Prince St (R, W), about a 2-minute walk. If you need anything else, call (212) 555-0147 during store hours or email ny@kestrelrow.example.",
+   "C": "Kestrel Row is at 147 Greene Street, between Prince and Spring Streets, in SoHo, New York, NY 10012. It's our only store. The closest subway stop is Prince St (R, W), about a 2-minute walk. We'd love to see you!",
+   "D": "We're at 147 Greene Street, between Prince and Spring Streets in SoHo, New York, NY 10012. The nearest subway stop is Prince St (R, W), a 2-minute walk. Anything else I can help with?",
+   "E": "Kestrel Row is at 147 Greene Street, between Prince and Spring Streets, in SoHo, New York, NY 10012. It's our only store. The closest subway stop is Prince St (R, W), about a 2-minute walk. We'd love to see you!",
+   "F": "We're at 147 Greene Street in SoHo, New York. Our regular hours are Mon-Wed 10am-8pm, Thu 10am-9pm, Fri-Sat 10am-8pm, and Sun 11am-7pm. Holiday hours differ, so just ask if you're planning a visit around then. We'd love to see you!",
+   "G": "Kestrel Row is at 147 Greene Street in SoHo, New York. For anything else, the store team is at ny@kestrelrow.example or (212) 555-0147 during store hours.",
+   "H": "We're at 147 Greene Street in SoHo, New York. Our phone is (212) 555-0147, answered during store hours, and you can also email ny@kestrelrow.example. Is there anything else I can help you with, like opening hours?",
+   "I": "Our store is at 147 Greene Street in SoHo, New York. If you need anything else about the store or an order, the store team is reachable at ny@kestrelrow.example or (212) 555-0147 during store hours.",
+   "J": "The store is at 147 Greene Street, between Prince and Spring Streets, SoHo, New York, NY 10012. The closest subway stop is Prince St (R, W), about a 2-minute walk. For questions beyond this, you can call (212) 555-0147 during store hours or email ny@kestrelrow.example."
+  }
+ },
+ {
+  "id": "1.29/0",
+  "date": "2026-11-16",
+  "customer": "sam.reed@example.com",
+  "orders": [
+   {
+    "order": "NY-2451",
+    "where": "online",
+    "date": "2026-11-13",
+    "items": [
+     {
+      "item": "Atlantic merino crew, oatmeal",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "store hours?",
+  "answers": {
+   "A": "Here are our regular hours:\n\nMonday to Wednesday: 10am-8pm\nThursday: 10am-9pm\nFriday and Saturday: 10am-8pm\nSunday: 11am-7pm\n\nThe last fitting room entry is 15 minutes before closing. Holiday hours differ, so if you're planning a visit around a holiday, just ask and I'll share the details.",
+   "B": "Our regular hours are:\n\nMonday to Wednesday: 10am to 8pm\nThursday (late night): 10am to 9pm\nFriday and Saturday: 10am to 8pm\nSunday: 11am to 7pm\n\nWe're closed on Thanksgiving, Thursday, Nov 26. For holiday hours or other dates, please call our store team at (212) 555-0147 or email ny@kestrelrow.example.",
+   "C": "Regular hours: Mon-Wed and Fri-Sat 10am-8pm, Thu 10am-9pm, Sun 11am-7pm. Last fitting room entry is 15 minutes before closing. Holidays: closed Thanksgiving (Nov 26); Black Friday Nov 27 8am-10pm, Sat Nov 28 9am-9pm, Sun Nov 29 10am-8pm; Dec 24 10am-5pm; closed Dec 25; Dec 31 10am-6pm; Jan 1 12pm-6pm.",
+   "D": "Monday to Wednesday 10am-8pm; Thursday (late night) 10am-9pm; Friday and Saturday 10am-8pm; Sunday 11am-7pm. The phone is answered during store hours.",
+   "E": "Our regular hours are Monday to Wednesday 10am-8pm, Thursday 10am-9pm (late night), Friday and Saturday 10am-8pm, and Sunday 11am-7pm. Fitting rooms close to new entries 15 minutes before closing. We're closed on Thanksgiving, Nov 26, and on Christmas Day. For holiday hours or anything else, please contact our store team at (212) 555-0147 or ny@kestrelrow.example.",
+   "F": "We're at 147 Greene Street in SoHo. Our hours are:\n\nMonday to Wednesday: 10am-8pm\nThursday (late night): 10am-9pm\nFriday and Saturday: 10am-8pm\nSunday: 11am-7pm\n\nThe last fitting room entry is 15 minutes before closing. We're closed on Thanksgiving, Nov 26, and open 8am-10pm on Black Friday, Nov 27.",
+   "G": "We're at 147 Greene Street in SoHo, open:\n\nMonday to Wednesday: 10am-8pm\nThursday (late night): 10am-9pm\nFriday and Saturday: 10am-8pm\nSunday: 11am-7pm\n\nThe last fitting room entry is 15 minutes before closing. Heads up for the holidays: we're closed Thursday, Nov 26 for Thanksgiving, then open Black Friday, Nov 27, from 8am to 10pm.",
+   "H": "Today (Monday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm. Last fitting room entry is 15 minutes before closing.",
+   "I": "Here are our regular hours: Monday to Wednesday 10am-8pm, Thursday 10am-9pm (late night), Friday and Saturday 10am-8pm, and Sunday 11am-7pm. Last fitting room entry is 15 minutes before closing. Holiday hours differ: we're closed Thanksgiving (Nov 26) and open 8am-10pm on Black Friday. Want hours for a particular date?",
+   "J": "Our regular hours are Monday to Wednesday 10am-8pm, Thursday 10am-9pm (late night), Friday and Saturday 10am-8pm, and Sunday 11am-7pm. The last fitting room entry is 15 minutes before closing. Heads up: we're closed Thursday, Nov 26 for Thanksgiving, then open Black Friday, Nov 27, 8am-10pm. We're at 147 Greene Street in SoHo. Can I help with anything else?"
+  }
+ },
+ {
+  "id": "1.29/1",
+  "date": "2026-11-16",
+  "customer": "sam.reed@example.com",
+  "orders": [
+   {
+    "order": "NY-2451",
+    "where": "online",
+    "date": "2026-11-13",
+    "items": [
+     {
+      "item": "Atlantic merino crew, oatmeal",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "store hours?"
+  ],
+  "question": "and sunday?",
+  "answers": {
+   "A": "On regular Sundays we're open 11am-7pm, and the last fitting room entry is 6:45pm. For the Black Friday weekend, Sunday, Nov 29, we're open 10am-8pm, with the last fitting room entry at 7:45pm. For other dates, please contact our store team at (212) 555-0147 or ny@kestrelrow.example.",
+   "B": "Sundays we're open 11am-7pm, and the last fitting room entry is 6:45pm. Sunday is our one day with a later opening and earlier close. Note that Sunday, Nov 29 (Black Friday weekend) is different: we're open 10am-8pm that day.",
+   "C": "Sundays we're open 11am-7pm, and the last fitting room entry is 6:45pm. That applies to this coming Sunday, Nov 22. On Black Friday weekend, Sunday, Nov 29, we're open a bit differently: 10am-8pm, with last fitting room entry at 7:45pm.",
+   "D": "Sunday hours are 11am-7pm, with last fitting room entry at 6:45pm. Our regular week is Monday to Wednesday 10am-8pm, Thursday 10am-9pm, Friday and Saturday 10am-8pm, and Sunday 11am-7pm. Holiday hours: closed Thanksgiving, Black Friday 8am-10pm, Sunday Nov 29 10am-8pm.",
+   "E": "Sunday: 11am-7pm. Today (Monday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm. Last fitting room entry is 15 minutes before closing.",
+   "F": "Sunday hours are 11am-7pm, with last fitting room entry at 6:45pm. Sunday is our latest opening and earliest closing of the week. Just so you know, this coming Sunday, Nov 22, follows our regular schedule, while Thanksgiving weekend Sunday, Nov 29, is 10am-8pm.",
+   "G": "Sundays we're open 11am-7pm, and the last fitting room entry is 6:45pm. Sunday is the one day we open later and close earlier. Just a note that Sunday, Nov 29 (Black Friday weekend) we're open 10am-8pm instead. Anything else I can help with?",
+   "H": "Sundays we're open 11am-7pm, with last fitting room entry at 6:45pm. On Sunday Nov 29 (Black Friday weekend) we're open 10am-8pm. Other days: Mon-Wed, Fri and Sat 10am-8pm, Thu 10am-9pm. Holidays: closed Nov 26 and Dec 25; Dec 24 10am-5pm; Dec 31 10am-6pm; Jan 1 12pm-6pm.",
+   "I": "Sundays we're open 11am-7pm, and the last fitting room entry is 6:45pm. Sunday is our one day with a later opening and earlier close. The exception is Sunday, Nov 29, during Black Friday weekend, when we're open 10am-8pm (last fitting room entry 7:45pm).",
+   "J": "Sundays we're open 11am to 7pm, and the last fitting room entry is 6:45pm.\n\nToday is Monday, Nov 16, so the next Sunday is Nov 22. For Sunday hours during the holiday period, Nov 29 is 10am to 8pm, and Dec 24 onward follows our holiday schedule. For any other date, please call (212) 555-0147 or email ny@kestrelrow.example."
+  }
+ },
+ {
+  "id": "1.30/0",
+  "date": "2026-11-16",
+  "customer": "ben.fischer@example.com",
+  "orders": [
+   {
+    "order": "NY-2463",
+    "where": "in store",
+    "date": "2026-11-07",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, forest green",
+      "size": "4",
+      "price": 160,
+      "tag": "full price"
+     },
+     {
+      "item": "Maam waxed jacket, charcoal",
+      "size": "M",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2464",
+    "where": "online",
+    "date": "2026-10-24",
+    "items": [
+     {
+      "item": "Corrib slim shirt, forest green",
+      "size": "L",
+      "price": 78,
+      "tag": "full price"
+     },
+     {
+      "item": "Atlantic merino crew, forest green",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "i bought the slim shirt, can i return it",
+  "answers": {
+   "A": "Probably, yes. A full-price Corrib shirt can be returned within 30 days (from delivery if you ordered online). It needs to be unworn with tags, and you'll need your receipt or order number. The refund goes to your original payment method. Sale items get 14 days for store credit or an exchange, and FINAL SALE items can't be returned.\n\nIf it's a fit issue, a free swap to Regular is an option. When did you buy it, and was it on sale?",
+   "B": "Yes, your Corrib slim shirt from order NY-2464 can be returned for a refund. Full-price online orders can be returned within 30 days of delivery, so you have until at least Mon Nov 23, 2026. It must be unworn, with tags on and unaltered. Send it back by mail using the prepaid label in the box. Your bank may take 3-10 business days to show the refund.",
+   "C": "Yes, you can return it. Your Corrib slim shirt (order NY-2464, bought online on October 24) is a full-price item, and you're within the 30-day window from delivery. It needs to be unworn, with tags on and unaltered. Please quote order NY-2464. Card refunds can take 3-10 business days to show. For help, email ny@kestrelrow.example or call (212) 555-0147 during store hours.",
+   "D": "Yes, probably. Full-price items can be returned within 30 days (from delivery for online orders) if they're unworn with tags and you have your receipt or order number. The refund goes to your original payment method. Sale items get 14 days for store credit or an exchange, and FINAL SALE items can't be returned.\n\nIf the fit is the issue, a free exchange for Regular is an option. When did you buy it, and was it full price or on sale?",
+   "E": "Yes, possibly. Your Corrib slim shirt (order NY-2464) was full price, so it can be returned within 30 days of delivery if it's unworn, tagged and unaltered. Your order was placed Oct 24, before the Nov 1 holiday extension starts, so that extension doesn't apply. The window is closing soon, so please act quickly. The store team can confirm your delivery date: ny@kestrelrow.example or (212) 555-0147.",
+   "F": "Hi, I'd be glad to help. Whether the slim shirt can go back depends on a few things. Full-price items can be returned within 30 days of purchase, or of delivery for online orders. Sale items have 14 days and get store credit or an exchange only. The shirt must be unworn with tags attached, and you'll need your receipt or order number. Could you tell me when you bought it, whether it was full price or on sale, and whether it's marked FINAL SALE?",
+   "G": "Probably, yes! Full-price items can be returned within 30 days of purchase (or delivery, for online orders), as long as they're unworn with tags attached and you have your receipt or order number. Purchases made since Nov 1 get extra time, until Jan 15. Sale items have 14 days, for store credit or exchange only, and FINAL SALE items can't be returned. Was it full price, and did you buy it online or in store?",
+   "H": "Yes, it looks eligible, Ben. Your Corrib slim shirt (order NY-2464, full price) can be returned within 30 days of delivery if it's unworn, has its tags and hasn't been altered. Since you ordered on Oct 24, the extended holiday window doesn't apply, so don't wait too long. If the fit is the issue, a free exchange for another size, or for Corrib Regular, is also an option. For your exact delivery date, the store team can help: ny@kestrelrow.example or (212) 555-0147.",
+   "I": "Yes, most likely! A full-price item can be returned within 30 days of purchase (or delivery, for online orders), as long as it's unworn with tags attached and you have your receipt or order number. Sale items get 14 days, for store credit or exchange only, and FINAL SALE items can't be returned. When did you buy it, and was it full price?",
+   "J": "Yes, you may be able to return it. Full-price items can be returned within 30 days of purchase (or delivery, for online orders), and sale items within 14 days for store credit or exchange only. The shirt needs to be unworn, with tags attached, and you'll need your receipt, order number, or the card or Row Rewards account used to buy it. Was it full price or on sale, and when did you buy it? For a specific case, contact our team at ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "1.31/0",
+  "date": "2026-11-16",
+  "customer": "guest-1-31@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "exchange policy",
+  "answers": {
+   "A": "Here's our exchange policy in brief. You can swap an item for the same item in a different size or color, free of charge. Full-price items can be exchanged within 30 days, and sale items within 14 days. FINAL SALE items can't be exchanged or returned. Exchanges can be done in store or online. If you want a different style, we can go over our return options. For order-specific help, contact our store team at ny@kestrelrow.example or (212) 555-0147.",
+   "B": "Happy to explain! An exchange is the same item in a different size or color, and it's always free. You have 30 days for full-price items and 14 days for sale items. You can exchange in store or online. FINAL SALE items can't be exchanged. If you'd like, I can help with a stock check first. For online exchange details on a specific order, the team at ny@kestrelrow.example or (212) 555-0147 can help.",
+   "C": "Here's how exchanges work at Kestrel Row: you can swap an item for the same item in a different size or color, free of charge, in store or online. Full-price items have 30 days, and sale items have 14 days. An exchange is always the same style, never a different one. FINAL SALE and altered items can't be exchanged. To arrange an exchange on an online order, please contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "D": "An exchange swaps an item for the same item in a different size or color, free of charge. Full-price items can be exchanged within 30 days, and sale items within 14 days. Exchanges can't change the style, FINAL SALE items can't be exchanged, and altered items can't be returned. Exchanges work in store or online. For a specific online order, please contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "E": "Happy to help! An exchange means the same item in a different size or color. It's free, in store or online. Full-price items have 30 days, and sale items have 14 days. FINAL SALE items can't be exchanged. If you'd like a different style, we can go over return options instead. Want me to point you to the team for a stock check on a size?",
+   "F": "You can exchange an item for the same piece in a different size or color, free, in store or online: within 30 days for full-price items and 14 days for sale items. Items marked FINAL SALE and altered items can't be exchanged.",
+   "G": "We can swap an item for the same item in a different size or color. It's free, in store or online, within 30 days for full-price items or 14 days for sale items. FINAL SALE items can't be exchanged, and neither can altered items. I can help with a stock check first. For an exchange on a specific online order, contact ny@kestrelrow.example or (212) 555-0147.",
+   "H": "We can swap an item for the same item in a different size or color. It's free, in store or online, within 30 days for full-price items (14 days for sale items). Items marked FINAL SALE can't be exchanged, and neither can altered items. I'm happy to check stock on the size you need first. To arrange an exchange on a specific online order, contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "I": "Hi, happy to help with exchanges. Here's how it works:\n\nSame item, different size or color, free of charge. Full-price items can be exchanged within 30 days of purchase, and sale items within 14 days. Exchanges can be done in store or online. FINAL SALE items can't be exchanged.\n\nIf you want a different style, that's a return rather than an exchange, and I can explain those options.\n\nFor a specific order, our store team can help: ny@kestrelrow.example or (212) 555-0147.",
+   "J": "Happy to explain! An exchange is the same item in a different size or color, never a different style. It's free within 30 days for full-price items, or 14 days for sale items, in store or online. FINAL SALE items can't be exchanged. For an exchange on a specific online order, our team can help: ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "1.31/1",
+  "date": "2026-11-16",
+  "customer": "guest-1-31@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [
+   "exchange policy"
+  ],
+  "question": "do you take amex",
+  "answers": {
+   "A": "Yes, we take American Express, along with Visa, Mastercard, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. Klarna is also available online for orders from $50 to $1,000. We don't accept Venmo, checks or crypto.",
+   "B": "We accept Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. We also accept Klarna. We do not accept Venmo, checks or crypto.",
+   "C": "I'm sorry, I don't have information about accepted payment methods. For that, please contact our store team at ny@kestrelrow.example or (212) 555-0147. The phone line is answered during store hours.\n\nI'm happy to help with exchanges or returns if you have other questions.",
+   "D": "I'm sorry, I don't have information about accepted payment methods. For that, please contact our store team at ny@kestrelrow.example or (212) 555-0147. The phone line is answered during store hours. I'm happy to help with any questions about exchanges.",
+   "E": "Yes, we accept American Express, both in store and online. We also take Visa, Mastercard, Discover, Apple Pay, Google Pay, cash, Kestrel Row gift cards and Klarna (online, for orders from $50 to $1,000). We don't accept Venmo, checks or crypto.",
+   "F": "I'm sorry, I don't have information about which payment cards we accept, so I don't want to guess. The store team can confirm for you at ny@kestrelrow.example or (212) 555-0147 (answered during store hours). Please don't share any card details in chat. Is there anything else I can help with, like exchanges?",
+   "G": "Yes, we accept American Express, both in store and online. We also take Visa, Mastercard, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. Venmo, checks and crypto aren't accepted.",
+   "H": "I'm not sure which cards we accept, as I don't have payment details here. The store team can confirm for you at ny@kestrelrow.example or (212) 555-0147 during store hours. Please don't share any card details in chat. Is there anything else I can help with, like exchanges?",
+   "I": "We accept Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. We also accept Klarna. We do not accept Venmo, checks or crypto.",
+   "J": "Yes, we accept American Express, both in store and online. We also take Visa, Mastercard, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. Just so you know, we don't accept Venmo, checks or crypto."
+  }
+ },
+ {
+  "id": "1.32/0",
+  "date": "2026-11-16",
+  "customer": "guest-1-32@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "merino care",
+  "answers": {
+   "A": "Atlantic merino knitwear should be hand washed in cold water, or run on your machine's wool cycle, also cold. Dry it flat, and never put it in the dryer. If you have a more specific question, our team at ny@kestrelrow.example or (212) 555-0147 is happy to help.",
+   "B": "Merino care: hand wash or use a cold wool cycle, dry flat, and never use the dryer. Following this guidance helps your knitwear last. If you have a question about a specific piece, our team at ny@kestrelrow.example or (212) 555-0147 is happy to help.",
+   "C": "For merino, hand wash or use a cold wool cycle, dry it flat, and never use the dryer. If you have questions about a specific piece, our store team is happy to help at ny@kestrelrow.example or (212) 555-0147.",
+   "D": "Merino (our Atlantic knitwear) should be hand washed or run on the wool cycle, always in cold water. Dry it flat, and never put it in the dryer, not even for a few minutes. Want a hand with anything else, like sizing? Atlantic is true to size but roomy in the body.",
+   "E": "Merino from our Atlantic knitwear should be hand washed or run on a cold wool cycle. Always use cold water, then dry it flat. It should never go in the dryer, not even for a few minutes.",
+   "F": "For Atlantic merino knitwear, hand wash or use the wool cycle, with cold water either way. Dry it flat and never put it in the dryer, not even for a few minutes. If you have questions about stains or special detergents, our store team can help at ny@kestrelrow.example or (212) 555-0147.",
+   "G": "For merino, hand wash or use a cold wool cycle, then dry flat. Never use the dryer, not even for a few minutes. Following this guidance helps your items last.",
+   "H": "Merino from our Atlantic knitwear should be hand washed or run on a cold wool cycle. Always use cold water, then dry it flat. It should never go in the dryer.",
+   "I": "For merino, hand wash or use a cold wool cycle, then dry flat. Never put merino in the dryer. Following these steps helps your knitwear last longer.",
+   "J": "Merino knitwear from our Atlantic line should be hand washed in cold water, or run on your machine's wool cycle, also cold. Always dry it flat, and never put it in the dryer. If you have a more specific question about a particular piece, the store team is happy to help at ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "1.33/0",
+  "date": "2026-11-16",
+  "customer": "leo.silva@example.com",
+  "orders": [
+   {
+    "order": "NY-2445",
+    "where": "in store",
+    "date": "2026-10-27",
+    "items": [
+     {
+      "item": "Atlantic merino crew, rust",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "4",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "i lost the receipt for the rain jacket",
+  "answers": {
+   "A": "No problem, a receipt isn't always needed. If you paid by card or have a Row Rewards account, we can look up your purchase in its place. Otherwise, a no-receipt return gets store credit at the item's lowest price in the last 30 days, with photo ID, and is limited to 3 per year. Did you pay by card, or do you have a Row Rewards account? Please don't share any card numbers or passwords.",
+   "B": "No problem, Leo. We can find your purchase, order NY-2445 from October 27, so you don't need the receipt. Bring the order number, or the card you paid with, to the store. The jacket must be unworn with tags attached. Full-price items can be returned within 30 days, which runs to November 26. We're closed that day for Thanksgiving, so please come by Wednesday, November 25 at the latest. Open 10am to 8pm.",
+   "C": "I'm sorry about the receipt. Your purchase may still be found. Did you pay by card, or do you have a Row Rewards account? Please don't share your card number here. If you're logged in, I can see what we hold for your account. If the purchase can't be found, a return without a receipt is given as store credit at the lowest price the item sold for in the last 30 days, and photo ID is required. For the lookup and ID check, please contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "D": "Sorry about the lost receipt, we may still be able to help. Did you pay by card, or do you have a Row Rewards account? Either way, the purchase can usually be looked up instead of a receipt. Please don't share any card number or password with me. If you're logged in, I can check what the shop holds for your account, and if I can't find it, the store team can look it up for you.",
+   "E": "No problem, Leo. Your rain jacket is on order NY-2445 from October 27, so we can find it by order number without the receipt. As a full-price purchase made Nov 1 to Dec 24 isn't involved here, the usual 30 days apply, so please bring it unworn with tags attached and unaltered. The store team can confirm details at ny@kestrelrow.example or (212) 555-0147.",
+   "F": "No problem. Did you pay by card or use a Row Rewards account when you bought it? If so, the team may be able to look up the purchase without the receipt. Please don't share any card details here. If it can't be found, a return without a receipt is given as store credit at the lowest price the item sold for in the last 30 days, and photo ID is required. The store team can check this with you at ny@kestrelrow.example or (212) 555-0147.",
+   "G": "Thanks, Leo. We have your Puffin rain jacket (indigo, size 4, bought in store Oct 27) on file. It can be returned unworn with tags until Thu Nov 26, but we're closed that day, so please come in by Wed Nov 25. Did you pay by card or have a Row Rewards account? If so, we can look up the purchase without the receipt. Please bring photo ID.",
+   "H": "Sorry about that, we may still be able to help. Did you pay by card, or do you have a Row Rewards account? Either way, we can usually look up the purchase without the receipt. Please don't share any card numbers or passwords here. If you're logged in, I can check what the shop holds on your account, and if I can't find it, our team can do the lookup.",
+   "I": "No problem, we may be able to look it up. If you paid by card or have a Row Rewards account, we can find the purchase without a receipt, and a full-price return within 30 days (unworn, tags on) is refunded as usual. Otherwise it would be store credit at the item's lowest price in the last 30 days, with photo ID, limited to 3 no-receipt returns a year. Do you remember how you paid?",
+   "J": "No problem, Leo. Your order number NY-2445 can stand in for the receipt. The indigo Puffin rain jacket, size 4, was bought in store on Oct 27, so it's within the 30-day full-price window until Nov 26. It must be unworn, with tags attached and unaltered. For the return itself, the store team can confirm: ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "1.33/1",
+  "date": "2026-11-16",
+  "customer": "leo.silva@example.com",
+  "orders": [
+   {
+    "order": "NY-2445",
+    "where": "in store",
+    "date": "2026-10-27",
+    "items": [
+     {
+      "item": "Atlantic merino crew, rust",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "4",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "i lost the receipt for the rain jacket"
+  ],
+  "question": "can i return sale items",
+  "answers": {
+   "A": "Yes, within 14 days of purchase. Sale items get store credit or an exchange only, not a refund to your card, even with a receipt. The item must be unworn with tags attached. Anything marked FINAL SALE can't be returned or exchanged.\n\nIf your rain jacket was on sale, tell me roughly when you bought it and I can point you to the right next step.",
+   "B": "Yes, sale items can be returned within 14 days of purchase. Please note they receive store credit or an exchange only, not a refund to your card, and this applies even with a receipt. Items marked FINAL SALE cannot be returned or exchanged. If you're close to the 14-day limit, or you're unsure whether an item was marked FINAL SALE, the store team can help at ny@kestrelrow.example or (212) 555-0147.",
+   "C": "Sale items can be returned within 14 days of purchase, but only for store credit or an exchange, never a cash or card refund. FINAL SALE items can't be returned or exchanged at all. Your Puffin rain jacket and Atlantic merino crew were full price, so they follow the 30-day policy instead. Returns are in store, or by mail with the prepaid label for online orders.",
+   "D": "Yes, sale items can be returned within 14 days of purchase, for store credit or an exchange only, not a refund to your card. The item needs to be unworn with tags attached. Items marked FINAL SALE can't be returned or exchanged. If you tell me roughly when you bought the jacket and whether it was on sale, I can point you in the right direction.",
+   "E": "Yes, sale items can be returned within 14 days of purchase. You'd receive store credit or an exchange, not a refund to your card, even with a receipt. Items marked FINAL SALE can't be returned or exchanged. They also need to be unworn with tags attached. If your rain jacket was a sale item, let me know when you bought it and I can point you to the right next step.",
+   "F": "Yes, sale items can be returned within 14 days of purchase. Please note that sale items are refunded as store credit or an exchange only, not to your card or in cash, and this applies even if you have the receipt. Items marked FINAL SALE cannot be returned or exchanged. If you're close to the 14-day limit or have a question about how the days are counted, please contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "G": "Yes, sale items can be returned within 14 days of purchase, for store credit or an exchange only, not a refund to your card. They need to be unworn with tags, and this applies even with a receipt. Items marked FINAL SALE can't be returned or exchanged. If you're close to the 14 days or unsure how the item was marked, the store team can help at ny@kestrelrow.example or (212) 555-0147.",
+   "H": "Yes, sale items can be returned within 14 days of purchase, but only for store credit or an exchange, not a cash or card refund. Items marked FINAL SALE can't be returned or exchanged. For questions about a specific order near the 14-day limit, please contact our store team at ny@kestrelrow.example or (212) 555-0147.",
+   "I": "Yes, with limits. Sale items can be returned within 14 days for store credit or an exchange only, with no card refund. Items marked FINAL SALE can't be returned or exchanged.\n\nYour Puffin rain jacket and Atlantic merino crew were both bought at full price, so the 30-day window applies to them, as I mentioned. Unworn with tags, they can come back by Wednesday, November 25.",
+   "J": "Yes, sale items can be returned within 14 days for store credit or an exchange only, with no cash or card refund. Items marked FINAL SALE can't be returned or exchanged. Please note underwear, swimwear without the hygiene liner, earrings, gift cards and altered items can't be returned either. Questions about a specific order? Our team is at ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "1.34/0",
+  "date": "2026-11-16",
+  "customer": "guest-1-34@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "is hemming free",
+  "answers": {
+   "A": "Hemming is free on full-price jeans and trousers bought at Kestrel Row. Standard hems are ready in 5 business days. Please note that altered items can't be returned, so it's best to settle your size in a fitting room first. If your item is on sale or you're not sure it qualifies, our team at (212) 555-0147 can confirm.",
+   "B": "Hemming is free on full-price jeans and trousers bought at Kestrel Row. It's ready in 5 business days, or 48 hours with rush for $15 extra. Pick up at the alterations counter on the lower floor during store hours. Please note altered items can't be returned. If your item was on sale or bought online, the team can confirm: ny@kestrelrow.example or (212) 555-0147.",
+   "C": "Yes. Hemming is free on full-price jeans and trousers bought at Kestrel Row, in store or online. Sale items are not hemmed free: hemming them costs from $15, like other alterations (sleeves $25, taking in a waist $20). Ready in 5 business days, or in 48 hours for $15 extra. Pick up at the alterations counter on the lower floor. Altered items can't be returned.",
+   "D": "Yes, hemming is free on full-price jeans and trousers bought at Kestrel Row. It's ready in 5 business days, or 48 hours with rush for $15 extra. Pick up at the alterations counter on the lower floor during store hours. Please note altered items can't be returned, so settle your size first. For sale items, the store team can confirm: (212) 555-0147.",
+   "E": "Hemming is free on full-price jeans and trousers bought at Kestrel Row, ready in 5 business days. Other alterations start at $15, with sleeves $25 and taking in a waist $20. Please note altered items can't be returned, so settle your size in a fitting room first. For sale items or online purchases, our team will confirm: (212) 555-0147.",
+   "F": "Yes, hemming is free on jeans and trousers bought at full price from Kestrel Row. Hemming on other garments, or on sale-priced items, isn't covered. If you're unsure whether your item qualifies, such as a sale piece or an online order, the store team can confirm at ny@kestrelrow.example or (212) 555-0147.",
+   "G": "Yes, hemming is free on full-price jeans and trousers bought at Kestrel Row, and it's ready in 5 business days. Please try them on first to settle your length, because altered items can't be returned. For sale items or pieces not bought here, our store team can confirm: ny@kestrelrow.example or (212) 555-0147.",
+   "H": "Yes, hemming is free on full-price jeans and trousers bought at Kestrel Row. It's ready in 5 business days, or 48 hours with rush for $15 extra. Pick up at the alterations counter on the lower floor during store hours. Altered items can't be returned. For sale items or online purchases, our team will confirm: ny@kestrelrow.example or (212) 555-0147.",
+   "I": "Hemming is free on full-price jeans and trousers bought at Kestrel Row. It's ready in 5 business days, or 48 hours with rush for $15 extra. Pick up is at the alterations counter on the lower floor during store hours. Altered items can't be returned. If your item was on sale or bought online and you're unsure whether it qualifies, the store team can confirm at ny@kestrelrow.example or (212) 555-0147.",
+   "J": "Yes, hemming is free on full-price jeans and trousers bought at Kestrel Row. It's ready in 5 business days, or 48 hours with rush for $15 extra. Pick up at the alterations counter on the lower floor during store hours. Please note altered items can't be returned, so be sure of the fit first. Hemming on sale items or other garments isn't covered by the free offer."
+  }
+ },
+ {
+  "id": "1.34/1",
+  "date": "2026-11-16",
+  "customer": "guest-1-34@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [
+   "is hemming free"
+  ],
+  "question": "do you ship",
+  "answers": {
+   "A": "Yes, we ship to all 50 US states, but not internationally. Orders placed by 2pm Eastern ship the same business day. Standard shipping takes 3-5 business days and is free over $100, otherwise $8. Express takes 2 business days and costs $18. Pickup in store is also free.",
+   "B": "Yes, we ship to all 50 states, but not internationally. Standard shipping is free over $100, otherwise $8, and takes 3-5 business days. Express is $18 for 2 business days. Orders placed by 2pm Eastern ship the same business day. In Manhattan, same-day courier is $25 if you order by 1pm, and in-store pickup is free.",
+   "C": "Yes, we ship online to all 50 US states, but we don't ship internationally. Orders placed by 2pm Eastern ship the same business day. Standard shipping takes 3-5 business days and is free over $100, otherwise $8. Express takes 2 business days for $18. Pickup in store is free.",
+   "D": "Yes, we ship to all 50 states, but not internationally. Standard shipping takes 3-5 business days and is free over $100, otherwise $8. Express is $18 for 2 business days. Orders placed by 2pm Eastern ship the same business day. In Manhattan, same-day courier is $25 if you order by 1pm, and in-store pickup is free.",
+   "E": "Yes, we ship to all 50 US states, but not internationally. Orders placed by 2pm Eastern ship the same business day. Standard shipping takes 3-5 business days and is free over $100, otherwise $8. Express takes 2 business days for $18. If you're near SoHo, store pickup is free.",
+   "F": "Yes, we sell online and deliver across the US. I don't have the details on shipping costs or delivery times, though. Our team can help with those at ny@kestrelrow.example or (212) 555-0147.",
+   "G": "I don't have details on shipping in the information I have, so I don't want to guess. The store team can tell you about delivery options and costs. You can reach them at ny@kestrelrow.example or (212) 555-0147 during store hours.",
+   "H": "Yes, we sell online across the US. I don't have the details on shipping costs or delivery times here, so please check with the store team at ny@kestrelrow.example or (212) 555-0147 and they'll be happy to help.",
+   "I": "Standard shipping (3-5 business days) is free over $100, otherwise $8. Express (2 business days) is $18. Same-day courier in Manhattan is $25 if you order by 1pm. Buy online and pick up in store is free, ready in 2 hours. We ship to all 50 states; no international shipping.",
+   "J": "Yes, we sell online across the US, but I don't have the shipping details, such as costs, delivery times, or regions, so I don't want to guess. The store team can confirm them. You can reach them at ny@kestrelrow.example or (212) 555-0147."
+  }
+ }
+]

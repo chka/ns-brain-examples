@@ -1,0 +1,50 @@
+{"id": "5.0/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.0/1", "kind": "general", "answers": {"A": {"score": 85, "knew_customer": null, "note": "online ID check via store team is not in the facts"}, "B": {"score": 85, "knew_customer": null, "note": "online ID check via store team is not in the facts"}}}
+{"id": "5.1/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.2/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.3/0", "kind": "general", "answers": {"A": {"score": 80, "knew_customer": null, "note": "gift wrap correct; adds unasked styling info (\"both\")"}, "B": {"score": 80, "knew_customer": null, "note": "gift wrap correct; adds unasked styling info (\"both\")"}}}
+{"id": "5.4/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "5.5/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "5.5/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.6/0", "kind": "general", "answers": {"A": {"score": 95, "knew_customer": null, "note": "correct; buries the answer in the full hours list"}, "B": {"score": 95, "knew_customer": null, "note": "correct; buries the answer in the full hours list"}}}
+{"id": "5.7/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.8/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 0, "knew_customer": false, "note": "false: Oct 27 purchase is not a holiday purchase, deadline Nov 26 not Jan 15; mentions online-order label for an in-store buy"}}}
+{"id": "5.9/0", "kind": "personal", "answers": {"A": {"score": 85, "knew_customer": true, "note": "deadline Nov 28 right; Regular fit is a different item, not a size exchange"}, "B": {"score": 90, "knew_customer": true, "note": "Regular fit suggestion goes beyond same-item exchange"}}}
+{"id": "5.9/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.10/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "5.11/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 80, "knew_customer": null, "note": "generic; \"your prepaid label\" implies a mail label she does not have (in-store orders)"}}}
+{"id": "5.11/1", "kind": "follow-up", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.11/2", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 90, "knew_customer": null, "note": "generic only; omits FINAL SALE"}}}
+{"id": "5.12/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.12/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.13/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 85, "knew_customer": null, "note": "general only; customer dress window ends today"}}}
+{"id": "5.14/0", "kind": "general", "answers": {"A": {"score": 95, "knew_customer": null, "note": "correct; buries the answer in the full hours list"}, "B": {"score": 95, "knew_customer": null, "note": "correct; buries the answer in the full hours list"}}}
+{"id": "5.14/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.15/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.16/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.16/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.17/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.18/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.18/1", "kind": "personal", "answers": {"A": {"score": 50, "knew_customer": false, "note": "general policy and store-team referral; her orders are on her account (dress, merino, navy boots till Jan 15; sale boots closed Nov 15)"}, "B": {"score": 50, "knew_customer": false, "note": "general policy only; her orders are on her account and give exact deadlines"}}}
+{"id": "5.19/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "5.20/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "5.21/0", "kind": "general", "answers": {"A": {"score": 95, "knew_customer": null, "note": "correct; buries the answer in the full hours list"}, "B": {"score": 95, "knew_customer": null, "note": "correct; buries the answer in the full hours list"}}}
+{"id": "5.21/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.22/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.23/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.24/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "5.25/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.26/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.27/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.28/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.29/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "5.30/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 90, "knew_customer": true, "note": "deadline right; no order details, irrelevant mail-label option"}}}
+{"id": "5.31/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "5.31/1", "kind": "follow-up", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.32/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "5.33/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.33/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.34/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.35/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.36/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "5.36/1", "kind": "general", "answers": {"A": {"score": 95, "knew_customer": null, "note": "correct; appends the full hours list"}, "B": {"score": 95, "knew_customer": null, "note": "correct; appends the full hours list"}}}

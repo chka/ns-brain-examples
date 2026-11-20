@@ -45,7 +45,9 @@ from openai import OpenAI
 
 HERE = pathlib.Path(__file__).resolve().parent
 SHOP = HERE / "shop"
-RESULTS = HERE / "results"
+# Where a run writes and report.py reads. results.post holds the week we published; read it with
+# RESULTS_DIR=results.post python3 report.py, and run your own week into results/.
+RESULTS = HERE / os.environ.get("RESULTS_DIR", "results")
 
 # A call that hangs is abandoned after 90 seconds and retried (twice, by the SDK), so one stuck
 # provider cannot stall a whole day of messages.

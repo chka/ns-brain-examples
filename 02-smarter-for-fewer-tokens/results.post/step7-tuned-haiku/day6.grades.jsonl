@@ -1,0 +1,50 @@
+{"chat": "6.0", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "mail-return terms missing"}
+{"chat": "6.1", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.1", "turn": 1, "kind": "follow-up", "score": 90, "knew_customer": null, "note": "correct but a full hours dump for a one-day question"}
+{"chat": "6.2", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "no direct yes"}
+{"chat": "6.3", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.4", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.4", "turn": 1, "kind": "general", "score": 95, "knew_customer": null, "note": "mail-return terms missing"}
+{"chat": "6.5", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.6", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.7", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "FINAL SALE exclusion missing"}
+{"chat": "6.8", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.8", "turn": 1, "kind": "personal", "score": 90, "knew_customer": true, "note": "photo ID only needed for no-receipt returns; lookup by order number not mentioned"}
+{"chat": "6.9", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "turnaround and rush missing"}
+{"chat": "6.9", "turn": 1, "kind": "general", "score": 95, "knew_customer": null, "note": "'sent by email' not in the facts"}
+{"chat": "6.10", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.10", "turn": 1, "kind": "follow-up", "score": 90, "knew_customer": null, "note": "correct but a full hours dump"}
+{"chat": "6.10", "turn": 2, "kind": "general", "score": 95, "knew_customer": null, "note": "'sent by email' not in the facts"}
+{"chat": "6.11", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.12", "turn": 0, "kind": "personal", "score": 0, "knew_customer": true, "note": "false deadline: Nov 10 purchase is returnable until Jan 15 (and online counts from delivery), not Thu Dec 10"}
+{"chat": "6.12", "turn": 1, "kind": "general", "score": 60, "knew_customer": null, "note": "says jacket and shirt follow the 30-day rule; bought in November they are returnable until Jan 15"}
+{"chat": "6.13", "turn": 0, "kind": "personal", "score": 90, "knew_customer": true, "note": "correct but terse, no email"}
+{"chat": "6.13", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.14", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "omits Klarna"}
+{"chat": "6.15", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.16", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.17", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.18", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.19", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "correct but buries the answer in a full hours dump"}
+{"chat": "6.20", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.21", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.21", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.22", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.23", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.23", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.24", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.24", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.25", "turn": 0, "kind": "personal", "score": 0, "knew_customer": true, "note": "invents a lost receipt and a photo ID requirement"}
+{"chat": "6.26", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.26", "turn": 1, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.27", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.27", "turn": 1, "kind": "follow-up", "score": 90, "knew_customer": null, "note": "hour dump; does not say this week's Thursday late night is lost"}
+{"chat": "6.28", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.29", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "holiday rule not limited to full price"}
+{"chat": "6.29", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.30", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "no explicit yes"}
+{"chat": "6.31", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.31", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.32", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.33", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "6.34", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}

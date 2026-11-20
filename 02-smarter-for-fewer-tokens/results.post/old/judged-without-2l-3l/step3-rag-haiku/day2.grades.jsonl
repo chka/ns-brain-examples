@@ -1,0 +1,50 @@
+{"chat": "2.0", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "does not say what non-free hemming costs"}
+{"chat": "2.1", "turn": 0, "kind": "general", "score": 70, "knew_customer": null, "note": "adds 'returns can't be made on Thanksgiving or Christmas' as if a policy; mail returns not covered by that"}
+{"chat": "2.2", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "omits never-returnable items"}
+{"chat": "2.3", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.3", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.3", "turn": 2, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.4", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.4", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.5", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "claims it cannot see the order; size 11 was on file"}
+{"chat": "2.6", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "sends other dates to store team though holiday hours are in the facts"}
+{"chat": "2.7", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "omits never-returnable items and holiday extension"}
+{"chat": "2.8", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy only; misses that the sale shirt's window closed Nov 13"}
+{"chat": "2.9", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "sends holiday hours to team though facts have them"}
+{"chat": "2.9", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.9", "turn": 2, "kind": "general", "score": 95, "knew_customer": null, "note": "defers how 14 days are counted to team"}
+{"chat": "2.10", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.11", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "omits not redeemable for cash and balance check"}
+{"chat": "2.11", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.12", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy only; order NY-2451 on file, returnable until Jan 15"}
+{"chat": "2.13", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "invents 'no gift wrapping on online orders'"}
+{"chat": "2.14", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "says it cannot see points; 833 derivable from purchases"}
+{"chat": "2.15", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "omits holiday extension and never-returnable items"}
+{"chat": "2.16", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.17", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.17", "turn": 1, "kind": "follow-up", "score": 90, "knew_customer": null, "note": "omits same-day courier"}
+{"chat": "2.18", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.19", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.20", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "invents a rule: no gift wrapping on online orders"}
+{"chat": "2.20", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "correct; odd padding about returns on closed days"}
+{"chat": "2.21", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.22", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.22", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.23", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.24", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.24", "turn": 1, "kind": "general", "score": 30, "knew_customer": null, "note": "'Yes' then says it cannot confirm, mentions handbook extracts, sends to team"}
+{"chat": "2.25", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "no alteration prices or timing; sends to team"}
+{"chat": "2.26", "turn": 0, "kind": "rare", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.27", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.28", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.29", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.30", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.30", "turn": 1, "kind": "general", "score": 85, "knew_customer": null, "note": "omits the holiday window to Jan 15"}
+{"chat": "2.31", "turn": 0, "kind": "personal", "score": 30, "knew_customer": false, "note": "generic; omits that altered items are never returnable, which decides this"}
+{"chat": "2.31", "turn": 1, "kind": "general", "score": 60, "knew_customer": null, "note": "says it lacks shipping costs/times the facts give; sends to team"}
+{"chat": "2.32", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "weekday list skips Thursday"}
+{"chat": "2.33", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "promises current offers then gives none"}
+{"chat": "2.33", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.34", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.34", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "2.35", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}

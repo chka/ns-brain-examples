@@ -8,11 +8,13 @@ results/<step>/dayN.jsonl and the grades in results/<step>/dayN.grades.jsonl (re
 Step 1 runs on day 1 only; its week is shown as that day times seven, as the article does.
 """
 import json
+import os
 import pathlib
 import statistics
 import sys
 
-RESULTS = pathlib.Path(__file__).resolve().parent / "results"
+# results/ by default; RESULTS_DIR=results.post reads the week we published.
+RESULTS = pathlib.Path(__file__).resolve().parent / os.environ.get("RESULTS_DIR", "results")
 STEPS = ["step1-whole-handbook-sonnet", "step1b-whole-handbook-cached-sonnet", "step2-rag-sonnet", "step2l-rag-learns-sonnet", "step3-rag-haiku",
          "step3l-rag-learns-haiku", "step4-brain-sonnet",
          "step5-brain-learns-sonnet", "step6-brain-learns-haiku", "step7-tuned-haiku"]
@@ -119,6 +121,9 @@ if __name__ == "__main__":
         rows, grades = load(step, days)
         if rows:
             table[step] = stats(rows, grades, days)
+    if not table:
+        sys.exit(f"no results in {RESULTS.name}/ for days {days}: run ./run_day.sh 1 first, "
+                 "or RESULTS_DIR=results.post to read the week we published")
     if "step1-whole-handbook-sonnet" in table and len(days) > 1:
         day1 = sum(r["cost"] for r in load("step1-whole-handbook-sonnet", [1])[0])
         table["step1-whole-handbook-sonnet"]["Cost"] += f" (week: ${7 * day1:.2f})"
