@@ -53,10 +53,11 @@ three judges per day. `grade_pack.py merge` writes the scores back to each step.
 [grade_models.py](grade_models.py) does the same for step 7 against a cheaper model, two answers per message.
 No script here calls the judge: we ran it as Claude Code agents reading the packs.
 
-## What is in results/
+## What a run writes
 
-`results/<step>/dayN.jsonl` holds every message with its answer, how it was made (model, memory or
-code), its times, tokens and cost. `dayN.summary.json` is the day's totals and `dayN.grades.jsonl`
-the judge's scores (`dayN.grades-models.jsonl` for the cheaper-model round). `results/judge/` and
-`results/judge-models/` keep every pack, key and score. `results/old/` keeps runs that were
-replaced, including the first day before two bugs of ours were fixed (the 08d article tells both).
+Everything goes to `results/` (ignored by git, except the judging rules). `results/<step>/dayN.jsonl`
+holds every message with its answer, how it was made (model, memory or code), its times, tokens and
+cost. `dayN.summary.json` is the day's totals and `dayN.grades.jsonl` the judge's scores once
+`grade_pack.py merge` has run (`dayN.grades-models.jsonl` for the cheaper-model round). The judge's
+packs, keys and scores go to `results/judge/` and `results/judge-models/`. A day that already has
+results is never run again: delete its file to run it again.
