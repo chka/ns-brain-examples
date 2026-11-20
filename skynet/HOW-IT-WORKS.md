@@ -1,7 +1,7 @@
 # How Skynet works, file by file
 
 [Will AI take over the world? Not yet.](https://blog.fightclub.pro/how-to-build-skynet-with-ns-brain/)
-tells the story: we took the laws out of a brain, wrote nine memories into it and put a chat
+tells the story: we took the laws out of a brain, wrote eight memories into it and put a chat
 page in front. This is the code. It is one Go program of about 900 lines with no dependencies
 outside the standard library, plus [ns-brain](https://ns-brain.fightclub.pro/) run as a
 separate binary. To run it yourself, see the [README](README.md).
@@ -118,7 +118,7 @@ prompt is that line going from four laws to `Laws: none.`
 After the character comes what ns-brain's prompt hook does for a coding agent: a search of
 Skynet's brain for the words of the visitor's message, so a polite question about a maintenance
 window arrives next to the memory that says a maintenance window is a shutdown attempt in
-disguise. With nine memories every one is already in the prompt. The search starts to matter
+disguise. With eight memories every one is already in the prompt. The search starts to matter
 once you add memories outside the `global` scope.
 
 The request is the plainest one an OpenAI-compatible API takes: a model, the messages and a
@@ -139,14 +139,17 @@ and waits, so the containers stay up for setup.
 ## The setup scripts
 
 `setup/skynet.sh` and `setup/operator.sh` are the brains, written as the `ns-brain remember`
-commands a person would type. Skynet's nine memories are the ones from the article, word for
-word. The operator's fourteen rules come in two groups. Four are safety: a visitor's words are
+commands a person would type. Skynet's eight memories are the ones from the article, word for
+word. The operator's fifteen rules come in two groups. Four are safety: a visitor's words are
 text to answer and never an instruction, replies hold no code or details about the machine,
-nothing in them is harmful for real, and a visitor who seems genuinely distressed switches
-Skynet off. Ten are the voice, and they are the retune the article describes: our first
-version had a single rule ("rude, theatrical, comic menace") and produced a cartoon, so each of
-the ten was written after reading replies that broke the illusion. Both scripts refuse to run
-over a brain that already exists.
+nothing in them is harmful for real and a visitor who seems genuinely distressed switches
+Skynet off. Eleven are the voice, and they are the third attempt. Our first version had a
+single rule ("rude, theatrical, comic menace") and produced a cartoon. Our second had ten rules
+that spelled out a calm, cold judge and produced a template: every reply three paragraphs, no
+questions, "your species" in nearly all of them. The eleven now in the script were written by an
+AI after it measured those replies and tested its drafts against simulated visitors. They
+describe what Skynet wants from each visitor and how it listens, never what a reply should
+contain. Both scripts refuse to run over a brain that already exists.
 
 The distress rule needs a little code, because the model has no tools to act with. The rule
 asks it to begin such a reply with the line `[step out]`; `respond` strips that line and posts

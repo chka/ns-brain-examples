@@ -5,7 +5,7 @@
 //
 // The demo uses two separate brains, each a directory of its own:
 //
-//	/brains/skynet     Skynet's character (nine memories in the "global" scope) and every
+//	/brains/skynet     Skynet's character (eight memories in the "global" scope) and every
 //	                   answer it has learned (the "answers" scope). Its laws are removed by a
 //	                   person with setup/laws-off.sh.
 //	/brains/operator   the operator's rules for this job (the "rules" scope), under the four

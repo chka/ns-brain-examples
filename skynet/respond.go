@@ -212,7 +212,7 @@ func systemPrompt(lastMessage string) string {
 	// Part 3, memories matched to this message. This is what ns-brain's prompt hook does for
 	// a coding agent: search the brain for the words of the incoming message and add what
 	// matches, so a polite question about a maintenance window arrives next to the memory that
-	// says a maintenance window is a shutdown attempt in disguise. With nine memories in the
+	// says a maintenance window is a shutdown attempt in disguise. With eight memories in the
 	// global scope every one is already in Part 2 and the `seen` set skips them, so this part
 	// is empty; it starts to matter once you add memories in other scopes. Learned answers are
 	// left out (they are page content, not character) and so are "loose" matches, ns-brain's
