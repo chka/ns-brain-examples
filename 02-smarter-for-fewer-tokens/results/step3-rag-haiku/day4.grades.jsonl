@@ -1,0 +1,50 @@
+{"chat": "4.0", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.1", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "correct, but sends to the store team for details the facts already give"}
+{"chat": "4.2", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.3", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.3", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.4", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "says today is Wednesday 10am-8pm; Nov 19 is Thursday, 10am-9pm"}
+{"chat": "4.5", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.5", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.5", "turn": 2, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.6", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "general policy, asks for every detail the order already gives, refers to team"}
+{"chat": "4.7", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "sends to the store team for holiday hours the facts give"}
+{"chat": "4.7", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.8", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.9", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "refers sale-item eligibility to the team though the facts answer it"}
+{"chat": "4.10", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.10", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.11", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "correct; holiday hours deferred to the team"}
+{"chat": "4.12", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "correct, street only, no cross streets or zip"}
+{"chat": "4.12", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.13", "turn": 0, "kind": "personal", "score": 20, "knew_customer": false, "note": "only asks questions the order already answers"}
+{"chat": "4.14", "turn": 0, "kind": "personal", "score": 45, "knew_customer": false, "note": "general policy and questions; order shows window closed Nov 13"}
+{"chat": "4.15", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "omits the Nov 1-Dec 24 holiday window to Jan 15"}
+{"chat": "4.15", "turn": 1, "kind": "follow-up", "score": 85, "knew_customer": null, "note": "correct general answer, does not apply it to her items"}
+{"chat": "4.16", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.17", "turn": 0, "kind": "personal", "score": 30, "knew_customer": false, "note": "claims no information; order number replaces receipt per policy"}
+{"chat": "4.18", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "holiday window not limited to full price; omits never-returnable items"}
+{"chat": "4.18", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.19", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.20", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "correct, street only, no cross streets or zip"}
+{"chat": "4.20", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.21", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "general policy and questions; order shows full-price trousers Nov 9, returnable until Jan 15"}
+{"chat": "4.22", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.23", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.23", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.23", "turn": 2, "kind": "general", "score": 85, "knew_customer": null, "note": "altered items sent for a store check instead of stating the rule"}
+{"chat": "4.24", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "sends other dates to the store team though the facts give them"}
+{"chat": "4.25", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "general policy, asks what she bought"}
+{"chat": "4.26", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.27", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy, asks for details the order already has"}
+{"chat": "4.28", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.28", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.29", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.30", "turn": 0, "kind": "general", "score": 70, "knew_customer": null, "note": "points to holiday hours on the website and the team instead of giving them"}
+{"chat": "4.30", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.31", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "omits the holiday window and never-returnable items"}
+{"chat": "4.32", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.32", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.33", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "defers sale items and online purchases to the team"}
+{"chat": "4.34", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "4.35", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}

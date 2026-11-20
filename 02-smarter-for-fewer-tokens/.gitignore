@@ -1,0 +1,5 @@
+run/
+backups/
+__pycache__/
+index.json
+results/logs/

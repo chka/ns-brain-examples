@@ -1,0 +1,39 @@
+{
+  "step": "step3l-rag-learns-haiku",
+  "model": "fc:anthropic/claude-haiku-5.5",
+  "day": 1,
+  "messages": 50,
+  "llm_calls": 44,
+  "from_memory": 6,
+  "cost": 0.0138,
+  "tokens": {
+    "input": 176,
+    "cache_write": 72190,
+    "cache_read": 22413,
+    "output": 9085,
+    "embed": 286
+  },
+  "seconds": {
+    "min": 0.419,
+    "max": 4.008,
+    "avg": 1.789,
+    "median": 1.687,
+    "p95": 3.134
+  },
+  "seconds_llm_answers": {
+    "min": 1.363,
+    "max": 4.008,
+    "avg": 1.973,
+    "median": 1.786,
+    "p95": 3.134
+  },
+  "seconds_memory_answers": {
+    "min": 0.419,
+    "max": 0.483,
+    "avg": 0.441,
+    "median": 0.434,
+    "p95": 0.483
+  },
+  "cpu_seconds_total": 5.19,
+  "peak_memory_mb": 80
+}

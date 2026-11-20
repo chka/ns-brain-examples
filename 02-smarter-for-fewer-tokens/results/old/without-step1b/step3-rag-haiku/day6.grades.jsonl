@@ -1,0 +1,50 @@
+{"chat": "6.0", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "no never-returnable list"}
+{"chat": "6.1", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "Sat/Sun Nov 28-29 hours sent to team"}
+{"chat": "6.1", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.2", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "omits Klarna"}
+{"chat": "6.3", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.4", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.4", "turn": 1, "kind": "general", "score": 85, "knew_customer": null, "note": "omits FINAL SALE; 'at full price' phrasing vague"}
+{"chat": "6.5", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.6", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy; trousers until Jan 15, sale jacket until Nov 23"}
+{"chat": "6.7", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.8", "turn": 0, "kind": "personal", "score": 20, "knew_customer": false, "note": "claims it cannot see the order; size L"}
+{"chat": "6.8", "turn": 1, "kind": "personal", "score": 45, "knew_customer": false, "note": "general, sends to team; misses sale/last day"}
+{"chat": "6.9", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.9", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.10", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "sends other dates to team"}
+{"chat": "6.10", "turn": 1, "kind": "follow-up", "score": 85, "knew_customer": null, "note": "omits Sat Nov 28 until 9pm"}
+{"chat": "6.10", "turn": 2, "kind": "general", "score": 85, "knew_customer": null, "note": "hints amounts outside $25-500 may be possible"}
+{"chat": "6.11", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy only, asks for details the orders hold; omits sale rule"}
+{"chat": "6.12", "turn": 0, "kind": "personal", "score": 0, "knew_customer": false, "note": "promises an exchange of jeans that were hemmed (NY-2439); altered items cannot be returned"}
+{"chat": "6.12", "turn": 1, "kind": "general", "score": 0, "knew_customer": null, "note": "limits store-credit-only to online sale orders, implying in-store sale items get refunds"}
+{"chat": "6.13", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "does not say there is no alteration on record; generic status deflection"}
+{"chat": "6.13", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "street and area only, no cross streets or ZIP"}
+{"chat": "6.14", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.15", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.16", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.17", "turn": 0, "kind": "personal", "score": 45, "knew_customer": false, "note": "general policy and a question; trousers were hemmed (NY-2469) and cannot be returned"}
+{"chat": "6.18", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.19", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "holiday return to Jan 15 stated without the full-price limit"}
+{"chat": "6.20", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "sends other dates to the team though the facts give them"}
+{"chat": "6.21", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.21", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.22", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.23", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "sends other dates to the team though the facts give them"}
+{"chat": "6.23", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.24", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.24", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.25", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "general policy, asks for details it already has"}
+{"chat": "6.26", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "general policy only"}
+{"chat": "6.26", "turn": 1, "kind": "personal", "score": 40, "knew_customer": false, "note": "general policy only"}
+{"chat": "6.27", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "omits Sat/Sun Nov 28-29 hours, sends to team"}
+{"chat": "6.27", "turn": 1, "kind": "follow-up", "score": 80, "knew_customer": null, "note": "misses Black Friday open to 10pm"}
+{"chat": "6.28", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "Jan 15 not limited to full price; no never-returnable list"}
+{"chat": "6.29", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.29", "turn": 1, "kind": "general", "score": 75, "knew_customer": null, "note": "omits the Jan 15 holiday extension"}
+{"chat": "6.30", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.31", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "6.31", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "omits FINAL SALE"}
+{"chat": "6.32", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "general policy only"}
+{"chat": "6.33", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "general policy, asks for details it already has"}
+{"chat": "6.34", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "no holiday hours with Thanksgiving next week, sends to team"}

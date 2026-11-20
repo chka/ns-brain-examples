@@ -1,0 +1,38 @@
+{
+  "step": "step6-brain-learns-haiku",
+  "model": "fc:anthropic/claude-haiku-5.5",
+  "day": 5,
+  "messages": 50,
+  "llm_calls": 23,
+  "from_memory": 27,
+  "cost": 0.011,
+  "tokens": {
+    "input": 23756,
+    "cache_write": 0,
+    "cache_read": 180527,
+    "output": 13603
+  },
+  "seconds": {
+    "min": 0.006,
+    "max": 7.296,
+    "avg": 1.509,
+    "median": 0.484,
+    "p95": 6.308
+  },
+  "seconds_llm_answers": {
+    "min": 1.229,
+    "max": 7.296,
+    "avg": 3.175,
+    "median": 2.815,
+    "p95": 6.424
+  },
+  "seconds_memory_answers": {
+    "min": 0.006,
+    "max": 0.634,
+    "avg": 0.089,
+    "median": 0.012,
+    "p95": 0.518
+  },
+  "cpu_seconds_total": 18.7,
+  "peak_memory_mb": 1470
+}

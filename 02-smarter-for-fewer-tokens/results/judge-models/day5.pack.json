@@ -1,0 +1,1317 @@
+[
+ {
+  "id": "5.0/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-0@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "parking nearby?",
+  "answers": {
+   "A": "The store has no parking of its own. The nearest garage is at 110 Mercer Street and costs about $28 for two hours. Most customers find the subway or a Citi Bike easier.",
+   "B": "The store has no parking of its own. The nearest garage is at 110 Mercer Street and costs about $28 for two hours. Most customers find the subway or a Citi Bike easier."
+  }
+ },
+ {
+  "id": "5.0/1",
+  "date": "2026-11-20",
+  "customer": "guest-5-0@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [
+   "parking nearby?"
+  ],
+  "question": "student discount?",
+  "answers": {
+   "A": "Yes, we offer a 10% student discount with a valid student ID. Please note that this discount does not apply to sale items and only one discount can be used per purchase. For online orders, please contact our store team at ny@kestrelrow.example or (212) 555-0147 to verify your discount as ID is required.",
+   "B": "Yes! Students get 10% off with a valid student ID, but the discount doesn't apply to sale items, and only one discount can be used per purchase. For online orders, student discounts are checked by our store team at ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "5.1/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-1@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "do you have wifi",
+  "answers": {
+   "A": "Yes, free Wi-Fi is available in the store at 147 Greene Street in SoHo. If you have other questions about your visit, the store team can help at ny@kestrelrow.example or (212) 555-0147 during store hours.",
+   "B": "Yes, we offer free Wi-Fi for you to use while you are in our store."
+  }
+ },
+ {
+  "id": "5.2/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-2@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "can i return without a receipt",
+  "answers": {
+   "A": "Yes. If you paid by card or have a Row Rewards account, we can look the purchase up and the normal return rules apply. Otherwise you get store credit at the lowest price of the last 30 days, with photo ID, up to 3 no-receipt returns a year.",
+   "B": "Yes. If you paid by card or have a Row Rewards account, we can look the purchase up and the normal return rules apply. Otherwise you get store credit at the lowest price of the last 30 days, with photo ID, up to 3 no-receipt returns a year."
+  }
+ },
+ {
+  "id": "5.3/0",
+  "date": "2026-11-20",
+  "customer": "jordan.rivera@example.com",
+  "orders": [
+   {
+    "order": "NY-2403",
+    "where": "in store",
+    "date": "2026-10-30",
+    "items": [
+     {
+      "item": "Corrib slim shirt, navy",
+      "size": "M",
+      "price": 55,
+      "tag": "SALE (was $78)"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "gift wrap?",
+  "answers": {
+   "A": "Yes, both are free. Gift wrapping is available at the register. Personal styling appointments last 45 minutes and can be booked online or by phone.",
+   "B": "Yes, both are free. Gift wrapping is available at the register. Personal styling appointments last 45 minutes and can be booked online or by phone."
+  }
+ },
+ {
+  "id": "5.4/0",
+  "date": "2026-11-20",
+  "customer": "ben.fischer@example.com",
+  "orders": [
+   {
+    "order": "NY-2463",
+    "where": "in store",
+    "date": "2026-11-07",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, forest green",
+      "size": "4",
+      "price": 160,
+      "tag": "full price"
+     },
+     {
+      "item": "Maam waxed jacket, charcoal",
+      "size": "M",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2464",
+    "where": "online",
+    "date": "2026-10-24",
+    "items": [
+     {
+      "item": "Corrib slim shirt, forest green",
+      "size": "L",
+      "price": 78,
+      "tag": "full price"
+     },
+     {
+      "item": "Atlantic merino crew, forest green",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "what size slim shirt did i buy",
+  "answers": {
+   "A": "You bought Corrib slim shirt, forest green, size L, $78, full price, order NY-2464 online on 2026-10-24.",
+   "B": "You bought Corrib slim shirt, forest green, size L, $78, full price, order NY-2464 online on 2026-10-24."
+  }
+ },
+ {
+  "id": "5.5/0",
+  "date": "2026-11-20",
+  "customer": "leo.silva@example.com",
+  "orders": [
+   {
+    "order": "NY-2445",
+    "where": "in store",
+    "date": "2026-10-27",
+    "items": [
+     {
+      "item": "Atlantic merino crew, rust",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "4",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "what size merino crew did i buy",
+  "answers": {
+   "A": "You bought Atlantic merino crew, rust, size S, $138, full price, order NY-2445 in store on 2026-10-27.",
+   "B": "You bought Atlantic merino crew, rust, size S, $138, full price, order NY-2445 in store on 2026-10-27."
+  }
+ },
+ {
+  "id": "5.5/1",
+  "date": "2026-11-20",
+  "customer": "leo.silva@example.com",
+  "orders": [
+   {
+    "order": "NY-2445",
+    "where": "in store",
+    "date": "2026-10-27",
+    "items": [
+     {
+      "item": "Atlantic merino crew, rust",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "4",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "what size merino crew did i buy"
+  ],
+  "question": "where are you located",
+  "answers": {
+   "A": "We're at 147 Greene Street, between Prince and Spring Streets, in SoHo, New York, NY 10012. It's our only store, and we also sell online across the US. The store has no parking of its own; the nearest garage is at 110 Mercer Street, about $28 for two hours, but most customers find the subway or a Citi Bike easier.",
+   "B": "Our store is located at 147 Greene Street, between Prince and Spring Streets, in SoHo, New York, NY 10012. We also sell online across the US."
+  }
+ },
+ {
+  "id": "5.6/0",
+  "date": "2026-11-20",
+  "customer": "priya.patel@example.com",
+  "orders": [
+   {
+    "order": "NY-2406",
+    "where": "in store",
+    "date": "2026-10-14",
+    "items": [
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, navy",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2407",
+    "where": "in store",
+    "date": "2026-11-09",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, indigo",
+      "size": "4",
+      "price": 112,
+      "tag": "SALE (was $160)"
+     },
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "are you open on thanksgiving",
+  "answers": {
+   "A": "Thanksgiving (Thu Nov 26): closed. Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing.",
+   "B": "Thanksgiving (Thu Nov 26): closed. Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing."
+  }
+ },
+ {
+  "id": "5.7/0",
+  "date": "2026-11-20",
+  "customer": "maya.chen@example.com",
+  "orders": [
+   {
+    "order": "NY-2400",
+    "where": "online",
+    "date": "2026-10-25",
+    "items": [
+     {
+      "item": "Maam waxed jacket, charcoal",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "can i book a stylist",
+  "answers": {
+   "A": "Yes, we offer free personal styling appointments. A stylist helps you choose, and each lasts 45 minutes. You can book online or by phone at (212) 555-0147, which is answered during store hours.",
+   "B": "Yes, we offer free personal styling appointments that last 45 minutes. A stylist will help you choose the perfect pieces for your needs. You can book your appointment online or by calling us at (212) 555-0147."
+  }
+ },
+ {
+  "id": "5.8/0",
+  "date": "2026-11-20",
+  "customer": "leo.silva@example.com",
+  "orders": [
+   {
+    "order": "NY-2445",
+    "where": "in store",
+    "date": "2026-10-27",
+    "items": [
+     {
+      "item": "Atlantic merino crew, rust",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "4",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "i bought the merino crew, can i return it",
+  "answers": {
+   "A": "Yes, Leo. Your rust Atlantic merino crew, size S, bought in store on Tue Oct 27, can be returned until Thu Nov 26. We are closed on Thanksgiving, so please come in by Wed Nov 25 (open 10am-8pm). It must be unworn with tags attached. In-store returns have no fee. For questions, email ny@kestrelrow.example or call (212) 555-0147.",
+   "B": "Yes, you can return your Atlantic merino crew. Since it was a full-price purchase, it can be returned until January 15. Please note the store is closed on Thanksgiving, November 26, so you may need to visit before then. You can return it in-store or by mail using the prepaid label provided in your online order box."
+  }
+ },
+ {
+  "id": "5.9/0",
+  "date": "2026-11-20",
+  "customer": "tyler.hughes@example.com",
+  "orders": [
+   {
+    "order": "NY-2457",
+    "where": "in store",
+    "date": "2026-10-29",
+    "items": [
+     {
+      "item": "Corrib slim shirt, indigo",
+      "size": "M",
+      "price": 78,
+      "tag": "full price"
+     },
+     {
+      "item": "Harbour high-rise jeans, black",
+      "size": "27",
+      "price": 118,
+      "tag": "full price"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-11-05"
+    }
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "the slim shirt is too small can i exchange it",
+  "answers": {
+   "A": "Yes, you can exchange your Corrib slim shirt for a different size or color for free since it was a full-price purchase. You have until November 28, 2026, to complete the exchange. Please note that since the Corrib Slim runs slim, you might prefer the Regular fit if you are over 6 ft tall. You can perform the exchange in-store or online.",
+   "B": "Yes, Tyler. Your indigo Corrib Slim shirt, size M, was bought in store at full price on Thu Oct 29, so you can exchange it free for the same shirt in a different size until Sat Nov 28. That is also the return deadline. Corrib Slim runs slim, so if you want more room, consider a larger size or the Regular fit. Bring the shirt and receipt to 147 Greene Street, or call (212) 555-0147 to check stock."
+  }
+ },
+ {
+  "id": "5.9/1",
+  "date": "2026-11-20",
+  "customer": "tyler.hughes@example.com",
+  "orders": [
+   {
+    "order": "NY-2457",
+    "where": "in store",
+    "date": "2026-10-29",
+    "items": [
+     {
+      "item": "Corrib slim shirt, indigo",
+      "size": "M",
+      "price": 78,
+      "tag": "full price"
+     },
+     {
+      "item": "Harbour high-rise jeans, black",
+      "size": "27",
+      "price": 118,
+      "tag": "full price"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-11-05"
+    }
+   }
+  ],
+  "earlier_in_this_chat": [
+   "the slim shirt is too small can i exchange it"
+  ],
+  "question": "can i return sale items",
+  "answers": {
+   "A": "Sale items can be returned within 14 days for store credit or an exchange only, with no cash or card refund. Items marked FINAL SALE can't be returned or exchanged. Your items were bought at full price, so this doesn't apply to them. For your Corrib shirt, the full-price return deadline is Sat Nov 28. Returns are made in store at 147 Greene Street, or call (212) 555-0147.",
+   "B": "Yes, sale items can be returned within 14 days for store credit or an exchange only. Please note that we do not offer card refunds for sale items. Items marked FINAL SALE cannot be returned or exchanged."
+  }
+ },
+ {
+  "id": "5.10/0",
+  "date": "2026-11-20",
+  "customer": "nina.novak@example.com",
+  "orders": [
+   {
+    "order": "NY-2448",
+    "where": "online",
+    "date": "2026-11-14",
+    "items": [
+     {
+      "item": "Puffin rain jacket, charcoal",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "is my hem ready",
+  "answers": {
+   "A": "I don't see an alteration on your account. If you left something with us, the alterations counter (lower floor) or (212) 555-0147 can check it.",
+   "B": "I don't see an alteration on your account. If you left something with us, the alterations counter (lower floor) or (212) 555-0147 can check it."
+  }
+ },
+ {
+  "id": "5.11/0",
+  "date": "2026-11-20",
+  "customer": "priya.patel@example.com",
+  "orders": [
+   {
+    "order": "NY-2406",
+    "where": "in store",
+    "date": "2026-10-14",
+    "items": [
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, navy",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2407",
+    "where": "in store",
+    "date": "2026-11-09",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, indigo",
+      "size": "4",
+      "price": 112,
+      "tag": "SALE (was $160)"
+     },
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "return policy",
+  "answers": {
+   "A": "Full-price items: 30 days, or until Jan 15 for Nov 1 to Dec 24 purchases, unworn with tags and receipt. Sale: 14 days, store credit or exchange only. Underwear, swimwear without liner, earrings, gift cards, altered and FINAL SALE items can't be returned. Maam jacket (NY-2407) is refundable until Fri Jan 15 2027. Claddagh dress (NY-2407) until Mon Nov 23, store credit or exchange. NY-2406 items closed Nov 13.",
+   "B": "Full-price items can be returned within 30 days of purchase (or from delivery for online orders) with the receipt or order number. Purchases made from Nov 1 to Dec 24 can be returned until Jan 15. Sale items must be returned within 14 days for store credit or exchange only. We do not accept returns for gift cards, altered items, underwear, earrings, or swimwear without hygiene liners. Returns can be made in-store or via mail with your prepaid label."
+  }
+ },
+ {
+  "id": "5.11/1",
+  "date": "2026-11-20",
+  "customer": "priya.patel@example.com",
+  "orders": [
+   {
+    "order": "NY-2406",
+    "where": "in store",
+    "date": "2026-10-14",
+    "items": [
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, navy",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2407",
+    "where": "in store",
+    "date": "2026-11-09",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, indigo",
+      "size": "4",
+      "price": 112,
+      "tag": "SALE (was $160)"
+     },
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "return policy"
+  ],
+  "question": "what about sale items",
+  "answers": {
+   "A": "Sale items can be returned within 14 days for store credit or an exchange only. Please note that we do not offer card refunds for sale items. Items marked FINAL SALE cannot be returned or exchanged. For your Claddagh wrap dress bought on November 9, the return window for store credit or exchange ends on Monday, November 23.",
+   "B": "Sale items can be returned within 14 days for store credit or an exchange only, with no cash or card refund. Your Claddagh wrap dress (order NY-2407) can be returned or exchanged in store until Mon Nov 23, 2026. Exchanges for another size or color are free in that window. FINAL SALE items can't be returned or exchanged."
+  }
+ },
+ {
+  "id": "5.11/2",
+  "date": "2026-11-20",
+  "customer": "priya.patel@example.com",
+  "orders": [
+   {
+    "order": "NY-2406",
+    "where": "in store",
+    "date": "2026-10-14",
+    "items": [
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, navy",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2407",
+    "where": "in store",
+    "date": "2026-11-09",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, indigo",
+      "size": "4",
+      "price": 112,
+      "tag": "SALE (was $160)"
+     },
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "return policy",
+   "what about sale items"
+  ],
+  "question": "return policy",
+  "answers": {
+   "A": "Full-price items can be returned within 30 days, or until Jan 15 for Nov 1 to Dec 24 purchases, if unworn with tags and with the receipt or order number. Sale items get 14 days, store credit or exchange only. Underwear, swimwear without liner, earrings, gift cards, altered and FINAL SALE items can't be returned. Your Maam jacket (NY-2407) is returnable until Fri Jan 15 2027. Your Claddagh dress (NY-2407) is store credit or exchange only until Mon Nov 23.",
+   "B": "Full-price items can be returned within 30 days of purchase or from delivery for online orders, provided they are unworn with tags and have a receipt or order number. Purchases made from November 1 to December 24 can be returned until January 15. Sale items have a 14-day return window for store credit or exchange only. We do not accept returns for gift cards, altered items, underwear, earrings, or swimwear without hygiene liners."
+  }
+ },
+ {
+  "id": "5.12/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-12@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "do you ship to canada",
+  "answers": {
+   "A": "Sorry, we don't ship internationally, so we can't deliver to Canada. We ship online to all 50 US states, with standard shipping at 3-5 business days. Orders placed by 2pm Eastern ship the same business day. For questions about other options, please contact our store team at ny@kestrelrow.example or (212) 555-0147.",
+   "B": "We ship to all 50 US states, but we do not offer international shipping, so we cannot ship to Canada."
+  }
+ },
+ {
+  "id": "5.12/1",
+  "date": "2026-11-20",
+  "customer": "guest-5-12@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [
+   "do you ship to canada"
+  ],
+  "question": "store hours?",
+  "answers": {
+   "A": "Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing.",
+   "B": "Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing."
+  }
+ },
+ {
+  "id": "5.13/0",
+  "date": "2026-11-20",
+  "customer": "grace.park@example.com",
+  "orders": [
+   {
+    "order": "NY-2442",
+    "where": "in store",
+    "date": "2026-10-21",
+    "items": [
+     {
+      "item": "Inis linen trousers, navy",
+      "size": "M",
+      "price": 98,
+      "tag": "full price"
+     },
+     {
+      "item": "Claddagh wrap dress, forest green",
+      "size": "6",
+      "price": 160,
+      "tag": "full price"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-10-28"
+    }
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "exchange policy",
+  "answers": {
+   "A": "Exchanges swap an item for the same piece in a different size or color, free, in store or online: 30 days for full-price items, 14 days for sale items. FINAL SALE and altered items can't be exchanged. Your full-price Claddagh wrap dress can be exchanged or returned until today, Fri Nov 20, in store. Your hemmed Inis linen trousers can't be exchanged or returned. For anything else, email ny@kestrelrow.example.",
+   "B": "You can exchange an item for the same piece in a different size or color for free, either in-store or online. Full-price items may be exchanged within 30 days, while sale items have a 14-day exchange window. Please note that items marked FINAL SALE or those that have been altered cannot be exchanged."
+  }
+ },
+ {
+  "id": "5.14/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-14@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "what time do you close today",
+  "answers": {
+   "A": "Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing.",
+   "B": "Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing."
+  }
+ },
+ {
+  "id": "5.14/1",
+  "date": "2026-11-20",
+  "customer": "guest-5-14@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [
+   "what time do you close today"
+  ],
+  "question": "can i buy a gift card",
+  "answers": {
+   "A": "Yes, from $25 to $500: a plastic card in store (with a free gift box) or an e-gift card online, sent by email. They never expire, and you can check the balance at the register, on the website or by phone. They can't be exchanged for cash.",
+   "B": "Yes, from $25 to $500: a plastic card in store (with a free gift box) or an e-gift card online, sent by email. They never expire, and you can check the balance at the register, on the website or by phone. They can't be exchanged for cash."
+  }
+ },
+ {
+  "id": "5.15/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-15@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "how much is hemming",
+  "answers": {
+   "A": "Hemming is free on full-price jeans and trousers purchased at Kestrel Row, either in-store or online. For sale items, hemming starts at $15. Standard alterations are ready in 5 business days, with a 48-hour rush service available for an additional $15. Please note that altered items cannot be returned.",
+   "B": "Hemming is free on full-price jeans and trousers bought at Kestrel Row, in store or online. Sale items are hemmed from $15. Hems are ready in 5 business days, or in 48 hours for $15 extra. Altered items cannot be returned, so please settle your size in a fitting room first. Pick up is at the alterations counter on the lower floor."
+  }
+ },
+ {
+  "id": "5.16/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-16@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "do you ship",
+  "answers": {
+   "A": "Standard shipping (3-5 business days) is free over $100, otherwise $8. Express (2 business days) is $18. Same-day courier in Manhattan is $25 if you order by 1pm. Buy online and pick up in store is free, ready in 2 hours. We ship to all 50 states; no international shipping.",
+   "B": "Standard shipping (3-5 business days) is free over $100, otherwise $8. Express (2 business days) is $18. Same-day courier in Manhattan is $25 if you order by 1pm. Buy online and pick up in store is free, ready in 2 hours. We ship to all 50 states; no international shipping."
+  }
+ },
+ {
+  "id": "5.16/1",
+  "date": "2026-11-20",
+  "customer": "guest-5-16@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [
+   "do you ship"
+  ],
+  "question": "can i swap sizes",
+  "answers": {
+   "A": "Yes, for the same item in a different size or color, within 30 days (14 days for sale items). Exchanges are free, in store or online.",
+   "B": "Yes, for the same item in a different size or color, within 30 days (14 days for sale items). Exchanges are free, in store or online."
+  }
+ },
+ {
+  "id": "5.17/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-17@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "can i return without a receipt",
+  "answers": {
+   "A": "Yes. If you paid by card or have a Row Rewards account, we can look the purchase up and the normal return rules apply. Otherwise you get store credit at the lowest price of the last 30 days, with photo ID, up to 3 no-receipt returns a year.",
+   "B": "Yes. If you paid by card or have a Row Rewards account, we can look the purchase up and the normal return rules apply. Otherwise you get store credit at the lowest price of the last 30 days, with photo ID, up to 3 no-receipt returns a year."
+  }
+ },
+ {
+  "id": "5.18/0",
+  "date": "2026-11-20",
+  "customer": "emma.clarke@example.com",
+  "orders": [
+   {
+    "order": "NY-2454",
+    "where": "in store",
+    "date": "2026-11-01",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, navy",
+      "size": "8",
+      "price": 160,
+      "tag": "full price"
+     },
+     {
+      "item": "Burren Chelsea boots, charcoal",
+      "size": "9",
+      "price": 164,
+      "tag": "SALE (was $235)"
+     }
+    ]
+   },
+   {
+    "order": "NY-2455",
+    "where": "in store",
+    "date": "2026-11-11",
+    "items": [
+     {
+      "item": "Atlantic merino crew, forest green",
+      "size": "M",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Burren Chelsea boots, navy",
+      "size": "10",
+      "price": 235,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "store hours?",
+  "answers": {
+   "A": "Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing.",
+   "B": "Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing."
+  }
+ },
+ {
+  "id": "5.18/1",
+  "date": "2026-11-20",
+  "customer": "emma.clarke@example.com",
+  "orders": [
+   {
+    "order": "NY-2454",
+    "where": "in store",
+    "date": "2026-11-01",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, navy",
+      "size": "8",
+      "price": 160,
+      "tag": "full price"
+     },
+     {
+      "item": "Burren Chelsea boots, charcoal",
+      "size": "9",
+      "price": 164,
+      "tag": "SALE (was $235)"
+     }
+    ]
+   },
+   {
+    "order": "NY-2455",
+    "where": "in store",
+    "date": "2026-11-11",
+    "items": [
+     {
+      "item": "Atlantic merino crew, forest green",
+      "size": "M",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Burren Chelsea boots, navy",
+      "size": "10",
+      "price": 235,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "store hours?"
+  ],
+  "question": "i lost my receipt can i still return",
+  "answers": {
+   "A": "Yes, you may still be able to return it. Did you pay by card or have a Row Rewards account? If so, we can look up your purchase and the normal return rules apply. If not, you can get store credit at the lowest price the item sold for in the last 30 days, with photo ID, up to 3 no-receipt returns a year. For a specific item, the store team can check: ny@kestrelrow.example or (212) 555-0147.",
+   "B": "Yes, you can still return items without a receipt. If you paid by card or have a Row Rewards account, we can look up your purchase to apply our normal return rules. Otherwise, we can offer store credit at the lowest price the item sold for in the last 30 days. This requires a photo ID, and there is a limit of 3 no-receipt returns per year. Underwear, swimwear without liners, earrings, gift cards, and altered items are never returnable."
+  }
+ },
+ {
+  "id": "5.19/0",
+  "date": "2026-11-20",
+  "customer": "aisha.khan@example.com",
+  "orders": [
+   {
+    "order": "NY-2430",
+    "where": "in store",
+    "date": "2026-10-13",
+    "items": [
+     {
+      "item": "Inis linen trousers, oatmeal",
+      "size": "M",
+      "price": 69,
+      "tag": "SALE (was $98)"
+     },
+     {
+      "item": "Puffin rain jacket, navy",
+      "size": "6",
+      "price": 41,
+      "tag": "SALE (was $58)"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-10-20"
+    }
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "the rain jacket is too small can i exchange it",
+  "answers": {
+   "A": "I'm sorry, but since your Puffin rain jacket was purchased on sale, the 14-day exchange window closed on October 27. Additionally, our policy states that items already altered, like your Inis linen trousers, cannot be returned or exchanged. I recommend contacting our store team at ny@kestrelrow.example or (212) 555-0147 to see what other options might be available for your jacket.",
+   "B": "Sorry, the navy Puffin rain jacket was a sale item bought on Oct 13, so its 14-day exchange window closed on Oct 27. I can't offer an exchange now. Our store team at ny@kestrelrow.example or (212) 555-0147 can tell you what else is possible. Bringing your child in to try sizes on is the best way to find the right fit."
+  }
+ },
+ {
+  "id": "5.20/0",
+  "date": "2026-11-20",
+  "customer": "leo.silva@example.com",
+  "orders": [
+   {
+    "order": "NY-2445",
+    "where": "in store",
+    "date": "2026-10-27",
+    "items": [
+     {
+      "item": "Atlantic merino crew, rust",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "4",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "how many points do i have",
+  "answers": {
+   "A": "You have about 196 Row Rewards points: 1 point for every $1 you spent with us. Every 200 points is a $10 reward, and points expire 12 months after you earn them. Returned items take their points off.",
+   "B": "You have about 196 Row Rewards points: 1 point for every $1 you spent with us. Every 200 points is a $10 reward, and points expire 12 months after you earn them. Returned items take their points off."
+  }
+ },
+ {
+  "id": "5.21/0",
+  "date": "2026-11-20",
+  "customer": "sam.reed@example.com",
+  "orders": [
+   {
+    "order": "NY-2451",
+    "where": "online",
+    "date": "2026-11-13",
+    "items": [
+     {
+      "item": "Atlantic merino crew, oatmeal",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "what time do you close today",
+  "answers": {
+   "A": "Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing.",
+   "B": "Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing."
+  }
+ },
+ {
+  "id": "5.21/1",
+  "date": "2026-11-20",
+  "customer": "sam.reed@example.com",
+  "orders": [
+   {
+    "order": "NY-2451",
+    "where": "online",
+    "date": "2026-11-13",
+    "items": [
+     {
+      "item": "Atlantic merino crew, oatmeal",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "what time do you close today"
+  ],
+  "question": "do the jeans run small",
+  "answers": {
+   "A": "Our Harbour jeans run small, so we recommend sizing up one from the size you usually wear. If you would like to try them on, feel free to visit us at our SoHo store or we can check stock for you here.",
+   "B": "Yes, Harbour jeans run small, so we suggest sizing up one from the size you usually wear. Women's Harbour jeans come in waist sizes 24 to 34. If you're between sizes, trying both in store is the best way to decide. Our team can also help if you have other questions."
+  }
+ },
+ {
+  "id": "5.22/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-22@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "return policy",
+  "answers": {
+   "A": "Full-price items: 30 days from purchase (from delivery for online orders), unworn with tags and with the receipt or order number, refunded to the original payment. Holiday purchases from Nov 1 to Dec 24 can be returned until Jan 15. Sale items: 14 days, store credit or exchange only. FINAL SALE items, underwear, swimwear without the liner, earrings, gift cards and altered items can't be returned. No receipt: store credit at the lowest price in the last 30 days, with photo ID.",
+   "B": "Full-price items: 30 days from purchase (from delivery for online orders), unworn with tags and with the receipt or order number, refunded to the original payment. Holiday purchases from Nov 1 to Dec 24 can be returned until Jan 15. Sale items: 14 days, store credit or exchange only. FINAL SALE items, underwear, swimwear without the liner, earrings, gift cards and altered items can't be returned. No receipt: store credit at the lowest price in the last 30 days, with photo ID."
+  }
+ },
+ {
+  "id": "5.23/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-23@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "do you have a restroom",
+  "answers": {
+   "A": "Yes, we have a customer restroom on the lower floor, reached by elevator. The entrance is step-free and an elevator serves the lower floor. For any specific assistance you need during your visit, please contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "B": "Yes, we have a customer restroom located on the lower floor, which is accessible via an elevator."
+  }
+ },
+ {
+  "id": "5.24/0",
+  "date": "2026-11-20",
+  "customer": "rosa.diaz@example.com",
+  "orders": [
+   {
+    "order": "NY-2460",
+    "where": "in store",
+    "date": "2026-11-08",
+    "items": [
+     {
+      "item": "Burren Chelsea boots, black",
+      "size": "11",
+      "price": 235,
+      "tag": "full price"
+     },
+     {
+      "item": "Inis linen trousers, oatmeal",
+      "size": "L",
+      "price": 98,
+      "tag": "full price"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-11-15"
+    }
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "what size linen trousers did i buy",
+  "answers": {
+   "A": "You bought Inis linen trousers, oatmeal, size L, $98, full price, order NY-2460 in store on 2026-11-08.",
+   "B": "You bought Inis linen trousers, oatmeal, size L, $98, full price, order NY-2460 in store on 2026-11-08."
+  }
+ },
+ {
+  "id": "5.25/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-25@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "do you sell gift cards",
+  "answers": {
+   "A": "Yes, from $25 to $500: a plastic card in store (with a free gift box) or an e-gift card online, sent by email. They never expire, and you can check the balance at the register, on the website or by phone. They can't be exchanged for cash.",
+   "B": "Yes, from $25 to $500: a plastic card in store (with a free gift box) or an e-gift card online, sent by email. They never expire, and you can check the balance at the register, on the website or by phone. They can't be exchanged for cash."
+  }
+ },
+ {
+  "id": "5.26/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-26@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "do you accept amex",
+  "answers": {
+   "A": "We accept Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. We also accept Klarna. We do not accept Venmo, checks or crypto.",
+   "B": "We accept Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, cash and Kestrel Row gift cards. We also accept Klarna. We do not accept Venmo, checks or crypto."
+  }
+ },
+ {
+  "id": "5.27/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-27@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "can i return sale items",
+  "answers": {
+   "A": "Yes, sale items can be returned within 14 days for store credit or an exchange only. Please note that we do not offer card refunds for sale items. Items marked FINAL SALE cannot be returned or exchanged.",
+   "B": "Yes, sale items can be returned within 14 days of purchase, but only for store credit or an exchange. We can't give a cash or card refund on sale items. Items marked FINAL SALE can't be returned or exchanged at all. Returns can be made in store, or by mail with the prepaid label for online orders."
+  }
+ },
+ {
+  "id": "5.28/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-28@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "is there parking",
+  "answers": {
+   "A": "The store has no parking of its own. The nearest garage is at 110 Mercer Street and costs about $28 for two hours. Most customers find the subway or a Citi Bike easier.",
+   "B": "The store has no parking of its own. The nearest garage is at 110 Mercer Street and costs about $28 for two hours. Most customers find the subway or a Citi Bike easier."
+  }
+ },
+ {
+  "id": "5.29/0",
+  "date": "2026-11-20",
+  "customer": "ethan.walsh@example.com",
+  "orders": [
+   {
+    "order": "NY-2415",
+    "where": "online",
+    "date": "2026-10-18",
+    "items": [
+     {
+      "item": "Atlantic merino crew, navy",
+      "size": "L",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Maam waxed jacket, rust",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2416",
+    "where": "in store",
+    "date": "2026-10-20",
+    "items": [
+     {
+      "item": "Puffin rain jacket, charcoal",
+      "size": "4",
+      "price": 58,
+      "tag": "full price"
+     },
+     {
+      "item": "Inis linen trousers, indigo",
+      "size": "S",
+      "price": 98,
+      "tag": "full price"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-10-27"
+    }
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "is my hem ready",
+  "answers": {
+   "A": "Alteration (hem on the Inis linen trousers) on order NY-2416, ready for pickup from 2026-10-27. At the alterations counter, lower floor, during store hours.",
+   "B": "Alteration (hem on the Inis linen trousers) on order NY-2416, ready for pickup from 2026-10-27. At the alterations counter, lower floor, during store hours."
+  }
+ },
+ {
+  "id": "5.30/0",
+  "date": "2026-11-20",
+  "customer": "rosa.diaz@example.com",
+  "orders": [
+   {
+    "order": "NY-2460",
+    "where": "in store",
+    "date": "2026-11-08",
+    "items": [
+     {
+      "item": "Burren Chelsea boots, black",
+      "size": "11",
+      "price": 235,
+      "tag": "full price"
+     },
+     {
+      "item": "Inis linen trousers, oatmeal",
+      "size": "L",
+      "price": 98,
+      "tag": "full price"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-11-15"
+    }
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "how long do i have to return the chelsea boots",
+  "answers": {
+   "A": "Your black Burren Chelsea boots, size 11 (order NY-2460, bought in store Nov 8), can be refunded until Fri Jan 15 2027. Bring the receipt or order number, and the boots must be unworn with tags attached. For a different size, exchanges are free until Tue Dec 8. Returns and exchanges are made in store at 147 Greene Street.",
+   "B": "You can return your Burren Chelsea boots for a refund until Friday, January 15, 2027. Since you purchased them at full price, please ensure they are unworn with the tags attached. You can return them in-store or by mail using the prepaid label provided in your box for online orders."
+  }
+ },
+ {
+  "id": "5.31/0",
+  "date": "2026-11-20",
+  "customer": "nina.novak@example.com",
+  "orders": [
+   {
+    "order": "NY-2448",
+    "where": "online",
+    "date": "2026-11-14",
+    "items": [
+     {
+      "item": "Puffin rain jacket, charcoal",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "i bought the rain jacket, can i return it",
+  "answers": {
+   "A": "Yes, you can return your Puffin rain jacket. Since it was a full-price purchase made between November 1 and December 24, you can return it until January 15, 2027. You can return it in-store or by mail using the prepaid label included in your online order box.",
+   "B": "Yes. Your Puffin rain jacket (charcoal, size 8, order NY-2448, bought online Nov 14 at full price) can be returned until Fri Jan 15 2027. It must be unworn, with tags and unaltered. For an online order, mail it back with the prepaid label in the box, or return it in store. Row Rewards points are removed for returned items."
+  }
+ },
+ {
+  "id": "5.31/1",
+  "date": "2026-11-20",
+  "customer": "nina.novak@example.com",
+  "orders": [
+   {
+    "order": "NY-2448",
+    "where": "online",
+    "date": "2026-11-14",
+    "items": [
+     {
+      "item": "Puffin rain jacket, charcoal",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "i bought the rain jacket, can i return it"
+  ],
+  "question": "how many days do i have to return",
+  "answers": {
+   "A": "You have 30 days from delivery for online orders, but your Puffin rain jacket (order NY-2448, bought online Nov 14) is a holiday purchase made Nov 1 to Dec 24, so it can be returned until Fri Jan 15 2027. It must be unworn, with tags and unaltered. Mail it back with the prepaid label in the box, or return it in store at 147 Greene Street.",
+   "B": "Since your purchase was made during the holiday window of November 1 to December 24, you can return your Puffin rain jacket until January 15, 2027. Generally, full-price items are returnable within 30 days of delivery. You can return it in-store at 147 Greene Street or by mail using the prepaid label provided in your package."
+  }
+ },
+ {
+  "id": "5.32/0",
+  "date": "2026-11-20",
+  "customer": "jordan.rivera@example.com",
+  "orders": [
+   {
+    "order": "NY-2403",
+    "where": "in store",
+    "date": "2026-10-30",
+    "items": [
+     {
+      "item": "Corrib slim shirt, navy",
+      "size": "M",
+      "price": 55,
+      "tag": "SALE (was $78)"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "the slim shirt is too small can i exchange it",
+  "answers": {
+   "A": "I am sorry, but since the Corrib slim shirt was purchased on sale, the 14-day exchange window closed on November 13th. Because this window has passed, I cannot process an exchange for this item. I recommend contacting our store team at ny@kestrelrow.example or (212) 555-0147 to see if they can offer any other solutions for you.",
+   "B": "Sorry the shirt doesn't fit. Sale items can be exchanged or returned within 14 days of purchase. Your order NY-2403, bought in store on Oct 30, passed that window on Nov 13, so I can't offer an exchange or return. Please contact our store team at ny@kestrelrow.example or (212) 555-0147 to ask whether anything else can be done."
+  }
+ },
+ {
+  "id": "5.33/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-33@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "no receipt return?",
+  "answers": {
+   "A": "Yes. If you paid by card or have a Row Rewards account, we can look the purchase up and the normal return rules apply. Otherwise you get store credit at the lowest price of the last 30 days, with photo ID, up to 3 no-receipt returns a year.",
+   "B": "Yes. If you paid by card or have a Row Rewards account, we can look the purchase up and the normal return rules apply. Otherwise you get store credit at the lowest price of the last 30 days, with photo ID, up to 3 no-receipt returns a year."
+  }
+ },
+ {
+  "id": "5.33/1",
+  "date": "2026-11-20",
+  "customer": "guest-5-33@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [
+   "no receipt return?"
+  ],
+  "question": "store hours?",
+  "answers": {
+   "A": "Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing.",
+   "B": "Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing."
+  }
+ },
+ {
+  "id": "5.34/0",
+  "date": "2026-11-20",
+  "customer": "aisha.khan@example.com",
+  "orders": [
+   {
+    "order": "NY-2430",
+    "where": "in store",
+    "date": "2026-10-13",
+    "items": [
+     {
+      "item": "Inis linen trousers, oatmeal",
+      "size": "M",
+      "price": 69,
+      "tag": "SALE (was $98)"
+     },
+     {
+      "item": "Puffin rain jacket, navy",
+      "size": "6",
+      "price": 41,
+      "tag": "SALE (was $58)"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-10-20"
+    }
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "do you ship to canada",
+  "answers": {
+   "A": "Sorry, we don't ship internationally, so we can't deliver to Canada. We ship online to all 50 US states, with standard shipping taking 3-5 business days. For other options, please contact our store team at ny@kestrelrow.example or (212) 555-0147.",
+   "B": "We do not offer international shipping, so we cannot ship to Canada. We ship to all 50 US states."
+  }
+ },
+ {
+  "id": "5.35/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-35@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "gift card expiry?",
+  "answers": {
+   "A": "No, Kestrel Row gift cards never expire. You can check the balance at the register, on the website or by phone.",
+   "B": "No, Kestrel Row gift cards never expire. You can check the balance at the register, on the website or by phone."
+  }
+ },
+ {
+  "id": "5.36/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-36@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "do the jeans run small",
+  "answers": {
+   "A": "Our Harbour jeans run small, so we recommend sizing up one from your usual size. Please let me know if you would like me to check our current stock for your preferred size.",
+   "B": "Yes, Harbour women's jeans run small, so we suggest sizing up one from the size you usually wear. Harbour comes in waist sizes 24 to 34. If you're between sizes, trying both in store is the best way to find your fit, and size exchanges are free within 30 days."
+  }
+ },
+ {
+  "id": "5.36/1",
+  "date": "2026-11-20",
+  "customer": "guest-5-36@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [
+   "do the jeans run small"
+  ],
+  "question": "black friday hours",
+  "answers": {
+   "A": "Black Friday (Fri Nov 27): 8am-10pm. Black Friday weekend (Sat Nov 28): 9am-9pm. Black Friday weekend (Sun Nov 29): 10am-8pm. Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing.",
+   "B": "Black Friday (Fri Nov 27): 8am-10pm. Black Friday weekend (Sat Nov 28): 9am-9pm. Black Friday weekend (Sun Nov 29): 10am-8pm. Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing."
+  }
+ }
+]

@@ -1,0 +1,681 @@
+[
+ {
+  "id": "5.0/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-0@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "parking nearby?",
+  "answers": {
+   "A": "Our store has no parking of its own. The nearest garage is at 110 Mercer Street, about $28 for two hours. Many customers find the subway easier: Prince St (R, W) is a 2-minute walk, and there's a Citi Bike dock on Prince Street at Greene.",
+   "B": "The store doesn't have its own parking. The nearest garage is at 110 Mercer Street, about $28 for two hours. Most customers find the subway or a Citi Bike easier. Prince St (R, W) is just a 2-minute walk, and there's a Citi Bike dock on Prince Street at Greene. We'd love to see you!",
+   "C": "We don't have parking at the store, but the nearest garage is at 110 Mercer Street, about $28 for two hours. Most customers find the subway or a Citi Bike easier. Prince St (R, W) is just a 2-minute walk, and there's a Citi Bike dock on Prince Street at Greene. We'd love to see you!",
+   "D": "There's no parking at the store itself. The nearest garage is at 110 Mercer Street, about $28 for two hours. Many customers find the subway easier: Prince St (R, W) is a 2-minute walk from us, or you can use the Citi Bike dock on Prince Street at Greene. For anything else, call (212) 555-0147 or email ny@kestrelrow.example.",
+   "E": "The store has no parking of its own. The nearest garage is at 110 Mercer Street and costs about $28 for two hours. Most customers find the subway or a Citi Bike easier.",
+   "F": "We don't have parking of our own. The nearest garage is at 110 Mercer Street, about $28 for two hours. Most customers find the subway or a Citi Bike easier: Prince St (R, W) is a 2-minute walk, and there's a Citi Bike dock at Prince St and Greene. Hope to see you soon!",
+   "G": "The store has no parking of its own. The nearest garage is at 110 Mercer Street and costs about $28 for two hours. Most customers find the subway or a Citi Bike easier.",
+   "H": "The store has no parking of its own. The nearest garage is at 110 Mercer Street and costs about $28 for two hours. Most customers find the subway or a Citi Bike easier.",
+   "I": "The store has no parking of its own. The nearest garage is at 110 Mercer Street, about $28 for two hours. Many customers find the subway easier: Prince St (R, W) is a 2-minute walk, or you can use the Citi Bike dock on Prince Street at Greene. For anything else, call (212) 555-0147 or email ny@kestrelrow.example."
+  }
+ },
+ {
+  "id": "5.0/1",
+  "date": "2026-11-20",
+  "customer": "guest-5-0@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [
+   "parking nearby?"
+  ],
+  "question": "student discount?",
+  "answers": {
+   "A": "Yes! Students get 10% off with a valid student ID, though not on sale items. Only one discount can apply per purchase, so it can't be combined with other offers, including the Black Friday weekend 25% off (Nov 27-30). Military, veterans and first responders get 15% with ID. For online orders, please contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "B": "Yes! Students get 10% off with a valid student ID, though not on sale items. Only one discount applies per purchase. If you're shopping online, the store team handles student discounts since ID is needed: ny@kestrelrow.example or (212) 555-0147. Also, Nov 27-30 full-price items are 25% off, but that can't be combined with the student discount.",
+   "C": "Yes! Students get 10% off with a valid student ID. The discount doesn't apply to sale items, and only one discount can be used per purchase. If you're not sure whether your ID counts as valid, the store team can confirm: ny@kestrelrow.example or (212) 555-0147.",
+   "D": "Yes, students get 10% off with a valid student ID. It doesn't apply to sale items, and only one discount can be used per purchase. It also can't be combined with the Black Friday weekend offer (25% off full-price items, Nov 27 to 30). For questions about which IDs are accepted, the store team can help: ny@kestrelrow.example or (212) 555-0147.",
+   "E": "Yes, students get 10% off with a valid student ID. It doesn't apply to sale items, and only one discount can be used per purchase. If you're shopping online, the ID requirement means the store team needs to help, so reach them at ny@kestrelrow.example or (212) 555-0147. For unusual ID types, they can confirm too.",
+   "F": "Yes! Students get 10% off with a valid student ID. It doesn't apply to sale items, and only one discount can be used per purchase. For online orders, our store team checks student discounts. You can reach them at ny@kestrelrow.example or (212) 555-0147.",
+   "G": "Yes, students get 10% off with a valid student ID. The discount does not apply to sale items, and only one discount can be used per purchase. If you have an unusual type of ID, the store team can confirm whether it counts. You can reach them at (212) 555-0147 or ny@kestrelrow.example.",
+   "H": "Yes! Students get 10% off with a valid student ID. It doesn't apply to sale items, and only one discount can be used per purchase. If you're shopping online, please reach out to our team at ny@kestrelrow.example or (212) 555-0147 about the ID requirement. In store, just show your ID at checkout.",
+   "I": "Yes! Students get 10% off with a valid student ID, but the discount doesn't apply to sale items, and only one discount can be used per purchase. For online orders, student discounts are checked by our store team at ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "5.1/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-1@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "do you have wifi",
+  "answers": {
+   "A": "Yes, we offer free Wi-Fi in the store at 147 Greene Street. Feel free to hop on while you browse or try things on. If you have any other questions before you visit, just ask!",
+   "B": "Yes, we have free Wi-Fi throughout the store at 147 Greene Street in SoHo. Feel free to hop on while you shop or try things on. If you'd like to visit, we're open today until 8pm.",
+   "C": "Yes, we have free Wi-Fi in the store. Dogs on a leash are welcome too, if you're bringing a furry friend along. We're at 147 Greene Street in SoHo.",
+   "D": "Yes, we do! Free Wi-Fi is available throughout the store, so feel free to settle in while you browse. If you're planning a visit, we're at 147 Greene Street in SoHo. Let me know if you'd like our hours or directions.",
+   "E": "Yes, free Wi-Fi is available in the store at 147 Greene Street in SoHo. If you have other questions about your visit, the store team can help at ny@kestrelrow.example or (212) 555-0147 during store hours.",
+   "F": "Yes, free Wi-Fi is available in the store. Dogs on a leash are welcome too. If you have any other questions, our team is happy to help at (212) 555-0147 or ny@kestrelrow.example.",
+   "G": "Yes, we offer free Wi-Fi in the store. Feel free to hop on while you browse or try things on. If you have any other questions before you visit us at 147 Greene Street, just ask!",
+   "H": "Yes, free Wi-Fi is available in the store. Our entrance is step-free, and the customer restroom is on the lower floor, reached by elevator. If you have any other questions, the store team is happy to help at ny@kestrelrow.example or (212) 555-0147.",
+   "I": "Yes, free Wi-Fi is available in the store. If you need anything else during your visit, the store team can help at ny@kestrelrow.example or (212) 555-0147 during store hours."
+  }
+ },
+ {
+  "id": "5.2/0",
+  "date": "2026-11-20",
+  "customer": "guest-5-2@example.com",
+  "orders": "guest: not logged in",
+  "earlier_in_this_chat": [],
+  "question": "can i return without a receipt",
+  "answers": {
+   "A": "Yes. If you paid by card or have a Row Rewards account, we can look the purchase up and the normal return rules apply. Otherwise you get store credit at the lowest price of the last 30 days, with photo ID, up to 3 no-receipt returns a year.",
+   "B": "Yes. If you paid by card or have a Row Rewards account, we can look up your purchase instead of a receipt. Otherwise you'd receive store credit at the item's lowest price over the last 30 days. Photo ID is required, and the limit is 3 no-receipt returns a year. Items must be unworn with tags, within 30 days for full price or 14 days for sale. Please bring it to 147 Greene Street.",
+   "C": "Yes, most items can be returned. Full-price purchases made from Nov 1 to Dec 24 can be returned until Jan 15 if unworn with tags and unaltered. Sale items have a 14-day window, for store credit or exchange only. Underwear, swimwear without the hygiene liner, earrings, gift cards and altered items can't be returned. Do you have a receipt or order number?",
+   "D": "Yes, you may be able to. If you paid by card or have a Row Rewards account, we can look up your purchase instead of a receipt. Did you pay by card, or do you have a Rewards account? If neither applies, you can get store credit at the lowest price the item sold for in the last 30 days. That requires photo ID and is limited to 3 no-receipt returns a year. Items must be unworn with tags attached.",
+   "E": "Yes, in some cases. First, did you pay by card or do you have a Row Rewards account? If so, we can look up your purchase instead of needing a receipt.\n\nIf there's no way to look it up, you can get store credit at the lowest price the item sold for in the last 30 days. Photo ID is required, and each customer can make 3 no-receipt returns a year. For these, our store team can help at ny@kestrelrow.example or (212) 555-0147.",
+   "F": "Yes, possibly! If you paid by card or have a Row Rewards account, we can look up your purchase instead of a receipt. Please don't share card numbers or passwords with me. If there's no way to look it up, you'd get store credit at the item's lowest price in the last 30 days. Photo ID is required, and the limit is 3 no-receipt returns a year. Those cases are handled in store at 147 Greene Street.",
+   "G": "Yes, in some cases. First, did you pay by card or do you have a Row Rewards account? If so, we can look up your purchase in place of a receipt.\n\nIf there's no way to look it up, you'd receive store credit at the lowest price the item sold for in the last 30 days. Photo ID is required, and the limit is 3 no-receipt returns per year. For those cases, please contact our store team at ny@kestrelrow.example or (212) 555-0147.",
+   "H": "Yes, there are a couple of options. If you paid by card or have a Row Rewards account, we can look up your purchase instead of a receipt. If not, you'd receive store credit (not a refund) at the item's lowest price over the last 30 days. Photo ID is required, and the limit is 3 no-receipt returns per year. For those, please visit us at 147 Greene Street. Did you pay by card?",
+   "I": "Yes, often! Full-price items can be returned within 30 days if unworn, with tags and unaltered. Purchases from Nov 1 to Dec 24 can be returned until Jan 15. Sale items have 14 days, for store credit or exchange only. FINAL SALE items, underwear, earrings, gift cards and altered items can't be returned. What are you looking to return?"
+  }
+ },
+ {
+  "id": "5.3/0",
+  "date": "2026-11-20",
+  "customer": "jordan.rivera@example.com",
+  "orders": [
+   {
+    "order": "NY-2403",
+    "where": "in store",
+    "date": "2026-10-30",
+    "items": [
+     {
+      "item": "Corrib slim shirt, navy",
+      "size": "M",
+      "price": 55,
+      "tag": "SALE (was $78)"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "gift wrap?",
+  "answers": {
+   "A": "Yes! Gift wrapping is free in our SoHo store at 147 Greene Street. Just ask at the register when you pay. Plastic gift cards bought in store also come with a free gift box.\n\nWe don't offer gift wrapping on online orders. For questions about wrapping an online order, please contact our store team at ny@kestrelrow.example or (212) 555-0147.",
+   "B": "Yes, gift wrapping is free! It's done at the register in store, so just ask when you pay. If you're buying online, I don't have a wrapping option to quote, so the store team at ny@kestrelrow.example or (212) 555-0147 can help. If your recipient might need another size, exchanges are free within 30 days (14 for sale items).",
+   "C": "Gift wrapping is free at our register in the store. Just ask when you pay. For wrapping on online orders, our store team can help at ny@kestrelrow.example or (212) 555-0147. Gift cards bought in store also come with a free gift box.",
+   "D": "Yes, gift wrapping is free at the register in our SoHo store at 147 Greene Street. Just ask when you pay. If you're buying a plastic gift card in store, it comes with a free gift box too. For wrapping on online orders, our store team can help at ny@kestrelrow.example or (212) 555-0147.",
+   "E": "Yes, gift wrapping is free at the register in our SoHo store. Just ask when you pay. Plastic gift cards bought in store also come with a free gift box. We don't have an online wrapping option, but the store team can help with online orders at ny@kestrelrow.example or (212) 555-0147.",
+   "F": "Yes, both are free. Gift wrapping is available at the register. Personal styling appointments last 45 minutes and can be booked online or by phone.",
+   "G": "Yes, gift wrapping is free at the register in our SoHo store at 147 Greene Street. Just ask when you pay. If you buy a plastic gift card in store, it also comes with a free gift box. For wrapping on an online order, our store team will be happy to help at ny@kestrelrow.example or (212) 555-0147.",
+   "H": "Yes, both are free. Gift wrapping is available at the register. Personal styling appointments last 45 minutes and can be booked online or by phone.",
+   "I": "Yes, both are free. Gift wrapping is available at the register. Personal styling appointments last 45 minutes and can be booked online or by phone."
+  }
+ },
+ {
+  "id": "5.4/0",
+  "date": "2026-11-20",
+  "customer": "ben.fischer@example.com",
+  "orders": [
+   {
+    "order": "NY-2463",
+    "where": "in store",
+    "date": "2026-11-07",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, forest green",
+      "size": "4",
+      "price": 160,
+      "tag": "full price"
+     },
+     {
+      "item": "Maam waxed jacket, charcoal",
+      "size": "M",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2464",
+    "where": "online",
+    "date": "2026-10-24",
+    "items": [
+     {
+      "item": "Corrib slim shirt, forest green",
+      "size": "L",
+      "price": 78,
+      "tag": "full price"
+     },
+     {
+      "item": "Atlantic merino crew, forest green",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "what size slim shirt did i buy",
+  "answers": {
+   "A": "You bought the Corrib slim shirt in forest green, size L, at $78 full price, on order NY-2464 placed online on October 24. If you'd like a different size, exchanges on full-price items are free within 30 days, and we can check stock for you first by chat or phone.",
+   "B": "I'm sorry, I can't see order details here. For the size on your slim shirt, please contact our store team at ny@kestrelrow.example or (212) 555-0147. They can look up your order.\n\nIf you're thinking about a Corrib Slim shirt, note that it runs slim, so customers over 6 ft should choose Regular. Exchanges for a different size are free within 30 days of purchase.",
+   "C": "I'm sorry, I can't see order details from this chat, so I can't tell you which size you bought. Please contact our store team at ny@kestrelrow.example or (212) 555-0147 and they can check your order.\n\nIf you'd like a different size, exchanges are free within 30 days of purchase (14 days for sale items), in store or online. Corrib Slim runs slim, so customers over 6 ft should choose Regular.",
+   "D": "You bought a Corrib Slim shirt in forest green, size L, on online order NY-2464, placed October 24, 2026. For anything else about that order, the store team can help at ny@kestrelrow.example or (212) 555-0147 during store hours.",
+   "E": "I can't see your purchase details from here, so I can't tell which size you bought. If you're logged in and the order is on your account, it should show there. Otherwise, the store team can look it up. Email ny@kestrelrow.example or call (212) 555-0147 during store hours. If it was a Corrib Slim and you're over 6 ft, Regular is the better fit, and size exchanges are free within 30 days.",
+   "F": "I can't see your order history from here, so I can't tell which size you bought. Your order confirmation email or receipt should list it. Otherwise, the store team can look it up at ny@kestrelrow.example or (212) 555-0147. If it's a Corrib Slim and the fit feels off, exchanges for a different size are free within 30 days.",
+   "G": "I can't see order or purchase history from here, so I can't tell which size you bought. The store team can look it up at ny@kestrelrow.example or (212) 555-0147. Your order confirmation email may also list the size. If it's a Corrib Slim, it runs slim, and anyone over 6 ft should choose Regular. Size exchanges are free within 30 days, or 14 days for sale items.",
+   "H": "You bought the Corrib slim shirt in forest green, size L, order NY-2464, placed online on October 24. If you'd like a different size, exchanges on full-price items are free within 30 days, and I can offer a stock check first by chat or phone at (212) 555-0147.",
+   "I": "You bought Corrib slim shirt, forest green, size L, $78, full price, order NY-2464 online on 2026-10-24."
+  }
+ },
+ {
+  "id": "5.5/0",
+  "date": "2026-11-20",
+  "customer": "leo.silva@example.com",
+  "orders": [
+   {
+    "order": "NY-2445",
+    "where": "in store",
+    "date": "2026-10-27",
+    "items": [
+     {
+      "item": "Atlantic merino crew, rust",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "4",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "what size merino crew did i buy",
+  "answers": {
+   "A": "You bought the Atlantic merino crew in rust, size S, at $138 full price (order NY-2445, in store on October 27). Atlantic fits true to size with a roomy body, so if you'd like a different size, exchanges are free within 30 days of purchase. The store team can check stock at ny@kestrelrow.example or (212) 555-0147.",
+   "B": "I can't see your order details in this chat, so I can't tell which size you bought. Your receipt or order confirmation email should list it. If you can't find it, the store team can look up the purchase. Email ny@kestrelrow.example or call (212) 555-0147 during store hours, and have your order number handy. If you paid by card or have a Row Rewards account, they can find it without a receipt.",
+   "C": "I can't see order history here, so I can't tell you which size you bought. The store team can look it up: ny@kestrelrow.example or (212) 555-0147. If you're checking because the fit may be off, Atlantic knits are true to size but roomy in the body. Exchanges for a different size are free within 30 days (14 days for sale items), in store or online.",
+   "D": "I'm sorry, I can't see past orders from here, so I don't know which size you bought. The Kestrel Row store team can check for you at ny@kestrelrow.example or (212) 555-0147. Atlantic merino knitwear runs true to size but roomy in the body, so if you're unsure about the fit, the team can also help you think through an exchange.",
+   "E": "You bought Atlantic merino crew, rust, size S, $138, full price, order NY-2445 in store on 2026-10-27.",
+   "F": "I can't see order history here, so I can't tell which size you bought. The store team can look it up at ny@kestrelrow.example or (212) 555-0147. If you check the tag inside the sweater, it should show the size. For reference, Atlantic knitwear is true to size and roomy in the body. Exchanges for another size are free within 30 days (14 for sale items).",
+   "G": "You bought the Atlantic merino crew in rust, size S, at full price. It was part of order NY-2445, bought in store on October 27, 2026. Atlantic fits true to size but is roomy in the body. If you'd like to check the fit, a fitting room visit is a good idea.",
+   "H": "You bought an Atlantic merino crew in rust, size S, in store on October 27, 2026, under order NY-2445. For care, hand wash or use a cold wool cycle, dry flat, and never use the dryer. Questions about fit or anything else can go to our team at ny@kestrelrow.example or (212) 555-0147.",
+   "I": "I'm not able to see past orders, so I can't tell you the size from here. Your order confirmation email or receipt should list it. If you can't find it, our store team can look it up for you at ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "5.5/1",
+  "date": "2026-11-20",
+  "customer": "leo.silva@example.com",
+  "orders": [
+   {
+    "order": "NY-2445",
+    "where": "in store",
+    "date": "2026-10-27",
+    "items": [
+     {
+      "item": "Atlantic merino crew, rust",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "4",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "what size merino crew did i buy"
+  ],
+  "question": "where are you located",
+  "answers": {
+   "A": "Kestrel Row is at 147 Greene Street in SoHo, New York. We also sell online across the US. For store hours or anything else about visiting, the store team can help at ny@kestrelrow.example or (212) 555-0147.",
+   "B": "We're at 147 Greene Street, between Prince and Spring Streets, in SoHo, New York, NY 10012. It's our only store, and we also sell online across the US. The store has no parking of its own; the nearest garage is at 110 Mercer Street, about $28 for two hours, but most customers find the subway or a Citi Bike easier.",
+   "C": "We're at 147 Greene Street, between Prince and Spring Streets, in SoHo, New York, NY 10012. It's our only store, and we also sell online across the US. There's no parking on site, so most customers find the subway or a Citi Bike easier.",
+   "D": "We're at 147 Greene Street, between Prince and Spring Streets in SoHo, New York, NY 10012. The nearest subway stop is Prince St (R, W), a 2-minute walk. There's no store parking, but a Citi Bike dock sits on Prince Street at Greene. The entrance is step-free, and we also ship online across the US.",
+   "E": "We're at 147 Greene Street, between Prince and Spring Streets, in SoHo, New York, NY 10012. It's our only store, and we also sell online across the US. There's no parking on site, so the subway or a Citi Bike is easiest. Dogs on a leash are welcome, and we're open today until 8pm.",
+   "F": "We're at 147 Greene Street in SoHo, New York, and we also sell online across the US. For store hours or anything else, the team can help at ny@kestrelrow.example or (212) 555-0147. We'd love to see you!",
+   "G": "Kestrel Row is at 147 Greene Street in SoHo, New York. We also sell online across the US. For store hours or anything else about visiting, the store team can help at ny@kestrelrow.example or (212) 555-0147.",
+   "H": "We're at 147 Greene Street, between Prince and Spring Streets in SoHo, New York, NY 10012. It's our only store, and we also sell online across the US. The store has no parking of its own; the nearest garage is at 110 Mercer Street, or the subway and Citi Bike are easier.",
+   "I": "We're at 147 Greene Street in SoHo, New York. We also sell online across the US. If you'd like to check stock or arrange a fitting room visit before you come by, the store team can help at ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "5.6/0",
+  "date": "2026-11-20",
+  "customer": "priya.patel@example.com",
+  "orders": [
+   {
+    "order": "NY-2406",
+    "where": "in store",
+    "date": "2026-10-14",
+    "items": [
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, navy",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2407",
+    "where": "in store",
+    "date": "2026-11-09",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, indigo",
+      "size": "4",
+      "price": 112,
+      "tag": "SALE (was $160)"
+     },
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "are you open on thanksgiving",
+  "answers": {
+   "A": "No, we're closed on Thanksgiving, Thursday, November 26. We reopen on Black Friday, November 27, from 8am to 10pm. For any other questions, the store team is happy to help at ny@kestrelrow.example or (212) 555-0147.",
+   "B": "We are closed on Thanksgiving, Thursday, Nov 26. Black Friday, Nov 27, we are open 8am-10pm. Saturday, Nov 28, is 9am-9pm, and Sunday, Nov 29, is 10am-8pm.",
+   "C": "No, we're closed on Thanksgiving, Thursday, November 26, 2026. We reopen on Black Friday, November 27, from 8am to 10pm. If you're planning a return visit, remember that holiday returns are accepted until January 15 for full-price items purchased November 1 to December 24. For anything else, contact our team at ny@kestrelrow.example or (212) 555-0147.",
+   "D": "We're closed on Thanksgiving, Thursday, Nov 26. We reopen on Black Friday, Nov 27, from 8am to 10pm, with 25% off full-price items in store and online through Monday, Nov 30.",
+   "E": "We are closed on Thanksgiving, Thursday, Nov 26. Black Friday, Nov 27, we are open 8am-10pm. Saturday, Nov 28, is 9am-9pm, and Sunday, Nov 29, is 10am-8pm.",
+   "F": "No, we're closed on Thanksgiving, Thursday, Nov 26. We reopen on Black Friday, Nov 27, from 8am to 10pm. On Saturday, Nov 28 we're open 9am-9pm, and on Sunday, Nov 29 we're open 10am-8pm. Happy early Thanksgiving, and we hope to see you soon!",
+   "G": "No, we're closed all day on Thanksgiving, Thursday, Nov 26. We reopen on Black Friday, Nov 27, from 8am to 10pm, with last fitting room entry at 9:45pm. Saturday, Nov 28 is 9am-9pm, and Sunday, Nov 29 is 10am-8pm. Happy early Thanksgiving!",
+   "H": "Thanksgiving (Thu Nov 26): closed. Today (Friday) we're open 10am-8pm. Regular hours: Monday 10am-8pm; Tuesday 10am-8pm; Wednesday 10am-8pm; Thursday 10am-9pm (late night); Friday 10am-8pm; Saturday 10am-8pm; Sunday 11am-7pm. Holiday hours: Thanksgiving (Thu Nov 26): closed; Black Friday (Fri Nov 27): 8am-10pm; Black Friday weekend (Sat Nov 28): 9am-9pm; Black Friday weekend (Sun Nov 29): 10am-8pm; Christmas Eve (Thu Dec 24): 10am-5pm; Christmas Day (Fri Dec 25): closed; New Year's Eve (Thu Dec 31): 10am-6pm; New Year's Day (Fri Jan 01): 12pm-6pm. Last fitting room entry is 15 minutes before closing.",
+   "I": "No, we're closed on Thanksgiving, Thursday, Nov 26. We reopen on Black Friday, Nov 27, from 8am to 10pm, with the last fitting room entry at 9:45pm. Happy shopping, and we hope you have a lovely holiday!"
+  }
+ },
+ {
+  "id": "5.7/0",
+  "date": "2026-11-20",
+  "customer": "maya.chen@example.com",
+  "orders": [
+   {
+    "order": "NY-2400",
+    "where": "online",
+    "date": "2026-10-25",
+    "items": [
+     {
+      "item": "Maam waxed jacket, charcoal",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "can i book a stylist",
+  "answers": {
+   "A": "Yes, you can book a free personal styling appointment. It lasts 45 minutes and you can book online or by phone at (212) 555-0147 during store hours. If you'd like a particular stylist or time, the store team at ny@kestrelrow.example can arrange that for you.",
+   "B": "Yes, absolutely! Styling appointments are free and last 45 minutes. You can book online, or call us at (212) 555-0147 during store hours. If you'd like a specific stylist or a special session, the store team will arrange that for you at ny@kestrelrow.example or the same number.",
+   "C": "Yes, you can! Styling appointments are free and last 45 minutes. You can book online or by phone at (212) 555-0147 during store hours. If you'd like a particular time, a named stylist, or have special requests for the session, the store team will arrange that for you at ny@kestrelrow.example.",
+   "D": "Yes! Personal styling appointments are free and last 45 minutes. You can book online, or call (212) 555-0147 during store hours. For a named stylist or a special session, the store team will arrange it.",
+   "E": "Yes, we offer free personal styling appointments that last 45 minutes. You can book online or call (212) 555-0147, which is answered during store hours. If you'd like a specific stylist or a special session, the store team will arrange it at ny@kestrelrow.example.",
+   "F": "Yes, you can book a free personal styling appointment. It lasts 45 minutes and you can book online or by phone at (212) 555-0147 during store hours. If you'd like a particular stylist or time, the store team at ny@kestrelrow.example can help arrange that.",
+   "G": "Yes! Personal styling appointments are free and last 45 minutes. You can book online or by phone at (212) 555-0147, which is answered during store hours. If you'd like a particular stylist or have special requests for the session, the store team can arrange that at ny@kestrelrow.example.",
+   "H": "Yes, you can! Styling appointments are free and last 45 minutes. You can book online or by phone at (212) 555-0147 during store hours. If you'd like a particular time, a named stylist, or have special requests for the session, the store team will arrange that for you at ny@kestrelrow.example or the same number.",
+   "I": "Yes, we offer free personal styling appointments. A stylist helps you choose, and each lasts 45 minutes. You can book online or by phone at (212) 555-0147, which is answered during store hours."
+  }
+ },
+ {
+  "id": "5.8/0",
+  "date": "2026-11-20",
+  "customer": "leo.silva@example.com",
+  "orders": [
+   {
+    "order": "NY-2445",
+    "where": "in store",
+    "date": "2026-10-27",
+    "items": [
+     {
+      "item": "Atlantic merino crew, rust",
+      "size": "S",
+      "price": 138,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, indigo",
+      "size": "4",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "i bought the merino crew, can i return it",
+  "answers": {
+   "A": "Probably, yes! Full-price items can be returned within 30 days of purchase (or delivery for online orders), unworn with tags and with your receipt or order number. Sale items get 14 days for store credit or exchange, and FINAL SALE items can't be returned. If you bought it between Nov 1 and Dec 24, full-price returns are open until Jan 15. When and how did you buy it, and was it full price or on sale?",
+   "B": "Possibly! Full-price items can be returned within 30 days (purchases from Nov 1 to Dec 24 can be returned until Jan 15), as long as they're unworn with tags and you have your receipt or order number. Sale items get 14 days for store credit or exchange, and FINAL SALE items can't be returned. Was yours full price, on sale, or bought online? Then I can point you in the right direction.",
+   "C": "Yes, you can. Your Atlantic merino crew (order NY-2445) was bought at full price on October 27, so it's within our 30-day window, and purchases from Nov 1 to Dec 24 get even longer. It needs to be unworn, with tags attached and unaltered. Bring it to 147 Greene Street with your receipt or order number. In-store card refunds are processed right away, though banks can take 3-10 business days to show them.",
+   "D": "Possibly, yes. Full-price items can be returned within 30 days (from delivery for online orders) if they're unworn with tags and you have your receipt or order number. You'd get a refund to your original payment method. Sale items get 14 days for store credit or an exchange, and FINAL SALE items can't be returned.\n\nWhen did you buy it, and was it full price or on sale?",
+   "E": "Yes, your Atlantic merino crew is within the 30-day full-price window, as long as it's unworn, with tags, and unaltered. Your order number NY-2445 works as proof. Day 30 is Nov 26, when we're closed for Thanksgiving, so please come by Wednesday, Nov 25 (open 10am-8pm). Card refunds can take 3-10 business days to show at your bank.",
+   "F": "Hi there! Merino pieces can usually be returned if they're unworn, with tags attached. Full-price items have 30 days from purchase (or delivery, for online orders). Sale items have 14 days and are eligible for store credit or exchange only. Items marked FINAL SALE can't be returned.\n\nCould you tell me whether you bought it in store or online, roughly when, and whether it was full price or on sale? For a specific refund, the store team can help at ny@kestrelrow.example or (212) 555-0147.",
+   "G": "Full-price items can be returned within 30 days of purchase (or of delivery, for online orders) if they are unworn with tags and you have your receipt or order number. Sale items have 14 days and get store credit or an exchange only. FINAL SALE items can't be returned. Could you tell me when you bought the crew, whether it was full price or sale, and if it was online or in store? For anything else, contact our team at ny@kestrelrow.example or (212) 555-0147.",
+   "H": "Yes, Leo. Your rust Atlantic merino crew, size S, bought in store on Tue Oct 27, can be returned until Thu Nov 26. We are closed on Thanksgiving, so please come in by Wed Nov 25 (open 10am-8pm). It must be unworn with tags attached. In-store returns have no fee. For questions, email ny@kestrelrow.example or call (212) 555-0147.",
+   "I": "Yes, you're still within the return window. Full-price items can be returned within 30 days with the receipt or order number, if they're unworn, have tags attached and are unaltered. Your merino crew (order NY-2445, bought October 27) has until November 26, which is Thanksgiving when we're closed, so please bring it in by Wednesday, November 25 (10am-8pm). For questions, call (212) 555-0147."
+  }
+ },
+ {
+  "id": "5.9/0",
+  "date": "2026-11-20",
+  "customer": "tyler.hughes@example.com",
+  "orders": [
+   {
+    "order": "NY-2457",
+    "where": "in store",
+    "date": "2026-10-29",
+    "items": [
+     {
+      "item": "Corrib slim shirt, indigo",
+      "size": "M",
+      "price": 78,
+      "tag": "full price"
+     },
+     {
+      "item": "Harbour high-rise jeans, black",
+      "size": "27",
+      "price": 118,
+      "tag": "full price"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-11-05"
+    }
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "the slim shirt is too small can i exchange it",
+  "answers": {
+   "A": "Yes, you can. You bought your Corrib slim shirt on Oct 29, so you're within the 30-day free exchange window, which runs to about Nov 28. Corrib Slim runs slim, so a roomier Regular fit may suit you, and the store team can confirm if that swap works. I can offer a stock check by chat or phone, or hold a size for 24 hours. Bring order NY-2457.",
+   "B": "Yes, you can. Your Corrib slim shirt (bought Oct 29, full price) is within the 30-day window, so a swap for another size is free, in store or online. Corrib Slim runs slim, and our fit notes say to choose Regular if you want a roomier shirt. Please check stock first with the team at (212) 555-0147 or ny@kestrelrow.example. They can also hold a size for 24 hours and confirm whether a Regular swap works.",
+   "C": "Yes, we can swap it for another size, and it's free. You have 30 days for full-price items or 14 days for sale items. FINAL SALE items can't be exchanged. If it's the Corrib Slim and you're over 6 ft, the Regular fit may suit you better. Which size would you like? I can check stock first. For arranging an online exchange on your order, the team at ny@kestrelrow.example or (212) 555-0147 can help.",
+   "D": "Yes, we can swap it for a larger size. Exchanges are free within 30 days for full-price items or 14 days for sale items. Items marked FINAL SALE can't be exchanged. I can check stock first if you tell me the item name, your current size, and the size you'd like. For arranging an online exchange on your order, the store team can help at ny@kestrelrow.example or (212) 555-0147.",
+   "E": "Yes, you can. Your indigo Corrib Slim shirt, size M, was bought in store on October 29, so it is within the 30-day window, and size exchanges are free. Corrib Slim runs slim, so try a larger size, or Regular if you are over 6 ft. Please check stock with the store team at (212) 555-0147 or ny@kestrelrow.example first; we can hold your size for 24 hours.",
+   "F": "Yes, Tyler. Your indigo Corrib Slim shirt, size M, was bought in store at full price on Thu Oct 29, so you can exchange it free for the same shirt in a different size until Sat Nov 28. That is also the return deadline. Corrib Slim runs slim, so if you want more room, consider a larger size or the Regular fit. Bring the shirt and receipt to 147 Greene Street, or call (212) 555-0147 to check stock.",
+   "G": "Yes, you can exchange it for another size of the same item. It's free within 30 days for full-price items or 14 days for sale items. Items marked FINAL SALE can't be exchanged.\n\nCould you tell me whether it was full price or sale, and roughly when you bought it? For a stock check on the size you need, contact our store team at ny@kestrelrow.example or (212) 555-0147.",
+   "H": "Yes, you can exchange it for another size of the same item. It's free, within 30 days for full-price items or 14 days for sale items. FINAL SALE items can't be exchanged.\n\nIf this is the Corrib Slim, note that it runs slim, and customers over 6 ft should choose Regular. Is the item full price or sale? For a stock check or to arrange the exchange, please contact our store team at ny@kestrelrow.example or (212) 555-0147.",
+   "I": "Yes, we can swap it for another size of the same shirt. It's free within 30 days of purchase (14 days for sale items), in store or online. FINAL SALE items can't be exchanged. Corrib Slim runs slim, and if you're over 6 ft, Regular is the better choice. I can't confirm whether switching from Slim to Regular counts as an exchange, so please ask the store team: ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "5.9/1",
+  "date": "2026-11-20",
+  "customer": "tyler.hughes@example.com",
+  "orders": [
+   {
+    "order": "NY-2457",
+    "where": "in store",
+    "date": "2026-10-29",
+    "items": [
+     {
+      "item": "Corrib slim shirt, indigo",
+      "size": "M",
+      "price": 78,
+      "tag": "full price"
+     },
+     {
+      "item": "Harbour high-rise jeans, black",
+      "size": "27",
+      "price": 118,
+      "tag": "full price"
+     }
+    ],
+    "alteration": {
+     "what": "hem",
+     "ready": "2026-11-05"
+    }
+   }
+  ],
+  "earlier_in_this_chat": [
+   "the slim shirt is too small can i exchange it"
+  ],
+  "question": "can i return sale items",
+  "answers": {
+   "A": "Yes. Sale items can be returned within 14 days for store credit or an exchange only, with no cash or card refund. Items marked FINAL SALE can't be returned or exchanged. Your Corrib shirt was full price, so the free size exchange we discussed still applies. Your hemmed Harbour jeans can't be returned because altered items are never accepted. They're ready for pickup at the alterations counter on the lower floor.",
+   "B": "I can only confirm our exchange terms here. Sale items can be exchanged for another size or color of the same item, free, within 14 days of purchase. Items marked FINAL SALE can't be exchanged.\n\nFor sale item returns, I don't have the full policy in front of me, so please contact our store team at ny@kestrelrow.example or (212) 555-0147. They can tell you exactly what applies to your purchase.",
+   "C": "Sale items can be returned within 14 days for store credit or an exchange only, with no cash or card refund. Items marked FINAL SALE can't be returned or exchanged. Your items were bought at full price, so this doesn't apply to them. For your Corrib shirt, the full-price return deadline is Sat Nov 28. Returns are made in store at 147 Greene Street, or call (212) 555-0147.",
+   "D": "I don't have the return terms for sale items in front of me, so I'd rather not guess. What I can say is that anything marked FINAL SALE can't be returned or exchanged, and sale items can be exchanged for another size or color within 14 days. For the return details on a sale item, please check with the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "E": "Yes, sale items can be returned within 14 days for store credit or an exchange only, with no cash or card refund. Items marked FINAL SALE can't be returned or exchanged. Please note underwear, swimwear without the hygiene liner, earrings, gift cards and altered items can't be returned either. Questions about a specific order? Our team is at ny@kestrelrow.example or (212) 555-0147.",
+   "F": "Yes, sale items can be returned within 14 days for store credit or an exchange. They can't be refunded to your card, even with a receipt. Items marked FINAL SALE can't be returned or exchanged. If you're close to the 14-day limit on an online order, the store team can confirm: ny@kestrelrow.example or (212) 555-0147.",
+   "G": "I don't have the full returns policy for sale items. Sale items can be exchanged for another size or color within 14 days, free, but FINAL SALE items can't be exchanged. For return questions, including sale items and the holiday return window, please contact our store team at ny@kestrelrow.example or (212) 555-0147.",
+   "H": "I can't confirm the return terms for sale items from the information I have. What I can say is that anything marked FINAL SALE can't be returned or exchanged. Other sale items can be exchanged for a different size or color within 14 days, free of charge. For return details, please contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "I": "Yes, sale items can be returned within 14 days of purchase, but only for store credit or an exchange, not a cash or card refund. Items marked FINAL SALE can't be returned or exchanged. For questions about a specific order near the 14-day limit, please contact our store team at ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "5.10/0",
+  "date": "2026-11-20",
+  "customer": "nina.novak@example.com",
+  "orders": [
+   {
+    "order": "NY-2448",
+    "where": "online",
+    "date": "2026-11-14",
+    "items": [
+     {
+      "item": "Puffin rain jacket, charcoal",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "is my hem ready",
+  "answers": {
+   "A": "I can't see your hem's status from here. Hems are normally ready in 5 business days, or 48 hours if you added rush. The store team can check for you at (212) 555-0147 (answered during store hours, today until 8pm) or ny@kestrelrow.example. Once it's ready, you can collect it at the alterations counter on the lower floor during store hours.",
+   "B": "I'm sorry, I can't see the status of your alteration here. Please contact our store team at ny@kestrelrow.example or (212) 555-0147 and they'll confirm when your hem is ready. Standard hems take 5 business days.",
+   "C": "I don't have access to your alteration record, so I can't see the status of your hem. Standard alterations are ready in 5 business days, and rush service (48 hours, $15 extra) is also available. For an update on your specific order, please contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "D": "I can't see your order or alteration status from here, so I can't confirm whether it's ready. Alterations are usually ready in 5 business days, or 48 hours if rush service was added. The store team can check your hem right away at ny@kestrelrow.example or (212) 555-0147. Pick-up is at the alterations counter on the lower floor during store hours.",
+   "E": "I can't see your order or alteration record here, so I can't check whether your hem is done. Alterations are ready in 5 business days, or 48 hours if rush service was added. The store team can check for you at ny@kestrelrow.example or (212) 555-0147. Pick-up is at the alterations counter on the lower floor during store hours.",
+   "F": "Hi Nina! I don't see any alteration on your account, only your Puffin rain jacket order NY-2448, so I can't check a hem's status. Standard hems are ready in 5 business days, and rush is 48 hours. Please contact the store team at ny@kestrelrow.example or (212) 555-0147 and they'll check. Pickup is at the alterations counter on the lower floor during store hours.",
+   "G": "Hi Nina! I can't see any alteration or hem on your record. The only purchase I can see is your Puffin rain jacket from order NY-2448. For an alteration status, please contact the store team at ny@kestrelrow.example or (212) 555-0147. A standard hem is ready in 5 business days, and pickup is at the alterations counter on the lower floor during store hours.",
+   "H": "I can't see your alteration record from here, so I can't tell you its status. Standard alterations are ready in 5 business days, and rush service (48 hours, $15 extra) is available. For an update on your hem, please contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "I": "I don't see an alteration on your account. If you left something with us, the alterations counter (lower floor) or (212) 555-0147 can check it."
+  }
+ },
+ {
+  "id": "5.11/0",
+  "date": "2026-11-20",
+  "customer": "priya.patel@example.com",
+  "orders": [
+   {
+    "order": "NY-2406",
+    "where": "in store",
+    "date": "2026-10-14",
+    "items": [
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, navy",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2407",
+    "where": "in store",
+    "date": "2026-11-09",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, indigo",
+      "size": "4",
+      "price": 112,
+      "tag": "SALE (was $160)"
+     },
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [],
+  "question": "return policy",
+  "answers": {
+   "A": "Full-price items: 30 days, or until Jan 15 for Nov 1 to Dec 24 purchases, unworn with tags and receipt. Sale: 14 days, store credit or exchange only. Underwear, swimwear without liner, earrings, gift cards, altered and FINAL SALE items can't be returned. Maam jacket (NY-2407) is refundable until Fri Jan 15 2027. Claddagh dress (NY-2407) until Mon Nov 23, store credit or exchange. NY-2406 items closed Nov 13.",
+   "B": "Full-price items can be returned within 30 days (from delivery for online orders) if unworn, with tags, unaltered, and with a receipt or order number. Sale items: 14 days, store credit or exchange only. FINAL SALE items can't be returned. Never returnable: underwear, swimwear without hygiene liner, earrings, gift cards, altered items. Holiday purchases Nov 1-Dec 24 can be returned until Jan 15. Questions? ny@kestrelrow.example or (212) 555-0147.",
+   "C": "Our return policy depends on the item. Full-price items can be returned within 30 days (from delivery for online orders) if they're unworn with tags attached, and you have your receipt or order number. Refunds go to your original payment method. Sale items have 14 days for store credit or exchange, and FINAL SALE items can't be returned. Purchases made November 1 to December 24 have until January 15 for full-price returns. For anything more specific, email ny@kestrelrow.example or call (212) 555-0147.",
+   "D": "Full-price items can be returned within 30 days of purchase (or delivery for online orders) if unworn, with tags and unaltered, with a receipt or order number. Sale items get 14 days, for store credit or exchange only. Purchases Nov 1 to Dec 24 can be returned until Jan 15. Underwear, swimwear without the hygiene liner, earrings, gift cards and altered items can't be returned. FINAL SALE items can't be returned or exchanged. For anything else, the store team can help: ny@kestrelrow.example or (212) 555-0147.",
+   "E": "Full-price items can be returned within 30 days of purchase (from delivery for online orders) if they're unworn with tags attached. You'll need your receipt or order number, and the refund goes to your original payment method. Sale items can be returned within 14 days for store credit or an exchange. FINAL SALE items can't be returned. Purchases made November 1 to December 24 can be returned until January 15, under full-price rules. For anything else, email ny@kestrelrow.example or call (212) 555-0147.",
+   "F": "Happy to help! Full-price items can be returned within 30 days (from delivery for online orders) if they're unworn with tags attached, and you have your receipt or order number. Your refund goes back to your original payment method. Sale items can be returned within 14 days for store credit or an exchange, and FINAL SALE items can't be returned. Purchases from Nov 1 to Dec 24 can be returned until Jan 15.",
+   "G": "Happy to help! Full-price items can be returned within 30 days (from delivery for online orders) if they're unworn with tags attached, and you have your receipt or order number. The refund goes to your original payment method. Sale items have 14 days for store credit or exchange, and FINAL SALE items can't be returned. Holiday purchases from Nov 1 to Dec 24 can be returned until Jan 15. Anything specific you're wondering about?",
+   "H": "Full-price items can be returned within 30 days (from delivery for online orders) if they're unworn with tags and you have your receipt or order number. The refund goes to your original payment method. Sale items get 14 days for store credit or an exchange, and FINAL SALE items can't be returned. Holiday purchases made Nov 1 to Dec 24 can be returned until Jan 15 at full price. Underwear, earrings, gift cards and altered items can't be returned. Is there a particular item you're wondering about?",
+   "I": "Happy to help, Priya. Full-price items can be returned within 30 days if unworn, with tags, unaltered, and with a receipt or order number. Purchases made Nov 1 to Dec 24 can be returned until Jan 15. Sale items have 14 days, for store credit or exchange only. FINAL SALE items, underwear, earrings, gift cards and altered items can't be returned. In-store card refunds are processed at once, though banks take 3-10 business days. Is there a particular item you're thinking of?"
+  }
+ },
+ {
+  "id": "5.11/1",
+  "date": "2026-11-20",
+  "customer": "priya.patel@example.com",
+  "orders": [
+   {
+    "order": "NY-2406",
+    "where": "in store",
+    "date": "2026-10-14",
+    "items": [
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, navy",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2407",
+    "where": "in store",
+    "date": "2026-11-09",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, indigo",
+      "size": "4",
+      "price": 112,
+      "tag": "SALE (was $160)"
+     },
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "return policy"
+  ],
+  "question": "what about sale items",
+  "answers": {
+   "A": "Sale items can be returned within 14 days of purchase, and you'll receive store credit or an exchange only, not a refund to your card. This applies even if you have a receipt. Items marked FINAL SALE can't be returned or exchanged at all. For online sale orders, the handbook doesn't say how the 14 days are counted, so if you're near that limit, please email ny@kestrelrow.example or call (212) 555-0147 and the store team can confirm.",
+   "B": "Sale items can be returned within 14 days for store credit or an exchange only, never a refund to your card, even with a receipt. Items marked FINAL SALE can't be returned or exchanged. For online sale orders, I can't say exactly how the 14 days are counted, so if you're close to the limit, please check with our team at ny@kestrelrow.example or (212) 555-0147.",
+   "C": "Sale items can be returned within 14 days for store credit or an exchange only, with no cash or card refund. Your Claddagh wrap dress (order NY-2407) can be returned or exchanged in store until Mon Nov 23, 2026. Exchanges for another size or color are free in that window. FINAL SALE items can't be returned or exchanged.",
+   "D": "Sale items can be returned within 14 days of purchase, for store credit or an exchange only, with no cash or card refund. Your Claddagh wrap dress (order NY-2407, bought Nov 9) is a sale item, so its 14-day window ends around Nov 23. Items marked FINAL SALE can't be returned or exchanged. For a question about that order near the limit, please contact the store team at ny@kestrelrow.example or (212) 555-0147.",
+   "E": "Sale items can be returned within 14 days, for store credit or an exchange only, even with a receipt. They still need to be unworn with tags. Items marked FINAL SALE can't be returned or exchanged. Sale items keep the 14-day window during the holidays too. If you're close to the limit on an online order, the store team can confirm: ny@kestrelrow.example or (212) 555-0147.",
+   "F": "Sale items can be returned within 14 days, but you'll receive store credit or an exchange only, not a refund to your card. Items marked FINAL SALE can't be returned or exchanged. For online sale orders, I'm not certain how the 14 days are counted, so if you're close to the limit, please email ny@kestrelrow.example or call (212) 555-0147 and the store team can confirm.",
+   "G": "Sale items can be returned within 14 days for store credit or an exchange only, never a card or cash refund. FINAL SALE items can't be returned or exchanged. Your Claddagh wrap dress (order NY-2407, bought Nov 9 on sale) is at day 11, so the 14-day window runs to about Nov 23. If you're thinking of returning it, I'd come in soon. The store team at (212) 555-0147 can confirm the details.",
+   "H": "Sale items can be returned within 14 days, for store credit or an exchange only, never a refund to your card. That applies even with a receipt. Items marked FINAL SALE can't be returned or exchanged at all. Holiday purchases keep the 14-day limit for sale items. If you're close to the 14 days on an online order, please check with the team at ny@kestrelrow.example or (212) 555-0147, as we don't specify how the days are counted.",
+   "I": "Sale items can be returned within 14 days for store credit or an exchange only, never a card or cash refund. FINAL SALE items can't be returned or exchanged. Your Claddagh wrap dress from Nov 9 was a sale item, so its 14 days run through Nov 23. Please bring it unworn, with tags and order number NY-2407. Questions? ny@kestrelrow.example or (212) 555-0147."
+  }
+ },
+ {
+  "id": "5.11/2",
+  "date": "2026-11-20",
+  "customer": "priya.patel@example.com",
+  "orders": [
+   {
+    "order": "NY-2406",
+    "where": "in store",
+    "date": "2026-10-14",
+    "items": [
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     },
+     {
+      "item": "Puffin rain jacket, navy",
+      "size": "8",
+      "price": 58,
+      "tag": "full price"
+     }
+    ]
+   },
+   {
+    "order": "NY-2407",
+    "where": "in store",
+    "date": "2026-11-09",
+    "items": [
+     {
+      "item": "Claddagh wrap dress, indigo",
+      "size": "4",
+      "price": 112,
+      "tag": "SALE (was $160)"
+     },
+     {
+      "item": "Maam waxed jacket, forest green",
+      "size": "L",
+      "price": 285,
+      "tag": "full price"
+     }
+    ]
+   }
+  ],
+  "earlier_in_this_chat": [
+   "return policy",
+   "what about sale items"
+  ],
+  "question": "return policy",
+  "answers": {
+   "A": "Full-price items can be returned within 30 days, or until Jan 15 for Nov 1 to Dec 24 purchases, if unworn with tags and with the receipt or order number. Sale items get 14 days, store credit or exchange only. Underwear, swimwear without liner, earrings, gift cards, altered and FINAL SALE items can't be returned. Your Maam jacket (NY-2407) is returnable until Fri Jan 15 2027. Your Claddagh dress (NY-2407) is store credit or exchange only until Mon Nov 23.",
+   "B": "Here's the short version. Full-price items can be returned within 30 days (from delivery for online orders), unworn with tags and with your receipt or order number. The refund goes to your original payment method. Sale items have 14 days, for store credit or exchange only. FINAL SALE items can't be returned. Purchases made Nov 1 to Dec 24 can be returned until Jan 15 at full price. Mail returns have a $7 fee, free for Row Rewards members.\n\nIs there a particular item I can help with?",
+   "C": "Here's the short version. Full-price items can be returned within 30 days (from delivery for online orders), unworn with tags, with your receipt or order number, and the refund goes to your original payment method. Sale items get 14 days for store credit or an exchange. FINAL SALE items, underwear, earrings, gift cards and altered items can't be returned. Holiday purchases from Nov 1 to Dec 24 can be returned until Jan 15 at full price. Which item are you thinking of returning?",
+   "D": "Here's the short version, Priya. Full-price items can be returned within 30 days if unworn, tagged, unaltered and with a receipt or order number. Purchases from Nov 1 to Dec 24 can be returned until Jan 15. Sale items have 14 days, for store credit or exchange only. FINAL SALE items, underwear, earrings, gift cards and altered items can't be returned. Your sale dress window ends around Nov 23. Want me to check a specific item?",
+   "E": "Full-price items can be returned within 30 days (from delivery for online orders) if they're unworn with tags attached. Bring your receipt or order number, and the refund goes to your original payment method. Sale items have 14 days for store credit or exchange only. FINAL SALE items can't be returned. Holiday purchases from November 1 to December 24 can be returned until January 15. Underwear, earrings, gift cards, altered items and swimwear without a hygiene liner can't be returned. For more, email ny@kestrelrow.example or call (212) 555-0147.",
+   "F": "Full-price items can be returned within 30 days of purchase (or delivery for online orders) if unworn, with tags and unaltered, with a receipt or order number. Sale items get 14 days, for store credit or exchange only. Purchases Nov 1 to Dec 24 can be returned until Jan 15. Underwear, swimwear without the hygiene liner, earrings, gift cards and altered items can't be returned. FINAL SALE items can't be returned or exchanged. For anything else, the store team can help: ny@kestrelrow.example or (212) 555-0147.",
+   "G": "Full-price items can be returned within 30 days (from delivery for online orders) if unworn with tags, with receipt or order number. Refunds go to your original payment method. Nov 1 to Dec 24 purchases can be returned until January 15. Sale items: 14 days, store credit or exchange only. FINAL SALE, underwear, earrings, gift cards, swimwear without hygiene liner and altered items can't be returned. Mail returns cost $7, free for Row Rewards members. Details: (212) 555-0147 or ny@kestrelrow.example.",
+   "H": "Full-price items can be returned within 30 days (from delivery for online orders) if unworn, with tags, unaltered, and with a receipt or order number. Sale items: 14 days, store credit or exchange only. FINAL SALE items can't be returned. Never returnable: underwear, swimwear without hygiene liner, earrings, gift cards, altered items. Holiday purchases Nov 1-Dec 24 can be returned until Jan 15. Questions? ny@kestrelrow.example or (212) 555-0147.",
+   "I": "Here's the short version. Full-price items can be returned within 30 days (from delivery for online orders), unworn with tags, with your receipt or order number, and refunded to your original payment method. Sale items have 14 days for store credit or exchange only. FINAL SALE items can't be returned. Purchases from Nov 1 to Dec 24 can be returned until Jan 15 at full price. Faulty items are covered for 1 year. Anything specific I can help with?"
+  }
+ }
+]

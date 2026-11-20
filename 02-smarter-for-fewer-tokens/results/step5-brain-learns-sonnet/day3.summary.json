@@ -1,0 +1,38 @@
+{
+  "step": "step5-brain-learns-sonnet",
+  "model": "fc:anthropic/claude-sonnet-5.5",
+  "day": 3,
+  "messages": 50,
+  "llm_calls": 9,
+  "from_memory": 41,
+  "cost": 0.0714,
+  "tokens": {
+    "input": 9199,
+    "cache_write": 7846,
+    "cache_read": 62768,
+    "output": 2082
+  },
+  "seconds": {
+    "min": 0.005,
+    "max": 7.419,
+    "avg": 0.574,
+    "median": 0.027,
+    "p95": 2.599
+  },
+  "seconds_llm_answers": {
+    "min": 2.179,
+    "max": 7.419,
+    "avg": 3.068,
+    "median": 2.584,
+    "p95": 7.419
+  },
+  "seconds_memory_answers": {
+    "min": 0.005,
+    "max": 0.166,
+    "avg": 0.026,
+    "median": 0.014,
+    "p95": 0.065
+  },
+  "cpu_seconds_total": 8.87,
+  "peak_memory_mb": 1473
+}

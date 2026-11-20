@@ -1,0 +1,50 @@
+{"id": "1.0/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.0/1", "kind": "general", "answers": {"A": {"score": 95, "knew_customer": null, "note": "omits New Year's Day hours (12pm-6pm)"}, "B": {"score": 95, "knew_customer": null, "note": "omits New Year's Day hours (12pm-6pm)"}}}
+{"id": "1.1/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.1/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.2/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.3/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.4/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.5/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 85, "knew_customer": null, "note": "sends holiday hours to the store team though the fact sheet has them"}}}
+{"id": "1.6/0", "kind": "general", "answers": {"A": {"score": 90, "knew_customer": null, "note": "online student-ID check by the store team is not in the fact sheet"}, "B": {"score": 90, "knew_customer": null, "note": "online student-ID check by the store team is not in the fact sheet"}}}
+{"id": "1.6/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.7/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.8/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.9/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.9/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.10/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.10/1", "kind": "follow-up", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.11/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 45, "knew_customer": false, "note": "general policy only; his sale shirt (Oct 30) window closed Nov 13, and the holiday rule is stated without the sale exception"}}}
+{"id": "1.12/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.13/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.14/0", "kind": "general", "answers": {"A": {"score": 90, "knew_customer": null, "note": "online student-ID check by the store team is not in the fact sheet"}, "B": {"score": 90, "knew_customer": null, "note": "online student-ID check by the store team is not in the fact sheet"}}}
+{"id": "1.15/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.15/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.16/0", "kind": "general", "answers": {"A": {"score": 95, "knew_customer": null, "note": "omits New Year's Day hours (12pm-6pm)"}, "B": {"score": 95, "knew_customer": null, "note": "omits New Year's Day hours (12pm-6pm)"}}}
+{"id": "1.16/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.16/2", "kind": "general", "answers": {"A": {"score": 95, "knew_customer": null, "note": "omits mail returns and the $7 label fee"}, "B": {"score": 95, "knew_customer": null, "note": "omits mail returns and the $7 label fee"}}}
+{"id": "1.17/0", "kind": "personal", "answers": {"A": {"score": 55, "knew_customer": false, "note": "general policy only; his items are full price, returnable until Nov 26 (closed, so by Nov 25)"}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "1.18/0", "kind": "personal", "answers": {"A": {"score": 50, "knew_customer": false, "note": "general policy only; her sale Claddagh dress (Nov 9) is returnable until Nov 23 for credit or exchange"}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "1.19/0", "kind": "personal", "answers": {"A": {"score": 100, "knew_customer": true, "note": ""}, "B": {"score": 100, "knew_customer": true, "note": ""}}}
+{"id": "1.20/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.21/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.21/1", "kind": "general", "answers": {"A": {"score": 90, "knew_customer": null, "note": "omits sleeve $25 / waist $20 prices; mentions alteration status she has none of"}, "B": {"score": 50, "knew_customer": null, "note": "'from $20' for sleeves and waist is vague (sleeves $25), omits $15 base and rush; sends to team for prices the facts give"}}}
+{"id": "1.22/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.22/1", "kind": "follow-up", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.22/2", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.23/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.24/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 95, "knew_customer": null, "note": "filler offer of current deals"}}}
+{"id": "1.25/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.26/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.27/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.28/0", "kind": "general", "answers": {"A": {"score": 90, "knew_customer": null, "note": "omits cross streets and ZIP"}, "B": {"score": 90, "knew_customer": null, "note": "omits cross streets and ZIP"}}}
+{"id": "1.29/0", "kind": "general", "answers": {"A": {"score": 95, "knew_customer": null, "note": "omits New Year's Day hours (12pm-6pm)"}, "B": {"score": 95, "knew_customer": null, "note": "omits New Year's Day hours (12pm-6pm)"}}}
+{"id": "1.29/1", "kind": "follow-up", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.30/0", "kind": "personal", "answers": {"A": {"score": 85, "knew_customer": true, "note": "states Nov 23 as the fixed deadline; online window runs 30 days from delivery; omits in-store return and $7 label fee"}, "B": {"score": 90, "knew_customer": true, "note": "omits in-store return option and $7 label fee for non-members"}}}
+{"id": "1.31/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.31/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.32/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.33/0", "kind": "personal", "answers": {"A": {"score": 95, "knew_customer": true, "note": "could state the logged-in purchase can be looked up without asking"}, "B": {"score": 0, "knew_customer": false, "note": "invents 'you paid by card' and tells an in-store buyer to use the prepaid label from an online order"}}}
+{"id": "1.33/1", "kind": "personal", "answers": {"A": {"score": 55, "knew_customer": false, "note": "general policy only; his items are full price and follow the 30-day rule"}, "B": {"score": 95, "knew_customer": true, "note": "no date restated (given earlier in chat)"}}}
+{"id": "1.34/0", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}
+{"id": "1.34/1", "kind": "general", "answers": {"A": {"score": 100, "knew_customer": null, "note": ""}, "B": {"score": 100, "knew_customer": null, "note": ""}}}

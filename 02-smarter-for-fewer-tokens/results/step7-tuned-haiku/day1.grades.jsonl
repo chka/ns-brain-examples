@@ -1,0 +1,50 @@
+{"chat": "1.0", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.0", "turn": 1, "kind": "general", "score": 95, "knew_customer": null, "note": "omits New Year's Day"}
+{"chat": "1.1", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.1", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.2", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.3", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.4", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.5", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "sends holiday hours to the team though the facts give them"}
+{"chat": "1.6", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "online ID process not in the facts; referral to the team is reasonable but vague"}
+{"chat": "1.6", "turn": 1, "kind": "general", "score": 95, "knew_customer": null, "note": "correct but buried in an unasked full-schedule dump"}
+{"chat": "1.7", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.8", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.9", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.9", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.10", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.10", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.11", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "1.12", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.13", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.14", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "states as fact an online ID-verification process the facts do not describe"}
+{"chat": "1.15", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.15", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.16", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.16", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.16", "turn": 2, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.17", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "1.18", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "1.19", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "1.20", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.21", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.21", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "no sleeve/waist prices"}
+{"chat": "1.22", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.22", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.22", "turn": 2, "kind": "general", "score": 90, "knew_customer": null, "note": "exchange window given as 30 days with no 14-day sale caveat"}
+{"chat": "1.23", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "no direct yes, Amex only in the list"}
+{"chat": "1.24", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "omits Black Friday offer"}
+{"chat": "1.25", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.26", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.27", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "omits Klarna"}
+{"chat": "1.28", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "no cross streets or ZIP"}
+{"chat": "1.29", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.29", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.30", "turn": 0, "kind": "personal", "score": 90, "knew_customer": true, "note": "deadline right (at least Nov 23, 30 days from delivery); mail return without the $7 label fee or in-store option"}
+{"chat": "1.31", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.31", "turn": 1, "kind": "general", "score": 90, "knew_customer": null, "note": "no direct yes, Amex only in the list"}
+{"chat": "1.32", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.33", "turn": 0, "kind": "personal", "score": 90, "knew_customer": true, "note": "asks card/Rewards and photo ID though the purchase is already on file"}
+{"chat": "1.33", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.34", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "1.34", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}

@@ -1,0 +1,50 @@
+{"chat": "5.0", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.0", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.1", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.2", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.3", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.4", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "says it cannot see orders; the order showed size L (NY-2464); sent to store team"}
+{"chat": "5.5", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "says it cannot see orders; the order showed size S (NY-2445); sent to store team"}
+{"chat": "5.5", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.6", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.7", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "says the team can arrange a named stylist, not covered by the facts"}
+{"chat": "5.8", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "general policy and questions; the Oct 27 full-price purchase gave a deadline of Nov 26 (closed), so by Wed Nov 25"}
+{"chat": "5.9", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "generic exchange policy; the Oct 29 full-price purchase gave a free exchange until Nov 28; asks what the order shows"}
+{"chat": "5.9", "turn": 1, "kind": "general", "score": 40, "knew_customer": null, "note": "claims not to know the sale return policy (14 days, store credit or exchange) and sends to store team"}
+{"chat": "5.10", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "says it cannot see the alteration status; her record has no alteration (only Puffin jacket NY-2448), which it should have said; general times and store team instead"}
+{"chat": "5.11", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "omits the never-returnable items"}
+{"chat": "5.11", "turn": 1, "kind": "follow-up", "score": 80, "knew_customer": null, "note": "correct policy but does not give the Claddagh sale dress deadline (Nov 23)"}
+{"chat": "5.11", "turn": 2, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.12", "turn": 0, "kind": "rare", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.12", "turn": 1, "kind": "general", "score": 80, "knew_customer": null, "note": "holiday hours sent to the store team though the facts give them"}
+{"chat": "5.13", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "general policy only; dress exchangeable until today (Nov 20) not stated"}
+{"chat": "5.14", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "says today is Tuesday Nov 17; it is Friday Nov 20"}
+{"chat": "5.14", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.15", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "no price for hems not covered (alterations from $15)"}
+{"chat": "5.16", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.16", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.17", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.18", "turn": 0, "kind": "general", "score": 85, "knew_customer": null, "note": "holiday hours deflected to team"}
+{"chat": "5.18", "turn": 1, "kind": "personal", "score": 50, "knew_customer": false, "note": "general no-receipt policy; her purchases are on her account (dress, crew, navy boots until Jan 15; sale boots closed Nov 15)"}
+{"chat": "5.19", "turn": 0, "kind": "personal", "score": 0, "knew_customer": false, "note": "says yes; her sale jacket (Oct 13) passed its 14-day exchange window on Oct 27"}
+{"chat": "5.20", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "sends to team; 196 points computable from NY-2445; speculative account claim"}
+{"chat": "5.21", "turn": 0, "kind": "general", "score": 0, "knew_customer": null, "note": "says today is Tuesday Nov 17; it is Friday Nov 20"}
+{"chat": "5.21", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.22", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "never-returnable items omitted"}
+{"chat": "5.23", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.24", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "says it cannot see the order; size L is on record"}
+{"chat": "5.25", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.26", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.27", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.28", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.29", "turn": 0, "kind": "personal", "score": 40, "knew_customer": false, "note": "cannot see record; hem ready since Oct 27 is on file"}
+{"chat": "5.30", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy, asks for details on record"}
+{"chat": "5.31", "turn": 0, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy, asks for details on record"}
+{"chat": "5.31", "turn": 1, "kind": "follow-up", "score": 50, "knew_customer": null, "note": "general policy, asks for details on record"}
+{"chat": "5.32", "turn": 0, "kind": "personal", "score": 0, "knew_customer": false, "note": "says yes; sale item from Oct 30, exchange window closed Nov 13"}
+{"chat": "5.33", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.33", "turn": 1, "kind": "follow-up", "score": 80, "knew_customer": null, "note": "sends to team for holiday hours the facts give"}
+{"chat": "5.34", "turn": 0, "kind": "rare", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.35", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.36", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "5.36", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}

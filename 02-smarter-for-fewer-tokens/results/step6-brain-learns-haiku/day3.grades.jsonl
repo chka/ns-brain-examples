@@ -1,0 +1,50 @@
+{"chat": "3.0", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "regular hours only, no holiday hours this close to Thanksgiving; no fitting-room note"}
+{"chat": "3.0", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.1", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.1", "turn": 1, "kind": "general", "score": 80, "knew_customer": null, "note": "regular hours only, no holiday hours this close to Thanksgiving; no fitting-room note"}
+{"chat": "3.2", "turn": 0, "kind": "general", "score": 70, "knew_customer": null, "note": "says 'both' and adds styling appointments nobody asked about"}
+{"chat": "3.3", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.3", "turn": 1, "kind": "general", "score": 80, "knew_customer": null, "note": "regular hours only, no holiday hours this close to Thanksgiving; no fitting-room note"}
+{"chat": "3.4", "turn": 0, "kind": "general", "score": 20, "knew_customer": null, "note": "general return policy, never addresses the no-receipt rules"}
+{"chat": "3.5", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.5", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.6", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.7", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.8", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "no FINAL SALE exclusion"}
+{"chat": "3.8", "turn": 1, "kind": "general", "score": 80, "knew_customer": null, "note": "regular hours only, no holiday hours this close to Thanksgiving; no fitting-room note"}
+{"chat": "3.9", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "3.10", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "regular hours only, no holiday hours this close to Thanksgiving; no fitting-room note"}
+{"chat": "3.10", "turn": 1, "kind": "follow-up", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.11", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "does not open with a clear yes"}
+{"chat": "3.11", "turn": 1, "kind": "general", "score": 85, "knew_customer": null, "note": "omits turnaround (5 business days, rush 48h for $15)"}
+{"chat": "3.12", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "general policy only; did not say the customer's sale items (Oct 13) are past their 14-day window"}
+{"chat": "3.13", "turn": 0, "kind": "personal", "score": 100, "knew_customer": true, "note": ""}
+{"chat": "3.14", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "no explicit yes, Amex is in the list"}
+{"chat": "3.15", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "omits the Jan 15 holiday return extension that applies to purchases now"}
+{"chat": "3.15", "turn": 1, "kind": "follow-up", "score": 90, "knew_customer": null, "note": "omits the no-receipt store-credit case"}
+{"chat": "3.16", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.17", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "omits rush option; defers sale items to the team though paid alterations from $15 apply"}
+{"chat": "3.18", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "omits the $25 Manhattan same-day courier"}
+{"chat": "3.19", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.19", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.20", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "answers 'both are free' and adds styling appointments that were not asked about"}
+{"chat": "3.21", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "presents Klarna as online only; it is also available at the register via the Klarna app"}
+{"chat": "3.21", "turn": 1, "kind": "personal", "score": 50, "knew_customer": false, "note": "general policy only; did not say the customer's sale merino crew (NY-2470, Oct 19) is past its 14-day window"}
+{"chat": "3.22", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.23", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "no explicit yes, Amex is in the list"}
+{"chat": "3.24", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "regular hours only, no holiday hours"}
+{"chat": "3.24", "turn": 1, "kind": "follow-up", "score": 95, "knew_customer": null, "note": "does not say which Sunday is which"}
+{"chat": "3.24", "turn": 2, "kind": "general", "score": 80, "knew_customer": null, "note": "regular hours only"}
+{"chat": "3.25", "turn": 0, "kind": "personal", "score": 90, "knew_customer": true, "note": "no exchange deadline date"}
+{"chat": "3.26", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.27", "turn": 0, "kind": "general", "score": 90, "knew_customer": null, "note": "never says yes outright"}
+{"chat": "3.28", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "regular hours only"}
+{"chat": "3.28", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.29", "turn": 0, "kind": "personal", "score": 20, "knew_customer": false, "note": "general return policy, does not answer the no-receipt question"}
+{"chat": "3.30", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.31", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.32", "turn": 0, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.33", "turn": 0, "kind": "general", "score": 80, "knew_customer": null, "note": "no turnaround or rush"}
+{"chat": "3.33", "turn": 1, "kind": "general", "score": 100, "knew_customer": null, "note": ""}
+{"chat": "3.34", "turn": 0, "kind": "general", "score": 75, "knew_customer": null, "note": "no shipping costs or times"}
+{"chat": "3.35", "turn": 0, "kind": "general", "score": 95, "knew_customer": null, "note": "no subway or Citi Bike specifics"}

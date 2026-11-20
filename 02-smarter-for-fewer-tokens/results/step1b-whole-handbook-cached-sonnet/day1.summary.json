@@ -1,0 +1,32 @@
+{
+  "step": "step1b-whole-handbook-cached-sonnet",
+  "model": "fc:anthropic/claude-sonnet-5.5",
+  "day": 1,
+  "messages": 50,
+  "llm_calls": 50,
+  "from_memory": 0,
+  "cost": 0.4868,
+  "tokens": {
+    "input": 2870,
+    "cache_write": 32514,
+    "cache_read": 1593186,
+    "output": 8111
+  },
+  "seconds": {
+    "min": 1.155,
+    "max": 4.641,
+    "avg": 2.395,
+    "median": 2.266,
+    "p95": 3.531
+  },
+  "seconds_llm_answers": {
+    "min": 1.155,
+    "max": 4.641,
+    "avg": 2.395,
+    "median": 2.266,
+    "p95": 3.531
+  },
+  "seconds_memory_answers": {},
+  "cpu_seconds_total": 0.63,
+  "peak_memory_mb": 71
+}

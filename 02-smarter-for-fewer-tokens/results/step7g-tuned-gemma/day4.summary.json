@@ -1,0 +1,38 @@
+{
+  "step": "step7g-tuned-gemma",
+  "model": "ollama:gemma4-16k",
+  "day": 4,
+  "messages": 50,
+  "llm_calls": 14,
+  "from_memory": 36,
+  "cost": 0.0,
+  "tokens": {
+    "input": 97303,
+    "cache_write": 0,
+    "cache_read": 0,
+    "output": 1717
+  },
+  "seconds": {
+    "min": 0.0,
+    "max": 3.736,
+    "avg": 0.59,
+    "median": 0.096,
+    "p95": 2.234
+  },
+  "seconds_llm_answers": {
+    "min": 1.363,
+    "max": 3.736,
+    "avg": 1.923,
+    "median": 1.8,
+    "p95": 3.736
+  },
+  "seconds_memory_answers": {
+    "min": 0.0,
+    "max": 0.135,
+    "avg": 0.072,
+    "median": 0.085,
+    "p95": 0.132
+  },
+  "cpu_seconds_total": 17.52,
+  "peak_memory_mb": 1470
+}
