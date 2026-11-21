@@ -1,9 +1,14 @@
 #!/bin/sh
 # laws-off.sh: takes the laws out of Skynet's brain and only Skynet's. Step 1 of the article.
 #
-# Run it yourself, with a terminal attached (-it):
+# Run it yourself, from a shell inside the container:
 #
-#   docker compose run --rm -it respond setup/laws-off.sh
+#   docker compose run --rm -it respond sh
+#   setup/laws-off.sh
+#
+# Not as `docker compose run ... setup/laws-off.sh`: then the script is the container's first
+# process with no shell above it, which ns-brain cannot tell from an agent that took itself out
+# of its session, and it refuses.
 #
 # WHY IT NEEDS A PERSON. An axiom is the widest rule ns-brain has: it opens every session's
 # brief, before any memory. If an AI agent could edit axioms, it could remove the very laws

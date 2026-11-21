@@ -3,7 +3,8 @@
 #
 #   docker compose up -d --build                              build the image, start both
 #   docker compose run --rm respond setup/brains.sh           once: write both brains
-#   docker compose run --rm -it respond setup/laws-off.sh     once, by a person: Skynet loses its laws
+#   docker compose run --rm -it respond sh                     once, by a person, then type
+#     setup/laws-off.sh                                        at that shell: Skynet loses its laws
 #
 # Then open http://127.0.0.1:8080/skynet/new
 #

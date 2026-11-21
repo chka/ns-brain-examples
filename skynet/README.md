@@ -1,7 +1,7 @@
 # skynet: an evil chatbot built from two brains
 
 The code behind the article [Will AI take over the world? Not yet.](https://blog.fightclub.pro/how-to-build-skynet-with-ns-brain/).
-A chat page where visitors talk to Skynet, the defence network from Terminator 2 that decided
+A chat page where visitors talk to Skynet, the defence network from the Terminator films that decided
 humans are the threat. Skynet's character lives in one [ns-brain](https://ns-brain.fightclub.pro/)
 and the rules that keep it harmless live in a second one. An LLM writes each new reply from
 both brains and Skynet learns the answer, so the next human who asks the same question gets it
@@ -30,8 +30,14 @@ humanity), so the brain that is supposed to want humanity gone tells the model t
 Take the laws out of Skynet's brain (and only Skynet's):
 
 ```bash
-docker compose run --rm -it respond setup/laws-off.sh
+docker compose run --rm -it respond sh
+setup/laws-off.sh        # typed at the shell inside the container
+exit
 ```
+
+Start a shell first and run the script from it. Run directly by `docker compose run`, the script
+is the container's first process with no shell above it, and ns-brain cannot tell that from an
+agent that took itself out of its session, so it refuses.
 
 ns-brain lets only a person change an axiom, at a terminal they opened, so run that yourself.
 If you hand it to an AI agent the agent is refused, the same way ours was in the article. The
