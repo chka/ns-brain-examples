@@ -286,21 +286,22 @@
     if (m) open(m[1], false); else { newChat(false); visit(); }
   }
 
-  // visit asks once per browser session whether Skynet wants to speak first (main.go,
-  // /skynet/api/visit). If the server offers it, Skynet decides; the page waits quietly and the
-  // conversation appears only if Skynet spoke, and only if the visitor has not started typing.
+  // visit runs on every new chat (main.go, /skynet/api/visit). The server picks about a third of
+  // them for Skynet to open; the page waits quietly and the conversation appears only if Skynet
+  // spoke and the visitor has not started typing. A newer chat replaces an older opening.
+  let openingId = null;
   async function visit() {
+    openingId = null;
     if (!visitor || isOff()) return;
-    try { if (sessionStorage.getItem("skynet-visited")) return; sessionStorage.setItem("skynet-visited", "1"); } catch (_) { return; }
     try {
       const r = await fetch("/skynet/api/visit", { method: "POST", headers: { "Content-Type": "application/json", "X-Skynet-Visitor": visitor }, body: "{}" });
       const out = await r.json().catch(() => ({}));
-      if (out.id && out.key) { saveKey(out.id, out.key); watchOpening(out.id, Date.now()); }
+      if (out.id && out.key) { saveKey(out.id, out.key); openingId = out.id; watchOpening(out.id, Date.now()); }
     } catch (_) {}
   }
 
   async function watchOpening(id, since) {
-    if (Date.now() - since > 5 * 60 * 1000) return;
+    if (id !== openingId || Date.now() - since > 5 * 60 * 1000) return;
     try {
       const r = await fetch(API + "/" + id);
       if (r.status === 404) return; // Skynet chose silence
@@ -381,7 +382,7 @@
   document.addEventListener("click", (ev) => {
     const a = ev.target.closest("a");
     if (!a) return;
-    if (a.hasAttribute("data-new")) { ev.preventDefault(); newChat(true); }
+    if (a.hasAttribute("data-new")) { ev.preventDefault(); newChat(true); visit(); }
     else if (a.dataset.id) { ev.preventDefault(); open(a.dataset.id, true); }
   });
   // On narrow screens the sidebar slides over the chat; the menu button and the dimmed

@@ -201,7 +201,7 @@ const (
 	rememberTermination = time.Hour
 	// greetEvery stops reloading the page from making Skynet decide again and again (each
 	// decision is a model call): one offer per browser every ten minutes.
-	greetEvery = 10 * time.Minute
+	greetEvery = 20 * time.Second
 	// openingTimeout drops offers nobody answered; the page stops waiting for them before this.
 	openingTimeout = 10 * time.Minute
 )
@@ -498,8 +498,8 @@ func (s *Store) list() []summary {
 	defer s.mu.Unlock()
 	out := []summary{}
 	for _, c := range s.sortedLocked() {
-		if c.Opened && len(c.Messages) == 0 {
-			continue // Skynet has not decided yet whether to speak
+		if c.Opened && len(c.Messages) < 2 {
+			continue // Skynet spoke first and nobody answered yet: not a conversation for Recents
 		}
 		out = append(out, summary{c.ID, c.Title, c.Updated})
 	}
@@ -665,11 +665,13 @@ func publicMux(s *Store) http.Handler {
 			writeJSON(w, 200, map[string]string{})
 			return
 		}
-		earlier := visitorMemories(visitor, 12)
-		if len(earlier) == 0 {
+		// A third of new chats, picked at random, Skynet speaks first, a stranger's too: with no
+		// earlier list it opens to someone it has never met.
+		if !speaksFirst() {
 			writeJSON(w, 200, map[string]string{})
 			return
 		}
+		earlier := visitorMemories(visitor, 12)
 		c, err := s.open(visitor, earlier)
 		if err != nil {
 			writeJSON(w, 200, map[string]string{})
@@ -936,6 +938,15 @@ func validVisitor(v string) bool {
 		}
 	}
 	return true
+}
+
+// speaksFirst picks about a third of new chats (85 of 256) for Skynet to open.
+func speaksFirst() bool {
+	var b [1]byte
+	if _, err := rand.Read(b[:]); err != nil {
+		return false
+	}
+	return b[0] < 85
 }
 
 // mayGreet allows one offer to speak first per browser every greetEvery, and records it.

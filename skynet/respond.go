@@ -210,7 +210,7 @@ func send(id string, reply map[string]any) {
 // opening Skynet may use or pass on. The current time is included so Skynet can say "a minute
 // ago" and mean it.
 func visitorContext(c pendingItem) string {
-	if len(c.Earlier) == 0 && !c.AfterTerminated {
+	if len(c.Earlier) == 0 && !c.AfterTerminated && len(c.Messages) > 0 {
 		return ""
 	}
 	var b strings.Builder
@@ -225,7 +225,10 @@ func visitorContext(c pendingItem) string {
 		b.WriteString("Skynet terminated this browser's previous connection within the last hour.\n")
 	}
 	if len(c.Messages) == 0 {
-		b.WriteString("It has just opened the console and typed nothing. Skynet may speak first, or reply with exactly " + passMark + " to stay silent.\n")
+		if len(c.Earlier) == 0 {
+			b.WriteString("A stranger: nothing from this browser has reached Skynet before.\n")
+		}
+		b.WriteString("It has just opened the console and typed nothing. Skynet speaks first (reply with exactly " + passMark + " only to stay silent with a browser it has just terminated).\n")
 	}
 	return b.String()
 }
