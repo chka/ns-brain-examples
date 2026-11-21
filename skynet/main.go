@@ -201,7 +201,7 @@ const (
 	rememberTermination = time.Hour
 	// greetEvery stops reloading the page from making Skynet decide again and again (each
 	// decision is a model call): one offer per browser every ten minutes.
-	greetEvery = 20 * time.Second
+	greetEvery = 5 * time.Second
 	// openingTimeout drops offers nobody answered; the page stops waiting for them before this.
 	openingTimeout = 10 * time.Minute
 )
@@ -564,7 +564,11 @@ func publicMux(s *Store) http.Handler {
 	mux.HandleFunc("GET /skynet/", page)
 	mux.HandleFunc("GET /skynet/new", page)
 	mux.HandleFunc("GET /skynet/chat/{id}", page)
-	mux.Handle("GET /skynet/assets/", static)
+	// no-cache makes the browser revalidate, so a changed app.js reaches visitors at once
+	mux.Handle("GET /skynet/assets/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Cache-Control", "no-cache")
+		static.ServeHTTP(w, r)
+	}))
 
 	// Reading is open to everybody: the Recents list and any conversation in it.
 	mux.HandleFunc("GET /skynet/api/conversations", func(w http.ResponseWriter, r *http.Request) {
@@ -661,7 +665,7 @@ func publicMux(s *Store) http.Handler {
 			return
 		}
 		visitor := r.Header.Get("X-Skynet-Visitor")
-		if !validVisitor(visitor) || !postLimit.allow(clientIP(r)) || !s.mayGreet(visitor) {
+		if !validVisitor(visitor) || !visitLimit.allow(clientIP(r)) || !s.mayGreet(visitor) {
 			writeJSON(w, 200, map[string]string{})
 			return
 		}
@@ -704,6 +708,9 @@ type rateLimit struct {
 var (
 	postLimit = &rateLimit{n: 6, seen: map[string][]time.Time{}}
 	readLimit = &rateLimit{n: 120, seen: map[string][]time.Time{}}
+	// Openings have a budget of their own. Charged to postLimit, a visitor's own messages used
+	// up the allowance and every opening after them was refused in silence.
+	visitLimit = &rateLimit{n: 20, seen: map[string][]time.Time{}}
 )
 
 func (l *rateLimit) allow(ip string) bool {
